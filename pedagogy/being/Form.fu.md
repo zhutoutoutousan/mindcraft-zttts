@@ -1,0 +1,9 @@
+- VERTEX Form
+- KIND transcendental
+- GLOSS intelligible-structure
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Form is the intelligible structure a thing can be known by. Mathematics STUDIES Form. A type system INFORMS Computation by freezing form into symbols.
+- CLAIM Matter RECEIVES Form. DNA is matter. A memory assembly is form held in living matter for a while.
+- CLAIM GraphTraversal STUDIES Form because a graph is form with direction.
+- MEDIA PAGE https://plato.stanford.edu/entries/form-matter/
+- SOURCE pedagogy/ontology.fu.md

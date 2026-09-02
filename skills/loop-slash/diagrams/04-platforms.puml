@@ -1,0 +1,44 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontColor #e8eef5
+skinparam ArrowColor #ffcc80
+skinparam ArrowThickness 3
+skinparam rectangleBorderColor #90caf9
+skinparam packageBorderColor #90caf9
+skinparam packageBackgroundColor #121a24
+skinparam componentBorderColor #69f0ae
+skinparam componentBackgroundColor #1a2530
+skinparam noteBorderColor #ffcc80
+skinparam noteBackgroundColor #1a2530
+skinparam noteFontColor #e8eef5
+skinparam shadowing false
+
+title Claude Code vs Cursor — same job, two buildings
+
+package "Claude Code" as CC #121a24 {
+  [ /loop  ] as CLloop
+  [ /schedule cloud ] as CSched
+  [ loop.md default prompt ] as CMd
+  CLloop --> CMd
+  CLloop ..> CSched : laptop off? promote
+}
+
+package "Cursor" as CU #121a24 {
+  [ /loop parse ] as UParse
+  [ Local: AGENT_LOOP_TICK_ +\nnotify_on_output ] as ULocal
+  [ Cloud: subscribe_timer ] as UCloud
+  UParse --> ULocal
+  UParse --> UCloud
+}
+
+note bottom of UCloud
+  same name without unsubscribe
+  = silent no-op
+  (thermostat sticker, boiler unchanged)
+end note
+
+note bottom of CLloop
+  session-local
+  Esc clears next wakeup
+end note
+@enduml

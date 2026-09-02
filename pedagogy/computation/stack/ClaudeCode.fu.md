@@ -1,0 +1,13 @@
+- VERTEX ClaudeCode
+- KIND techne
+- GLOSS cli-agent
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Named with Cursor / Kiro on worldquant-miner evidence.
+- CLAIM Agent Toolkit for AWS names Claude Code as a target CLI. That is a product page, not extra employment.
+- CLAIM Official stack: CLAUDE.md always on, Skills on demand, Hooks on events, Subagents isolated, Plugins as installable bundles, MCP around them. Infographic 2026-09-02 names the same five layers. Hire-weight this week is below AgentCore. Lebenslauf already names Claude Code so the essence belongs on this vertex, not on CPU.md as NOW.
+- CLAIM Card vs docs: skills need not always fork; hooks need not be shell-only. See mezzanine/claude-code-layers.toon.md.
+- SOURCE self/identity/skill.toon.md
+- SOURCE https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
+- SOURCE https://code.claude.com/docs/en/features-overview
+- SOURCE mezzanine/claude-code-layers.toon.md

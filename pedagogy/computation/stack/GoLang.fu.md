@@ -1,0 +1,8 @@
+- VERTEX GoLang
+- KIND techne
+- GLOSS compiled-language-for-servers
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Attested at RITS with Fiber.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

@@ -1,0 +1,8 @@
+- VERTEX SQS
+- KIND techne
+- GLOSS aws-queue
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Fictio / NovelMonkey. Kafka is not in the skill toon. Do not add Kafka until sourced.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

@@ -1,0 +1,10 @@
+- VERTEX Bedrock
+- KIND techne
+- GLOSS aws-hosted-models
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Fictio / NovelMonkey.
+- CLAIM AgentCore sits on Bedrock as the production agent platform. Hosted models and agent runtime are not the same vertex.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md
+- SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html

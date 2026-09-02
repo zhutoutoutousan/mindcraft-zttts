@@ -1,0 +1,12 @@
+- VERTEX CursorSkill
+- KIND techne
+- GLOSS packaged-procedure-an-agent-reads-on-trigger
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A Cursor skill is a SKILL.md the agent reads. A slash is one trigger. Create-skill create-rule create-hook create-subagent are skills, not attested as slashes on this machine.
+- CLAIM This repo's skills/ontology-showcase.fu.md is the same essence in fu form. Janitor keeps skills/*.py so the procedure still runs.
+- CLAIM Agent Toolkit for AWS is the same shape at cloud scale: curated SKILL.md procedures a coding agent reads before touching AWS. Product page names Kiro Claude Code Codex MCP. Not a lebenslauf line.
+- CLAIM Claude Code skills: description matching, optional auto-invoke, may run in-session or with context fork into a subagent. Infographic says always fork. Official skills.md says fork is optional. CONTRADICTS the card on that point. Cursor on this machine reads SKILL.md on trigger. Do not write them as one implementation.
+- SOURCE mezzanine/cursor-slash.toon.md
+- SOURCE skills/ontology-showcase.fu.md
+- SOURCE https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
+- SOURCE https://code.claude.com/docs/en/skills.md

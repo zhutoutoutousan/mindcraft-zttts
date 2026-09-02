@@ -1,0 +1,6 @@
+- VERTEX TailwindCSS
+- KIND techne
+- GLOSS utility-css-for-layout
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- SOURCE self/identity/skill.toon.md

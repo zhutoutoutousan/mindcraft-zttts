@@ -1,0 +1,21 @@
+- VERTEX MemoryAssembly
+- KIND natural
+- GLOSS cluster-of-neurons-representing-one-memory
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A subset of hippocampal neurons assembles into a microcircuit that represents a memory. Recruitment protects that representation from later streams of input.
+- CLAIM Cascade the paper reports: learning -> persistent dsDNA breaks in discrete CA1 clusters -> nuclear envelope rupture -> perinuclear histone and dsDNA fragments -> TLR9 inflammatory phenotype -> centrosomal DNA repair complexes -> ciliogenesis and perineuronal nets -> recruitment to the memory circuit.
+- CLAIM Time: IEG peak ~1 h. Nuclear γH2AX foci 1-3 h. Larger pericentrosomal γH2AX 6-96 h. Immune/TLR gene program at 96 h vs cilium/ECM program at 21 days (prior work). Bulk RNA-seq 96 h vs 21 d: 847 genes differ, 440 up. Immune nucleic-acid sensing dominant at 96 h (71 up, 11 down).
+- CLAIM Neuron-specific Tlr9 knockdown impaired contextual freezing across tests. Astrocytic GFAP-cre knockdown did not. Microglial depletion did not. Bloodborne cell-free DNA and DNase1 infusions did not explain the effect.
+- CLAIM With compromised TLR9 this same cascade is a gateway to genomic instability and cognitive impairment. The paper flags accelerated senescence, psychiatric and neurodegenerative disorders as implicated, not proven here in humans.
+- MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/1
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/2
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/3
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/4
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/5
+- MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7#Sec32
+- MEDIA GEO https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174076
+- MEDIA GEO https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254780
+- MEDIA CODE https://github.com/RadulovicLab/Nature-2024
+- SOURCE https://doi.org/10.1038/s41586-024-07220-7
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7

@@ -1,0 +1,11 @@
+- VERTEX CentrosomeDDR
+- KIND natural
+- GLOSS pericentrosomal-hub-of-DNA-repair
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Persistent γH2AX from 6-96 h is 4 µm or larger, fuzzy, co-labelled with centrin and γ-tubulin, hence pericentrosomal, not a classical nuclear break focus. 53BP1 co-recruits there.
+- CLAIM The paper treats centrosomes as DDR hubs in adult neurons, extending a role known in dividing cells. TLR9 is required for that recruitment.
+- CLAIM Tlr9 or Rela knockout: 53BP1 fails to go to damage sites and to centrosomal DDR. Ifnar1 knockout keeps centrosomal DDR.
+- CLAIM Cluster 26 after Tlr9-KO showed a paradoxical up of axon guidance and adhesion genes. Exception noted. Not overwritten.
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/2
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/5
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7

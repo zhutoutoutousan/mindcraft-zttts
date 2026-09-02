@@ -1,0 +1,7 @@
+- VERTEX AzureCosmosGremlin
+- KIND techne
+- GLOSS hosted-property-graph
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Skill family Azure CosmosDB Gremlin.
+- SOURCE self/identity/skill.toon.md

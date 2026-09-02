@@ -1,0 +1,12 @@
+- VERTEX Pedagogy
+- KIND praxis
+- GLOSS transmission-of-form-through-language
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Pedagogy TRANSMITS Language and PARTICIPATES Being. This folder tree is pedagogy as ontology, not a course catalog.
+- CLAIM Attested teaching: Education First Englischlehrer 2023-12 to 2024-03 Shanghai. TEFL. Yuege Bootcamp tech lead cofounder 2025-05 to 2026-05. Do not invent student counts.
+- CLAIM This graph's cron enrich is pedagogy too: a paper becomes CLAIM on a vertex, MEDIA as URL, never a copied MP4.
+- MEDIA PAGE https://yuege-bootcamp.it.com/
+- MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7
+- SOURCE self/identity/experience.toon.md
+- SOURCE self/identity/project.toon.md
+- SOURCE pedagogy/ontology.fu.md

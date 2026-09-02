@@ -1,0 +1,8 @@
+- VERTEX RalphLoop
+- KIND praxis
+- GLOSS while-new-session-joined-by-filesystem
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM From BV1t9oZBDENp: Ralph is a while loop that starts a new session each tick and hands context through the filesystem. It is one harness for long work. The talk prefers MultiAgent. That is a recommendation, not a CONTRADICT edge: both ENACT AgentLoop.
+- CLAIM Do not invent Ralph's author, repo, or benchmarks not on that page.
+- MEDIA VIDEO https://www.bilibili.com/video/BV1t9oZBDENp
+- SOURCE https://www.bilibili.com/video/BV1t9oZBDENp

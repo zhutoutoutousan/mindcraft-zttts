@@ -1,0 +1,10 @@
+- VERTEX MultiAgent
+- KIND praxis
+- GLOSS coordinator-plus-specialists-for-long-work
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM From BV1t9oZBDENp: a main agent coordinates and does not do the work. Child agents specialize. Develop and test are separate jobs. The talk recommends this over a single long session for hours of autonomous work.
+- CLAIM Flow named on that page: split the task, design the prompt, the one who writes a bug fixes it, the one who files a bug accepts it. Experience store makes later ticks better. Do not invent extra protocol names.
+- CLAIM Claude Code subagents: own context, model, tools, permissions. Main delegates down, results up. Infographic: no infinite recursion. Official: isolated loop, returns a summary. Agent-hook type can spawn a subagent. Do not write this repo's Task tool as Claude Code.
+- MEDIA VIDEO https://www.bilibili.com/video/BV1t9oZBDENp
+- SOURCE https://www.bilibili.com/video/BV1t9oZBDENp
+- SOURCE https://code.claude.com/docs/en/features-overview

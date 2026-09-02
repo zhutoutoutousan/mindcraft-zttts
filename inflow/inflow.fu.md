@@ -1,0 +1,87 @@
+- KIND inflow. News that matters to this human. Read this file. Not latex. Not pdf.
+- TZ Europe/Berlin
+- GOAL ai-agent-engineer languages-b2-16
+- STORE PATH inflow/STATE.md
+- STORE PATH self/goals.toon.md
+- RULE Skip ids in inflow/STATE.md. Do not invent clock times. Cite URL. Empty PROBE stays empty. Do not add Chinese as native.
+
+- TICK $date=2026-09-02T15:06+02
+  - NEWS $id=agentcore-payments-ga-2026-08-18
+    - TITLE AgentCore payments is generally available
+    - URL https://aws.amazon.com/about-aws/whats-new/2026/08/bedrock-agentcore-payments-ga/
+    - WHY Hire north is AgentCore. Payments GA plus Stripe wallets is also the gastronomie Stripe thread on CPU.md. This is what interviewers will ask after "what is AgentCore".
+    - LEARN AgentCore. Read after you write the open PROBE in your own words. Do not skip the PROBE.
+  - NEWS $id=agentcore-memory-fgac-2026-08-28
+    - TITLE AgentCore Memory fine-grained access control via Cedar on Gateway
+    - URL https://aws.amazon.com/about-aws/whats-new/2026/08/agentcorememory-fine-grained-access-control/
+    - WHY Thursday workshop already names Cedar on AgentCore. FGAC moves isolation out of app code. That is the hireable sentence.
+    - LEARN AgentCore AgentHook. Workshop 2026-09-04 11:30. SOURCE CPU.md
+  - NEWS $id=aws-agent-registry-ga-2026-08-31
+    - TITLE AWS Agent Registry generally available, including MCP and AgentCore auto-detect
+    - URL https://aws.amazon.com/about-aws/whats-new/2026/08/aws-agent-registry-generally-available/
+    - WHY Registry is a governed catalog of agents, tools, skills, MCP servers. Matches MCP plus MultiAgent on the graph. Posted 2026-08-31.
+    - LEARN MCP MultiAgent
+  - NEWS $id=agentcore-runtime-instances-infoq
+    - TITLE Persistent EC2 runtime instances beside the microVM session ceiling
+    - URL https://www.infoq.com/news/2026/08/aws-bedrock-agentcore-runtime/
+    - WHY LambdaMicroVM is on DAY and on the Thursday workshop. InfoQ reports a second compute option: EC2-backed sessions up to fourteen days. Do not collapse MicroVM and this instance model into one sentence until you have read it.
+    - LEARN LambdaMicroVM AgentCore
+  - NEWS $id=merantix-agentic-data-stack-2026-09-02
+    - TITLE The Agentic Data Stack at Merantix AI Campus, this evening
+    - URL https://somo.social/e/the-agentic-data-stack-berlin-902
+    - WHY Production agents, observability, Berlin room. Sourced 18:00–21:00 today. If you are already in a study DAY, skip. Stop if sore.
+    - LEARN AgentLoop AgentCore
+  - NEWS $id=ifa-ux-layer-ai-agents-2026-09-04
+    - TITLE IFA Dream Stage: The UX Layer, Building the Interface for AI Agents
+    - URL https://www.ifa-berlin.com/programme-ifa-moments
+    - WHY IFA Fri is already confirmed. Workshop 11:30–13:30 comes first. This session is listed 14:00 on the IFA Moments programme, after the workshop ends. Walk the halls for agent UX, not kitchen robots you already logged.
+    - LEARN AgentCore AgenticEngineering
+  - NEWS $id=ai-builders-berlin-2026-09-22
+    - TITLE AI Builders Berlin at Aethos, agents and MCP lingo
+    - URL https://allevents.in/berlin/ai-builders-berlin/100001994009244327
+    - WHY Sourced Tue 2026-09-22 17:30–21:00. Street number for Aethos not on the cited page. Do not invent it. Different from the already-logged language and health AI nights that day.
+    - LEARN MCP AgentLoop
+  - NEWS $id=goethe-b2-official-training
+    - TITLE Official Goethe-Zertifikat B2 Prüfungstraining, Schreiben and Sprechen
+    - URL https://www.goethe.de/de/spr/prf/ueb/pb2.html
+    - WHY DUMP.md asks for an interactive Goethe B2 speaking and writing interface. Goethe already ships timed Modellsatz plus online training. Do not invent a new app this tick. Jugend debattiert on CPU.md stays the debate drill.
+    - LEARN NaturalLanguage Wordschatz
+  - LEARN
+    - ASK NOW AgentCore PROBE is still empty. Write it before chasing payments GA.
+    - ASK 摸底 http://127.0.0.1:8765/ four boxes Speak or type. Skip any language. Stop if sore. Not DAY LOAD.
+    - ASK Tomorrow 2026-09-03 12:30 Agentur Potsdam is confirmed. KI and Croissants 09:00 is candidate, same morning.
+    - ASK Thursday 2026-09-04 workshop first, IFA after 13:30.
+    - ASK 德语助手 wordschatz log --external --id de-assistant-wordschatz. Do not invent a word count.
+    - ASK DUMP.md /batch in Claude Code stays open. This /loop 20m is the Cursor gather loop, not /batch.
+
+- TICK $date=2026-09-02T17:03+02
+  - NEWS $id=agent-registry-namespace-eol-2026-09-17
+    - TITLE Agent Registry preview namespace bedrock-agentcore ends 2026-09-17
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-prerequisites.html
+    - WHY Registry GA is already logged. The hireable follow-up is the cutoff: public-preview namespace support stops 17 Sep. Fifteen days. Also https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-record-lifecycle.html
+    - LEARN MCP AgentCore
+  - NEWS $id=agentcore-runtime-instances-ga
+    - TITLE AgentCore runtime instances generally available, including Europe Frankfurt
+    - URL https://aws.amazon.com/about-aws/whats-new/2026/08/aws-bedrock-agentcore-runtime-instances-generally-available/
+    - WHY Official GA beside the InfoQ note already logged. MicroVM sessions up to eight hours; EC2-backed instances up to fourteen days. Frankfurt is on the region list. Do not collapse the two compute models in the open PROBE.
+    - LEARN LambdaMicroVM AgentCore
+  - NEWS $id=agent-toolkit-search-skills
+    - TITLE Agent Toolkit CLI searches the AgentCore skill catalog
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-prerequisites.html
+    - WHY North includes AgentToolkit. Docs name a read-only command: aws agent-toolkit search-skills --search-query bedrock-agentcore. That is a concrete toolkit sentence for Thursday's workshop, not a new product claim.
+    - LEARN AgentToolkit CursorSkill
+  - NEWS $id=mcp-spec-2026-07-28-stateless
+    - TITLE MCP revision 2026-07-28: stateless core, no initialize handshake
+    - URL https://modelcontextprotocol.io/specification/2026-07-28/basic/index
+    - WHY DAY still has an MCP question. Spec moves sessions off the protocol: each request carries protocolVersion in _meta. One Hashnode note still called it RC on 28 Jul; this page is the spec text. Do not invent which SDK you already run.
+    - LEARN MCP
+  - NEWS $id=clickhouse-grafana-berlin-2026-09-08
+    - TITLE Building AI Applications at Scale, Berlin, ClickHouse Grafana dltHub
+    - URL https://www.meetup.com/real-time-analytics-and-ai/events/315911085/
+    - WHY Production data path for agents, not a demo stage. Meetup title says Tue 8 Sep 09:00; the same page agenda says 18:00–21:00 CEST. Luma https://luma.com/oretqk1d. Do not pick a clock until they agree. Register there if you go.
+    - LEARN AgentLoop AgentCore
+  - LEARN
+    - ASK AgentCore PROBE still empty. Do not skip it for registry cutoff.
+    - ASK Merantix tonight 18:00–21:00 is still on the earlier tick. Skip if sore.
+    - ASK Tomorrow 2026-09-03 12:30 Agentur Potsdam confirmed. KI and Croissants 09:00 is candidate. IFA Retail Leaders Summit is invite-only C-level. Skip that room.
+    - ASK 摸底 still async. Skip any language. Stop if sore.

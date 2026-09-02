@@ -1,0 +1,11 @@
+- VERTEX TypeSystem
+- KIND formal
+- GLOSS constraints-on-what-a-symbol-may-be
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM TypeScript JavaScript Go Python Java are child vertices under pedagogy/computation/stack/.
+- CLAIM Role line in lebenslauf: Full-Stack- / Frontend-Entwickler · Next.js · TypeScript · KI. That attests TypeSystem under Computation, not a Person vertex.
+- CLAIM Fu tags are a type system for agents: CAPITAL TAG vs domain noun. ROOT.md is the schema.
+- MEDIA PAGE https://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html
+- MEDIA CODE https://github.com/zhutoutoutousan
+- SOURCE self/lebenslauf.toon.md
+- SOURCE self/identity/skill.toon.md

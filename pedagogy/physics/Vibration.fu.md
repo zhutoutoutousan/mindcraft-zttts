@@ -1,0 +1,11 @@
+- VERTEX Vibration
+- KIND natural
+- GLOSS oscillation-of-matter-in-time
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Vibration is periodic motion of Matter. NVH names noise vibration harshness in machines. Order tracking names frequency that scales with rotation.
+- CLAIM Attested: NVH-Forscher, Yangzhou University, 2019-05 to 2019-09. IEEE RCAR 2019 paper on NVH order tracking. Code Indirect-sensor-estimation. Do not invent extra metrics.
+- CLAIM This is Physics, not a job vertex. The particular lab stay lives in self/identity/experience.toon.md.
+- MEDIA PAGE https://ieeexplore.ieee.org/document/9044105
+- MEDIA CODE https://github.com/zhutoutoutousan/Indirect-sensor-estimation
+- SOURCE self/identity/experience.toon.md
+- SOURCE self/identity/credential.toon.md

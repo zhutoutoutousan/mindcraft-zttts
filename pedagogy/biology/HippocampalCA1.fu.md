@@ -1,0 +1,12 @@
+- VERTEX HippocampalCA1
+- KIND natural
+- GLOSS CA1-slice-of-hippocampus-for-context
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Dorsal CA1 is the paper's anatomical focus because of its role in forming and retaining context memories.
+- CLAIM After CFC, discrete patchy clusters of excitatory CA1 neurons, not astrocytes or microglia, show γH2AX foci. Glial nuclear size was used to exclude glia from the TLR9-LAMP2 co-localization.
+- CLAIM snRNA-seq of dorsal hippocampus: 29 clusters. Highest diversity among excitatory CA1 (12 clusters) vs dentate granule (4) vs interneurons (4) vs typically one cluster per non-neuronal type.
+- CLAIM Conserved CFC gene responses were stronger in DCX+ clusters. Some DCX+ CA1 clusters (11, 21, 24) lost the DCX+ phenotype after CFC, read as a shift toward a more mature state. DCX couples nucleus to centrosome.
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/2
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/4
+- MEDIA GEO https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254780
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7

@@ -1,0 +1,12 @@
+- VERTEX GeographicInformation
+- KIND techne
+- GLOSS form-of-place-as-queryable-layers
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Place is Form. GIS is Computation over that Form: layers, projections, spatial joins.
+- CLAIM Attested at RITS / XU Exponential University, Software Engineer Werkstudent, 2025-09 to present, Potsdam hybrid: PostGIS Go Fiber MapLibre Deck.gl 15+ layers MaStR OSM ALKIS BKG MCP GIS-Chat FastAPI.
+- CLAIM Child vertices: PostGIS MapLibre DeckGL GeoJSON MCP OSM ALKIS MaStR BKG.
+- MEDIA PAGE https://resiliente-infrastruktur.de/de/
+- MEDIA PAGE https://maplibre.org/
+- MEDIA PAGE https://postgis.net/
+- SOURCE self/identity/experience.toon.md
+- SOURCE self/identity/skill.toon.md

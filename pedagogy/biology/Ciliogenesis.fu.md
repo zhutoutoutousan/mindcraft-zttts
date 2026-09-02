@@ -1,0 +1,10 @@
+- VERTEX Ciliogenesis
+- KIND natural
+- GLOSS build-of-primary-cilium
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Primary cilia in CA1, marked by filamentous adenyl cyclase III, persist after Syn-cre in wild-type and after Ifnar1 deletion. Tlr9 or Rela knockout yields punctate disorganized ACIII.
+- CLAIM Prior work by the same group (iScience 2021) tied primary cilia to persistence of memory and stabilization of perineuronal nets. 21-day gene programs after CFC revolve around cilium and ECM.
+- CLAIM Reactome of CFC-up genes in DCX- CA1 and dentate: RNA and protein metabolism, vesicle trafficking, immunity, cell cycle, DNA repair, cilium assembly. Tlr9-KO down-regulates those.
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/5
+- MEDIA PAGE https://www.cell.com/iscience/fulltext/S2589-0042(21)00695-4
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7

@@ -1,0 +1,8 @@
+- VERTEX WebGL
+- KIND techne
+- GLOSS gpu-in-the-browser
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Inkdeeps Unity WebGL.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

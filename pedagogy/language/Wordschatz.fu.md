@@ -1,0 +1,9 @@
+- VERTEX Wordschatz
+- KIND praxis
+- GLOSS lexicon-drill-as-intellectual-load
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Wordschatz is lexicon drill. It is Study under NaturalLanguage. It counts as IntellectualLoad the same way a DAY DO does. Human 2026-09-02 attests daily 德语助手 wordschatz training. Particulars of the app stay in self/endurance.toon.md. Do not invent a word count. Do not write 德语助手 as a Person vertex.
+- CLAIM One logged session is one load unit toward Ausdauer. DAY LOAD is remaining after planned daily external units. Sore from wordschatz is still SORE. Named DSB is a hypothesis. Nature 2024 is mouse CA1, not a diagnosis. Do not write sore as GenomicInstability.
+- SOURCE self/endurance.toon.md
+- SOURCE self/identity/language.toon.md
+- SOURCE human 2026-09-02

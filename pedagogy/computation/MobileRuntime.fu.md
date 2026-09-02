@@ -1,0 +1,8 @@
+- VERTEX MobileRuntime
+- KIND techne
+- GLOSS computation-on-a-phone
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Mobile is Computation whose Matter is a phone. Attested: Android, Google Play, in-app purchases. Fictio 500000+ downloads, 4.4/5, 50+ countries as written in the toon. Do not invent later store ranks.
+- MEDIA PAGE https://play.google.com/store/apps/details?id=topstory.fiction.novel
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/project.toon.md

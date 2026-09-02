@@ -1,0 +1,8 @@
+- VERTEX EKS
+- KIND techne
+- GLOSS aws-managed-kubernetes
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Fictio / NovelMonkey.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

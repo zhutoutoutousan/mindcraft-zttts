@@ -1,0 +1,7 @@
+- VERTEX DualSubtitle
+- KIND techne
+- GLOSS two-language-captions-on-one-picture
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Dual subtitles are Language projected onto a picture. Attested project: Bilibili dual-subtitle browser extension. The loop-slash cut burns DE over EN. MEDIA is URL or a generated deliverable, not copied lecture bytes.
+- SOURCE self/identity/project.toon.md
+- SOURCE skills/video-generation.fu.md

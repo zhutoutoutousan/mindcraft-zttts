@@ -1,0 +1,12 @@
+- VERTEX Biology
+- KIND natural
+- GLOSS living-matter-that-maintains-form
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Biology STUDIES Matter that keeps Form against decay. A cell is matter plus a program of repair. When repair fails, GenomicInstability.
+- CLAIM The Nature 2024 paper shows that in CA1 neurons, an immune DNA-sensing pathway is not an infection leftover but part of how living matter stores a memory.
+- CLAIM Neuroscience STUDIES Biology. Do not collapse Biology into Physics even though Biology GROUNDS_IN Physics.
+- MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7
+- MEDIA PAGE https://www.nature.com/subjects/cellular-neuroscience
+- VERTEX Neuroscience Memory MemoryAssembly HippocampalCA1 DNADamageResponse TLR9Signalling NuclearEnvelopeRupture CentrosomeDDR Ciliogenesis PerineuronalNet ImmediateEarlyGene GenomicInstability ResistanceTraining IntellectualLoad Scapula SerratusAnterior Periodization
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7
+- NOTE Windows cannot store Biology.fu.md and biology.fu.md as two files. This file is both the branch index and the Biology body.

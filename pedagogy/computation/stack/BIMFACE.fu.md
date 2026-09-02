@@ -1,0 +1,8 @@
+- VERTEX BIMFACE
+- KIND techne
+- GLOSS building-mesh-in-the-browser
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM MORIMATSU mesh compression LOD.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

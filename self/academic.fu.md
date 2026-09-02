@@ -1,0 +1,4 @@
+- PROFILE ACADEMIC
+- STORE PATH pedagogy/math/DataScience.fu.md
+- STORE PATH self/identity/education.toon.md
+- NOTE particulars of degrees live in identity. Essence is DataScience on the graph.

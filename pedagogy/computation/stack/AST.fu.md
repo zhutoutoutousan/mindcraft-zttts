@@ -1,0 +1,8 @@
+- VERTEX AST
+- KIND techne
+- GLOSS program-as-a-tree
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM worldquant-miner AST harness.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/project.toon.md

@@ -1,0 +1,10 @@
+- VERTEX Language
+- KIND semiosis
+- GLOSS mediation-of-form-between-agents
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Language MEDIATES Agent. Without a shared Form, agents cannot transmit. Fu is a language. TypeScript is a language. Deutsch is a language.
+- CLAIM NaturalLanguage ISA Language. Pedagogy TRANSMITS Language. Do not put a phone number on this vertex.
+- VERTEX NaturalLanguage Pedagogy Study FuLanguage PromptEngineering SlashCommand DualSubtitle Wordschatz
+- MEDIA PAGE https://plato.stanford.edu/entries/language-thought/
+- SOURCE pedagogy/ontology.fu.md
+- NOTE Windows cannot store Language.fu.md and language.fu.md as two files. This file is both the branch index and the Language body.

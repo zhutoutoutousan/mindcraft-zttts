@@ -1,0 +1,6 @@
+- VERTEX DynamoDB
+- KIND techne
+- GLOSS managed-key-value-store
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- SOURCE self/identity/skill.toon.md

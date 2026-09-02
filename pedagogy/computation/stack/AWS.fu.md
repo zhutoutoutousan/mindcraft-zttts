@@ -1,0 +1,11 @@
+- VERTEX AWS
+- KIND techne
+- GLOSS amazon-cloud-as-one-computer
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Developer Associate Nov 2021. SysOps Associate Sep 2022.
+- CLAIM AgentCore is a Bedrock platform service for production agents. Cedar/Dogwood policy at Gateway. Workshop 2026-09-04 on CPU.md. Not a job line on the lebenslauf.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/credential.toon.md
+- SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
+- SOURCE CPU.md

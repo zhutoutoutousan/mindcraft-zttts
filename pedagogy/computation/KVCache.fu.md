@@ -1,0 +1,11 @@
+- VERTEX KVCache
+- KIND techne
+- GLOSS elastic-virtual-memory-for-attention-state
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Transformer agents keep a key-value cache of attention. That cache is Matter on a GPU. kvcached treats it as virtual memory: reserve virtual address space, back with physical GPU memory only while the cache is live, reclaim when idle.
+- CLAIM Attested project: ovg-project/kvcached. OS-style virtual memory for LLM serving. Elastic allocate and reclaim. Prefix caching APC on vLLM, RadixCache on SGLang. Engines SGLang and vLLM. Claimed 2-28x TTFT reduction vs static reservation on three Llama-3.1-8B on one A100-80G under intermittent peaks. That metric is from their benchmark, not reproduced here.
+- CLAIM This is Computation of memory, not a GPU shopping list. Do not invent extra speedups.
+- MEDIA CODE https://github.com/ovg-project/kvcached
+- MEDIA PAGE https://yifanqiao.notion.site/Solve-the-GPU-Cost-Crisis-with-kvcached-289da9d1f4d68034b17bf2774201b141
+- SOURCE https://github.com/ovg-project/kvcached
+- SOURCE https://arxiv.org/abs/2508.08448

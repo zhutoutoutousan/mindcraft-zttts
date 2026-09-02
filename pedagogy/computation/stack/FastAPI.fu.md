@@ -1,0 +1,8 @@
+- VERTEX FastAPI
+- KIND techne
+- GLOSS python-http-framework
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Attested GIS-Chat FastAPI at RITS.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

@@ -1,0 +1,6 @@
+- VERTEX Docker
+- KIND techne
+- GLOSS process-plus-filesystem-as-an-image
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- SOURCE self/identity/skill.toon.md

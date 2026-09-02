@@ -1,0 +1,10 @@
+- VERTEX GenomicInstability
+- KIND natural
+- GLOSS unrepaired-breaks-as-gateway-to-decay
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM TLR9Signalling CONTRADICTS GenomicInstability: intact TLR9-RELA DDR keeps mild activity from becoming lasting damage. Knockdown makes even spontaneous or memory-related activity, and possibly commensal microbes, a source of instability.
+- CLAIM Syn-cre itself raised γH2AX+ neuron counts in all lines, more so in Tlr9 Rela Ifnar1 floxed lines, including mice never given CFC.
+- CLAIM Anti-inflammatory TLR9 blockade that helps by quieting astroglia and microglia may harm neurons if it cuts neuronal TLR9. The paper presents this as a warning, not a clinical trial.
+- CLAIM Implicated, not demonstrated here in patients: accelerated senescence, psychiatric disorders, neurodegenerative disorders. Do not write those as proven outcomes of this mouse CFC study.
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/5
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7

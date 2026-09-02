@@ -1,0 +1,9 @@
+- VERTEX Matter
+- KIND transcendental
+- GLOSS that-which-receives-form
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Matter is not junk. It is the potency to receive form. Physics STUDIES Matter in motion. Biology STUDIES living matter that keeps form against decay.
+- CLAIM NuclearEnvelopeRupture is matter failing to hold the form of a nucleus, which the Nature 2024 paper treats as the start of a memory cascade.
+- CLAIM Vibration is matter oscillating. NVH research is Physics of Matter, not a job title.
+- MEDIA PAGE https://plato.stanford.edu/entries/form-matter/
+- SOURCE pedagogy/ontology.fu.md

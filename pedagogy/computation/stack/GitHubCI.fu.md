@@ -1,0 +1,9 @@
+- VERTEX GitHubCI
+- KIND techne
+- GLOSS tests-on-git-push
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM AWS Lambda MicroVMs skill lists multi-tenant CI executors as a use. The 2026-09-04 workshop is sandboxed coding agents in CI/CD. Do not claim this repo's GitHub CI already runs MicroVMs.
+- SOURCE self/identity/skill.toon.md
+- SOURCE https://github.com/aws/agent-toolkit-for-aws/blob/d6ad2e44d5e3077b85b63f322e007c84f94f3a6c/skills/specialized-skills/serverless-skills/aws-lambda-microvms/SKILL.md
+- SOURCE CPU.md

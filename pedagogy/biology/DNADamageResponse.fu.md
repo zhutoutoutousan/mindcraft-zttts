@@ -1,0 +1,14 @@
+- VERTEX DNADamageResponse
+- KIND natural
+- GLOSS sensing-and-repair-of-broken-dsDNA
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Activity can induce transient DNA breaks needed for immediate-early genes. Those breaks are in enhancers of coding genes and repair within minutes. The paper's persistent breaks are different: they last hours, release genomic fragments, and recruit centrosomal repair.
+- CLAIM Human 2026-09-02 reports post-study sore and names it DSB. That is a hypothesis, not this paper. Do not write calendar study as CFC. Do not write sore as GenomicInstability. Gauge load in self/endurance.toon.md. Stop on SORE.
+- CLAIM Marker: phospho-histone γH2AX foci at least two standard deviations above nuclear background in CA1. 53BP1 co-labels later pericentrosomal signals and mediates nonhomologous end joining.
+- CLAIM Extranuclear cloned fragments were genomic, mostly non-coding, 50-300 bp, not mitochondrial. After CFC, CG-containing sequences (putative TLR9 activators) rose from 33% to 77%. 53 unique cloned fragments, 25 unique genomic sequences, none mitochondrial.
+- CLAIM Cleaved caspase-3 overlapped γH2AX but nuclear morphology was not apoptotic. The paper reads this as non-apoptotic, probably memory-related caspase.
+- CLAIM IEG vs DDR: only 20% of γH2AX+ nuclei were Fos+. γH2AX co-localized more with RELA. On reactivation, γH2AX+ neurons showed smaller Fos responses than PRAM-labelled IEG neurons.
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/2
+- MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7#Sec32
+- MEDIA GEO https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174076
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7

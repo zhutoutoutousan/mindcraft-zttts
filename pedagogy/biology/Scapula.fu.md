@@ -1,0 +1,12 @@
+- VERTEX Scapula
+- KIND natural
+- GLOSS shoulder-blade-on-the-ribcage
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM The scapula is a bone that must stay controlled against the thorax while the humerus moves. Pressing without that control loads the glenoid instead of the chest. Particular pain lives in self/training.toon.md. This vertex is the anatomy.
+- CLAIM Cavaliere: set the blades down and back and keep them there for the whole press. Scapula work, rotator-cuff work, and face-pulls are the stability stack. Goal is zero pain in the range, not grinding through it. Drop the load. Slow the eccentric.
+- CLAIM NCBI StatPearls: abnormal scapular motion is often a stabilizer problem (serratus, trapezius, rhomboids), not a diagnosis of this log. Do not write 2026-09-01 pain as winging.
+- MEDIA PAGE https://learn.athleanx.com/articles/shoulders-for-men/my-shoulder-hurts-when-i-bench-press-not-anymore
+- MEDIA PAGE https://www.ncbi.nlm.nih.gov/books/NBK541005/
+- SOURCE https://learn.athleanx.com/articles/shoulders-for-men/my-shoulder-hurts-when-i-bench-press-not-anymore
+- SOURCE https://www.ncbi.nlm.nih.gov/books/NBK541005/
+- SOURCE self/training.toon.md

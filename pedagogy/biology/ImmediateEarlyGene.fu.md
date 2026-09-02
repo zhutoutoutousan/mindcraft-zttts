@@ -1,0 +1,10 @@
+- VERTEX ImmediateEarlyGene
+- KIND natural
+- GLOSS fast-transcriptional-mark-of-activity
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Fos EGR1 CREB mark activity within about 1 h. Many neurons with homogenous nuclear IEG label lack γH2AX. Correlation is insignificant overall. Where they co-occur, IEG label is punctate.
+- CLAIM 20% of γH2AX+ nuclei were Fos+. 52% of Fos+ nuclei co-labelled with γH2AX. γH2AX tracks RELA more than Fos.
+- CLAIM PRAM-GFP driven by Fos permanently labels the IEG population. At 96 h, DDR (γH2AX+) neurons show smaller Fos reactivation than PRAM+ neurons.
+- CLAIM The paper does not CONTRADICT ImmediateEarlyGene with DNADamageResponse. They are mostly non-overlapping contributions: IEG for update, DDR/inflammatory for stable context. Both PARTICIPATE Memory.
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/2
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7

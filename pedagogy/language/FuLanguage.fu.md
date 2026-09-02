@@ -1,0 +1,9 @@
+- VERTEX FuLanguage
+- KIND semiosis
+- GLOSS nested-lists-with-capital-tags-as-control
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Fu is a language for agents. First token after "- " is a TAG. Domain nouns are not tags. VERTEX lives in the graph, not as a fu TAG.
+- CLAIM ROOT.md is the schema. .fu.md has no hash headings. AGENT is a spawn declaration.
+- CLAIM Attested dump: f-university prototype nested unordered lists plus CAPITAL tags. Persist EXECUTION NUMBER CONTEXT STORE PATH EXECUTED ON.
+- SOURCE ROOT.md
+- SOURCE CPU.md

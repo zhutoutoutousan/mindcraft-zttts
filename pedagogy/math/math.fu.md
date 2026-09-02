@@ -1,0 +1,4 @@
+- VERTEX Mathematics DataScience GraphTraversal TypeSystem Evaluation
+- EDGE STUDIES Form
+- STORE PATH pedagogy/universe.graph.md
+- NOTE later branches: number geometry proof. Bodies live in sibling .fu.md files.

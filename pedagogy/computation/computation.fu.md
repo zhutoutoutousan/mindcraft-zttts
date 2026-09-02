@@ -1,0 +1,13 @@
+- VERTEX Computation
+- KIND techne
+- GLOSS effective-form-on-matter
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Computation APPLIES Mathematics: a program is finite Form that Matter (silicon, neuron, paper) can receive and run.
+- CLAIM Agent ENACTS Computation. SearchHarness ENACTS Agent when the program searches other programs.
+- CLAIM Attested stack leaves live in pedagogy/computation/stack/. Each named tool is a vertex. Kafka is not in self/identity/skill.toon.md. Do not add it until sourced.
+- VERTEX Agent GeographicInformation CloudRuntime SearchHarness SpatialGraphics KVCache AgentLoop AgenticEngineering SoftwareEngineering MultiAgent RalphLoop ExperienceStore MobileRuntime Payment CursorSkill AgentCore AgentToolkit LambdaMicroVM Transformer RAG FineTuning Quantization VectorDatabase LLMOps AISafety Multimodal AgentConstitution AgentHook AgentPlugin
+- MEDIA CODE https://github.com/zhutoutoutousan
+- MEDIA PAGE https://owenshao.space
+- SOURCE self/identity/skill.toon.md
+- SOURCE pedagogy/ontology.fu.md
+- NOTE Windows cannot store Computation.fu.md and computation.fu.md as two files. This file is both the branch index and the Computation body.

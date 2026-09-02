@@ -1,0 +1,13 @@
+- VERTEX SearchHarness
+- KIND techne
+- GLOSS search-over-programs-with-feedback
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A harness is Computation that treats other programs as Matter to be searched. Genetic search and bandit allocation are Mathematics APPLIED. The agent loop ENACTS it.
+- CLAIM AWS names a service Harness inside AgentCore: a managed agent loop in an isolated microVM. That is a product name for the same shape. worldquant-miner remains the attested particular.
+- CLAIM Attested: WorldQuant Quant-Research-Berater und MT5-Entwickler Teilzeit 2025-08 to 2026-03. 100+ Alphas. worldquant-miner 680+ GitHub stars. AST harness Bandit genetic search. Cursor / Kiro / Claude Code named as evidence, not as extra star counts.
+- CLAIM Related code: profitable-expert-advisor on GitHub. No extra profit metric in the CV. Do not invent one.
+- MEDIA CODE https://github.com/zhutoutoutousan/worldquant-miner
+- MEDIA CODE https://github.com/zhutoutoutousan/profitable-expert-advisor
+- SOURCE self/identity/experience.toon.md
+- SOURCE self/identity/project.toon.md
+- SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html

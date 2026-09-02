@@ -1,0 +1,33 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontName Microsoft YaHei
+skinparam defaultFontColor #e8eef5
+skinparam ArrowColor #69f0ae
+skinparam rectangleBorderColor #90caf9
+skinparam cardBorderColor #69f0ae
+skinparam legendBorderColor #90caf9
+skinparam legendBackgroundColor #121a24
+skinparam legendFontColor #e8eef5
+skinparam shadowing false
+
+title Four loop types — who holds which lever
+
+rectangle "You still sit in the room" as Y #121a24 {
+  card "Turn-based\nYou are the scheduler" as T #1a2530
+  card "/goal\nCoach holds the STOP" as G #1a2530
+}
+
+rectangle "The clock / the cloud holds the room" as C #121a24 {
+  card "/loop\nNight watch on YOUR laptop" as L #1a2530
+  card "/schedule\nSame watch, CLOUD shift" as S #1a2530
+}
+
+T -down-> G : still a human start
+L -down-> S : laptop off? move the shift
+Y -[hidden]right-> C
+
+legend right
+  Hand off ONE piece:
+  check | stop | trigger | whole prompt
+endlegend
+@enduml

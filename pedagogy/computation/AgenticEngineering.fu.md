@@ -1,0 +1,10 @@
+- VERTEX AgenticEngineering
+- KIND praxis
+- GLOSS intent-and-audit-when-code-is-ephemeral
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Cao 2026 arXiv 2606.05608 argues traditional software is a tuple of resources, static decision rules in source, and an environment. An agent is model, tools, memory, plan, with decision logic generated at runtime and code discarded. That is a claim. It is not a proof that software engineering has ended.
+- CLAIM The paper names Agentic Engineering as intent architects, agent coordinators, outcome auditors. Four-stage roadmap toward self-evolving ecosystems. Benchmarks named: SWE-bench Verified, EvoClaw, LangChain multi-agent studies. Do not invent scores.
+- CLAIM In this graph Agent already ENACTS Computation. AgenticEngineering STUDIES Agent. CONTRADICTS SoftwareEngineering only as the paper's opposition of static D versus runtime generation, not as a deletion of Computation.
+- MEDIA PAGE https://arxiv.org/html/2606.05608v1
+- SOURCE https://arxiv.org/html/2606.05608v1
+- SOURCE https://arxiv.org/abs/2606.05608

@@ -1,0 +1,24 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontColor #e8eef5
+skinparam shadowing false
+
+title Outer /loop vs inner agent cycle — alarm clock vs heartbeat
+
+actor You
+participant "/loop skill\n(alarm clock)" as Loop #121a24
+participant "Agent cycle\n(heartbeat)" as Agent #121a24
+participant "Tools / CI / git" as World #121a24
+
+You -[#69f0ae]> Loop : /loop 5m babysit PR
+loop #1a2530 every 5 minutes while session lives
+  Loop -[#69f0ae]> Agent : same prompt again
+  loop #15202b until no tool_use (or max_turns)
+    Agent -[#69f0ae]> World : gh / tests / edit
+    World -[#b3e5fc]-> Agent : results
+  end
+  Agent -[#b3e5fc]-> Loop : one tick done
+end
+You -[#ffcc80]> Loop : Esc or close laptop
+Loop -[#b3e5fc]-> You : no more ticks
+@enduml
