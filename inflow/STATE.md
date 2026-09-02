@@ -1,5 +1,5 @@
 # inflow STATE
-Loop: RUNNING 20m last_stamp 2026-09-02T15:04:22Z. Read inflow/inflow.fu.md. Skip ids below.
+Loop: RUNNING 20m last_stamp 2026-09-02T15:38:37Z. Read inflow/inflow.fu.md. Skip ids below.
 
 Rule: later ticks MUST skip ids below. Do not re-arm a second inflow-news loop.
 
@@ -61,3 +61,6 @@ Rule: later ticks MUST skip ids below. Do not re-arm a second inflow-news loop.
 - agent-toolkit-search-skills
 - mcp-spec-2026-07-28-stateless
 - clickhouse-grafana-berlin-2026-09-08
+- agentcore-temporal-policies-2026-08-06
+- lambda-console-coding-agent-prompt
+- ifa-algorithmic-shopper-2026-09-04

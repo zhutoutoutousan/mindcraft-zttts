@@ -85,3 +85,26 @@
     - ASK Merantix tonight 18:00–21:00 is still on the earlier tick. Skip if sore.
     - ASK Tomorrow 2026-09-03 12:30 Agentur Potsdam confirmed. KI and Croissants 09:00 is candidate. IFA Retail Leaders Summit is invite-only C-level. Skip that room.
     - ASK 摸底 still async. Skip any language. Stop if sore.
+
+- TICK $date=2026-09-02T17:38+02
+  - NEWS $id=agentcore-temporal-policies-2026-08-06
+    - TITLE Temporal policies and rate limiting on AgentCore Gateway
+    - URL https://aws.amazon.com/about-aws/whats-new/2026/08/temporal-policies-agentcore/
+    - WHY Thursday workshop already names Cedar on AgentCore. This page is the follow-up: a tool call can be safe alone and still denied given the session so far. Dogwood plus rate limits sit on Gateway, outside agent code. Also https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy-temporal.html
+    - LEARN AgentCore. Write the open PROBE first. Do not collapse Cedar deny-by-default with this trajectory check.
+  - NEWS $id=lambda-console-coding-agent-prompt
+    - TITLE Lambda console one-click setup prompt for coding agents
+    - URL https://aws.amazon.com/about-aws/whats-new/2026/07/aws-lambda-prompt-coding-agents/
+    - WHY Workshop triad is MicroVM plus Toolkit plus AgentCore policy. The console prompt installs Agent Toolkit serverless skills and the Serverless MCP server. Concrete names: Claude Code, Kiro, Cursor. Setup guide https://docs.aws.amazon.com/lambda/latest/dg/agent-setup-guide.html
+    - LEARN AgentToolkit LambdaMicroVM MCP
+  - NEWS $id=ifa-algorithmic-shopper-2026-09-04
+    - TITLE IFA Retail Innovation Zone: The Algorithmic Shopper, AI agent as the buyer
+    - URL https://www.ifa-berlin.com/programme/the-algorithmic-shopper
+    - WHY IFA Fri is confirmed. Programme lists this workshop 2026-09-04 12:00, 60 min, Retail Innovation Zone Stage. That overlaps the AWS workshop 11:30–13:30. Workshop first. Do not invent a second seat. Hall walk after 13:30 still stands.
+    - LEARN AgenticEngineering AgentCore
+  - LEARN
+    - ASK NOW AgentCore PROBE is still empty. Temporal policies are after that sentence, not instead of it.
+    - ASK Merantix tonight 18:00–21:00 is about twenty minutes out. Skip if you are already in a study DAY. Stop if sore.
+    - ASK Tomorrow 2026-09-03 12:30 Agentur Potsdam confirmed. KI and Croissants 09:00 is still candidate.
+    - ASK Thursday workshop first, IFA after 13:30. Algorithmic Shopper at 12:00 is a clash, not a second plan.
+    - ASK 德语助手 wordschatz log --external --id de-assistant-wordschatz. Do not invent a word count.
