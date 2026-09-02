@@ -1,0 +1,12 @@
+- VERTEX SpatialGraphics
+- KIND techne
+- GLOSS projecting-form-onto-a-screen
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Graphics is Form projected. WebGL Three.js Unity BIMFACE D3 are attested engines. Mesh compression and LOD are ways Matter on a GPU receives a cheaper Form.
+- CLAIM Attested: MORIMATSU Frontend 2021-04 to 2021-06 MES Vue D3 Three.js BIMFACE mesh compression LOD. Inkdeeps 2020-10 to 2021-04 Unity WebGL Three.js virtual exhibition.
+- CLAIM Android / Play / in-app purchases sit next to this as mobile presentation, attested via Fictio. Do not duplicate the 500K metric here beyond CloudRuntime and the project toon.
+- MEDIA PAGE https://threejs.org/
+- MEDIA PAGE https://unity.com/
+- MEDIA PAGE https://play.google.com/store/apps/details?id=topstory.fiction.novel
+- SOURCE self/identity/experience.toon.md
+- SOURCE self/identity/skill.toon.md

@@ -1,0 +1,8 @@
+- VERTEX Vue
+- KIND techne
+- GLOSS component-ui-on-javascript
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Attested at MORIMATSU with MES.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

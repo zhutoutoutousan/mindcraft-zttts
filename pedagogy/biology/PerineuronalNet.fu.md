@@ -1,0 +1,10 @@
+- VERTEX PerineuronalNet
+- KIND natural
+- GLOSS extracellular-matrix-stabilizing-a-circuit
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM PNNs stabilize memory circuits by tightening inhibitory input onto dedicated assemblies. Wisteria floribunda lectin marks them.
+- CLAIM After Tlr9 or Rela knockout, PNNs disappear or lose complexity. Wild-type and Ifnar1 knockout keep them.
+- CLAIM Gogolla et al. Science 2009: PNNs protect fear memories from erasure. This paper places PNN build-up downstream of TLR9-dependent ciliogenesis after learning-induced DNA damage.
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/5
+- MEDIA PAGE https://www.science.org/doi/10.1126/science.1174146
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7

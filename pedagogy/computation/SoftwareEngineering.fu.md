@@ -1,0 +1,7 @@
+- VERTEX SoftwareEngineering
+- KIND praxis
+- GLOSS static-decision-logic-encoded-before-input
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Software engineering as NATO 1968 and Brooks: the design is the product. Decision rules D are written before the system sees input. Change costs grow with the size of D.
+- CLAIM This vertex is the traditional pole. AgenticEngineering CONTRADICTS it in Cao 2026. Computation still APPLIES Mathematics either way. Do not delete this vertex when ingesting agent papers.
+- SOURCE https://arxiv.org/html/2606.05608v1

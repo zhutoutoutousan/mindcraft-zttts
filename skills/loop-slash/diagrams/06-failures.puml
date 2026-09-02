@@ -1,0 +1,27 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontColor #e8eef5
+skinparam stateBackgroundColor #121a24
+skinparam stateBorderColor #ff8a80
+skinparam ArrowColor #ffcc80
+skinparam ArrowThickness 3
+skinparam shadowing false
+
+title How loops die — and the patch
+
+[*] --> Running
+Running --> InfiniteFix : same CI 5 times
+Running --> VerifierTheater : judge says green, code is wrong
+Running --> TokenBurn : 30s poll + fat subagents
+Running --> Collision : two worktrees, one file
+Running --> SilentNoOp : retune timer, forgot unsubscribe
+Running --> Success : oracle holds
+
+InfiniteFix --> Human : cap 3, escalate
+VerifierTheater --> Human : held-out tests
+TokenBurn --> Human : cheap triage first
+Collision --> Human : lock + isolation
+SilentNoOp --> Human : unsubscribe then resubscribe
+Human --> Running : harness patched
+Success --> [*]
+@enduml

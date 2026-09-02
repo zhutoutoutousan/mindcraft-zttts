@@ -1,0 +1,18 @@
+- VERTEX AgentCore
+- KIND techne
+- GLOSS production-runtime-and-policy-for-agents
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Amazon Bedrock AgentCore is an agentic platform for building, deploying, and operating agents at scale with any framework and foundation model. Services work together or independently. That is AWS's claim, not a proof that every agent must run there.
+- CLAIM Core services named in the overview: Harness, Runtime, Memory, Gateway, Identity, Code Interpreter, Browser, Observability, Payments, Evaluations, Optimization, Policy, Registry. Harness is a managed agent loop. Each Harness session runs in an isolated microVM with filesystem and shell. Runtime is a serverless environment with session isolation and support for MCP and A2A. Do not invent latency numbers.
+- CLAIM Gateway converts APIs, Lambda, and existing MCP servers into MCP-compatible tools. Policy intercepts tool calls at Gateway. Policies are Cedar for point-in-time allow/deny, or Dogwood for session-history temporal rules. Deny-by-default. Natural-language authoring is translated into Cedar and checked before enforce.
+- CLAIM Evaluations score sessions, traces, and spans. Observability emits OpenTelemetry. The 2026-09-04 AWS workshop on the CPU calendar names Lambda MicroVMs, Agent Toolkit for AWS, and Cedar in AgentCore. The workshop is a SCHEDULE. This vertex is the essence.
+- CLAIM Attested nearby skills: Bedrock SQS ECS EKS Fargate CDK from Fictio/NovelMonkey. MCP GIS-Chat at RITS. AWS Developer Associate Nov 2021 and SysOps Associate Sep 2022. Cursor Kiro Claude Code Semantic Kernel in the AI family. AgentCore itself is not yet a line on the lebenslauf. Do not write it as a job.
+- CLAIM AWS Compute Blog on sandboxed coding agents names three pieces that must work together: Lambda MicroVMs as the execution sandbox, Agent Toolkit for AWS as curated domain procedure, and Policy in AgentCore as governance. Worked example: the agent builds inside a MicroVM then calls a deploy tool on Gateway with environment production. Cedar inspects the input and denies because the agent may only deploy to staging. That is AWS's example, not a metric.
+- MEDIA PAGE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
+- MEDIA PAGE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html
+- MEDIA PAGE https://aws.amazon.com/bedrock/agentcore/
+- SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
+- SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html
+- SOURCE CPU.md
+- SOURCE self/identity/skill.toon.md
+- SOURCE https://aws.amazon.com/blogs/compute/secure-code-execution-for-ai-agents-with-aws-lambda-microvms/

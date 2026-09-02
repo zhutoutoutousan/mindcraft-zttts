@@ -1,0 +1,24 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontName Microsoft YaHei
+skinparam defaultFontColor #e8eef5
+skinparam ArrowColor #ce93d8
+skinparam ArrowThickness 3
+skinparam rectangleBorderColor #ce93d8
+skinparam rectangleBackgroundColor #121a24
+skinparam shadowing false
+
+title Loop specification — arXiv 2607.00038
+
+rectangle "1 TRIGGER\nperson / cron / event" as A
+rectangle "2 GOAL\nverifiable, not vibes" as B
+rectangle "3 WORK\nnamed skills, not heroics" as C
+rectangle "4 VERIFY\noracle tests, not LLM opinion" as D
+rectangle "5 STOP + DISK MEMORY\nsuccess / no-op / blocked\nstalled / exhausted" as E
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> C : not done? continue
+@enduml

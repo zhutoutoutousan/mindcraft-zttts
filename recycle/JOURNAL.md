@@ -1,0 +1,17 @@
+- KIND recycle journal. Markdown so the janitor will not move this file.
+- NOTE restore by moving recycle/<path> back to <path>.
+- SWEEP 2026-09-02T12:03:20Z moved=0 trash=2
+  - TRASH cron/__pycache__
+  - TRASH videos/loop-slash/__pycache__
+- SWEEP 2026-09-02T12:13:46Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-02T12:32:44Z moved=0 trash=0
+- SWEEP 2026-09-02T14:42:52Z moved=0 trash=2
+  - TRASH cron/__pycache__
+  - TRASH skills/loop-slash/__pycache__
+- SWEEP 2026-09-02T14:42:52Z moved=4 trash=0
+  - inflow/briefing.pdf -> recycle/inflow/briefing.pdf
+  - inflow/briefing.tex -> recycle/inflow/briefing.tex
+  - inflow/map.png -> recycle/inflow/map.png
+  - inflow/map.puml -> recycle/inflow/map.puml
+- SWEEP 2026-09-02T15:04:22Z moved=0 trash=0

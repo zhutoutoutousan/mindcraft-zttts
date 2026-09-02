@@ -1,0 +1,8 @@
+- VERTEX GeneticSearch
+- KIND techne
+- GLOSS search-by-variation-and-select
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM worldquant-miner.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/project.toon.md

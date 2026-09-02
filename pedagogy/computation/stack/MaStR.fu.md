@@ -1,0 +1,8 @@
+- VERTEX MaStR
+- KIND techne
+- GLOSS german-energy-register-as-place-data
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Attested layer source at RITS.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

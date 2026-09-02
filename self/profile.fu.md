@@ -1,0 +1,13 @@
+- PROFILE FITNESS
+  - STORE PATH self/training.toon.md
+  - STORE PATH self/training.fu.md
+- PROFILE IDENTITY
+  - STORE PATH self/lebenslauf-de.tex
+  - STORE PATH self/lebenslauf.toon.md
+  - STORE PATH self/identity/
+- PROFILE STUDY
+  - STORE PATH self/learn.toon.md
+  - NOTE grasp of knowledge. Not a CV role. Graph mirror is E Study STUDIES.
+- PROFILE GOALS
+  - STORE PATH self/goals.toon.md
+  - NOTE age language job-seeking intent. Particulars. pedagogy-cpu and cron/learn-enrich read this.

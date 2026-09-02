@@ -1,0 +1,9 @@
+- VERTEX Mathematics
+- KIND formal
+- GLOSS study-of-form-and-relation
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Mathematics STUDIES Form. It does not care which matter instantiates the form.
+- CLAIM Physics GROUNDS_IN Mathematics because motion is written as relation. Computation APPLIES Mathematics because an algorithm is a finite form that runs.
+- CLAIM Attested branches in this graph: DataScience GraphTraversal TypeSystem. Later: number geometry proof. Do not invent theorems not sourced.
+- MEDIA PAGE https://plato.stanford.edu/entries/philosophy-mathematics/
+- SOURCE pedagogy/ontology.fu.md

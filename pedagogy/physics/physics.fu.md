@@ -1,0 +1,11 @@
+- VERTEX Physics
+- KIND natural
+- GLOSS study-of-matter-in-motion
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Physics STUDIES Matter and GROUNDS_IN Mathematics. Energy field measurement remain TODO branches. Vibration is the first filled child because it is attested.
+- CLAIM Biology GROUNDS_IN Physics: a neuron is matter; TLR9 trafficking is vesicle motion; a centrosome is a material hub.
+- CLAIM Do not paste engineering job titles here. Put the physical essence (oscillation, field) and cite the paper or the CV as SOURCE.
+- VERTEX Vibration
+- MEDIA PAGE https://plato.stanford.edu/entries/philosophy-physics/
+- SOURCE pedagogy/ontology.fu.md
+- NOTE Windows cannot store Physics.fu.md and physics.fu.md as two files. This file is both the branch index and the Physics body.

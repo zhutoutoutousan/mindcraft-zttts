@@ -1,0 +1,8 @@
+- VERTEX Fargate
+- KIND techne
+- GLOSS aws-serverless-containers
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Fictio / NovelMonkey.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

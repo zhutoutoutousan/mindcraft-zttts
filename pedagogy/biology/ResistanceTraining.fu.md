@@ -1,0 +1,10 @@
+- VERTEX ResistanceTraining
+- KIND praxis
+- GLOSS progressive-load-on-living-matter
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Resistance training is Physics of load APPLIED to Biology. The session log is not this vertex. Particulars live in self/training.toon.md.
+- CLAIM Attested 2026-09-02: bodyweight 106.1 kg. Session estimate bench 1RM ~112 kg, not claimed 120. Left scapula pain after 2026-09-01 top set 100 kg x2 is about 40 percent relieved, not quiet. Next heavy bench is blocked until quiet. Do not invent later sessions.
+- CLAIM Periodization INFORMS this praxis. Scapula is the anatomical limiter on the press. Pain is a blocker like IntellectualLoad SORE. Not a Person vertex. Not a medical claim.
+- SOURCE self/training.toon.md
+- SOURCE self/training.fu.md
+- SOURCE pedagogy/biology/Periodization.fu.md

@@ -1,0 +1,10 @@
+- VERTEX Neuroscience
+- KIND natural
+- GLOSS study-of-nervous-systems
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Neuroscience STUDIES Biology and STUDIES Memory. Hippocampus and cortex hold assemblies that represent experience.
+- CLAIM Proposed mechanisms the paper names before adding TLR9: long-term potentiation of synapses, intrinsic CREB baseline, developmental lineage, perineuronal nets that tighten inhibition.
+- CLAIM The paper asks whether one cascade can integrate stimulus-dependent and pre-existing mechanisms that commit a neuron to a memory-specific assembly.
+- MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/1
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7

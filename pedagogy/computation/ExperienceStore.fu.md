@@ -1,0 +1,8 @@
+- VERTEX ExperienceStore
+- KIND techne
+- GLOSS durable-lessons-across-agent-sessions
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM From BV1t9oZBDENp: an experience library lets later ticks work better. In this repo the same shape is STORE PATH and vertex bodies. Particulars of one person stay in self/. Claims about the world stay on the graph.
+- MEDIA VIDEO https://www.bilibili.com/video/BV1t9oZBDENp
+- SOURCE https://www.bilibili.com/video/BV1t9oZBDENp
+- SOURCE pedagogy/universe.graph.md

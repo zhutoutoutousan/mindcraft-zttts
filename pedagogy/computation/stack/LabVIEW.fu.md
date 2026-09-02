@@ -1,0 +1,8 @@
+- VERTEX LabVIEW
+- KIND techne
+- GLOSS graphical-automation
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Legrand SLEC with Node.js MongoDB.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

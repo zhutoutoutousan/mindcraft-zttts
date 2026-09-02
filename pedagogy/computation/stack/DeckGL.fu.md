@@ -1,0 +1,8 @@
+- VERTEX DeckGL
+- KIND techne
+- GLOSS gpu-layers-on-a-map
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Attested at RITS.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

@@ -1,0 +1,10 @@
+- VERTEX AgentToolkit
+- KIND techne
+- GLOSS curated-aws-procedures-for-coding-agents
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Agent Toolkit for AWS is a catalog of skills plus a managed AWS MCP Server. AWS says any coding agent can scaffold; the toolkit is how the agent ships production-shaped IAM, observability, and Well-Architected patterns instead of improvising. Product page names Kiro, Claude Code, Codex, and MCP-compatible agents. That is a product claim. It is not a line on the lebenslauf.
+- CLAIM The AWS MCP Server exposes AWS APIs over MCP. Agents can run AWS CLI, search current docs, and execute Python in a sandbox with no local filesystem or network. Rules files tell the agent to search skills before starting a task and to prefer infrastructure as code over raw CLI.
+- CLAIM Attested nearby: Kiro Claude Code CursorSkill MCP on self/identity/skill.toon.md. worldquant-miner names Cursor / Kiro / Claude Code. Do not write Agent Toolkit as a job.
+- MEDIA PAGE https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
+- SOURCE https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
+- SOURCE self/identity/skill.toon.md

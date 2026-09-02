@@ -1,0 +1,8 @@
+- VERTEX NextJS
+- KIND techne
+- GLOSS react-with-server-routes
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Role line names Next.js.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/lebenslauf.toon.md

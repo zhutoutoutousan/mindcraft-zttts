@@ -1,0 +1,4 @@
+- STORE PATH pedagogy/universe.graph.md
+- NOTE superseded by skills/ontology-showcase.fu.md. Keep as alias.
+- AGENT $id=ontology-viz-puml $input=pedagogy/universe.graph.md $output=tmp/pedagogy/universe.puml $prompt=Same as ontology-showcase puml compile.
+- AGENT $id=ontology-viz-gremlin $input=pedagogy/universe.graph.md $when=user asks traversal $prompt=gremlin-lite only.

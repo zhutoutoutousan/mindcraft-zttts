@@ -1,0 +1,11 @@
+- VERTEX Being
+- KIND transcendental
+- GLOSS that-which-is
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Being is not a thing among things. It is that there is anything rather than nothing.
+- CLAIM Every other vertex in this graph participates in Being. Pedagogy PARTICIPATES Being because teaching is a way Being is shown.
+- CLAIM Do not confuse Being with a person. A CV names one being. Ontology names being as such.
+- VERTEX Essence Form Matter
+- MEDIA PAGE https://plato.stanford.edu/entries/aristotle-metaphysics/
+- SOURCE pedagogy/ontology.fu.md
+- NOTE Windows cannot store Being.fu.md and being.fu.md as two files. This file is both the branch index and the Being body.

@@ -1,0 +1,12 @@
+- VERTEX Periodization
+- KIND praxis
+- GLOSS planned-overload-then-planned-fatigue-drop
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Renaissance Periodization: a mesocycle is accumulation until recoverable volume is hit, then a deload microcycle. Accumulation can be 3-4 weeks in advanced lifters, up to about 12 in beginners. Deload is easy on purpose. Hard training does not drop fatigue.
+- CLAIM Volume landmarks: MEV is the least sets that still grow. MRV is the most sets you can recover from. Start near MEV after a deload. Add sets across weeks. When performance or joints fail, deload. RIR on a bar that can fall on you stays at least 1 in the last hard week.
+- CLAIM Joint pain after a top set is fatigue and a stop, not a cue to add load. The 2026-09-01 100kg x2 then scapular pain is an unplanned end of accumulation. The week through 2026-09-06 is the deload. The next 4-week press meso starts only after the scapula is quiet and a pain-free technique press exists. Session e1RM 110-115kg, not claimed 120. Ignore Bankdruecken_Plan.xlsx percents.
+- CLAIM Cavaliere agrees on the deload of load: half of a normal 10-12 set, scapulae down and back, slow, zero pain. That is the technique microcycle, not meso week 1.
+- SOURCE https://rpstrength.com/blogs/articles/back-hypertrophy-training-tips
+- SOURCE https://rpstrength.com/blogs/articles/progressing-for-hypertrophy
+- SOURCE https://learn.athleanx.com/articles/shoulders-for-men/my-shoulder-hurts-when-i-bench-press-not-anymore
+- SOURCE self/training.toon.md

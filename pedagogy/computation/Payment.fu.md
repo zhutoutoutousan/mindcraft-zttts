@@ -1,0 +1,8 @@
+- VERTEX Payment
+- KIND techne
+- GLOSS transfer-of-value-as-an-api
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Payment is Computation over money. Stripe is attested in the skill family and in the gastronomie TODO. No invented GMV.
+- MEDIA PAGE https://stripe.com/docs
+- SOURCE self/identity/skill.toon.md
+- SOURCE CPU.md

@@ -1,0 +1,8 @@
+- VERTEX MetaTrader
+- KIND techne
+- GLOSS retail-trade-runtime
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM WorldQuant MT5. profitable-expert-advisor. No invented profit metric.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/project.toon.md

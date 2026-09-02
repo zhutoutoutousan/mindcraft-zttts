@@ -1,0 +1,7 @@
+- VERTEX JavaScript
+- KIND techne
+- GLOSS language-of-the-web-runtime
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Implied via React in the skill family. Not a separate cert.
+- SOURCE self/identity/skill.toon.md

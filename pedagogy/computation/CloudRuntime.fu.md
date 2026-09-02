@@ -1,0 +1,14 @@
+- VERTEX CloudRuntime
+- KIND techne
+- GLOSS remote-machines-as-one-computer
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Cloud is Computation whose Matter is someone else's machine, addressed as one computer.
+- CLAIM Attested credentials: AWS Certified Developer Associate Nov 2021. AWS Certified SysOps Administrator Associate Sep 2022. Do not invent extra cert dates.
+- CLAIM Child vertices: AWS Azure ECS EKS Fargate Bedrock SQS CDK CloudFormation DynamoDB. Kafka is not in the skill toon.
+- MEDIA PAGE https://aws.amazon.com/certification/certified-developer-associate/
+- MEDIA PAGE https://aws.amazon.com/certification/certified-sysops-admin-associate/
+- MEDIA PAGE https://play.google.com/store/apps/details?id=topstory.fiction.novel
+- MEDIA PAGE https://www.novelmonkey.ai/
+- SOURCE self/identity/credential.toon.md
+- SOURCE self/identity/experience.toon.md
+- SOURCE self/identity/project.toon.md

@@ -1,0 +1,11 @@
+- VERTEX GraphTraversal
+- KIND formal
+- GLOSS walk-of-vertices-and-edges
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A graph is Form with direction. Gremlin-lite in pedagogy/universe.graph.md is the same idea as a property graph: V then E, out(LABEL), in(LABEL).
+- CLAIM Attested skill family: Azure CosmosDB Gremlin. This ontology is the working instance. Do not claim a production Cosmos account that is not in the CV.
+- CLAIM TRAVERSE examples: g.V(MemoryAssembly).in(ENACTS) yields Memory. g.V(TLR9Signalling).out(CONTRADICTS) yields GenomicInstability. g.V().has(kind, natural).
+- MEDIA PAGE https://tinkerpop.apache.org/gremlin.html
+- MEDIA PAGE https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/introduction
+- SOURCE self/identity/skill.toon.md
+- SOURCE pedagogy/universe.graph.md

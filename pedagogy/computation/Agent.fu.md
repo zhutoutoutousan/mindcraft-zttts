@@ -1,0 +1,12 @@
+- VERTEX Agent
+- KIND praxis
+- GLOSS that-which-enacts-computation-toward-a-goal
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM An agent is not a LLM brand. It is whatever enacts Computation toward a goal. Fu AGENT tags spawn processes. Neurons enact Memory. A quant harness enacts search.
+- CLAIM Memory PARTICIPATES Agent. Language MEDIATES Agent. Pedagogy TRANSMITS Language so agents can share Form.
+- CLAIM Attested tools in the skill family: OpenAI/LLM Cursor AWS Kiro Claude Code MCP Semantic Kernel. AWS docs: production agents may run on AgentCore Runtime with session isolation, MCP, and A2A. The 2026-09-04 workshop remains a SCHEDULE. AgentCore is now a vertex.
+- MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7
+- MEDIA CODE https://github.com/zhutoutoutousan/worldquant-miner
+- SOURCE pedagogy/ontology.fu.md
+- SOURCE self/identity/skill.toon.md
+- SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html

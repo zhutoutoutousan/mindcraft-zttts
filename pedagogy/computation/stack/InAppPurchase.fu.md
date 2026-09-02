@@ -1,0 +1,7 @@
+- VERTEX InAppPurchase
+- KIND techne
+- GLOSS payment-inside-a-phone-app
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Skill family mobile.
+- SOURCE self/identity/skill.toon.md

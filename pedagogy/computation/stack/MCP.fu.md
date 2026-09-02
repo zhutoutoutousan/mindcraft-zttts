@@ -1,0 +1,12 @@
+- VERTEX MCP
+- KIND techne
+- GLOSS tool-protocol-for-models
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM GIS-Chat MCP at RITS. Also in the AI family.
+- CLAIM AWS AgentCore Gateway converts APIs, Lambda, and existing MCP servers into MCP-compatible tools. Recruiter writeups treat MCP server work as its own role. That is market talk. The essence here stays: a typed tool protocol for models.
+- CLAIM Claude Code features-overview wraps MCP around the five harness layers. Infographic: GitHub, databases, APIs, custom servers. Same protocol as AgentCore Gateway. Different product. Do not merge the vertices.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md
+- SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
+- SOURCE https://code.claude.com/docs/en/features-overview

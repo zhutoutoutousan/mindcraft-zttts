@@ -1,0 +1,8 @@
+- VERTEX MongoDB
+- KIND techne
+- GLOSS document-store
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Attested at Legrand SLEC.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

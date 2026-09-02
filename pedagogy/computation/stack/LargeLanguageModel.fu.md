@@ -1,0 +1,7 @@
+- VERTEX LargeLanguageModel
+- KIND techne
+- GLOSS learned-weights-as-a-reasoner
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Skill family OpenAI/LLM.
+- SOURCE self/identity/skill.toon.md

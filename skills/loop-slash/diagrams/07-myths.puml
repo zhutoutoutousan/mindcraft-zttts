@@ -1,0 +1,22 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontColor #e8eef5
+skinparam ArrowColor #69f0ae
+skinparam cardBackgroundColor #121a24
+skinparam cardBorderColor #69f0ae
+skinparam shadowing false
+
+title Mythbusters lab — we ran the parser on this machine
+
+card "M1 BUSTED\nno-interval is NOT always self-pace\n2.1.71 = 10m fixed" as M1
+card "M3 BUSTED\n30s → 1 minute\ncron has no seconds" as M3
+card "M4 BUSTED\n*/7 wrap gap = 4 min\nnot 7" as M4
+card "M5 BUSTED\ncheck every PR\nis not an interval" as M5
+card "M6 BUSTED\n5m jitter bound 150s\n>> sleep drift" as M6
+card "M8 PLAUSIBLE\nPS Start-Sleep error\n~17ms on 0.4s" as M8
+
+M1 -[hidden]right-> M3
+M3 -[hidden]right-> M4
+M5 -[hidden]right-> M6
+M6 -[hidden]right-> M8
+@enduml

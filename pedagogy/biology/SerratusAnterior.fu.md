@@ -1,0 +1,10 @@
+- VERTEX SerratusAnterior
+- KIND natural
+- GLOSS protracts-and-holds-the-scapula-on-the-ribs
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Serratus anterior protracts the scapula and helps upward rotation and posterior tilt so the arm can go overhead. Weakness here is a common story of medial winging when the long thoracic nerve is involved. That is textbook anatomy. It is not a diagnosis of this athlete.
+- CLAIM Cavaliere on winging: opposing tightness (levator scapulae, internal rotators) can make serratus look weak. Stretch the opposing side before loading serratus. Protract on purpose when you strengthen it.
+- MEDIA VIDEO https://www.youtube.com/watch?v=VCPp1DUypo0
+- MEDIA PAGE https://www.ncbi.nlm.nih.gov/books/NBK541005/
+- SOURCE https://www.youtube.com/watch?v=VCPp1DUypo0
+- SOURCE https://www.ncbi.nlm.nih.gov/books/NBK541005/

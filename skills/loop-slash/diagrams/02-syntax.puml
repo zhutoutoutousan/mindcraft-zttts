@@ -1,0 +1,38 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontColor #e8eef5
+skinparam ArrowColor #90caf9
+skinparam ArrowThickness 3
+skinparam ActivityBackgroundColor #121a24
+skinparam ActivityBorderColor #69f0ae
+skinparam activityArrowColor #69f0ae
+skinparam activityBarColor #69f0ae
+skinparam DiamondBackgroundColor #1a2530
+skinparam DiamondBorderColor #ffcc80
+skinparam shadowing false
+
+title /loop syntax — what you actually typed
+
+start
+:Type /loop;
+if (Interval given?) then (yes, 5m)
+  if (Prompt given?) then (yes)
+    :Fixed cron in this session\n/loop 5m check the deploy;
+  else (no)
+    :loop.md or maintenance\non that interval;
+  endif
+else (no)
+  if (Prompt given?) then (yes)
+    :Self-pace 1 min .. 1 hour\nClaude prints WHY;
+  else (bare /loop)
+    :Default prompt or loop.md\ndynamic delay;
+  endif
+endif
+:Session open? Laptop awake?;
+if (Still alive?) then (yes)
+  :Next tick;
+else (Esc / sleep / close)
+  :Loop is dead\n/schedule if you need cloud;
+  stop
+endif
+@enduml

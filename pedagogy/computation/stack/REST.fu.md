@@ -1,0 +1,6 @@
+- VERTEX REST
+- KIND techne
+- GLOSS http-as-resource-verbs
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- SOURCE self/identity/skill.toon.md

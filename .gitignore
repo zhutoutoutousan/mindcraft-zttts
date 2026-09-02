@@ -1,0 +1,54 @@
+# Local private store. Life notes the runtime must not publish.
+.private/
+
+# Identity / CV particulars (email, phone, education rows, skills dump)
+self/identity/
+self/lebenslauf.toon.md
+self/lebenslauf*.tex
+self/lebenslauf*.pdf
+
+# Health / training session log (bodyweight, injury flags)
+self/training.toon.md
+
+# Ephemeral human deliverables. ttl.toon.md is the only persistent tmp file.
+tmp/**
+!tmp/ttl.toon.md
+
+# Recycle bin. Journal stays so restores are documented.
+recycle/**
+!recycle/JOURNAL.md
+
+# Generated media and leftover renders (kit stays in skills/)
+videos/
+pedagogy/_showcase_tmp/
+
+# Generated inflow briefings. Markdown store stays.
+inflow/**/latex/
+inflow/**/pdf/
+inflow/**/*.pdf
+inflow/**/*.tex
+inflow/**/*.puml
+inflow/**/*.png
+*.pdf
+
+# Generated calendar export can contain personal appointments
+schedule/calendar.ics
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets
+.env
+.env.*
+credentials.json
+*.pem
+*.key
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

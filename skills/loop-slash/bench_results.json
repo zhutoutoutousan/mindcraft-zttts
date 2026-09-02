@@ -1,0 +1,421 @@
+{
+  "parse_table": [
+    {
+      "input": "5m /babysit-prs",
+      "claude_2_1_71": {
+        "interval": "5m",
+        "prompt": "/babysit-prs",
+        "rule": "leading",
+        "ok": true
+      },
+      "cursor_or_docs_2026": {
+        "interval": "5m",
+        "prompt": "/babysit-prs",
+        "rule": "leading",
+        "ok": true,
+        "mode": "fixed"
+      },
+      "disagree": false
+    },
+    {
+      "input": "check the deploy every 20m",
+      "claude_2_1_71": {
+        "interval": "20m",
+        "prompt": "check the deploy",
+        "rule": "trailing-every",
+        "ok": true
+      },
+      "cursor_or_docs_2026": {
+        "interval": "20m",
+        "prompt": "check the deploy",
+        "rule": "trailing-every",
+        "ok": true,
+        "mode": "fixed"
+      },
+      "disagree": false
+    },
+    {
+      "input": "run tests every 5 minutes",
+      "claude_2_1_71": {
+        "interval": "5m",
+        "prompt": "run tests",
+        "rule": "trailing-every",
+        "ok": true
+      },
+      "cursor_or_docs_2026": {
+        "interval": "5m",
+        "prompt": "run tests",
+        "rule": "trailing-every",
+        "ok": true,
+        "mode": "fixed"
+      },
+      "disagree": false
+    },
+    {
+      "input": "check the deploy",
+      "claude_2_1_71": {
+        "interval": "10m",
+        "prompt": "check the deploy",
+        "rule": "default-10m",
+        "ok": true
+      },
+      "cursor_or_docs_2026": {
+        "interval": null,
+        "prompt": "check the deploy",
+        "rule": "dynamic",
+        "ok": true,
+        "mode": "self-pace"
+      },
+      "disagree": true
+    },
+    {
+      "input": "check every PR",
+      "claude_2_1_71": {
+        "interval": "10m",
+        "prompt": "check every PR",
+        "rule": "default-10m",
+        "ok": true
+      },
+      "cursor_or_docs_2026": {
+        "interval": null,
+        "prompt": "check every PR",
+        "rule": "dynamic",
+        "ok": true,
+        "mode": "self-pace"
+      },
+      "disagree": true
+    },
+    {
+      "input": "5m",
+      "claude_2_1_71": {
+        "interval": "5m",
+        "prompt": "",
+        "rule": "leading",
+        "ok": false
+      },
+      "cursor_or_docs_2026": {
+        "interval": "5m",
+        "prompt": "",
+        "rule": "leading",
+        "ok": false,
+        "mode": "fixed"
+      },
+      "disagree": false
+    },
+    {
+      "input": "30s check status",
+      "claude_2_1_71": {
+        "interval": "30s",
+        "prompt": "check status",
+        "rule": "leading",
+        "ok": true
+      },
+      "cursor_or_docs_2026": {
+        "interval": "30s",
+        "prompt": "check status",
+        "rule": "leading",
+        "ok": true,
+        "mode": "fixed"
+      },
+      "disagree": false
+    },
+    {
+      "input": "90m babysit",
+      "claude_2_1_71": {
+        "interval": "90m",
+        "prompt": "babysit",
+        "rule": "leading",
+        "ok": true
+      },
+      "cursor_or_docs_2026": {
+        "interval": "90m",
+        "prompt": "babysit",
+        "rule": "leading",
+        "ok": true,
+        "mode": "fixed"
+      },
+      "disagree": false
+    },
+    {
+      "input": "7m check ci",
+      "claude_2_1_71": {
+        "interval": "7m",
+        "prompt": "check ci",
+        "rule": "leading",
+        "ok": true
+      },
+      "cursor_or_docs_2026": {
+        "interval": "7m",
+        "prompt": "check ci",
+        "rule": "leading",
+        "ok": true,
+        "mode": "fixed"
+      },
+      "disagree": false
+    },
+    {
+      "input": "2h run report",
+      "claude_2_1_71": {
+        "interval": "2h",
+        "prompt": "run report",
+        "rule": "leading",
+        "ok": true
+      },
+      "cursor_or_docs_2026": {
+        "interval": "2h",
+        "prompt": "run report",
+        "rule": "leading",
+        "ok": true,
+        "mode": "fixed"
+      },
+      "disagree": false
+    },
+    {
+      "input": "",
+      "claude_2_1_71": {
+        "interval": null,
+        "prompt": "",
+        "rule": "empty",
+        "ok": false
+      },
+      "cursor_or_docs_2026": {
+        "interval": null,
+        "prompt": "",
+        "rule": "empty",
+        "ok": false,
+        "mode": "usage"
+      },
+      "disagree": false
+    }
+  ],
+  "seconds_ceil_to_minutes": {
+    "1": 1,
+    "30": 1,
+    "59": 1,
+    "60": 1,
+    "61": 2,
+    "90": 2
+  },
+  "cron_gaps": {
+    "5": {
+      "n": 5,
+      "hits": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "gaps": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "uneven": false,
+      "wrap_gap": 5
+    },
+    "7": {
+      "n": 7,
+      "hits": [
+        0,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49,
+        56
+      ],
+      "gaps": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        4
+      ],
+      "uneven": true,
+      "wrap_gap": 4
+    },
+    "15": {
+      "n": 15,
+      "hits": [
+        0,
+        15,
+        30,
+        45
+      ],
+      "gaps": [
+        15,
+        15,
+        15,
+        15
+      ],
+      "uneven": false,
+      "wrap_gap": 15
+    },
+    "30": {
+      "n": 30,
+      "hits": [
+        0,
+        30
+      ],
+      "gaps": [
+        30,
+        30
+      ],
+      "uneven": false,
+      "wrap_gap": 30
+    }
+  },
+  "sentinel": [
+    {
+      "line": "AGENT_LOOP_TICK_deploy {\"prompt\":\"check deploy\"}",
+      "match": true
+    },
+    {
+      "line": "noise AGENT_LOOP_TICK_deploy later",
+      "match": false
+    },
+    {
+      "line": "AGENT_LOOP_TICK_deployed extra",
+      "match": false
+    },
+    {
+      "line": "AGENT_LOOP_TICK_other {\"prompt\":\"x\"}",
+      "match": false
+    },
+    {
+      "line": "  AGENT_LOOP_TICK_deploy padded",
+      "match": false
+    }
+  ],
+  "myths": [
+    {
+      "id": "M1",
+      "claim": "/loop check the deploy is always self-paced 1m\u20131h",
+      "verdict": "BUSTED as a universal. Version-split.",
+      "evidence": "claude-code@2.1.71 skill: no interval \u2192 default 10m fixed. Docs 2026: no interval \u2192 self-pace 1m\u20131h, except Bedrock/Foundry/old builds stay 10m."
+    },
+    {
+      "id": "M2",
+      "claim": "Recurring /loop expires in 3 days",
+      "verdict": "BUSTED on current docs (7 days). CONFIRMED in 2.1.71 skill text (3 days).",
+      "evidence": "Gist skill: auto-expire after 3 days. scheduled-tasks.md: 7 days, fires once more, then deletes."
+    },
+    {
+      "id": "M3",
+      "claim": "/loop 30s actually waits 30 seconds",
+      "verdict": "BUSTED for Claude cron /loop.",
+      "evidence": "Seconds ceil to 1 minute. 30s \u2192 1m. Measured mapping: {1: 1, 30: 1, 59: 1, 60: 1, 61: 2, 90: 2}"
+    },
+    {
+      "id": "M4",
+      "claim": "/loop 7m is a clean every-7-minutes clock",
+      "verdict": "BUSTED.",
+      "evidence": "*/7 hits [0, 7, 14, 21, 28, 35, 42, 49, 56]; wrap-around gap is 4 min not 7. Skill says round to nearest clean step."
+    },
+    {
+      "id": "M5",
+      "claim": "check every PR is parsed as an interval",
+      "verdict": "BUSTED.",
+      "evidence": "every must be followed by a time expression. check every PR \u2192 prompt intact, 10m default (2.1.71) or dynamic (2026 docs)."
+    },
+    {
+      "id": "M6",
+      "claim": "A scheduled /loop fires exactly on the cron minute",
+      "verdict": "BUSTED.",
+      "evidence": "Jitter: up to 30 min late, or half the interval if < hourly. 5m job jitter bound = 150s. Offset is deterministic from task ID. Busy session: no catch-up, fires once when idle."
+    },
+    {
+      "id": "M7",
+      "claim": "Cursor /loop 5m is cron on the OS",
+      "verdict": "BUSTED.",
+      "evidence": "Cursor local skill uses sleep + AGENT_LOOP_TICK_ sentinel + notify_on_output. Not Task Scheduler. Cloud path is subscribe_timer."
+    },
+    {
+      "id": "M8",
+      "claim": "Start-Sleep on Windows is too sloppy for a 5m loop",
+      "verdict": "PLAUSIBLE but overstated at loop scale.",
+      "evidence": {
+        "python_sleep_0.25s": {
+          "requested_s": 0.25,
+          "n": 12,
+          "mean_s": 0.2503102833288722,
+          "mean_error_ms": 0.310283328872174,
+          "max_error_ms": 0.6180000491440296,
+          "min_s": 0.25003899983130395,
+          "max_s": 0.25061800004914403
+        },
+        "powershell_Start-Sleep_0.4s": {
+          "requested_s": 0.4,
+          "n": 6,
+          "engine": "Start-Sleep",
+          "mean_s": 0.41708321666666665,
+          "mean_error_ms": 17.083216666666612,
+          "max_error_ms": 71.01849999999993,
+          "samples_s": [
+            0.471,
+            0.4033,
+            0.4009,
+            0.403,
+            0.4029,
+            0.4213
+          ]
+        },
+        "note": "Millisecond-scale drift. On a 300s interval this is <<1%. Cron jitter (up to 150s on a 5m job) dominates."
+      }
+    },
+    {
+      "id": "M9",
+      "claim": "Arming a local loop and running the prompt now cannot double-fire",
+      "verdict": "BUSTED if echo is before sleep.",
+      "evidence": {
+        "bad_pattern": "echo then sleep \u2192 2 fires in <1s if prompt also ran immediately",
+        "good_pattern": "run prompt now; sleep THEN echo (Cursor SKILL.md step 5-6)",
+        "bad_events": [
+          "run_now",
+          "tick"
+        ],
+        "good_events": [
+          "run_now",
+          "sleep",
+          "tick"
+        ],
+        "verdict": "CONFIRMED: sleep-first is required to avoid double tick"
+      }
+    },
+    {
+      "id": "M10",
+      "claim": "/loop 20m /permissions re-executes the permissions UI",
+      "verdict": "BUSTED.",
+      "evidence": "Docs: built-ins (/permissions, /model, /clear) and disable-model-invocation skills arrive as plain text, they do not execute."
+    }
+  ],
+  "sources": [
+    "https://code.claude.com/docs/en/scheduled-tasks",
+    "https://gist.github.com/Strajk/7bcece00b2ff0f5f501a0845ce009d27",
+    "C:\\Users\\tians\\.cursor\\skills-cursor\\loop\\SKILL.md",
+    "https://bestagent.dev/claude-code-loop-2026/"
+  ]
+}

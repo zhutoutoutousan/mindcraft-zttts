@@ -1,0 +1,11 @@
+- VERTEX Memory
+- KIND praxis
+- GLOSS persistence-of-experience-in-an-agent
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Memory PARTICIPATES Agent. An agent without persistence cannot have a world. Computational agents cache state. Neurons assemble.
+- CLAIM Two populations the paper separates: ImmediateEarlyGene neurons (Fos CREB EGR1) suited to retrieval-mediated updates, and DNADamageResponse neurons suited to stable context representations. They largely do not overlap.
+- CLAIM Hippocampus-dependent contextual fear conditioning needs TLR9 in CA1 neurons. Delay fear conditioning, which is hippocampus-independent, did not.
+- CLAIM This vertex is the essence. MemoryAssembly is the material enactment. Do not store a person's CV as Memory.
+- MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/3
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7

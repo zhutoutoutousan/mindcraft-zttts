@@ -1,0 +1,18 @@
+- VERTEX TLR9Signalling
+- KIND natural
+- GLOSS endosomal-sensing-of-self-dsDNA-in-neurons
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM TLR9 is a Toll-like receptor that senses DNA, classically unmethylated CpG of bacterial origin, also mammalian self-DNA and histones. Together with cGAS-STING it is a main sensor of extranuclear DNA.
+- CLAIM After CFC, Tlr9 mRNA and TLR9 protein rise. TLR9 co-localizes with LAMP2 (late endosome/lysosome), peaking 96 h, not with early (EEA1 RAB7) or recycling (RAB11) endosomes as strongly. Neuron-specific, not glia.
+- CLAIM Knockdown: AAV9 Syn-cre in Tlr9 fl/fl CA1, and Syn-driven Tlr9 shRNA in wild-type, both cut contextual freezing. Trace fear conditioning context and tone impaired. Delay fear conditioning tone intact.
+- CLAIM Pharmacology: TLR9 antagonist ODN2088 impaired CFC. cGAS-STING inhibitors RU-521 and H-151 did not. Sting1 knockout mice had intact CFC. Dnase2 shRNA (blocks generation of TLR9-activating fragments) impaired memory. TREX1 overexpression (restricts cGAS-STING) did not.
+- CLAIM Conserved up-genes after CFC that Tlr9-KO blunts: ER chaperones, vesicle trafficking, IL-6 production. Hsp90b1 (TLR9 folding) and Atp6v0c (vesicle acidification needed for TLR9) are named. Low-abundance Tlr9 and Rela transcripts were not detected in snRNA-seq but protein work showed the pathway.
+- CLAIM Downstream: Rela knockout phenocopied TLR9 loss on 53BP1 recruitment, ciliogenesis, PNN. Ifnar1 knockout did not. NF-κB not interferon is the memory-relevant arm here.
+- CLAIM The paper could not show TLR9 activation by a specific DNA fragment in a single neuron. It shows converging mechanisms: CpG-like fragments, nuclear rupture, histone release, endolysosomal trafficking rather than cytosolic cGAS sensing.
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/1
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/3
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/4
+- MEDIA PAGE https://www.ncbi.nlm.nih.gov/gene/54106
+- MEDIA CODE https://github.com/RadulovicLab/Nature-2024
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7
+- SOURCE https://doi.org/10.1038/s41586-024-07220-7

@@ -1,0 +1,9 @@
+- VERTEX Kiro
+- KIND techne
+- GLOSS aws-agent-ide
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Named with Cursor / Claude Code on worldquant-miner evidence.
+- CLAIM Agent Toolkit for AWS names Kiro as a target IDE. That is a product page, not extra employment.
+- SOURCE self/identity/skill.toon.md
+- SOURCE https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/

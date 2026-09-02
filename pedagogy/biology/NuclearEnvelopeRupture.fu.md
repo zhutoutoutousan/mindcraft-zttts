@@ -1,0 +1,11 @@
+- VERTEX NuclearEnvelopeRupture
+- KIND natural
+- GLOSS break-of-nuclear-lamina-releasing-dsDNA
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Lamin B1 labelling shows discontinuities at the time of maximal dsDNA-break detection. γH2AX appears perinuclear in RNA-rich ER-like zones, a site of inactive TLR9.
+- CLAIM Ruptures rise at 1 h after CFC and remain in a smaller set of nuclei through 96 h. Perinuclear γH2AX overlaps TLR9 (~75% of 120 counted) and to a lesser extent Hoechst and anti-dsDNA.
+- CLAIM Live primary hippocampal neurons show mobile extranuclear dsDNA distinct from mitochondrial DNA. Supplementary Video 1 on the article page. Do not copy the MP4 into this repo.
+- CLAIM This is Matter failing to hold the Form of a closed nucleus, which INFORMS TLR9Signalling by delivering self-DNA and histone to the endomembrane system.
+- MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/2
+- MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7#Sec32
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7

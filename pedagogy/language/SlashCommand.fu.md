@@ -1,0 +1,11 @@
+- VERTEX SlashCommand
+- KIND semiosis
+- GLOSS user-typed-lever-into-an-agent
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A slash command is Language that MEDIATES AgentLoop. Inner heartbeat is AgentLoop, not a slash.
+- CLAIM Attested slashes from Cursor skill files on this machine 2026-09-02. /loop [interval] prompt. /goal objective. /onboard. /rename-chat. /shell rest as literal shell only when invoked.
+- CLAIM /schedule is attested in skills/loop-slash/PUBLISH.md as the cloud alarm. No skills-cursor/schedule/SKILL.md on this machine. Do not invent more slashes.
+- CLAIM Mention-invoked skills in the same folder are not slashes. Catalog of those names lives in mezzanine/cursor-slash.toon.md as skills_not_claimed_as_slash.
+- STORE PATH mezzanine/cursor-slash.toon.md
+- SOURCE mezzanine/cursor-slash.toon.md
+- SOURCE skills/loop-slash/PUBLISH.md

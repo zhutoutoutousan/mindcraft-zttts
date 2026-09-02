@@ -1,0 +1,10 @@
+- VERTEX DataScience
+- KIND formal
+- GLOSS inference-from-measured-form
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Data science is Mathematics APPLIED to measurements plus Computation to hold them. It is not a job.
+- CLAIM Attested education: M.Sc. Data Science, laufend, XU Exponential University, Potsdam. B.Sc. Ingenieurwesen / Software, Yangzhou University. No extra dates.
+- CLAIM Attested practice that sits under this vertex: PostGIS layers, RNA-seq style cluster thinking when ingesting papers, Gremlin walks of this graph.
+- MEDIA PAGE https://owenshao.space
+- SOURCE self/lebenslauf.toon.md
+- SOURCE self/identity/education.toon.md

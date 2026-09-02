@@ -1,0 +1,12 @@
+- VERTEX AgentLoop
+- KIND praxis
+- GLOSS heartbeat-of-prompt-tool-result-until-text
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Inner agent loop is a heartbeat: prompt, tool, result, until the model speaks with empty hands. Outer slash-loop is an alarm: the same job again after N minutes. They are not the same vertex.
+- CLAIM Attested in the loop-slash cut: four levers turn, goal, loop, schedule. Turn is the human at the door. /loop is the watch. /schedule puts the watch in the cloud. A heartbeat is not a Slash Loop.
+- CLAIM Lab claims in that cut (parser gaps, 30s ceil) stay in the mezzanine of that video. Do not copy unverified numbers here without the bench file.
+- CLAIM Hooks sit on the loop, not in the prompt. PreToolUse PostToolUse Stop fire around tool turns. That is AgentHook informing AgentLoop. This repo has no hook store.
+- MEDIA PAGE skills/loop-slash/PUBLISH.md
+- SOURCE skills/loop-slash/PUBLISH.md
+- SOURCE skills/video-generation.fu.md
+- SOURCE https://code.claude.com/docs/en/hooks-guide.md

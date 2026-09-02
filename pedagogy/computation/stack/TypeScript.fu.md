@@ -1,0 +1,8 @@
+- VERTEX TypeScript
+- KIND techne
+- GLOSS javascript-plus-types
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Role line: Next.js · TypeScript · KI.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/lebenslauf.toon.md

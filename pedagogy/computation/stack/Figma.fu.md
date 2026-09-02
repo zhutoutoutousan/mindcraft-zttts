@@ -1,0 +1,8 @@
+- VERTEX Figma
+- KIND techne
+- GLOSS drawing-of-interface-form
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM Attested at Avature UX.
+- SOURCE self/identity/skill.toon.md
+- SOURCE self/identity/experience.toon.md

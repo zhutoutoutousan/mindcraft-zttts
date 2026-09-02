@@ -1,0 +1,10 @@
+- VERTEX AgentConstitution
+- KIND praxis
+- GLOSS always-on-rules-for-an-agent
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A constitution is context that is loaded every session so architecture rules do not have to be pasted again. Claude Code names this CLAUDE.md. Global ~/.claude/CLAUDE.md and project .claude/CLAUDE.md. Official: persistent context Claude sees every conversation.
+- CLAIM This repo's always-on rules are ROOT.md then CPU.md then pedagogy/pedagogy-cpu.fu.md. Same essence, fu not CLAUDE.md. Do not write a CLAUDE.md into this tree unless the human asks.
+- CLAIM Infographic layer 1. Not a prompt trick. Four of the five Claude Code layers are not prompting. This layer is memory-as-law.
+- SOURCE https://code.claude.com/docs/en/features-overview
+- SOURCE ROOT.md
+- SOURCE human 2026-09-02 infographic Claude Code five layers

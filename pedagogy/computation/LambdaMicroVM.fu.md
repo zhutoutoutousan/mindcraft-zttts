@@ -1,0 +1,12 @@
+- VERTEX LambdaMicroVM
+- KIND techne
+- GLOSS firecracker-isolated-session-compute
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM AWS Lambda MicroVMs are serverless compute with VM-level isolation. AWS Compute Blog: agent-generated code needs a sandbox apart from production and the developer laptop. MicroVMs are that ephemeral environment: write, build, test, run, then discard. Do not invent startup times.
+- CLAIM The Agent Toolkit skill aws-lambda-microvms names Firecracker isolation, snapshot resume, and use as AI/agent code-execution sandboxes and multi-tenant CI executors. The 2026-09-04 workshop on CPU.md is titled Running Sandboxed Coding Agents in your CI/CD Pipeline and names Lambda MicroVMs. The workshop is a SCHEDULE. This vertex is the essence.
+- CLAIM AgentCore Harness also runs each session in an isolated microVM with filesystem and shell. Product names overlap. The isolation shape is the same. Particular jobs stay in self/.
+- MEDIA PAGE https://aws.amazon.com/blogs/compute/secure-code-execution-for-ai-agents-with-aws-lambda-microvms/
+- MEDIA PAGE https://aws.amazon.com/blogs/compute/announcing-lambda-microvms-serverless-compute-environments-with-vm-level-isolation-and-near-instant-startup/
+- SOURCE https://aws.amazon.com/blogs/compute/secure-code-execution-for-ai-agents-with-aws-lambda-microvms/
+- SOURCE https://github.com/aws/agent-toolkit-for-aws/blob/d6ad2e44d5e3077b85b63f322e007c84f94f3a6c/skills/specialized-skills/serverless-skills/aws-lambda-microvms/SKILL.md
+- SOURCE CPU.md
