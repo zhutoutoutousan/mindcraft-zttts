@@ -5,11 +5,13 @@
 - CLAIM Attested SPRACHEN only: Englisch C1 IELTS 7.5 (PwC EF teaching). Deutsch B2+ Goethe Studium Beruf Deutschland. Spanisch verhandlungssicher Avature Kundentermine.
 - CLAIM Chinese as native is not in SPRACHEN. Do not add it.
 - CLAIM TEFL at Education First 2023-12 to 2024-03 attests Pedagogy TRANSMITS NaturalLanguage, not a new language vertex.
-- CLAIM Daily wordschatz drill is Wordschatz. Human 2026-09-02 attests 德语助手. That load belongs on IntellectualLoad, not as a new SPRACHE.
+- CLAIM Daily wordschatz drill is Wordschatz. Human 2026-09-03 attests 德语助手 法语助手 西语助手. That load belongs on IntellectualLoad, not as a new SPRACHE. Do not invent a French CEFR. TESOL Lexical Press 2024-03-07 names LanguageDrilling as the Pedagogy method. Wordschatz APPLIES it. Do not add a new SPRACHE from that page.
 - CLAIM 摸底 2026-09-02 records expression samples in en zh fr de. Englisch C1 and Deutsch B2+ are attested SPRACHEN. 中文 and Français here are expression samples the human asked for, not SPRACHEN lines. Do not add Chinese as native. Do not invent a French level.
 - MEDIA PAGE https://www.ielts.org/
 - MEDIA PAGE https://www.goethe.de/en/spr/kup/prf.html
+- MEDIA PAGE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 - SOURCE self/identity/language.toon.md
 - SOURCE self/lebenslauf.toon.md
 - SOURCE self/identity/credential.toon.md
 - SOURCE self/endurance.toon.md
+- SOURCE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/

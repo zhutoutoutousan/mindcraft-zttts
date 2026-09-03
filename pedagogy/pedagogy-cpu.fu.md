@@ -19,12 +19,12 @@
   - GUI optional. python cron/learn-enrich.py --gui writes tmp/pedagogy/learn-gui.html, gather one ANSWER. Janitor --ttl expires it. Do not save html into pedagogy/_learn.
   - BASELINE 摸底. python cron/learn-enrich.py --baseline then --baseline-serve. Async gather in tmp/pedagogy/baseline.html. Four expression boxes en zh fr de. Speak in Chrome or Edge: each Speak button is voice-to-text in that language. Skip any language. Stop if sore. Not DAY LOAD. Empty skip. Never invent ANSWER. --ingest-baseline copies to pedagogy/_learn/baseline.toon.md. --apply-study uses English if present else first filled language for STUDY ANSWER. Expression samples stay in the answers file. Do not assess until asked. Do not add Chinese as native.
   - DAY python cron/interview-anchor.py --day. Exact DO list for that calendar date. LOAD is how many items before a SORE check. First unfinished DO is NOW. Human says finished (--done --id) or sore (--sore --text). After SORE, stop. Do not pile more.
-  - ENDURANCE self/endurance.toon.md. Sore after intellectual work is a stop signal. Human named it DSB. Nature 2024 is mouse CA1, not a diagnosis. Do not write sore as GenomicInstability. External drills count. 德语助手 wordschatz is Wordschatz, one unit per session. DAY LOAD is remaining after planned daily external. python cron/interview-anchor.py --external --id de-assistant-wordschatz when that session is done.
+  - ENDURANCE self/endurance.toon.md. Sore after intellectual work is a stop signal. Human named it DSB. Nature 2024 is mouse CA1, not a diagnosis. Do not write sore as GenomicInstability. External drills count. Daily 德语助手 法语助手 西语助手 背单词 are Wordschatz, one unit per app session. DAY LOAD is remaining after those three. python cron/interview-anchor.py --external --id de-assistant-wordschatz or fr-assistant-wordschatz or es-assistant-wordschatz when that session is done.
   - SATISFY when the human says this loop worked. python cron/learn-enrich.py --satisfy writes mezzanine/learn-enrich.toon.md. Process changes go in cron/learn-enrich.fu.md or cron/interview-anchor.fu.md.
 
 - DAY $date=2026-09-02
   - LOAD 3
-  - EXTERNAL planned 1 Wordschatz 德语助手 daily. Remaining hire DAY would be 2 on a fresh --day. Today's 3 DO already written. Log the session --external --id de-assistant-wordschatz. Do not invent a word count.
+  - EXTERNAL planned 3 Wordschatz daily: 德语助手 法语助手 西语助手. Remaining hire DAY is 1 on budget 4. Log each --external --id de-assistant-wordschatz or fr-assistant-wordschatz or es-assistant-wordschatz. Do not invent a word count.
   - TZ Europe/Berlin
   - WHY job seeking as AI agent engineer. Titles from the Amit Shekhar bank mapped onto this graph. Stop on SORE.
   - DO $id=probe-AgentCore $vertex=AgentCore PROBE In your own words: what is Amazon Bedrock AgentCore, and what is it not?
@@ -105,8 +105,14 @@
   - GAP
 
 - STUDY $id=Wordschatz
-  - WHY daily 德语助手 lexicon drill. Counts as IntellectualLoad. Empty GAP. Do not invent a word count.
+  - WHY daily 德语助手 法语助手 西语助手 lexicon drill. Counts as IntellectualLoad. Empty GAP. Do not invent a word count.
   - STORE PATH pedagogy/language/Wordschatz.fu.md
+  - RECALL
+  - GAP
+
+- STUDY $id=LanguageDrilling
+  - WHY TESOL Lexical Press 2024-03-07. Controlled repetition for Automaticity. Species ChoralRepetition ChainDrill SubstitutionDrill. CONTRADICTS CommunicativePractice when it is the whole lesson. Empty GAP. Do not invent ANSWER. Do not add to DAY.
+  - STORE PATH pedagogy/language/LanguageDrilling.fu.md
   - RECALL
   - GAP
 
@@ -134,7 +140,8 @@
 - ASK TRAVERSE gremlin-lite. Compact. No essay.
 - ASK LEARN answer the open PROBE in chat or under ANSWER. Agent runs --answer --text then --assess. Do not ask the human to open an html file in the repo.
 - ASK BASELINE fill tmp/pedagogy/baseline.html or http://127.0.0.1:8765/ in Chrome or Edge. Four boxes: English, 中文, Français, Deutsch. Speak or type. Skip any language. Save. Then --ingest-baseline. Do not invent ANSWER.
-- ASK DAY what to do today. python cron/interview-anchor.py --print. Finished: --done --id. Sore: --sore --text. Wordschatz session: --external --id de-assistant-wordschatz.
+- ASK DAY what to do today. python cron/interview-anchor.py --print. Finished: --done --id. Sore: --sore --text. Wordschatz session: --external --id de-assistant-wordschatz or fr-assistant-wordschatz or es-assistant-wordschatz.
+- ASK DUMP when back, run dump-drip. Away loops write inflow/DUMP.md only. PII pass then drip. Empty PROBE stays empty.
 
 - AGENT $id=day-plan $input=pedagogy/pedagogy-cpu.fu.md $prompt=python cron/interview-anchor.py --day. Print today's DO in order. Stop. When the human finishes one, --done --id. When they say sore, --sore --text and stop the day. Do not invent ANSWER. Do not spawn janitor.
 

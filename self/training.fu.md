@@ -7,7 +7,7 @@
   - remaining scapular pain: no 92.5. Light Cavaliere technique press only if quality is not sharp.
 
 - BLOCKER STORE flags.skipHeavyPressUntilClear
-  - 40 percent relief on 2026-09-02 is not quiet. No 92.5-95 until quiet.
+  - 40 percent relief on 2026-09-02 is not quiet. Rotation-evoked residual on 2026-09-03 is not quiet. No 92.5-95 until quiet.
 
 - SCHEDULE 2026-09-02–06 unplanned deload microcycle. Walk and optional Cavaliere technique test on 2026-09-06 only if not sharp. Overlap Agentur 2026-09-03 and IFA/AWS 2026-09-04–05.
 

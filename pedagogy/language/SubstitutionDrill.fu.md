@@ -1,0 +1,7 @@
+- VERTEX SubstitutionDrill
+- KIND praxis
+- GLOSS swap-lexis-keep-the-frame
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM SubstitutionDrill ISA LanguageDrilling. Model a sentence pattern. Swap vocabulary in the same frame. SOURCE example: The cat is black. The dog is brown. TESOL Lexical Press 2024-03-07. Wordschatz sessions can take this shape. Do not invent a word count.
+- MEDIA PAGE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
+- SOURCE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/

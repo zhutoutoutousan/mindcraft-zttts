@@ -3,6 +3,7 @@
 - GLOSS bounded-study-before-repair
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Human 2026-09-02 reports post-study head/brain sore and names it DSB. Nature 2024: activity can induce transient DNA breaks in CA1 enhancers that repair within minutes. Persistent extranuclear genomic fragments are a different class. Do not write this calendar's study as CFC. Do not write sore as GenomicInstability. Stop on SORE. Log self/endurance.toon.md.
-- CLAIM Ausdauer is the day's total intellectual units, not only interview DAY. Human 2026-09-02 attests daily 德语助手 wordschatz. That is Wordschatz. One session is one unit. DAY LOAD is remaining after planned daily external. Do not invent a word count.
+- CLAIM Ausdauer is the day's total intellectual units, not only interview DAY. Human 2026-09-03 attests daily 德语助手 法语助手 西语助手 背单词. That is Wordschatz. One session is one unit. DAY LOAD is remaining after planned daily external. Do not invent a word count. TESOL Lexical Press 2024-03-07: a drill that runs too long bores, and repetition stresses some learners. LanguageDrilling INFORMS IntellectualLoad. Keep the segment short.
 - SOURCE https://www.nature.com/articles/s41586-024-07220-7
 - SOURCE https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
+- SOURCE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/

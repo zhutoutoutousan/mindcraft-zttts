@@ -2,6 +2,7 @@
 
     python cron/janitor.py --touch   stamp last_run now
     python cron/janitor.py --ttl     delete tmp siblings if last_run is 5 days old
+    python cron/janitor.py --purge   delete tmp siblings now. Keep ttl.toon.md. Human asked.
 """
 from __future__ import annotations
 
@@ -94,9 +95,9 @@ def touch() -> Path:
     return TTL_FILE
 
 
-def expire(*, dry_run: bool = False) -> list[Path]:
+def expire(*, dry_run: bool = False, force: bool = False) -> list[Path]:
     gone: list[Path] = []
-    if not due():
+    if not force and not due():
         return gone
     import shutil
 
@@ -112,7 +113,8 @@ def expire(*, dry_run: bool = False) -> list[Path]:
                 child.unlink()
             else:
                 continue
-        except OSError:
+        except OSError as exc:
+            print(f"TTL FAIL {rel.as_posix()}: {exc}")
             continue
         gone.append(rel)
     if not dry_run:

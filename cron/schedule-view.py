@@ -468,14 +468,174 @@ def html_esc(text: str) -> str:
     )
 
 
+def cjk_font():
+    from matplotlib import font_manager
+
+    for name in ("Microsoft YaHei", "Microsoft JhengHei", "SimHei", "Segoe UI"):
+        try:
+            path = font_manager.findfont(font_manager.FontProperties(family=name), fallback_to_default=False)
+            if path and "DejaVu" not in path:
+                return font_manager.FontProperties(fname=path)
+        except (ValueError, OSError):
+            continue
+    return font_manager.FontProperties()
+
+
+def draw_plate(today: date, path: Path) -> None:
+    """Share card for today's plate. Friend-facing. No phone numbers."""
+    fp = cjk_font()
+    fig = plt.figure(figsize=(9.0, 12.0), dpi=140, facecolor=C_BG)
+    ax = fig.add_axes((0.0, 0.0, 1.0, 1.0))
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.invert_yaxis()
+    ax.axis("off")
+    ax.set_facecolor(C_BG)
+    fig.patch.set_facecolor(C_BG)
+
+    wd = ("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag")[today.weekday()]
+    ax.text(0.07, 0.04, "HEUTIGER TELLER", color=C_TODAY, fontsize=11, fontproperties=fp, fontweight="bold", va="top")
+    ax.text(0.07, 0.075, f"{wd}  {today.day}. {MONTH_DE[today.month]} {today.year}", color=C_TEXT, fontsize=22, fontproperties=fp, fontweight="bold", va="top")
+    ax.text(0.07, 0.125, "DSB recovery  ·  walk only  ·  Europe/Berlin", color=C_MUTED, fontsize=11, fontproperties=fp, va="top")
+
+    cards = [
+        ("12:30", "Amt Potsdam", "Empfang  ·  Horstweg 102–108\nAusweis + Terminbestätigung", C_CONF),
+        ("每天", "背单词 × 3", "德语助手  ·  法语助手  ·  西语助手\n各一轮，停就停", "#34a853"),
+        ("NOW", "AgentCore", "用自己的话：AgentCore 是什么，不是什么。\n一句就够。先别读 workshop。", C_TODAY),
+        ("body", "Walk only", "肩胛还酸  ·  转体残留痛\n胸 / 背阔 / 前臂 DOMS  ·  不练卧推", C_CLASH),
+        ("after", "如果头不晕", "Goethe B2 Schreiben 75 min\n然后可以停", C_CAND),
+        ("Fr 4.", "Morgen", "11:30 AWS workshop  ·  danach IFA\nkein heavy bench", "#8ab4f8"),
+    ]
+    top = 0.17
+    h = 0.12
+    gap = 0.018
+    for i, (when, title, body, fill) in enumerate(cards):
+        y = top + i * (h + gap)
+        ax.add_patch(
+            FancyBboxPatch(
+                (0.07, y),
+                0.86,
+                h,
+                boxstyle="round,pad=0.008,rounding_size=0.02",
+                facecolor=C_PANEL,
+                edgecolor=C_GRID,
+                linewidth=1.0,
+            )
+        )
+        ax.add_patch(Rectangle((0.07, y), 0.012, h, facecolor=fill, edgecolor="none"))
+        ax.text(0.11, y + 0.018, when, color=fill, fontsize=11, fontproperties=fp, fontweight="bold", va="top")
+        ax.text(0.28, y + 0.018, title, color=C_TEXT, fontsize=15, fontproperties=fp, fontweight="bold", va="top")
+        ax.text(0.11, y + 0.052, body, color=C_MUTED, fontsize=11, fontproperties=fp, va="top", linespacing=1.45)
+
+    ax.text(0.07, 0.96, "kein Gym  ·  Croissants vorbei  ·  IFA Retail Summit heute skip", color=C_MUTED, fontsize=9, fontproperties=fp, va="top")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(path, facecolor=C_BG)
+    plt.close(fig)
+
+
+def draw_next_board(path: Path, kicker: str, title: str, sub: str, rows: list[tuple[str, str, str, str]], chips: list[str], foot: str) -> None:
+    fp = cjk_font()
+    fig = plt.figure(figsize=(8.5, 11.0), dpi=140, facecolor=C_BG)
+    ax = fig.add_axes((0.0, 0.0, 1.0, 1.0))
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.invert_yaxis()
+    ax.axis("off")
+    ax.set_facecolor(C_PANEL)
+    fig.patch.set_facecolor(C_BG)
+    ax.add_patch(FancyBboxPatch((0.04, 0.03), 0.92, 0.94, boxstyle="round,pad=0.01,rounding_size=0.03", facecolor=C_PANEL, edgecolor=C_GRID, linewidth=1.0))
+    ax.text(0.08, 0.06, kicker, color=C_TODAY, fontsize=11, fontproperties=fp, fontweight="bold", va="top")
+    ax.text(0.08, 0.10, title, color=C_TEXT, fontsize=26, fontproperties=fp, fontweight="bold", va="top")
+    ax.text(0.08, 0.16, sub, color=C_MUTED, fontsize=12, fontproperties=fp, va="top")
+    top = 0.22
+    h = 0.13
+    gap = 0.018
+    for i, (when, head, body, fill) in enumerate(rows):
+        y = top + i * (h + gap)
+        ax.add_patch(FancyBboxPatch((0.08, y), 0.84, h, boxstyle="round,pad=0.008,rounding_size=0.02", facecolor=C_BG, edgecolor=C_GRID, linewidth=1.0))
+        ax.add_patch(Rectangle((0.08, y), 0.012, h, facecolor=fill, edgecolor="none"))
+        ax.text(0.12, y + 0.018, when, color=fill, fontsize=12, fontproperties=fp, fontweight="bold", va="top")
+        ax.text(0.12, y + 0.048, head, color=C_TEXT, fontsize=16, fontproperties=fp, fontweight="bold", va="top")
+        ax.text(0.12, y + 0.078, body, color=C_MUTED, fontsize=11, fontproperties=fp, va="top", linespacing=1.4)
+    ax.text(0.08, 0.88, "   ·   ".join(chips), color=C_MUTED, fontsize=10, fontproperties=fp, va="top")
+    ax.text(0.08, 0.93, foot, color=C_MUTED, fontsize=10, fontproperties=fp, va="top")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(path, facecolor=C_BG)
+    plt.close(fig)
+
+
+def draw_next_pack(out: Path) -> list[Path]:
+    written: list[Path] = []
+    boards = [
+        (
+            out / "next-01-now.png",
+            "JETZT  ·  DO 3. SEP  ·  11:14",
+            "11:14  →  12:30",
+            "~76 min until Empfang. DSB recovery. Walk only. 30m loop is off.",
+            [
+                ("NOW", "Leave window", "Bag is in .private. Do not start a study DAY.\nDo not open workshop notes.", C_CLASH),
+                ("12:30", "Agentur Empfang", "~20 min. Confirmed. Street, tram, ID list\nstay in .private/after-agentur.fu.md", C_CONF),
+                ("SKIP", "Not today", "IFA halls. Retail Leaders Summit. Heavy press.\nWorkshop pre-reads. Inventing AgentCore ANSWER.", C_CAND),
+            ],
+            ["walk only", "PROBE empty", "助手 not logged"],
+            "Next board is the after-door order.",
+        ),
+        (
+            out / "next-02-after.png",
+            "AFTER THE DOOR  ·  SAME DAY",
+            "Sit, then one line",
+            "If the head is loud: water, walk, stop. Empty PROBE stays empty.",
+            [
+                ("1", "Sit and log", "Water. Log the visit in .private/after-agentur.fu.md.\nNo file number on the graph.", C_CONF),
+                ("2", "AgentCore PROBE", "One sentence, own words: what it is, and what it is not.\nWorkshop reading waits until this exists.", C_TODAY),
+                ("3", "助手 × 3", "德语 → 法语 → 西语. One unit each.\n--external --id de- / fr- / es-assistant-wordschatz", "#34a853"),
+                ("4", "Optional Goethe", "B2 Schreiben 75 min only if still quiet.\nOptional 18:00 Cognee/Fastino if energy. Stop if sore.", C_CAND),
+            ],
+            ["budget 4 = 3 lexicon + 1 probe", "stop on sore"],
+            "Do not pile DAY.",
+        ),
+        (
+            out / "next-03-fr.png",
+            "FREITAG 4. SEP",
+            "Workshop first",
+            "Registered. Online. Then Messe if the head is still quiet.",
+            [
+                ("11:30", "AWS workshop ~2h", "Sandboxed coding agents. Lambda MicroVMs.\nAgent Toolkit. Cedar on AgentCore. Drop CIC lunch.", C_TODAY),
+                ("13:30", "IFA after the call", "Privatbesucher from 12:00. Halls close 18:00.\nWalk for agent UX, not kitchen robots.", "#34a853"),
+                ("14:00", "Dream Stage UX Layer", "Interface for AI agents. Skip 11:00 AMD and\n12:00 Algorithmic Shopper — they clash.", C_CLASH),
+                ("evening", "Pick at most one", "Hertie 18:00 · Employed.world 17:00.\nNo heavy bench.", C_CAND),
+            ],
+            ["workshop wins", "no heavy bench", "IFA 4–8 Sep"],
+            "2026-09-03 11:14  ·  tmp/schedule/next.html",
+        ),
+    ]
+    for item in boards:
+        draw_next_board(*item)
+        written.append(item[0])
+    return written
+
+
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--today", default="")
+    p.add_argument("--plate", action="store_true")
+    p.add_argument("--next", action="store_true")
     args = p.parse_args()
-    if args.today:
-        today = date.fromisoformat(args.today)
-    else:
-        today = datetime.now(TZ).date()
+    today = date.fromisoformat(args.today) if args.today else datetime.now(TZ).date()
+    if args.next:
+        OUT.mkdir(parents=True, exist_ok=True)
+        written = draw_next_pack(OUT)
+        stamp_ttl()
+        for path in written:
+            print(path.relative_to(ROOT).as_posix())
+        return 0
+    if args.plate:
+        OUT.mkdir(parents=True, exist_ok=True)
+        path = OUT / f"plate-{today.isoformat()}.png"
+        draw_plate(today, path)
+        stamp_ttl()
+        print(path.relative_to(ROOT).as_posix())
+        return 0
     events = load_events()
     weeks = weeks_covering(events, today)
     OUT.mkdir(parents=True, exist_ok=True)

@@ -34,7 +34,7 @@
   - Enrich ontology from RESEARCH DUMP LEARNING_DUMP. Additive. Cite SOURCE. Default $output=pedagogy/universe.graph.md
   - LEARN-ENRICH cron/learn-enrich.fu.md reads self/goals.toon.md, picks NORTH from the focused goal, writes pedagogy/_learn/lesson.toon.md, probes on pedagogy-cpu, assesses into self/learn.toon.md and E Study STUDIES. Study GUI is ephemeral. On SATISFY write mezzanine/learn-enrich.toon.md.
   - INTERVIEW-ANCHOR cron/interview-anchor.fu.md fetches AI-engineering interview titles, maps them onto graph vertices, writes a dated DAY slice on pedagogy-cpu, and logs intellectual load in self/endurance.toon.md. Titles and SOURCE urls only. Do not copy answers. Sore stops the day.
-  - INFLOW-NEWS cron/inflow-news.fu.md gathers news that matters to open goals into inflow/inflow.fu.md. TITLE URL WHY LEARN. Skip ids in inflow/STATE.md. Not latex. Not pdf.
+  - INFLOW-NEWS cron/inflow-news.fu.md gathers news, ideas, tech, and unknown unknowns into inflow/DUMP.md while the human is away. Skip ids in inflow/STATE.md. Not latex. Not pdf. Drip on return: cron/dump-drip.fu.md.
   - SCHEDULE-HARVEST cron/schedule-harvest.fu.md reads CPU.md inflow/ dumps, then the agent fills WHAT WHERE WHEN WHY from the open web into schedule/enrich.toon.md. Python merges that overlay. Slug titles are not a finished store. ICS only when the human asks python cron/schedule-harvest.py --ics.
   - JANITOR cron/janitor.fu.md moves non-markdown files to recycle/. Markdown stays. Bytecode caches (__pycache__, *.pyc) are deleted, not recycled. Restore recycled files by moving back. tmp/ is not recycle: python cron/janitor.py --ttl deletes tmp siblings when tmp/ttl.toon.md last_run is 5 days old. Keep ttl.toon.md.
 
@@ -42,7 +42,7 @@
   - KIND inbound news the human can read. Not the life queue. Not the ontology.
   - STORE PATH inflow/inflow.fu.md
   - STATE inflow/STATE.md is the skip list. Later ticks must not repeat those ids.
-  - MEANING each NEWS row needs a URL and a WHY that touches an open goal or a dated calendar row. LEARN points at study vertices. DUMP.md is capture, not the briefing.
+  - MEANING each NEWS row needs a URL and a WHY that touches an open goal or a dated calendar row. LEARN points at study vertices. DUMP.md is the away-loop buffer. Drip via cron/dump-drip.fu.md when the human is back. PII never stays in DUMP.md.
 
 - DIR schedule
   - KIND calendar store. Harvested SCHEDULE rows. Not the life queue. CPU.md still arms ticks.
@@ -50,6 +50,10 @@
   - ENRICH schedule/enrich.toon.md is the sourced WHAT WHERE WHEN WHY overlay. Do not invent times. Cite url.
   - MONTH files schedule/<year>-<month>.fu.md nest WHAT WHERE WHEN WHY under each SCHEDULE.
   - ICS schedule/calendar.ics only after the human asks. TZ Europe/Berlin.
+
+- DIR .private
+  - KIND gitignored life notes. Pinpointable particulars: bag lists, Ausweis, Melde, personal phone, Amt file numbers, what a clerk said.
+  - MEANING CPU.md may name a public office and a clock. Ontology stays universal. self/identity and lebenslauf are also gitignored. Do not paste those facts into inflow/ or pedagogy/.
 
 - DIR recycle
   - KIND bin for non-markdown swept by janitor. Not delete. JOURNAL.md is markdown so it stays.

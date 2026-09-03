@@ -5,9 +5,11 @@
 - CLAIM Study is Pedagogy enacted in one Agent. pedagogy-cpu.fu.md is the interface. CPU.md is not.
 - CLAIM Nature 2024: memory assemblies form when discrete neurons take DNA damage and repair it through TLR9. Internalization is the same shape: a claim is taken in, broken, repaired, then stabilized. Study ENACTS Memory. Do not claim the mouse CFC protocol is a study method.
 - CLAIM Walk: PROBE first. Human ANSWER. ASSESS grasp. Adjust PLAN. DAY is the calendar slice: exact DO for one date, LOAD from self/endurance.toon.md. Empty ANSWER means wait. Empty GAP means not yet internalized. Do not lecture the body before the first probe.
-- CLAIM IntellectualLoad bounds Study the way ResistanceTraining bounds a session. Human 2026-09-02 names post-study sore as DSB. Nature 2024 is mouse CA1 DNA-damage response. Do not write sore as GenomicInstability. Stop on SORE. External drills (Wordschatz / 德语助手) are the same bound. DAY LOAD is remaining after planned daily external units.
+- CLAIM IntellectualLoad bounds Study the way ResistanceTraining bounds a session. Human 2026-09-02 names post-study sore as DSB. Nature 2024 is mouse CA1 DNA-damage response. Do not write sore as GenomicInstability. Stop on SORE. External drills (Wordschatz / 德语助手 法语助手 西语助手) are the same bound. DAY LOAD is remaining after planned daily external units. LanguageDrilling INFORMS Study. Parrot-back of a drill is not internalization. CommunicativePractice and a later PROBE/ANSWER are. TESOL Lexical Press 2024-03-07.
 - CLAIM Interview titles from https://github.com/amitshekhariitbhu/ai-engineering-interview-questions are hire-pressure probes. cron/interview-anchor.fu.md maps each title onto a vertex. Answers stay at SOURCE urls.
 - CLAIM cron/learn-enrich.fu.md is the process. pedagogy/_learn/lesson.toon.md is the current pack. Grasp lives in self/learn.toon.md and on E Study STUDIES. GUI is tmp/pedagogy/learn-gui.html, not a vertex body.
 - MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7
+- MEDIA PAGE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 - SOURCE pedagogy/pedagogy-cpu.fu.md
 - SOURCE pedagogy/ontology.fu.md
+- SOURCE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
