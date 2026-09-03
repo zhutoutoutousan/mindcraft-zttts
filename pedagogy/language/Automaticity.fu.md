@@ -1,0 +1,8 @@
+- VERTEX Automaticity
+- KIND praxis
+- GLOSS production-without-deliberation
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Automaticity is the Essence LanguageDrilling aims at: produce the targeted Form without having to think hard. TESOL Lexical Press 2024-03-07. Not fluency. Fluency in that SOURCE is creative use in conversation, which lives on CommunicativePractice.
+- CLAIM Accuracy is a CLAIM on LanguageDrilling, not a sibling vertex. Automaticity without a later communicative task stays parroting.
+- MEDIA PAGE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
+- SOURCE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/

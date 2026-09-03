@@ -32,7 +32,7 @@
   - SHOWCASE ASK image or video then run skills/ontology-showcase.fu.md
   - GUI optional tempfile. Never store study html. SATISFY writes mezzanine/learn-enrich.toon.md. Process changes live in cron/learn-enrich.fu.md.
 
-- RULE do not stuff Person Skill Job into this graph. Lebenslauf maps to domains. Email phone notice stay in self/. Session loads stay in self/training.toon.md. ResistanceTraining is the essence.
+- RULE do not stuff Person Skill Job into this graph. Lebenslauf maps to domains. Email phone notice stay in self/identity and .private/. Session loads stay in self/training.toon.md. ResistanceTraining is the essence. CPU.md may name a public office. Do not put Ausweis Melde personal mobile into inflow or a vertex.
 - RULE cron may add vertices. cron may not delete Being Essence Form Matter.
 - RULE contradiction is an edge CONTRADICTS, not a silent overwrite.
 - RULE do not invent dates or metrics. Cite SOURCE. Chinese as native is not in SPRACHEN. Do not add it.

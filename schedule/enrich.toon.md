@@ -10,19 +10,19 @@ record:
   when: 2026-09-03T09:00+02:00
   end: 2026-09-03T10:00+02:00
   allday: false
-  why: Why it matters: I live in Potsdam and I am job-seeking as an AI agent engineer. Compact local AI-sales room on the way to the 12:30 Agentur Termin.
+  why: Local Potsdam AI-sales room on the way to the 12:30 Agentur Termin.
   url: https://www.deal-engine.de/en/events/
   source: https://www.deal-engine.de/en/events/
 
 record:
   match: agentur
   title: Agentur für Arbeit Potsdam
-  what: About 20 min Empfang Termin. Bring Terminbestätigung plus Ausweis with current Wohnanschrift or Meldebescheinigung.
-  where: Horstweg 102-108, 14478 Potsdam, Raum Empfang
+  what: About 20 min Empfang Termin. Bag and ID list in .private/after-agentur.fu.md
+  where: Agentur für Arbeit Potsdam Empfang. Street in .private/after-agentur.fu.md
   when: 2026-09-03T12:30+02:00
   end: 2026-09-03T12:50+02:00
   allday: false
-  why: Why it matters: this is the confirmed Jobcenter appointment that keeps the Potsdam job-search file alive. Cancel via Kontaktformular or 0800 4 555500.
+  why: Confirmed Jobcenter slot. Cancel path in .private/after-agentur.fu.md
   url:
   source: CPU.md
 

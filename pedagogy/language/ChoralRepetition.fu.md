@@ -1,0 +1,7 @@
+- VERTEX ChoralRepetition
+- KIND praxis
+- GLOSS whole-class-repeat-after-the-model
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM ChoralRepetition ISA LanguageDrilling. The whole class repeats the model together. TESOL Lexical Press 2024-03-07 lists it as the first dynamic form, before smaller groups or one speaker.
+- MEDIA PAGE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
+- SOURCE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/

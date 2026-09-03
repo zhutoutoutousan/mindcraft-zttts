@@ -1,0 +1,11 @@
+- VERTEX LanguageDrilling
+- KIND praxis
+- GLOSS controlled-repetition-of-targeted-form
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM LanguageDrilling is Pedagogy. Controlled repetition of one targeted Form: a sound, a word, or a grammatical pattern. Aim is Accuracy plus Automaticity, not open conversation. Teacher or model first, then unison, then smaller groups or one speaker. Attested SOURCE is TESOL Lexical Press 2024-03-07. Do not invent a Person vertex for the blog account tesol.
+- CLAIM Tree under this vertex: ChoralRepetition ChainDrill SubstitutionDrill ISA LanguageDrilling. Automaticity is the aim GROUNDS_IN. CommunicativePractice RECEIVES the drilled Form after the drill. Wordschatz APPLIES LanguageDrilling as lexicon repetition, including daily 德语助手 法语助手 西语助手. Goethe Schreiben is production, not this vertex.
+- CLAIM Keep a drill short and on one target. Warm-up, isolated error, or a guaranteed-success pass for a shy beginner. Then stop. Scales in music class are the metaphor in the SOURCE: groundwork, not the performance.
+- CLAIM CONS in the SOURCE: boring if overused; parroting a drill is not fluency; repetition stresses some learners. LanguageDrilling CONTRADICTS CommunicativePractice when the drill is the whole lesson. The same SOURCE says drill then a game, conversation, or story so the accurate Form is used. That pair is INFORMS plus RECEIVES, not a delete of either vertex.
+- CLAIM Pronunciation example in the SOURCE: th minimal pairs three/free bath/path. Vocabulary: I like / I do not like on pictured food. Grammar: present continuous I am eating, swap the verb while doing the action. Do not copy the page. MEDIA is the URL.
+- MEDIA PAGE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
+- SOURCE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/

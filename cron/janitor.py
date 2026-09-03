@@ -25,7 +25,7 @@ KEEP_FILES = {
     Path("cron") / "janitor.py",
     Path("skills") / "ontology-showcase.py",
 }
-NEVER_DIR = {".git", "recycle", ".cursor", "tmp"}
+NEVER_DIR = {".git", "recycle", ".cursor", "tmp", ".private"}
 TRASH_DIR_NAMES = {"__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
 TRASH_SUFFIXES = {".pyc", ".pyo"}
 KEEP_DIR_EMPTY = {
@@ -44,6 +44,7 @@ KEEP_DIR_EMPTY = {
     Path("schedule"),
     Path("inflow"),
     Path("tmp"),
+    Path(".private"),
 }
 
 
@@ -194,11 +195,12 @@ def main() -> int:
     p.add_argument("--trash", action="store_true")
     p.add_argument("--apply", action="store_true")
     p.add_argument("--ttl", action="store_true")
+    p.add_argument("--purge", action="store_true")
     p.add_argument("--touch", action="store_true")
     args = p.parse_args()
-    n = sum(bool(x) for x in [args.dry_run, args.trash, args.apply, args.ttl, args.touch])
+    n = sum(bool(x) for x in [args.dry_run, args.trash, args.apply, args.ttl, args.purge, args.touch])
     if n != 1:
-        print("ASK --dry-run or --trash or --apply or --ttl or --touch. Default is refuse.")
+        print("ASK --dry-run or --trash or --apply or --ttl or --purge or --touch. Default is refuse.")
         return 2
     if args.touch:
         path = temp_ttl.touch()
@@ -223,6 +225,12 @@ def main() -> int:
         if gone:
             append_journal([], gone)
         print(f"TTL n={len(gone)} keep {temp_ttl.TTL_FILE.relative_to(ROOT).as_posix()}")
+        return 0
+    if args.purge:
+        gone = temp_ttl.expire(dry_run=False, force=True)
+        if gone:
+            append_journal([], gone)
+        print(f"PURGE n={len(gone)} keep {temp_ttl.TTL_FILE.relative_to(ROOT).as_posix()}")
         return 0
     trashed = trash_now(trash_dirs, trash_files)
     if args.trash or args.apply:

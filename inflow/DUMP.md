@@ -1,7 +1,32 @@
-Can I let cursor or whatnot simply run a loop or stuffs that simply automatically fetch a page without asking me for permission?
+- KIND dump. Raw capture while the human is away. Not the briefing. Not the ontology. Not .private.
+- TZ Europe/Berlin
+- STORE PATH inflow/STATE.md
+- STORE PATH inflow/inflow.fu.md
+- STORE PATH .private/
+- STORE PATH cron/dump-drip.fu.md
+- RULE Loop ticks APPEND here. Do not drip during the loop. Do not invent ANSWER. Do not add Chinese as native.
+- RULE Capture news, new ideas, technologies, and unknown unknowns that could touch an open goal even if the human did not name them. WHY must say the hook. URL required for NEWS. KIND unknown may lack a calendar row.
+- RULE No pinpointable particulars. No Ausweis Melde personal phone Amt file number home address. Those go to .private/ on the drip pass, never into this file.
+- RULE Skip ids already in STATE.md. Stamp after append. Not latex. Not pdf.
+- RULE When the human is back: AGENT dump-drip. PII pass first. Then drip pending CAPTURE into inflow.fu.md, schedule/, pedagogy/. Mark STATUS dripped. Leave HUMAN OPEN items until the human closes them.
 
-Anyway I can add slash command to cursor in terms of this project?
+- HUMAN OPEN
+  - CAPTURE $id=cursor-fetch-without-permission
+    - TITLE Can a Cursor loop fetch a page without asking permission each time
+    - STATUS open
+    - NOTE asked 2026-09. Answer lives in chat history if already given. Do not invent a product setting.
+  - CAPTURE $id=cursor-project-slash
+    - TITLE Add slash commands to Cursor for this project
+    - STATUS open
+  - CAPTURE $id=claude-batch
+    - TITLE Research and experiment with /batch in Claude Code
+    - STATUS open
+    - URL https://code.claude.com/docs/en/features-overview
+  - CAPTURE $id=goethe-b2-interactive
+    - TITLE Interactive Goethe B2 speaking and writing practice
+    - STATUS open
+    - NOTE Official timed Schreiben already logged. Do not invent a new app on drip. Jugend debattiert stays the debate drill.
+    - URL https://bfu.goethe.de/b2_mod_2MX6/schreiben.php
 
-TODO research usage and experiment with /batch command in Claude code
-
-TODO I need an interactive german goethe B2 interface for speaking and writing practice.
+- PENDING
+  - NOTE Loop ticks nest CAPTURE under a TICK below. Empty until the next away loop.
