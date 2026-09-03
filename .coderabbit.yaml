@@ -1,0 +1,24 @@
+language: "en-US"
+reviews:
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches:
+      - "main"
+      - "develop"
+  path_filters:
+    - "!self/identity/**"
+    - "!self/lebenslauf*"
+    - "!self/training.toon.md"
+    - "!.private/**"
+    - "!tmp/**"
+  path_instructions:
+    - path: "pedagogy/**/*.fu.md"
+      instructions: "Fu-language nested lists. Do not suggest markdown headings or tables. Do not invent Person vertices or PII."
+    - path: "inflow/**"
+      instructions: "DUMP.md is an away buffer. Do not request dripping live news into inflow.fu.md during a loop. Flag any Ausweis, phone, home address, or Amt file number."
+chat:
+  auto_reply: true
