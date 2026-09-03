@@ -4,7 +4,10 @@
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Language MEDIATES Agent. Without a shared Form, agents cannot transmit. Fu is a language. TypeScript is a language. Deutsch is a language.
 - CLAIM NaturalLanguage ISA Language. Pedagogy TRANSMITS Language. Do not put a phone number on this vertex.
-- VERTEX NaturalLanguage Pedagogy Study FuLanguage PromptEngineering SlashCommand DualSubtitle Wordschatz
+- VERTEX NaturalLanguage Pedagogy Study FuLanguage PromptEngineering SlashCommand DualSubtitle Wordschatz LanguageDrilling Automaticity ChoralRepetition ChainDrill SubstitutionDrill CommunicativePractice
+- CLAIM TESOL Lexical Press 2024-03-07: LanguageDrilling is Pedagogy on NaturalLanguage. Species ChoralRepetition ChainDrill SubstitutionDrill. Aim Automaticity. CommunicativePractice RECEIVES the drilled Form. Drill-as-whole-lesson CONTRADICTS CommunicativePractice. Wordschatz APPLIES LanguageDrilling. Goethe Schreiben is not this tree. MEDIA PAGE the URL. Do not invent a Person for tesol.
 - MEDIA PAGE https://plato.stanford.edu/entries/language-thought/
+- MEDIA PAGE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 - SOURCE pedagogy/ontology.fu.md
+- SOURCE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 - NOTE Windows cannot store Language.fu.md and language.fu.md as two files. This file is both the branch index and the Language body.

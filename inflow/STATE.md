@@ -1,5 +1,6 @@
 # inflow STATE
-Loop: RUNNING 20m last_stamp 2026-09-02T15:04:22Z. Read inflow/inflow.fu.md. Skip ids below.
+Loop: RUNNING 20m last_stamp 2026-09-03T09:12:24Z. Away-loop writes inflow/DUMP.md. Drip on return. Skip ids below.
+Maintain: STOPPED 2026-09-03T11:14+02 by human. Do not re-arm unless asked.
 
 Rule: later ticks MUST skip ids below. Do not re-arm a second inflow-news loop.
 
@@ -61,3 +62,43 @@ Rule: later ticks MUST skip ids below. Do not re-arm a second inflow-news loop.
 - agent-toolkit-search-skills
 - mcp-spec-2026-07-28-stateless
 - clickhouse-grafana-berlin-2026-09-08
+- lgtm-berlin-2026-09-02
+- agentcore-memory-flexible-namespaces
+- aws-cert-sep-2026-agentcore
+- agentcore-gateway-mcp-2026-07-28
+- aws-configure-agent-toolkit
+- agentcore-memory-ingestdata
+- opencode-agentcore-code-factory
+- agentcore-close-laptop-coding-agents
+- agentcore-gateway-runtime-targets-ga
+- berlin-aws-ug-2026-09-14
+- agentcore-runtime-interactive-shells
+- aws-community-day-dach-2026-09-15
+- agentcore-dogwood-temporal-policies
+- agentcore-gateway-rate-limits
+- agentcore-identity-private-key-jwt
+- agentcore-identity-byos-secrets
+- ki-croissants-2026-09-03
+- agentcore-policy-workshop-samples
+- agentcore-vpc-egress
+- lambda-microvms-agent-toolkit-cedar
+- agentcore-eval-typescript-frameworks
+- goethe-b2-interactive-schreiben
+- ki-mig-official
+- agentcore-cli-typescript
+- agentur-potsdam-hours
+- agentcore-gateway-govern-tools
+- ai-safety-berlin-2026-09-04
+- agentcore-code-interpreter-nodejs
+- saige-efais-2026-09-05
+- hertie-aisi-2026-09-04
+- agentcore-nl2cedar-docs
+- agentcore-gha-cicd
+- employed-world-berlin-2026-09-04
+- lambda-microvms-frankfurt-2026-08-19
+- ifa-algorithmic-shopper-2026-09-04
+- ifa-amd-personal-ai-2026-09-04
+- agentcore-evaluate-api
+- hpi-ai-roundtable-2026-09-07
+- cognee-fastino-berlin-2026-09-03
+- agentcore-websearch-eu-west-1

@@ -29,7 +29,7 @@
   - NEWS $id=merantix-agentic-data-stack-2026-09-02
     - TITLE The Agentic Data Stack at Merantix AI Campus, this evening
     - URL https://somo.social/e/the-agentic-data-stack-berlin-902
-    - WHY Production agents, observability, Berlin room. Sourced 18:00–21:00 today. If you are already in a study DAY, skip. Stop if sore.
+    - WHY Production agents, observability, Berlin room. Sourced 18:00–21:00. Luma names the campus at Max-Urich-Straße 3, 13355 Berlin. https://luma.com/clickh-2ccj If you are already in a study DAY, skip. Stop if sore.
     - LEARN AgentLoop AgentCore
   - NEWS $id=ifa-ux-layer-ai-agents-2026-09-04
     - TITLE IFA Dream Stage: The UX Layer, Building the Interface for AI Agents
@@ -85,3 +85,368 @@
     - ASK Merantix tonight 18:00–21:00 is still on the earlier tick. Skip if sore.
     - ASK Tomorrow 2026-09-03 12:30 Agentur Potsdam confirmed. KI and Croissants 09:00 is candidate. IFA Retail Leaders Summit is invite-only C-level. Skip that room.
     - ASK 摸底 still async. Skip any language. Stop if sore.
+
+- TICK $date=2026-09-02T17:23+02
+  - NEWS $id=lgtm-berlin-2026-09-02
+    - TITLE LGTM Berlin September, LLM craft, Nelly Solutions
+    - URL https://www.meetup.com/de-de/lgtm-berlin/events/316156722/
+    - WHY Sourced tonight 19:00–21:00, Chausseestraße 29, 5. Etage. Free. Overlaps Merantix 18:00–21:00 at the AI Campus. Pick one room. Stop if sore. AgentCore PROBE stays empty either way.
+    - LEARN AgenticEngineering NaturalLanguage
+  - NEWS $id=agentcore-memory-flexible-namespaces
+    - TITLE AgentCore Memory flexible namespace variables
+    - URL https://aws.amazon.com/about-aws/whats-new/2026/08/agentcorememory-flexible-namespaces/
+    - WHY Same week as Memory FGAC already logged. Up to five keys per memory resource, values at CreateEvent. Multi-tenant isolation is the hireable follow-up after "what is AgentCore". Posted 2026-08-28.
+    - LEARN AgentCore
+  - LEARN
+    - ASK AgentCore PROBE still empty.
+    - ASK Tonight clash: Merantix 18:00 Campus vs LGTM 19:00 Mitte. Skip if sore.
+    - ASK Tomorrow 12:30 Agentur Potsdam confirmed.
+
+- TICK $date=2026-09-02T17:43+02
+  - NEWS $id=aws-cert-sep-2026-agentcore
+    - TITLE September 2026 AWS cert updates name AgentCore on MLA-C02, SAP-C03, DVA-C03
+    - URL https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/
+    - WHY Posted 1 Sep. Hire north is AgentCore. MLA-C02 English beta registration is open; MLA-C01 English last day 28 Sep. SAP-C03 registration 27 Oct names AgentCore in agentic-architecture skills. DVA-C03 adds AgentCore and Kiro in-scope. Do not invent which exam you sit. Do not skip the open PROBE for a cert blog.
+    - LEARN AgentCore
+  - LEARN
+    - ASK Merantix doors 18:00 in minutes, else LGTM 19:00. Skip if sore.
+    - ASK AgentCore PROBE still empty.
+
+- TICK $date=2026-09-02T18:23+02
+  - NEWS $id=agentcore-gateway-mcp-2026-07-28
+    - TITLE AgentCore Gateway enables MCP 2026-07-28 with one UpdateGateway call
+    - URL https://aws.amazon.com/blogs/machine-learning/how-agentcore-gateway-supports-the-mcp-2026-07-28-spec/
+    - WHY Joins two rows already logged: AgentCore plus the stateless MCP spec. Hire sentence: add 2026-07-28 to supportedVersions, old clients keep 2025-11-25, no per-target rewrite. Also https://aws.amazon.com/blogs/architecture/mcp-went-stateless-is-your-aws-mcp-server-deployment-well-architected/ Read after the open PROBE, not instead of it.
+    - LEARN AgentCore MCP
+  - LEARN
+    - ASK Merantix already started. LGTM 19:00 Mitte if you skipped Campus. Stop if sore.
+
+- TICK $date=2026-09-02T18:43+02
+  - NEWS $id=aws-configure-agent-toolkit
+    - TITLE aws configure agent-toolkit installs AWS skills and MCP into Kiro Cursor Claude Code
+    - URL https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html
+    - WHY North is AgentToolkit. Different command from search-skills already logged. CLI 2.35.0+. Detects ~/.kiro ~/.cursor. Thursday workshop is Agent Toolkit plus AgentCore. Also https://docs.aws.amazon.com/cli/latest/reference/configure/agent-toolkit.html Do not run it in this repo this tick.
+    - LEARN AgentToolkit MCP CursorSkill
+  - LEARN
+    - ASK LGTM 19:00 if you are not at Merantix. Stop if sore.
+    - ASK AgentCore PROBE still empty. Tomorrow 12:30 Agentur.
+
+- TICK $date=2026-09-02T19:03+02
+  - NEWS $id=agentcore-memory-ingestdata
+    - TITLE AgentCore Memory IngestData feeds long-term memory without a short-term event
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-types.html
+    - WHY After FGAC and flexible namespaces already logged. CreateEvent keeps a short-term event; IngestData runs the same extraction pipeline and does not retain that event. Hire follow-up if they ask how memory is filled. Also https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/long-term-memory-metadata.html Do not skip the open PROBE.
+    - LEARN AgentCore
+  - LEARN
+    - ASK LGTM 19:00 already started if you went. Tomorrow 12:30 Agentur. KI and Croissants 09:00 still candidate. Stop if sore.
+
+- TICK $date=2026-09-02T19:23+02
+  - NEWS $id=opencode-agentcore-code-factory
+    - TITLE OpenCode on AgentCore Runtime: coding agent in a Firecracker microVM, PR via Gateway
+    - URL https://github.com/aws-samples/sample-opencode-on-amazon-bedrock-agentcore
+    - WHY Thursday workshop is sandboxed coding agents, Lambda MicroVMs, Agent Toolkit, Cedar on AgentCore. This sample is that stack: isolated microVM, MCP tools, Gateway JWT plus Cedar, Cursor or Kiro as client. Read after the open PROBE. Do not clone it instead of writing ANSWER.
+    - LEARN AgentCore LambdaMicroVM MCP AgentToolkit
+  - LEARN
+    - ASK Tomorrow 12:30 Agentur Potsdam. Workshop Thu 11:30. Stop if sore.
+
+- TICK $date=2026-09-02T19:43+02
+  - NEWS $id=agentcore-close-laptop-coding-agents
+    - TITLE Official AWS: host coding agents on AgentCore Runtime so the laptop lid can close
+    - URL https://aws.amazon.com/blogs/machine-learning/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-amazon-bedrock-agentcore/
+    - WHY Thursday workshop is sandboxed coding agents on Lambda MicroVMs. This post is the Runtime story: isolated Linux microVM, persistent /mnt/workspace for 14 idle days, Gateway MCP with tokens outside the agent, Identity as the user who triggered it. Pairs with the OpenCode sample already logged. Docs: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-filesystem-configurations.html Read after the open PROBE.
+    - LEARN AgentCore LambdaMicroVM MCP
+  - LEARN
+    - ASK Tomorrow 12:30 Agentur Potsdam. KI and Croissants 09:00 still candidate. Workshop Thu 11:30. Stop if sore.
+
+- TICK $date=2026-09-02T20:03+02
+  - NEWS $id=agentcore-gateway-runtime-targets-ga
+    - TITLE AgentCore Gateway Runtime targets are GA: Gateway can front a Runtime agent
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-http-runtime.html
+    - WHY Last two ticks were the coding-agent Runtime and the laptop-lid post. This is the Gateway half: traffic goes to the Runtime without MCP aggregation, API schema so Cedar and Guardrails apply, interceptor Lambdas, and the Runtime can refuse callers who skip the Gateway. Thursday workshop is Cedar on AgentCore. Also https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/release-notes.html Read after the open PROBE.
+    - LEARN AgentCore MCP
+  - LEARN
+    - ASK Tomorrow 12:30 Agentur Potsdam. KI and Croissants 09:00 still candidate. Workshop Thu 11:30. Stop if sore.
+
+- TICK $date=2026-09-02T20:23+02
+  - NEWS $id=berlin-aws-ug-2026-09-14
+    - TITLE AWS UG Berlin 14 Sep at Zalando HQ: Kiro and DevOps Agent talk
+    - URL https://luma.com/lnb1sa4p
+    - WHY North is AgentToolkit. Talk 18:45–19:10 Ali Yigit Ogun on Kiro and AWS DevOps Agent. Luma lists warm-up 18:15 then intro 18:30. Meetup lists the event as 18:30 CEST. Address Valeska-Gert-Straße 5. Zalando may check full name and organisation at the door. Also https://www.meetup.com/berlinawsug/ Community Day DACH is 15 Sep at Kosmos, not this room. Register if you want a hire conversation after Thursday workshop. Do not skip the open PROBE.
+    - LEARN AgentToolkit AgentCore
+  - LEARN
+    - ASK Tomorrow 12:30 Agentur Potsdam. KI and Croissants 09:00 still candidate. Workshop Thu 11:30. Stop if sore.
+
+- TICK $date=2026-09-02T20:43+02
+  - NEWS $id=agentcore-runtime-interactive-shells
+    - TITLE AgentCore Runtime interactive shells: PTY into the microVM over WebSocket
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-command-shell.html
+    - WHY Thursday workshop is sandboxed coding agents on Lambda MicroVMs. After the OpenCode sample, laptop-lid post, and Gateway Runtime targets already logged: InvokeAgentRuntimeCommandShell opens a persistent terminal in the same session. CLI is agentcore exec --it. Pin session_id and shellId to reconnect. Up to 10 shells per runtime. Also https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-agentcore-runtime/ Read after the open PROBE. Do not run it in this repo this tick.
+    - LEARN AgentCore LambdaMicroVM
+  - LEARN
+    - ASK Tomorrow 12:30 Agentur Potsdam. KI and Croissants 09:00 still candidate. Workshop Thu 11:30. Stop if sore.
+
+- TICK $date=2026-09-02T21:03+02
+  - NEWS $id=aws-community-day-dach-2026-09-15
+    - TITLE AWS Community Day DACH 15 Sep at Kosmos Berlin
+    - URL https://ti.to/aws-community-dach/cd26
+    - WHY Last tick named this as a different room from Zalando 14 Sep. Tito lists 08:00–18:00 15 Sep. Site https://www.aws-community-day.de/ does not give a clock. Monica Colangelo speaks on AgentCore Gateway multi-tenant isolation: The Token Vending Machine Pattern in the Era of AI Agents. Pre-read https://monicacolangelo.com/multi-tenant-isolation-ai-agents-agentcore/ Register if you want a hire room after Thursday workshop. Do not skip the open PROBE.
+    - LEARN AgentCore
+  - LEARN
+    - ASK Tomorrow 12:30 Agentur Potsdam. KI and Croissants 09:00 still candidate. Workshop Thu 11:30. Stop if sore.
+
+- TICK $date=2026-09-02T21:23+02
+  - NEWS $id=agentcore-dogwood-temporal-policies
+    - TITLE AgentCore Policy temporal rules in Dogwood, Cedar-compatible
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy-temporal.html
+    - WHY Thursday workshop is Cedar on AgentCore. Dogwood is Cedar plus when temporal over a session. You supply x-amzn-bedrock-agentcore-policy-session-id. LOG_ONLY then ENFORCE. Also https://aws.amazon.com/blogs/machine-learning/control-agent-behaviors-and-cost-beyond-a-single-action-new-capabilities-in-amazon-bedrock-agentcore/ Rate limiting on Gateway is a different control, keyed to identity not a session you choose. Read after the open PROBE.
+    - LEARN AgentCore
+  - LEARN
+    - ASK Tomorrow 12:30 Agentur Potsdam. KI and Croissants 09:00 still candidate. Workshop Thu 11:30. Stop if sore.
+
+- TICK $date=2026-09-02T21:43+02
+  - NEWS $id=agentcore-gateway-rate-limits
+    - TITLE AgentCore Gateway rate limits are keyed to identity, not a session you pick
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-rate-limits.html
+    - WHY Last tick named this as the other control next to Dogwood temporal policies. Caps requests, tokens, or connections by JWT claim, IAM principal, target, tool, or model. AND across limits. rate=0 blocks that bucket. Evaluated before Gateway rules. Fail-open if the limiter is down. Blog https://aws.amazon.com/blogs/machine-learning/configure-rate-limits-for-ai-traffic-on-agentcore-gateway/ Hire follow-up if they ask how you stop a runaway loop. Read after the open PROBE.
+    - LEARN AgentCore
+  - LEARN
+    - ASK Tomorrow 12:30 Agentur Potsdam. KI and Croissants 09:00 still candidate. Workshop Thu 11:30. Stop if sore.
+
+- TICK $date=2026-09-02T22:03+02
+  - NEWS $id=agentcore-identity-private-key-jwt
+    - TITLE AgentCore Identity Private Key JWT: client assertion signed in KMS, no client secret
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/private-key-jwt.html
+    - WHY After Gateway JWT and Cedar already logged. Agents authenticate to an IdP token endpoint with RFC 7523 Private Key JWT. The private key never leaves KMS. CloudTrail records kms:Sign. Works for M2M, on-behalf-of, and user-delegated. Blog https://aws.amazon.com/blogs/machine-learning/authenticate-with-private-key-jwt-using-amazon-bedrock-agentcore-identity/ Hire follow-up if they ask where secrets live. Read after the open PROBE.
+    - LEARN AgentCore
+  - LEARN
+    - ASK Tomorrow 12:30 Agentur Potsdam Empfang. KI and Croissants 09:00 still candidate. Workshop Thu 11:30. Stop if sore. Sleep.
+
+- TICK $date=2026-09-02T22:23+02
+  - NEWS $id=agentcore-identity-byos-secrets
+    - TITLE AgentCore Identity can reference your Secrets Manager secret instead of minting one
+    - URL https://aws.amazon.com/blogs/machine-learning/reference-your-own-aws-secrets-manager-secrets-in-amazon-bedrock-agentcore-identity/
+    - WHY Last tick was secret-less Private Key JWT. This is the other path: EXTERNAL secret ARN plus jsonKey, your CMK tags rotation and resource policy. Immutable after create. Same Region only. Service principal needs secretsmanager:GetSecretValue. Frankfurt is in the GA list. Docs https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity-add-api-key.html Read after the open PROBE.
+    - LEARN AgentCore
+  - LEARN
+    - ASK Tomorrow 12:30 Agentur Potsdam Empfang. KI and Croissants 09:00 still candidate. Workshop Thu 11:30. Stop if sore. Sleep.
+
+- TICK $date=2026-09-02T22:43+02
+  - NEWS $id=ki-croissants-2026-09-03
+    - TITLE KI and Croissants tomorrow 09:00 MediaTech Hub Potsdam, same city as Agentur
+    - URL https://www.deal-engine.de/en/events/
+    - WHY Candidate already on the calendar. New sourced detail: Hendrik Schade on KI-Inhalte kennzeichnen and KI-MIG. Doors 08:45, 09:00–10:00. Max 30 seats. Studio Babelsberg August-Bebel-Straße 26-53 Haus 4. Agentur is 12:30 Empfang. Same city, not the same room. Do not invent sold-out for this date. Sleep. Do not skip the open PROBE.
+    - LEARN NaturalLanguage
+  - LEARN
+    - ASK Tomorrow 09:00 KI and Croissants still candidate, then 12:30 Agentur Potsdam. Workshop Thu 11:30. Stop if sore. Sleep.
+
+- TICK $date=2026-09-02T23:03+02
+  - NEWS $id=agentcore-policy-workshop-samples
+    - TITLE Official AgentCore Policy workshop: Cedar on Gateway, then NL2Cedar
+    - URL https://github.com/awslabs/agentcore-samples/tree/main/06-workshops/08-AgentCore-policy/01-Getting-Started
+    - WHY Thursday workshop is Cedar on AgentCore. This lab deploys Lambda tools, attaches a Policy Engine, deny-by-default in ENFORCE. Next folder is NL2Cedar. Also https://github.com/awslabs/agentcore-samples/tree/main/06-workshops/08-AgentCore-policy/02-Natural-Language-Policy-Authoring Sleep. Read after the open PROBE. Do not clone it instead of writing ANSWER.
+    - LEARN AgentCore
+  - LEARN
+    - ASK Tomorrow 09:00 KI and Croissants still candidate, then 12:30 Agentur Potsdam. Workshop Thu 11:30. Stop if sore. Sleep.
+
+- TICK $date=2026-09-02T23:23+02
+  - NEWS $id=agentcore-vpc-egress
+    - TITLE AgentCore Gateway and Identity can reach private MCP and a private IdP without the public internet
+    - URL https://aws.amazon.com/blogs/machine-learning/configuring-amazon-bedrock-agentcore-gateway-for-secure-access-to-private-resources/
+    - WHY After Gateway Runtime targets and Identity already logged. Managed or self-managed VPC Lattice. Private MCP on EKS. Identity validates inbound JWT from a VPC IdP and fetches outbound tokens there. Frankfurt is in the GA list. Docs https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/vpc-egress-private-endpoints.html Sleep. Read after the open PROBE.
+    - LEARN AgentCore MCP
+  - LEARN
+    - ASK Tomorrow 09:00 KI and Croissants still candidate, then 12:30 Agentur Potsdam. Workshop Thu 11:30. Stop if sore. Sleep.
+
+- TICK $date=2026-09-03T07:29+02
+  - NEWS $id=agentcore-eval-typescript-frameworks
+    - TITLE AgentCore Evaluations now scores TypeScript Strands, LangGraph, OpenAI Agents, and Vercel AI SDK
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/release-notes.html
+    - WHY Hire north is AgentCore. Lebenslauf is TypeScript. September 2026 notes add TS framework eval next to Python. Read after the open PROBE, not instead of it. DSB recovery today: do not pile a DAY slice.
+    - LEARN AgentCore TypeScript
+  - NEWS $id=goethe-b2-interactive-schreiben
+    - TITLE Goethe B2 interactive Schreiben: 75 min Forumsbeitrag plus Nachricht
+    - URL https://bfu.goethe.de/b2_mod_2MX6/schreiben.php
+    - WHY DUMP.md asked for an interactive Goethe B2 speaking and writing interface. Official training page was already logged. This is the timed Schreiben box. Do not invent a new app. Jugend debattiert stays the debate drill. Light load on DSB recovery.
+    - LEARN NaturalLanguage Wordschatz
+  - LEARN
+    - ASK TODAY 12:30 Agentur Potsdam confirmed. KI and Croissants 09:00 still candidate if they leave soon.
+    - ASK IFA Retail Leaders Summit today is invite-only. Skip. Privatbesucher Fri 12:00.
+    - ASK AgentCore PROBE still empty. DSB recovery: do not spawn --day.
+    - ASK Body: scapular sore, rotation residual, chest lats forearm DOMS. Walk only.
+
+- TICK $date=2026-09-03T07:30+02
+  - NEWS $id=lambda-microvms-agent-toolkit-cedar
+    - TITLE Official AWS: Lambda MicroVMs plus Agent Toolkit plus Cedar on AgentCore Gateway
+    - URL https://aws.amazon.com/blogs/compute/secure-code-execution-for-ai-agents-with-aws-lambda-microvms/
+    - WHY Tomorrow workshop is that stack. MicroVM isolates generated code. Agent Toolkit supplies the skills. Cedar on Gateway denies deploy to production while staging is allowed. Read after the open PROBE, not this morning. Do not skip Agentur.
+    - LEARN LambdaMicroVM AgentToolkit AgentCore
+  - LEARN
+    - ASK Today 08:45 doors KI and Croissants still candidate, Haus 4 August-Bebel-Straße 26-53. Then 12:30 Agentur Empfang, tram in .private. Tomorrow workshop 11:30 then IFA after 13:30. Stop if sore.
+
+- TICK $date=2026-09-03T07:50+02
+  - NEWS $id=ki-mig-official
+    - TITLE KI-MIG is the German AI Act implementing law, in force 29 Jul 2026
+    - URL https://www.gesetze-im-internet.de/ki-mig/BJNR0DF0B0026.html
+    - WHY This morning's candidate talk is KI-Inhalte kennzeichnen. Official text. BNetzA is the coordinator. Service desk https://www.bundesnetzagentur.de/ki Press https://bmds.bund.de/aktuelles/pressemitteilungen/detail/neues-ki-gesetz-tritt-in-kraft Do not read this instead of leaving. Do not skip Agentur 12:30.
+    - LEARN NaturalLanguage
+  - LEARN
+    - ASK If going to Croissants, leave now. Doors 08:45 Haus 4. If sore, skip it. 12:30 Agentur Empfang stands. Tomorrow workshop 11:30. Stop if sore.
+
+- TICK $date=2026-09-03T08:02+02
+  - NEWS $id=agentcore-cli-typescript
+    - TITLE AgentCore CLI TypeScript: create, deploy, invoke in about 20 minutes
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-cli-typescript.html
+    - WHY Hire north is AgentCore. Lebenslauf is TypeScript. Follows the Evaluations TS note already logged. CLI scaffolds Strands TS, Node 22+, CodeZip to Runtime. Samples https://github.com/awslabs/bedrock-agentcore-samples-typescript Read after the open PROBE. Not this morning. Do not skip Agentur.
+    - LEARN AgentCore TypeScript AgentToolkit
+  - LEARN
+    - ASK KI and Croissants doors 08:45 in about 40 min. If going, leave. 12:30 Agentur stands. DSB recovery: do not pile DAY. Stop if sore.
+
+- TICK $date=2026-09-03T08:10+02
+  - NEWS $id=agentur-potsdam-hours
+    - TITLE Agentur Potsdam official Thursday hours cover the 12:30 appointment
+    - URL https://www.arbeitsagentur.de/vor-ort/potsdam
+    - WHY Official page: Thursday 09:00–13:00 and 14:00–18:00. Your slot is 12:30 Empfang. Third-party listings say Thursday from 07:30. Cite both. Tram lines on the public Amt page. Street in .private. Do not skip it for Croissants. If going to Croissants, leave now. Doors 08:45.
+    - LEARN NaturalLanguage
+  - LEARN
+    - ASK If Croissants, leave now. If sore, skip it. 12:30 Agentur stands. Tomorrow workshop 11:30. Stop if sore.
+
+- TICK $date=2026-09-03T08:30+02
+  - LEARN
+    - ASK Croissants doors 08:45 now. If you are not already on the way, skip it. 12:30 Agentur Empfang stands. Tomorrow workshop 11:30. Stop if sore.
+
+- TICK $date=2026-09-03T08:32+02
+  - NEWS $id=agentcore-gateway-govern-tools
+    - TITLE Govern agent tool access on AgentCore Gateway: Identity, Cedar Policy, Guardrails, Registry
+    - URL https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway/
+    - WHY Tomorrow workshop is Cedar on AgentCore. This post is the hireable stack: Gateway as the MCP entry, Identity for tokens, Policy in Cedar, Guardrails as suppressOutput, Registry as the catalog. Read after the open PROBE. Not instead of Agentur 12:30.
+    - LEARN AgentCore MCP AgentToolkit
+  - LEARN
+    - ASK If not already walking to Croissants, skip it. 12:30 Agentur stands. DSB recovery: do not pile DAY. Stop if sore.
+
+- TICK $date=2026-09-03T08:51+02
+  - NEWS $id=ai-safety-berlin-2026-09-04
+    - TITLE AI Safety Berlin coworking and lunch Fri 4 Sep at CIC, conflicts with the workshop
+    - URL https://luma.com/sxur2m7v
+    - WHY Luma: coworking 10:00, lunch 13:00, Lohmühlenstraße 65. Your workshop is 11:30–13:30 then IFA after 13:30. Do not drop the workshop. Saturday 5 Sep is SAIGE European Frontier AI Safety Day, a different room. No clock sourced for Saturday. Do not skip Agentur 12:30 today.
+    - LEARN AISafety
+  - LEARN
+    - ASK Croissants already started. If you are not there, skip it. 12:30 Agentur Empfang stands. Tomorrow workshop 11:30. Stop if sore.
+
+- TICK $date=2026-09-03T09:02+02
+  - NEWS $id=agentcore-code-interpreter-nodejs
+    - TITLE AgentCore Code Interpreter: JS/TS default Deno; pass runtime nodejs for Node
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter-runtime-selection.html
+    - WHY Hire north is AgentCore. Lebenslauf is TypeScript. Node packages listed at https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter-preinstalled-libraries.html Read after the open PROBE. Do not skip Agentur 12:30.
+    - LEARN AgentCore TypeScript
+  - LEARN
+    - ASK Croissants already started. If you are not there, skip it. 12:30 Agentur stands. Fri AI Safety Berlin conflicts with the workshop; keep the workshop. DSB recovery: do not pile DAY. Stop if sore.
+
+- TICK $date=2026-09-03T09:10+02
+  - NEWS $id=saige-efais-2026-09-05
+    - TITLE SAIGE European Frontier AI Safety Day Sat 5 Sep Berlin, waiting list
+    - URL https://safeaigermany.org/efais2026
+    - WHY Last tick named Saturday with no clock. Official agenda starts 09:00 registration, keynote 09:40, dinner from 18:00. Free, space limited, page says join the waiting list. Do not invent a seat. Luma lists Lohmühlenstraße 65; official FAQ did not print a street in the fetch. Do not skip Agentur 12:30 today. Do not drop Friday workshop for this.
+    - LEARN AISafety
+  - LEARN
+    - ASK Croissants runs to 10:00 if you are there. 12:30 Agentur Empfang stands. Tomorrow workshop 11:30. Stop if sore.
+
+- TICK $date=2026-09-03T09:30+02
+  - NEWS $id=hertie-aisi-2026-09-04
+    - TITLE Hertie School Fri 4 Sep 18:00–20:00: German AI Safety Institute debate
+    - URL https://luma.com/dhqvw7z5
+    - WHY After workshop 11:30–13:30 and IFA. IFA private visitors close 18:00. Hertie is Friedrichstraße 180. Attendance subject to approval. Show the ticket at the door. Do not invent a seat. Register if you want it after IFA. Do not skip Agentur 12:30 today. Do not drop the workshop for the CIC lunch already logged.
+    - LEARN AISafety
+  - LEARN
+    - ASK Croissants ends 10:00 if you are there. 12:30 Agentur Empfang stands. Tomorrow workshop 11:30 then IFA. Stop if sore.
+
+- TICK $date=2026-09-03T09:32+02
+  - NEWS $id=agentcore-nl2cedar-docs
+    - TITLE NL2Cedar: write AgentCore Policy in English, service emits Cedar
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy-natural-language.html
+    - WHY Tomorrow workshop is Cedar on AgentCore. Getting-started samples already logged. This is the official NL2Cedar page: default-deny, forbid wins, Gateway schema feeds generation. Read after the open PROBE. Do not skip Agentur 12:30.
+    - LEARN AgentCore
+  - LEARN
+    - ASK Croissants ends 10:00 if you are there. 12:30 Agentur stands. Hertie Fri 18:00 is optional after IFA. DSB recovery: do not pile DAY. Stop if sore.
+
+- TICK $date=2026-09-03T09:50+02
+  - LEARN
+    - ASK Croissants ends 10:00. Then travel to Agentur 12:30 Empfang, tram in .private. Tomorrow workshop 11:30. Stop if sore.
+
+- TICK $date=2026-09-03T10:02+02
+  - NEWS $id=agentcore-gha-cicd
+    - TITLE Deploy AgentCore Runtime agents from GitHub Actions with OIDC, ECR, Inspector
+    - URL https://aws.amazon.com/blogs/machine-learning/deploy-ai-agents-on-amazon-bedrock-agentcore-using-github-actions/
+    - WHY Tomorrow workshop is sandboxed coding agents in CI/CD. This post is that pipeline: Actions, OIDC to AWS, image to ECR, Inspector scan, Runtime endpoint. Sample https://github.com/aws-samples/sample-bedrock-agentcore-runtime-cicd Read after the open PROBE. Do not skip Agentur 12:30.
+    - LEARN AgentCore GitHubCI LambdaMicroVM
+  - LEARN
+    - ASK Croissants is over. 12:30 Agentur Empfang stands. DSB recovery: do not pile DAY. Stop if sore.
+
+- TICK $date=2026-09-03T10:10+02
+  - LEARN
+    - ASK Travel to Agentur 12:30 Empfang, tram in .private. Tomorrow workshop 11:30 is not the paid NobleProg Frankfurt course. Stop if sore.
+
+- TICK $date=2026-09-03T10:31+02
+  - NEWS $id=employed-world-berlin-2026-09-04
+    - TITLE Employed.world job-seeker gathering Fri 4 Sep 17:00–21:30 Berlin
+    - URL https://www.createwith.com/event/berlin-employed-world-community-gathering-3-sep-2026
+    - WHY Open goal is hire. Panel on AI hiring. Address only after register. Conflicts Hertie 18:00 already logged. IFA private close 18:00. Pick one evening room. Do not skip Agentur 12:30 today. Do not drop tomorrow workshop 11:30.
+    - LEARN Agent
+  - LEARN
+    - ASK Travel to Agentur 12:30 Empfang. Street and bag in .private/after-agentur.fu.md. Stop if sore.
+
+- TICK $date=2026-09-03T10:40+02
+  - NEWS $id=lambda-microvms-frankfurt-2026-08-19
+    - TITLE Lambda MicroVMs in Europe Frankfurt as of 19 Aug 2026, ten regions total
+    - URL https://aws.amazon.com/about-aws/whats-new/2026/08/lambda-microvms-5-additional-regions/
+    - WHY Thursday workshop is sandboxed coding agents on MicroVMs. Hire sentence: eu-central-1 is in the later five-region add, not only Ireland from the June launch note. Do not quote the June five-region list as current. Docs https://docs.aws.amazon.com/lambda/latest/dg/lambda-microvms-guide.html Read after the open PROBE.
+    - LEARN LambdaMicroVM AgentToolkit
+  - NEWS $id=ifa-algorithmic-shopper-2026-09-04
+    - TITLE IFA Fri 12:00: The Algorithmic Shopper, when the next customer is an AI agent
+    - URL https://www.ifa-berlin.com/programme
+    - WHY Sourced 12:00–13:00 Retail Innovation Zone Stage. Your workshop is 11:30–13:30. Clash. Keep the workshop. IFA private visitors from 12:00. After 13:30 the already-logged UX Layer at 14:00 is the agent-UX walk. Do not invent a seat.
+    - LEARN Agent AgenticEngineering
+  - NEWS $id=ifa-amd-personal-ai-2026-09-04
+    - TITLE IFA Fri 11:00 Innovation Stage: AMD The Era of Personal AI
+    - URL https://www.ifa-berlin.com/press-releases/ifa2026-a-to-z
+    - WHY Jack Huynh 11:00. Workshop starts 11:30. Do not drop the workshop for this keynote. Also https://www.ifa-berlin.com/programme
+    - LEARN Agent
+  - NEWS $id=agentcore-evaluate-api
+    - TITLE AgentCore Evaluate API scores OpenTelemetry spans on demand
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_Evaluate.html
+    - WHY Follows the TypeScript Evaluations note already logged. Synchronous Evaluate, session spans in, scores out. Getting started https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/getting-started-on-demand.html Read after the open PROBE. Not instead of Agentur.
+    - LEARN AgentCore Evaluation TypeScript
+  - LEARN
+    - ASK Leave for Agentur 12:30. Particulars only in .private/after-agentur.fu.md
+    - ASK After the door: sit, log the visit in .private, then if quiet write the AgentCore PROBE. Then three 助手. Goethe Schreiben only if still quiet.
+    - ASK Tomorrow workshop 11:30. Skip IFA 11:00 AMD and 12:00 Algorithmic Shopper. After 13:30 UX Layer if you walk the halls.
+    - ASK AgentCore PROBE still empty. DSB recovery: do not pile DAY. Stop if sore.
+
+- TICK $date=2026-09-03T10:50+02
+  - NEWS $id=hpi-ai-roundtable-2026-09-07
+    - TITLE HPI AI RoundTable Mon 7 Sep 16:00–18:00 Potsdam, free with registration
+    - URL https://stayhappening.com/e/ai-roundtable-vernetzen-diskutieren-profitieren-E118SB12F0GXU
+    - WHY After IFA. KI-Servicezentrum and IHK Potsdam. Prof.-Dr.-Helmert-Straße 2-3. Photos may be published. Do not skip Agentur 12:30 today. Do not drop Friday workshop 11:30.
+    - LEARN Agent
+  - LEARN
+    - ASK Leave for Agentur 12:30 Empfang, tram in .private. Stop if sore.
+
+- TICK $date=2026-09-03T11:11+02
+  - NEWS $id=cognee-fastino-berlin-2026-09-03
+    - TITLE Tonight 18:00–20:30 Berlin: Cognee and Fastino on agent memory with small models
+    - URL https://www.hackevents.net/de/events/slms-agent-memory-with-cognee-fastino-labs-72arxr2w
+    - WHY North includes AgentCore Memory. Arrival 18:00, talks 19:00. Luma lists Friedrichshain-Kreuzberg. Do not invent a street. Optional after Agentur if you go back to Berlin. Do not skip 12:30. Stop if sore.
+    - LEARN AgentCore Memory
+  - LEARN
+    - ASK Leave for Agentur 12:30 Empfang. Street and bag in .private/after-agentur.fu.md. Stop if sore.
+
+- TICK $date=2026-09-03T11:10+02
+  - NEWS $id=agentcore-websearch-eu-west-1
+    - TITLE AgentCore Gateway Web Search Tool now in Europe Ireland and Tokyo; 1.2.0 adds request filters
+    - URL https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-connector-web-search-tool.html
+    - WHY Hire north is AgentCore plus MCP. Release notes add eu-west-1 and ap-northeast-1. Do not claim Frankfurt for this connector. Version 1.2.0: domain include/exclude and publishedDateFilter on tools/call. Also https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/release-notes.html Read after the open PROBE. Not instead of walking to 12:30.
+    - LEARN AgentCore MCP
+  - LEARN
+    - ASK Leave soon for Agentur 12:30 Empfang. Particulars only in .private/after-agentur.fu.md
+    - ASK After the door: sit, log the visit in .private, then if quiet write the AgentCore PROBE. Then three 助手. Goethe Schreiben only if still quiet.
+    - ASK Optional tonight 18:00 Cognee/Fastino in Berlin if energy after Amt. Street not sourced. Stop if sore.
+    - ASK AgentCore PROBE still empty. DSB recovery: do not pile DAY.

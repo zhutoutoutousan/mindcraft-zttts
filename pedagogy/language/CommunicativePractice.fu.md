@@ -1,0 +1,8 @@
+- VERTEX CommunicativePractice
+- KIND praxis
+- GLOSS use-drilled-form-in-an-open-task
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM CommunicativePractice ISA Pedagogy. After LanguageDrilling, the learner USES the drilled Form in a game, conversation task, or story prompt. TESOL Lexical Press 2024-03-07. That is the performance after the scales.
+- CLAIM LanguageDrilling CONTRADICTS CommunicativePractice when the drill is treated as the whole lesson or as fluency. Parrot-back is not creative use. The SOURCE still wants both: short drill, then this vertex.
+- MEDIA PAGE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
+- SOURCE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/

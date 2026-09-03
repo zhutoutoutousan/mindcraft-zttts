@@ -1,0 +1,7 @@
+- VERTEX ChainDrill
+- KIND praxis
+- GLOSS sequential-addition-on-a-pattern
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM ChainDrill ISA LanguageDrilling. Speakers repeat in a sequence, each adding onto the previous. SOURCE example shape: I like tea. I like tea and coffee. I like tea and coffee but. TESOL Lexical Press 2024-03-07.
+- MEDIA PAGE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
+- SOURCE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
