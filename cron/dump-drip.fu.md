@@ -3,7 +3,7 @@
 - STORE PATH inflow/inflow.fu.md
 - STORE PATH inflow/STATE.md
 - STORE PATH pedagogy/universe.graph.md
-- STORE PATH schedule/2026-9.fu.md
+- STORE PATH schedule/
 - STORE PATH .private/
 - STORE PATH self/goals.toon.md
 
@@ -11,12 +11,14 @@
 
 - PASS 1 PII
   - MOVE to .private/ anything that pins this person
+  - MOVE Bewerbung Gehalt Eintritt employer letters into .private/. Named firm stays there. Pedagogy may gain industry vertices only.
   - STRIP from tracked markdown after the move
-  - KEEP public office names and public event streets if they are not this person's home or ID
+  - KEEP public event titles. Drop street+number, GPS, hall/stand id, home address, and ID papers from tracked files
 
 - PASS 2 DRIP
   - NEWS TITLE URL WHY LEARN into inflow/inflow.fu.md
   - dated rooms into schedule/ with SOURCE url. Do not invent a clock
+  - named clinic or personal invites stay in .private/. Splice tmp/take.html. Not schedule/
   - domain claims onto existing vertices or a new vertex. Cite SOURCE
   - unknown unknowns: STUDY empty GAP or a CLAIM that this is a blind spot. Do not invent facts
   - python cron/inflow-news.py --stamp --ids the new ids

@@ -1,5 +1,5 @@
 target: AgentCore
-reason: lesson pack ready. GUI is ephemeral. PROBE on pedagogy-cpu.
+reason: hold current until grasp is partial or firm
 on_graph: true
 grasp: unknown
-picked: 2026-09-02T11:22:37Z
+picked: 2026-09-05T23:15:17Z

@@ -1,0 +1,11 @@
+- VERTEX Ecommerce
+- KIND praxis
+- GLOSS selling-goods-over-the-network
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Ecommerce is Computation over a catalog: offer, order, payment, fulfillment. Payment is the value transfer. Disposition is the goods clock. Home and living SKUs (flooring, household, garden) are a category, not a Person and not an employer vertex. Named firm Bewerbung Gehalt stay in .private. Do not copy them here.
+- CLAIM CrossBorderTrade PARTICIPATES Ecommerce when the SKU is imported and sold in another customs area. Do not invent GMV.
+- CLAIM IFA kitchen and home robots (task-specific tools to humanoids) are Agent on the home-and-living floor of Ecommerce. Trust and safety stay on AISafety. SOURCE https://www.ifa-berlin.com/programme/robots_in-_the_kitchen_and_home
+- CLAIM Ecommerce APPLIES SEO when the catalog must be found in classic search before checkout. GenerativeEngineOptimization and AnswerEngineOptimization PARTICIPATE when the KPI is citation or extractable answer inside AI surfaces. SOURCE https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+- MEDIA PAGE https://en.wikipedia.org/wiki/E-commerce
+- SOURCE https://en.wikipedia.org/wiki/E-commerce
+- SOURCE https://www.ifa-berlin.com/programme/robots_in-_the_kitchen_and_home

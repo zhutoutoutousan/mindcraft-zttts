@@ -1,0 +1,10 @@
+- KIND maintain organ. Recompute attention weights on the ontology from goals PLAN STUDY harvest zeitgeist and Maslow heuristic. Mirror mastery from self/learn. Not a CLAIM store. Not ANSWER invent.
+- STORE PATH pedagogy/_learn/weights.toon.md
+- STORE PATH self/goals.toon.md
+- STORE PATH self/learn.toon.md
+- STORE PATH pedagogy/pedagogy-cpu.fu.md
+- STORE PATH schedule/harvest.toon.md
+- STORE PATH pedagogy/universe.graph.md
+- RUN python cron/ontology-weight.py
+- AGENT $id=ontology-weight $input=cron/ontology-weight.fu.md $output=pedagogy/_learn/weights.toon.md $when=human asks weight refresh OR maintain organ ontology-weight $prompt=python cron/ontology-weight.py. Write dims hire/plan/study/zeit/maslow + reason + mastery. Do not invent ANSWER. Do not add fake V/E. Optional --dry-run first.
+- RULE Weights are particulars of attention. Showcase and project-state-viz read them for node size. Mastery comes only from learn grasp / ASSESS. Empty PROBE stays empty.

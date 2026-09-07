@@ -1,0 +1,10 @@
+- VERTEX GrammarFrame
+- KIND formal
+- GLOSS target-language-pattern-with-slots-filled-by-lexicon
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A GrammarFrame is a reusable pattern (case government, particle order, hortative, polite imperative) with slots. Lemmas and Forms fill slots. A Chunk is a filled Frame. Sentences are ordered Chunks. This is how grammar and vocabulary pair: never drill bare Frame without a Lemma; never add a Lemma without naming its Frames.
+- CLAIM WritingAccuracyArbitrage oneFocus is one Frame (or one slot), forced into the next coding prompt. SubstitutionDrill keeps the Frame and swaps Lemmas. LanguageDrilling RECEIVES Frames; Wordschatz supplies Lemmas; CommunicativePractice uses filled Chunks in open tasks.
+- CLAIM Cross-lingual bridge: a Concept EXPRESSES Lemmas in multiple languages and NEEDS_FRAME in the target language. A code-switch gap means Concept has a foreign Lemma but missing target Form or Frame.
+- SOURCE pedagogy/_learn/polyglot/pairing.toon.md
+- SOURCE pedagogy/_learn/polyglot/frames/de.toon.md
+- SOURCE human 2026-09-07

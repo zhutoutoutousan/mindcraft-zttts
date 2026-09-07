@@ -1,0 +1,10 @@
+- VERTEX ContextEngineering
+- KIND praxis
+- GLOSS selecting-compressing-and-placing-what-the-model-sees
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Context Engineering is the craft of what enters the window: retrieval, compression, placement, unload, and pollution control. Interview banks (2026) separate it from Prompt Engineering (steering language) and Harness Engineering (runtime shell). SOURCE https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+- CLAIM RAG and ExperienceStore APPLIES ContextEngineering when durable store must become a bounded prompt. KVCache is the machine substrate for attention state, not the pedagogy of what to keep.
+- CLAIM Lost-in-the-middle and tool-result bloat are ContextEngineering failure modes, not excuses to invent ANSWER.
+- MEDIA PAGE https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+- SOURCE https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+- SOURCE pedagogy/language/PromptEngineering.fu.md

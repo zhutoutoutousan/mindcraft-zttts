@@ -34,6 +34,9 @@ V Language             kind=semiosis gloss=mediation-of-form-between-agents body
 V NaturalLanguage      kind=semiosis gloss=spoken-written-human-languages body=pedagogy/language/NaturalLanguage.fu.md
 V Pedagogy             kind=praxis gloss=transmission-of-form-through-language body=pedagogy/language/Pedagogy.fu.md
 V Study                kind=praxis gloss=internalization-of-form-by-an-agent body=pedagogy/language/Study.fu.md
+V InterviewPrep        kind=praxis gloss=retrieval-first-practice-for-hire-surfaces body=pedagogy/language/InterviewPrep.fu.md
+V History              kind=semiosis gloss=collective-narrative-assembled-from-shared-memory body=pedagogy/language/History.fu.md
+V AutobiographicalMemory kind=natural gloss=hierarchical-self-memory-life-periods-events-details body=pedagogy/biology/AutobiographicalMemory.fu.md
 V FuLanguage           kind=semiosis gloss=nested-lists-with-capital-tags-as-control body=pedagogy/language/FuLanguage.fu.md
 V ResistanceTraining   kind=praxis gloss=progressive-load-on-living-matter body=pedagogy/biology/ResistanceTraining.fu.md
 V KVCache              kind=techne gloss=elastic-virtual-memory-for-attention-state body=pedagogy/computation/KVCache.fu.md
@@ -46,9 +49,17 @@ V ExperienceStore      kind=techne gloss=durable-lessons-across-agent-sessions b
 V SlashCommand         kind=semiosis gloss=user-typed-lever-into-an-agent body=pedagogy/language/SlashCommand.fu.md
 V MobileRuntime        kind=techne gloss=computation-on-a-phone body=pedagogy/computation/MobileRuntime.fu.md
 V Payment              kind=techne gloss=transfer-of-value-as-an-api body=pedagogy/computation/Payment.fu.md
+V Ecommerce            kind=praxis gloss=selling-goods-over-the-network body=pedagogy/computation/Ecommerce.fu.md
+V SEO                  kind=praxis gloss=search-engine-optimization-for-classic-link-lists body=pedagogy/computation/SEO.fu.md
+V GenerativeEngineOptimization kind=praxis gloss=GEO-visibility-inside-synthesized-AI-answers body=pedagogy/computation/GenerativeEngineOptimization.fu.md
+V AnswerEngineOptimization kind=praxis gloss=AEO-extractable-direct-answers-in-search-surfaces body=pedagogy/computation/AnswerEngineOptimization.fu.md
+V Disposition          kind=praxis gloss=scheduling-orders-stock-and-delivery-clocks body=pedagogy/computation/Disposition.fu.md
+V CrossBorderTrade     kind=praxis gloss=goods-moving-across-customs-and-languages body=pedagogy/computation/CrossBorderTrade.fu.md
 V DualSubtitle         kind=techne gloss=two-language-captions-on-one-picture body=pedagogy/language/DualSubtitle.fu.md
 V CursorSkill          kind=techne gloss=packaged-procedure-an-agent-reads-on-trigger body=pedagogy/computation/CursorSkill.fu.md
 V AgentCore            kind=techne gloss=production-runtime-and-policy-for-agents body=pedagogy/computation/AgentCore.fu.md
+V AgentHarness         kind=praxis gloss=runtime-and-policy-shell-around-the-model body=pedagogy/computation/AgentHarness.fu.md
+V ContextEngineering   kind=praxis gloss=selecting-compressing-and-placing-what-the-model-sees body=pedagogy/computation/ContextEngineering.fu.md
 V AgentToolkit         kind=techne gloss=curated-aws-procedures-for-coding-agents body=pedagogy/computation/AgentToolkit.fu.md
 V LambdaMicroVM        kind=techne gloss=firecracker-isolated-session-compute body=pedagogy/computation/LambdaMicroVM.fu.md
 
@@ -129,6 +140,7 @@ V Evaluation kind=praxis gloss=measuring-whether-a-model-did-the-job body=pedago
 V AISafety kind=praxis gloss=preventing-harm-from-model-actions body=pedagogy/computation/AISafety.fu.md
 V Multimodal kind=techne gloss=more-than-text-as-input body=pedagogy/computation/Multimodal.fu.md
 V IntellectualLoad kind=praxis gloss=bounded-study-before-repair body=pedagogy/biology/IntellectualLoad.fu.md
+V SicknessBehavior kind=natural gloss=cytokine-driven-motivational-reorganization body=pedagogy/biology/SicknessBehavior.fu.md
 V Wordschatz kind=praxis gloss=lexicon-drill-as-intellectual-load body=pedagogy/language/Wordschatz.fu.md
 V LanguageDrilling kind=praxis gloss=controlled-repetition-of-targeted-form body=pedagogy/language/LanguageDrilling.fu.md
 V Automaticity kind=praxis gloss=production-without-deliberation body=pedagogy/language/Automaticity.fu.md
@@ -136,12 +148,26 @@ V ChoralRepetition kind=praxis gloss=whole-class-repeat-after-the-model body=ped
 V ChainDrill kind=praxis gloss=sequential-addition-on-a-pattern body=pedagogy/language/ChainDrill.fu.md
 V SubstitutionDrill kind=praxis gloss=swap-lexis-keep-the-frame body=pedagogy/language/SubstitutionDrill.fu.md
 V CommunicativePractice kind=praxis gloss=use-drilled-form-in-an-open-task body=pedagogy/language/CommunicativePractice.fu.md
+V WritingAccuracyArbitrage kind=praxis gloss=target-language-agent-instructions-as-writing-accuracy-byproduct body=pedagogy/language/WritingAccuracyArbitrage.fu.md
+V PolyglotHorizon kind=praxis gloss=sixteen-languages-to-b2-by-age-thirty-five body=pedagogy/language/PolyglotHorizon.fu.md
+V GrammarFrame kind=formal gloss=target-language-pattern-with-slots-filled-by-lexicon body=pedagogy/language/GrammarFrame.fu.md
 V AgentConstitution kind=praxis gloss=always-on-rules-for-an-agent body=pedagogy/computation/AgentConstitution.fu.md
 V AgentHook kind=techne gloss=event-fired-lifecycle-command body=pedagogy/computation/AgentHook.fu.md
 V AgentPlugin kind=techne gloss=installable-bundle-of-agent-behavior body=pedagogy/computation/AgentPlugin.fu.md
 V Scapula kind=natural gloss=shoulder-blade-on-the-ribcage body=pedagogy/biology/Scapula.fu.md
 V SerratusAnterior kind=natural gloss=protracts-and-holds-the-scapula-on-the-ribs body=pedagogy/biology/SerratusAnterior.fu.md
 V Periodization kind=praxis gloss=planned-overload-then-planned-fatigue-drop body=pedagogy/biology/Periodization.fu.md
+V VideoGeneration kind=techne gloss=script-to-spoken-picture-with-captions body=pedagogy/computation/VideoGeneration.fu.md
+V AgentStreamDrop kind=techne gloss=agent-stream-dies-before-durable-save body=pedagogy/computation/AgentStreamDrop.fu.md
+V AgentRunMode kind=praxis gloss=how-the-agent-runs-tools-and-when-it-asks body=pedagogy/computation/AgentRunMode.fu.md
+V BinauralBeat kind=natural gloss=stereo-frequency-difference-as-auditory-input body=pedagogy/biology/BinauralBeat.fu.md
+V Caffeine kind=natural gloss=adenosine-receptor-antagonist-as-load-class body=pedagogy/biology/Caffeine.fu.md
+V AphthousUlcer kind=natural gloss=localized-oral-mucosa-lesion-class body=pedagogy/biology/AphthousUlcer.fu.md
+V LowDemandIntake kind=praxis gloss=cheap-attention-while-effort-is-discounted body=pedagogy/biology/LowDemandIntake.fu.md
+V AestheticChills kind=natural gloss=embodied-reward-tingle-from-aesthetic-or-auditory-peak body=pedagogy/biology/AestheticChills.fu.md
+V IncentiveSalience kind=natural gloss=wanting-liking-learning-as-separable-reward-components body=pedagogy/biology/IncentiveSalience.fu.md
+V Interoception kind=natural gloss=sensing-the-body-from-the-inside body=pedagogy/biology/Interoception.fu.md
+V PredictiveCoding kind=formal gloss=brain-as-prediction-error-minimizer-with-precision-weights body=pedagogy/math/PredictiveCoding.fu.md
 E Transformer APPLIES LargeLanguageModel SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
 E Transformer GROUNDS_IN Mathematics SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
 E PromptEngineering INFORMS LargeLanguageModel SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
@@ -156,14 +182,21 @@ E LLMOps APPLIES CloudRuntime SOURCE=https://github.com/amitshekhariitbhu/ai-eng
 E Evaluation STUDIES LargeLanguageModel SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
 E Evaluation GROUNDS_IN Mathematics SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
 E AISafety INFORMS Agent SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
+E AISafety INFORMS Agent SOURCE=https://www.ifa-berlin.com/programme/robots_in-_the_kitchen_and_home
 E Multimodal APPLIES LargeLanguageModel SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
 E IntellectualLoad ENACTS Study SOURCE=self/endurance.toon.md
 E IntellectualLoad GROUNDS_IN DNADamageResponse SOURCE=https://www.nature.com/articles/s41586-024-07220-7
+E SicknessBehavior INFORMS IntellectualLoad SOURCE=https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2023.1305790/full
+E SicknessBehavior GROUNDS_IN Neuroscience SOURCE=https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2023.1305790/full
 E IntellectualLoad PARTICIPATES ResistanceTraining SOURCE=self/endurance.toon.md
 E Wordschatz PARTICIPATES NaturalLanguage SOURCE=self/endurance.toon.md
 E Wordschatz ENACTS Study SOURCE=self/endurance.toon.md
 E Wordschatz INFORMS IntellectualLoad SOURCE=self/endurance.toon.md
 E Wordschatz APPLIES LanguageDrilling SOURCE=https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
+E Wordschatz PARTICIPATES ResistanceTraining SOURCE=self/training.toon.md
+E Study STUDIES Disposition grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study STUDIES CrossBorderTrade grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study STUDIES AISafety grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
 E LanguageDrilling ISA Pedagogy SOURCE=https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 E LanguageDrilling APPLIES NaturalLanguage SOURCE=https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 E LanguageDrilling GROUNDS_IN Automaticity SOURCE=https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
@@ -178,6 +211,25 @@ E SubstitutionDrill ISA LanguageDrilling SOURCE=https://americantesol.com/blogge
 E CommunicativePractice ISA Pedagogy SOURCE=https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 E CommunicativePractice RECEIVES LanguageDrilling SOURCE=https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 E CommunicativePractice APPLIES NaturalLanguage SOURCE=https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
+E WritingAccuracyArbitrage ISA Pedagogy SOURCE=pedagogy/_learn/writing-accuracy/method.toon.md
+E WritingAccuracyArbitrage PARTICIPATES CommunicativePractice SOURCE=pedagogy/_learn/writing-accuracy/method.toon.md
+E WritingAccuracyArbitrage APPLIES NaturalLanguage SOURCE=pedagogy/_learn/writing-accuracy/method.toon.md
+E WritingAccuracyArbitrage RECEIVES LanguageDrilling SOURCE=pedagogy/_learn/writing-accuracy/method.toon.md
+E WritingAccuracyArbitrage APPLIES AgentHook SOURCE=pedagogy/_learn/writing-accuracy/method.toon.md
+E WritingAccuracyArbitrage INFORMS Automaticity SOURCE=pedagogy/_learn/writing-accuracy/method.toon.md
+E WritingAccuracyArbitrage INFORMS Wordschatz SOURCE=pedagogy/_learn/writing-accuracy/method.toon.md
+E WritingAccuracyArbitrage APPLIES GrammarFrame SOURCE=pedagogy/_learn/polyglot/pairing.toon.md
+E WritingAccuracyArbitrage PARTICIPATES PolyglotHorizon SOURCE=pedagogy/_learn/polyglot/horizon.toon.md
+E PolyglotHorizon APPLIES NaturalLanguage SOURCE=pedagogy/_learn/polyglot/horizon.toon.md
+E PolyglotHorizon INFORMS WritingAccuracyArbitrage SOURCE=pedagogy/_learn/polyglot/horizon.toon.md
+E GrammarFrame GROUNDS_IN Form SOURCE=pedagogy/_learn/polyglot/pairing.toon.md
+E GrammarFrame INFORMS LanguageDrilling SOURCE=pedagogy/_learn/polyglot/pairing.toon.md
+E GrammarFrame INFORMS Wordschatz SOURCE=pedagogy/_learn/polyglot/pairing.toon.md
+E GrammarFrame INFORMS CommunicativePractice SOURCE=pedagogy/_learn/polyglot/pairing.toon.md
+E GrammarFrame APPLIES NaturalLanguage SOURCE=pedagogy/_learn/polyglot/pairing.toon.md
+E Study STUDIES WritingAccuracyArbitrage SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-09-07.toon.md
+E Study STUDIES PolyglotHorizon SOURCE=pedagogy/_learn/polyglot/horizon.toon.md
+E Study STUDIES GrammarFrame SOURCE=pedagogy/_learn/polyglot/pairing.toon.md
 E Automaticity GROUNDS_IN Form SOURCE=https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 E Study STUDIES Transformer SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
 E Study STUDIES RAG SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
@@ -204,6 +256,7 @@ E Scapula PARTICIPATES Biology SOURCE=https://www.ncbi.nlm.nih.gov/books/NBK5410
 E SerratusAnterior PARTICIPATES Scapula SOURCE=https://www.ncbi.nlm.nih.gov/books/NBK541005/
 E SerratusAnterior INFORMS Scapula SOURCE=https://www.youtube.com/watch?v=VCPp1DUypo0
 E ResistanceTraining APPLIES Scapula SOURCE=https://learn.athleanx.com/articles/shoulders-for-men/my-shoulder-hurts-when-i-bench-press-not-anymore
+E Scapula INFORMS Periodization SOURCE=https://learn.athleanx.com/articles/shoulders-for-men/my-shoulder-hurts-when-i-bench-press-not-anymore
 E Periodization INFORMS ResistanceTraining SOURCE=https://rpstrength.com/blogs/articles/back-hypertrophy-training-tips
 E Periodization GROUNDS_IN Physics SOURCE=https://rpstrength.com/blogs/articles/progressing-for-hypertrophy
 E Periodization PARTICIPATES Biology SOURCE=https://rpstrength.com/blogs/articles/back-hypertrophy-training-tips
@@ -255,6 +308,23 @@ E ExperienceStore      INFORMS      Agent SOURCE=https://www.bilibili.com/video/
 E SlashCommand         MEDIATES     AgentLoop SOURCE=skills/loop-slash/PUBLISH.md
 E MobileRuntime        APPLIES      Computation SOURCE=self/identity/skill.toon.md
 E Payment              APPLIES      Computation SOURCE=self/identity/skill.toon.md
+E Ecommerce            APPLIES      Computation SOURCE=https://en.wikipedia.org/wiki/E-commerce
+E Ecommerce            APPLIES      Payment SOURCE=https://en.wikipedia.org/wiki/E-commerce
+E Ecommerce            APPLIES      SEO SOURCE=https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+E SEO                  APPLIES      Computation SOURCE=https://en.wikipedia.org/wiki/Search_engine_optimization
+E AnswerEngineOptimization APPLIES SEO SOURCE=https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+E GenerativeEngineOptimization APPLIES SEO SOURCE=https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+E GenerativeEngineOptimization APPLIES RAG SOURCE=https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+E GenerativeEngineOptimization PARTICIPATES Ecommerce SOURCE=https://arxiv.org/abs/2311.09735
+E AnswerEngineOptimization PARTICIPATES Ecommerce SOURCE=https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+E Disposition          PARTICIPATES Ecommerce SOURCE=https://de.wikipedia.org/wiki/Disposition_(Logistik)
+E Agent                PARTICIPATES Ecommerce SOURCE=https://www.ifa-berlin.com/programme/robots_in-_the_kitchen_and_home
+E CrossBorderTrade     PARTICIPATES Ecommerce SOURCE=https://en.wikipedia.org/wiki/International_trade
+E CrossBorderTrade     APPLIES      NaturalLanguage SOURCE=https://en.wikipedia.org/wiki/International_trade
+E Study                STUDIES      Ecommerce grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      SEO grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      GenerativeEngineOptimization grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      AnswerEngineOptimization grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
 E DualSubtitle         MEDIATES     NaturalLanguage SOURCE=self/identity/project.toon.md
 E DualSubtitle         APPLIES      Computation SOURCE=skills/video-generation.fu.md
 E CursorSkill          APPLIES      Computation SOURCE=mezzanine/cursor-slash.toon.md
@@ -381,3 +451,86 @@ E Ciliogenesis         INFORMS      PerineuronalNet SOURCE=https://www.nature.co
 E PerineuronalNet      INFORMS      MemoryAssembly SOURCE=https://www.nature.com/articles/s41586-024-07220-7
 E ImmediateEarlyGene   PARTICIPATES Memory SOURCE=https://www.nature.com/articles/s41586-024-07220-7
 E TLR9Signalling       CONTRADICTS  GenomicInstability SOURCE=https://www.nature.com/articles/s41586-024-07220-7
+
+E VideoGeneration      APPLIES      Computation SOURCE=skills/video-generation.fu.md
+E VideoGeneration      APPLIES      Multimodal SOURCE=skills/video-generation.fu.md
+E VideoGeneration      APPLIES      DualSubtitle SOURCE=skills/video-generation.fu.md
+E VideoGeneration      APPLIES      SpatialGraphics SOURCE=skills/video-generation.fu.md
+E VideoGeneration      PARTICIPATES CursorSkill SOURCE=skills/video-generation.fu.md
+E VideoGeneration      INFORMS      Pedagogy SOURCE=tmp/video-pipeline.pdf
+E AgentStreamDrop      INFORMS      Agent SOURCE=.cursor/skills/cursor-agent-retry/SKILL.md
+E AgentStreamDrop      INFORMS      AgentLoop SOURCE=.cursor/skills/cursor-agent-retry/reference.md
+E AgentStreamDrop      INFORMS      VideoGeneration SOURCE=skills/video-generation.fu.md
+E AgentStreamDrop      INFORMS      IntellectualLoad SOURCE=.cursor/skills/cursor-agent-retry/reference.md
+E AgentStreamDrop      APPLIES      Computation SOURCE=https://cursor.com/help/troubleshooting/network
+E CursorSkill          INFORMS      AgentStreamDrop SOURCE=.cursor/skills/cursor-agent-retry/SKILL.md
+E BinauralBeat         GROUNDS_IN   Vibration SOURCE=.cursor/skills/fog-rest/reference.md
+E BinauralBeat         GROUNDS_IN   Neuroscience SOURCE=https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288948
+E BinauralBeat         INFORMS      SicknessBehavior SOURCE=.cursor/skills/fog-rest/reference.md
+E BinauralBeat         PARTICIPATES LowDemandIntake SOURCE=.cursor/skills/fog-rest/reference.md
+E Caffeine             INFORMS      SicknessBehavior SOURCE=https://www.efsa.europa.eu/en/efsajournal/pub/4102
+E Caffeine             INFORMS      IntellectualLoad SOURCE=.cursor/skills/fog-rest/reference.md
+E Caffeine             PARTICIPATES Biology SOURCE=https://www.efsa.europa.eu/en/efsajournal/pub/4102
+E AphthousUlcer        PARTICIPATES Biology SOURCE=tmp/ulcer-compare/SOURCES.md
+E AphthousUlcer        INFORMS      SicknessBehavior SOURCE=.cursor/skills/fog-rest/reference.md
+E LowDemandIntake      RECEIVES     SicknessBehavior SOURCE=.cursor/skills/fog-rest/SKILL.md
+E LowDemandIntake      INFORMS      IntellectualLoad SOURCE=.cursor/skills/fog-rest/SKILL.md
+E LowDemandIntake      CONTRADICTS  Wordschatz SOURCE=.cursor/skills/fog-rest/SKILL.md
+E LowDemandIntake      APPLIES      VideoGeneration SOURCE=skills/video-generation.fu.md
+E Study                STUDIES      VideoGeneration grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      AgentStreamDrop grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      BinauralBeat grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      Caffeine grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      AphthousUlcer grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      LowDemandIntake grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      SicknessBehavior grasp=partial SOURCE=.cursor/skills/fog-rest/SKILL.md
+E Study                STUDIES      DualSubtitle grasp=unknown SOURCE=skills/video-generation.fu.md
+E Study                STUDIES      CursorSkill grasp=unknown SOURCE=mezzanine/cursor-slash.toon.md
+E AestheticChills      GROUNDS_IN   Neuroscience SOURCE=https://doi.org/10.3758/s13415-024-01168-x
+E AestheticChills      INFORMS      BinauralBeat SOURCE=mezzanine/meditation-binaural-2026-09-06.toon.md
+E AestheticChills      PARTICIPATES LowDemandIntake SOURCE=mezzanine/meditation-binaural-2026-09-06.toon.md
+E AestheticChills      INFORMS      Multimodal SOURCE=https://pmc.ncbi.nlm.nih.gov/articles/PMC6010208/
+E AestheticChills      APPLIES      IncentiveSalience SOURCE=https://doi.org/10.3758/s13415-024-01168-x
+E AestheticChills      GROUNDS_IN   Interoception SOURCE=https://doi.org/10.3758/s13415-024-01168-x
+E AestheticChills      GROUNDS_IN   PredictiveCoding SOURCE=https://doi.org/10.3758/s13415-024-01168-x
+E AestheticChills      INFORMS      Memory SOURCE=https://doi.org/10.3758/s13415-024-01168-x
+E IncentiveSalience    PARTICIPATES Neuroscience SOURCE=https://doi.org/10.1016/j.neuron.2015.02.018
+E IncentiveSalience    INFORMS      AestheticChills SOURCE=https://doi.org/10.3758/s13415-024-01168-x
+E Interoception        PARTICIPATES Neuroscience SOURCE=https://doi.org/10.3758/s13415-024-01168-x
+E Interoception        INFORMS      AestheticChills SOURCE=https://doi.org/10.3758/s13415-024-01168-x
+E PredictiveCoding     GROUNDS_IN   Mathematics SOURCE=https://doi.org/10.3758/s13415-024-01168-x
+E PredictiveCoding     INFORMS      AestheticChills SOURCE=https://doi.org/10.3758/s13415-024-01168-x
+E PredictiveCoding     INFORMS      Neuroscience SOURCE=https://doi.org/10.3758/s13415-024-01168-x
+E Study                STUDIES      AestheticChills grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      IncentiveSalience grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      Interoception grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      PredictiveCoding grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+
+E AgentHarness         APPLIES      AgenticEngineering SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E AgentHarness         INFORMS      AgentLoop SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E AgentCore            PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E CursorSkill          PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E AgentHook            PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E AgentPlugin          PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E AgentRunMode         PARTICIPATES AgentHarness SOURCE=https://cursor.com/docs/agent/security/run-modes
+E AgentRunMode         INFORMS      AgentLoop SOURCE=https://cursor.com/docs/agent/security/run-modes
+E AgentRunMode         INFORMS      AISafety SOURCE=https://cursor.com/docs/agent/security/run-modes
+E Study                STUDIES      AgentRunMode grasp=unknown SOURCE=mezzanine/cursor-run-modes-2026-09-07.toon.md
+E ContextEngineering   INFORMS      PromptEngineering SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E ContextEngineering   APPLIES      RAG SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E ExperienceStore      APPLIES      ContextEngineering SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E MCP                  PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E MultiAgent           PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E AISafety             INFORMS      AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E InterviewPrep        APPLIES      Pedagogy SOURCE=https://usegreenroom.app/blog/make-it-stick-summary-interview-prep
+E InterviewPrep        INFORMS      Study SOURCE=https://usegreenroom.app/blog/make-it-stick-summary-interview-prep
+E InterviewPrep        PARTICIPATES IntellectualLoad SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E AutobiographicalMemory GROUNDS_IN Memory SOURCE=https://doi.org/10.1609/aiide.v9i1.12686
+E AutobiographicalMemory INFORMS History SOURCE=https://ceur-ws.org/Vol-4210/paper2.pdf
+E History              INFORMS      Pedagogy SOURCE=https://research.vu.nl/ws/portalfiles/portal/453611861/blin-phd-manuscript%20-%2069452f95719dd.pdf
+E History              INFORMS      InterviewPrep SOURCE=pedagogy/language/InterviewPrep.fu.md
+E Study                STUDIES      AgentHarness grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      ContextEngineering grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      InterviewPrep grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      AutobiographicalMemory grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      History grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md

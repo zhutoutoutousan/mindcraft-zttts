@@ -6,7 +6,9 @@
 - CLAIM Attested in the loop-slash cut: four levers turn, goal, loop, schedule. Turn is the human at the door. /loop is the watch. /schedule puts the watch in the cloud. A heartbeat is not a Slash Loop.
 - CLAIM Lab claims in that cut (parser gaps, 30s ceil) stay in the mezzanine of that video. Do not copy unverified numbers here without the bench file.
 - CLAIM Hooks sit on the loop, not in the prompt. PreToolUse PostToolUse Stop fire around tool turns. That is AgentHook informing AgentLoop. This repo has no hook store.
+- CLAIM A single turn that opens a huge parallel tool batch or GenerateImage storm is still one heartbeat, but it amplifies AgentStreamDrop: unsaved progress on Retry. Prefer small turns; split asset gather from encode; inventory after interrupt. That is load informing the loop, not a second loop vertex.
 - MEDIA PAGE skills/loop-slash/PUBLISH.md
 - SOURCE skills/loop-slash/PUBLISH.md
 - SOURCE skills/video-generation.fu.md
+- SOURCE .cursor/skills/cursor-agent-retry/reference.md
 - SOURCE https://code.claude.com/docs/en/hooks-guide.md

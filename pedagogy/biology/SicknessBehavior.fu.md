@@ -1,0 +1,21 @@
+- VERTEX SicknessBehavior
+- KIND natural
+- GLOSS cytokine-driven-motivational-reorganization
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Sickness behavior is a coordinated motivational state during peripheral inflammation, not laziness and not post-study sore. Hart 1988; Dantzer. Do not write it as GenomicInstability. Do not invent a diagnosis.
+- CLAIM The usual cluster is reduced appetite (anorexia), lethargy, social withdrawal, anhedonia or high-effort discounting, sleepiness, sometimes fever and hyperalgesia. Reduced food-motivated behavior is a core sign, not a side quest. Kent et al. 1996.
+- CLAIM IL-1β and TNF-α are the main behavioral cytokines in this literature. IL-6 is more pyrogenic and HPA than behavioral in several designs. Dantzer Nat Rev Neurosci 2008.
+- CLAIM Two routes to the brain: fast, on afferents from the inflamed site (often vagus); slow, cytokines at circumventricular organs and choroid plexus, then volume transmission. Dantzer 2001.
+- CLAIM Anorexia here is a priority shift: less foraging and less work for food while the immune program runs. It can dissociate from anhedonia in animal designs (IL-1). Do not read a short appetite dip as a diet. Do not invent fat loss from a short weigh-in swing.
+- CLAIM If the immune signal stays on, sickness can shade into depressive-like symptoms in vulnerable people. That is a duration and vulnerability claim, not a mood diagnosis on a calendar day. Dantzer 2008.
+- CLAIM High-effort here is not only study. Multi-step executive work — packing, inventory, sequenced procedures — is the same expensive class. The body can feel about-to-be-sick when that class starts. That is the brake, not a character flaw. Do not invent a diagnosis.
+- CLAIM Preferred intake while the brake is on is LowDemandIntake: short video, rest audio (BinauralBeat class), soft ASMR or mindfulness sits — not Wordschatz or open PROBE. Soft non-acid food if oral mucosa is repairing (AphthousUlcer class). Personal bottles are not this vertex.
+- CLAIM Supplement and stimulant classes (Caffeine EFSA ceilings; creatine / magnesium / EPA-DHA as evidence roles) are category notes in fog-rest reference, not prescriptions and not personal stacks. Fever, stiff neck, new focal neuro signs: clinic.
+- CLAIM Named DSB post-study sore is a different stop (IntellectualLoad). Nature 2024 mouse CA1 is not this class. Do not write fog as GenomicInstability.
+- SOURCE https://www.nature.com/articles/nrn2297
+- SOURCE https://doi.org/10.1111/j.1749-6632.2001.tb05827.x
+- SOURCE https://www.sciencedirect.com/science/article/abs/pii/S014976349500037F
+- SOURCE https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2023.1305790/full
+- SOURCE https://www.nature.com/articles/s41586-024-07220-7
+- SOURCE .cursor/skills/fog-rest/reference.md
+- SOURCE .cursor/skills/fog-rest/SKILL.md

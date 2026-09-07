@@ -27,6 +27,18 @@ record:
   source: CPU.md
 
 record:
+  match: agentur follow-up
+  title: Agentur für Arbeit Potsdam Empfang follow-up
+  what: Empfang follow-up. Particulars and bag in .private/agentur-2026-09-04.fu.md
+  where: Agentur für Arbeit Potsdam Empfang. Street in .private/agentur-2026-09-04.fu.md
+  when: 2026-09-04T11:30+02:00
+  end:
+  allday: false
+  why: Same 11:30 as the AWS workshop. Empfang wins. Do not invent an end clock.
+  url:
+  source: CPU.md
+
+record:
   match: ifa berlin
   title: IFA Berlin 2026
   what: Internationale Funkausstellung. Consumer electronics and AI sessions. Kitchen robots Hall 25. Agent-Ready 8 Sep 13:45. Fri 04.09 Privatbesucher 12:00-18:00. Sat-Tue 10:00-18:00.
@@ -34,7 +46,7 @@ record:
   when: 2026-09-04T00:00+02:00
   end: 2026-09-09T00:00+02:00
   allday: true
-  why: Why it matters: closest large product-and-AI floor in Berlin this week. Overlaps the 11:30 AWS agent workshop — workshop first, Messe after 13:30.
+  why: Fri 11:30 Empfang follow-up wins vs the AWS workshop. Privatbesucher door 12:00. DUMP robots 13:15 Hall 25 is before the old 13:30 workshop gate. Do not invent travel.
   url: https://www.ifa-berlin.com/de/
   source: https://www.ifa-berlin.com/de/
 
@@ -46,7 +58,7 @@ record:
   when: 2026-09-04T11:30+02:00
   end: 2026-09-04T13:30+02:00
   allday: false
-  why: Why it matters: this is the hireable-skill session for the AI-agent-engineer goal (AgentCore, Agent Toolkit, Lambda MicroVMs). Same afternoon as IFA.
+  why: Same 11:30 as Empfang follow-up. Empfang wins. IFA-after-13:30 was this workshop end clock, not Amt.
   url: https://github.com/aws-samples/sample-amazon-bedrock-agentcore-coding-agents
   source: CPU.md
 

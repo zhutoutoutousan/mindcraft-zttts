@@ -1,0 +1,10 @@
+- VERTEX PolyglotHorizon
+- KIND praxis
+- GLOSS sixteen-languages-to-b2-by-age-thirty-five
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM PolyglotHorizon is the learner particular for NaturalLanguage growth: age 30 now, age 35 target, about 5 years, B2+ productive skill across sixteen named languages. Roster and bands: pedagogy/_learn/polyglot/horizon.toon.md (human 2026-09-07). Native/bilingual: en zh wuu. Professional working: de. Limited working: es fr it pt ru ja. Elementary: fi vi el ar hi ko. Zero unnamed slots.
+- CLAIM Cross-lingual lexicon lives under pedagogy/_learn/polyglot/ and per-lang writing-accuracy stores. Ontology keeps essence (NaturalLanguage Pedagogy GrammarFrame WritingAccuracyArbitrage). Particular pace and slot fills stay in _learn and self/goals. Do not invent CEFR beyond the named bands.
+- CLAIM Code-switch islands in a targetLang coding prompt are treated as Concepts the learner could not express in the target language. Hook beforeSubmitPrompt writes last-signal. Allowlisted tech nouns are not gaps.
+- SOURCE pedagogy/_learn/polyglot/horizon.toon.md
+- SOURCE self/goals.toon.md
+- SOURCE human 2026-09-07

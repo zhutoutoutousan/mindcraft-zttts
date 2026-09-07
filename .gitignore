@@ -31,6 +31,12 @@ inflow/**/*.puml
 inflow/**/*.png
 *.pdf
 
+# LaTeX crumbs from skill templates (compile into tmp, not git)
+*.aux
+*.log
+*.out
+*.toc
+
 # Generated calendar export can contain personal appointments
 schedule/calendar.ics
 

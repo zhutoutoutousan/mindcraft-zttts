@@ -32,8 +32,8 @@
   - SHOWCASE ASK image or video then run skills/ontology-showcase.fu.md
   - GUI optional tempfile. Never store study html. SATISFY writes mezzanine/learn-enrich.toon.md. Process changes live in cron/learn-enrich.fu.md.
 
-- RULE do not stuff Person Skill Job into this graph. Lebenslauf maps to domains. Email phone notice stay in self/identity and .private/. Session loads stay in self/training.toon.md. ResistanceTraining is the essence. CPU.md may name a public office. Do not put Ausweis Melde personal mobile into inflow or a vertex.
+  - RULE do not stuff Person Skill Job into this graph. Lebenslauf maps to domains. Email phone notice stay in self/identity and .private/. Session loads stay in self/training.toon.md. ResistanceTraining is the essence. CPU.md may name a public office. Do not put Ausweis Melde personal mobile into inflow or a vertex. Named employer Bewerbung Gehalt Eintritt stay in .private. Industry vertices (Ecommerce Disposition CrossBorderTrade SEO GenerativeEngineOptimization AnswerEngineOptimization) are essence, not a Job.
 - RULE cron may add vertices. cron may not delete Being Essence Form Matter.
 - RULE contradiction is an edge CONTRADICTS, not a silent overwrite.
-- RULE do not invent dates or metrics. Cite SOURCE. Chinese as native is not in SPRACHEN. Do not add it.
+- RULE do not invent dates or metrics. Cite SOURCE. Lebenslauf SPRACHEN lines are not invented. Polyglot self-ratings (including 中文/吴语 native_or_bilingual) live in pedagogy/_learn/polyglot/horizon.toon.md with SOURCE=human date — do not invent CEFR beyond those bands.
 - RULE every learned claim becomes a vertex or a CLAIM on an existing vertex. Do not leave attested knowledge only in CPU.md.

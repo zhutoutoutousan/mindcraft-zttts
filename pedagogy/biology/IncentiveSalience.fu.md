@@ -1,0 +1,10 @@
+- VERTEX IncentiveSalience
+- KIND natural
+- GLOSS wanting-liking-learning-as-separable-reward-components
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Berridge separates reward into wanting (incentive salience / approach motivation), liking (consummatory hedonic impact), and learning (updating predictions from outcomes). Dopamine is more tightly tied to wanting and prediction-error teaching than to pure liking (opioid “hedonic hotspots” are a different story). Not a diagnosis.
+- CLAIM Aesthetic chills are debated across these phases: music PET often looks “wanting-network-like,” while film/narrative AC often peaks at culmination — framed as peak liking kicking off learning/satiation of curiosity (Schoeller et al. 2024 Fig. 2). Circuits overlap; fMRI timing is coarse.
+- CLAIM Positive and negative chills both exist: high reward vs high risk / uncertainty extremes; amygdala polarity can reverse across appetitive vs aversive chill contexts (Zald & Pardo). Sublime/awe literature already mixed valence.
+- SOURCE https://doi.org/10.1016/j.neuron.2015.02.018
+- SOURCE https://doi.org/10.3758/s13415-024-01168-x
+- SOURCE pedagogy/biology/AestheticChills.fu.md

@@ -1,0 +1,20 @@
+- VERTEX AestheticChills
+- KIND natural
+- GLOSS embodied-reward-tingle-from-aesthetic-or-auditory-peak
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Aesthetic chills (AC; psychogenic shivers/goosebumps) are strong emotional responses to chill stimuli (CS): music, film, speech, stories, science moments, ritual. They have simultaneous subjective report and peripheral markers, so they are a probe of embodied reward (Schoeller, Jain, Pizzagalli, Reggente 2024 CABN open access). Not a diagnosis.
+- CLAIM Neural skeleton (mostly music neuroimaging to date): VTA dopaminergic projections into NAcc/striatum, plus insula, OFC, ACC, SMA, etc.; amygdala/hippocampus/vmPFC often deactivate in classic Blood & Zatorre PET (Fig. 1). EEG reports OFC-linked theta with emotion ratings (Chabin). Non-music CS neural map is still thin — gold-standard CS databases exist (Schoeller 2022/2023) but imaging lags.
+- CLAIM Reward-cycle reading (Fig. 2): Wanting → Liking (AC as peak consummatory pleasure) → Learning (encode CS meaning; curiosity temporarily satiated). Overlaps Berridge IncentiveSalience; music data can look “wanting-like,” narrative AC often at culmination — authors argue transition into satiety/learning, noting fMRI temporal limits.
+- CLAIM PredictiveCoding / precision: dopamine as precision or teaching signal; incoherent primes inhibit chills; AC near local extremum of learning-fit (Schoeller & Perlovsky). Positive and negative chills: reward vs threat/uncertainty extremes.
+- CLAIM Interoception: insula integrates bodily chill; lesion work can split objective vs subjective chill. Wearable cold amplification can boost pleasure reports.
+- CLAIM Individual differences: openness/absorption; ~36% twin heritability estimate (Bignardi); white-matter tracts linking auditory association, anterior insula, mPFC (Sachs).
+- CLAIM Reported benefits in preliminary CS studies (not medical advice): emotional valence drift; in anhedonic depression samples, chills experiencers showed higher PRT reward bias vs non-chills; shifts in maladaptive self-beliefs; phenomenology overlap with emotional breakthrough / insight / connectedness ratings. Treat as early research, not a protocol to replace care.
+- CLAIM ASMR is related but distinct (often more relaxing). Personal warm ascending flow on binaural/landscape/catharsis maps here as phenomenology only.
+- MEDIA PAGE https://link.springer.com/article/10.3758/s13415-024-01168-x
+- MEDIA PAGE https://link.springer.com/article/10.3758/s13415-024-01168-x/figures/1
+- MEDIA PAGE https://link.springer.com/article/10.3758/s13415-024-01168-x/figures/2
+- SOURCE https://doi.org/10.3758/s13415-024-01168-x
+- SOURCE https://pmc.ncbi.nlm.nih.gov/articles/PMC6209833/
+- SOURCE https://pmc.ncbi.nlm.nih.gov/articles/PMC6010208/
+- SOURCE mezzanine/aesthetic-chills-schoeller-2024.toon.md
+- SOURCE mezzanine/meditation-binaural-2026-09-06.toon.md

@@ -14,6 +14,8 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from coarse import coarse_place
+
 ROOT = Path(__file__).resolve().parent.parent
 CPU = ROOT / "CPU.md"
 INFLOW_STATE = ROOT / "inflow" / "STATE.md"
@@ -47,7 +49,6 @@ SKIP_SLUG = (
     "kvcached",
     "nature-",
     "stripe-",
-    "namelos",
     "forbes",
     "ng-three",
     "evoclaw",
@@ -514,11 +515,11 @@ def ics_description(row: dict) -> str:
         chunks.append(row["what"])
     meta = []
     if row.get("where"):
-        meta.append(f"Where: {row['where']}")
+        meta.append(f"Where: {coarse_place(row['where'])}")
     meta.append(f"When: {when_text(row)}")
     chunks.append("\n".join(meta))
     if row.get("why"):
-        chunks.append(row["why"])
+        chunks.append(coarse_place(row["why"]))
     if row.get("url"):
         chunks.append(row["url"])
     return ics_escape("\n\n".join(chunks))
@@ -560,8 +561,9 @@ def write_ics(rows: list[dict]) -> Path:
             lines.append(f"DTSTART;TZID=Europe/Berlin:{ics_stamp(r['start'], False)}")
             lines.append(f"DTEND;TZID=Europe/Berlin:{ics_stamp(r['end'], False)}")
         lines.append(fold(f"SUMMARY:{ics_escape(r['title'])}"))
-        if r["where"]:
-            lines.append(fold(f"LOCATION:{ics_escape(r['where'])}"))
+        loc = coarse_place(r["where"])
+        if loc:
+            lines.append(fold(f"LOCATION:{ics_escape(loc)}"))
         if r["url"]:
             lines.append(fold(f"URL:{r['url']}"))
         lines.append(fold(f"DESCRIPTION:{ics_description(r)}"))

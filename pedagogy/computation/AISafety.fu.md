@@ -3,4 +3,6 @@
 - GLOSS preventing-harm-from-model-actions
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Interview titles from https://github.com/amitshekhariitbhu/ai-engineering-interview-questions that map here are the hire-pressure form of this techne. Answers stay at their SOURCE urls. Do not paste cheat-sheet answers into this body.
+- CLAIM IFA 2026-09-04 Hall 25: trust, safety, and acceptance as physical automation enters intimate spaces such as the kitchen. Same vertex. Not a medical claim.
 - SOURCE https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
+- SOURCE https://www.ifa-berlin.com/programme/robots_in-_the_kitchen_and_home

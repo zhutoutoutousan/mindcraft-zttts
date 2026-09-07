@@ -1,0 +1,10 @@
+- VERTEX AgentHarness
+- KIND praxis
+- GLOSS runtime-and-policy-shell-around-the-model
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Agent Harness is the engineering layer that owns loops, tools, permissions, memory hooks, and failure policy around a model. 2026 interview banks treat Harness Engineering as distinct from Prompt Engineering and from Context Engineering. SOURCE https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+- CLAIM CursorSkill AgentHook AgentPlugin AgentConstitution PARTICIPATE this praxis as concrete harness surfaces. AgentCore is a cloud runtime form of harness policy. AgentRunMode is Cursor's local tool-permission shell (Auto-review, sandbox, classifier). Do not collapse Harness into LangChain brand names.
+- CLAIM SearchHarness is a different vertex: search over programs with feedback. AgentHarness is the shell that runs agents in product systems.
+- MEDIA PAGE https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+- SOURCE https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+- SOURCE pedagogy/computation/AgenticEngineering.fu.md

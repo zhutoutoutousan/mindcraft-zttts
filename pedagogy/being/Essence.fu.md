@@ -2,7 +2,7 @@
 - KIND transcendental
 - GLOSS what-a-thing-is
 - STORE PATH pedagogy/universe.graph.md
-- CLAIM Essence answers what a thing is, not that it is. Horse is an essence. This horse in Potsdam is a particular.
+- CLAIM Essence answers what a thing is, not that it is. Horse is an essence. This horse here is a particular.
 - CLAIM ISA edges in this graph are essence-to-Being or kind-to-kind. They are not employment.
 - CLAIM When cron ingests a paper, it must extract essences (MemoryAssembly, TLR9Signalling) not author names as vertices.
 - MEDIA PAGE https://plato.stanford.edu/entries/essence/

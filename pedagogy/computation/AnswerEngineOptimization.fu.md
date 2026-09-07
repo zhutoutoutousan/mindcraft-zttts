@@ -1,0 +1,10 @@
+- VERTEX AnswerEngineOptimization
+- KIND praxis
+- GLOSS AEO-extractable-direct-answers-in-search-surfaces
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Answer Engine Optimization (AEO) is the industry label for structuring content so a system can extract a direct answer — featured snippets, voice, and some AI answer boxes. It overlaps heavily with SEO and with GEO; Google Search Central notes the AEO/GEO labels are common online while still pointing site owners back to foundational SEO for Google generative features. SOURCE https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+- CLAIM AEO APPLIES SEO: clear headings, self-contained answer blocks, and crawlable HTML help both classic snippets and passage selection after retrieval. Do not treat AEO as a separate ranking product Google sells.
+- CLAIM Answer-first HTML under a question heading is the practical form used in .cursor/skills/dev-sidework/geo.md. Do not invent statistics or expert quotes to force extraction.
+- MEDIA PAGE https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+- SOURCE https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+- SOURCE .cursor/skills/dev-sidework/geo.md

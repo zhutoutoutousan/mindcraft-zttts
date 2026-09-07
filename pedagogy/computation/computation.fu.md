@@ -5,7 +5,7 @@
 - CLAIM Computation APPLIES Mathematics: a program is finite Form that Matter (silicon, neuron, paper) can receive and run.
 - CLAIM Agent ENACTS Computation. SearchHarness ENACTS Agent when the program searches other programs.
 - CLAIM Attested stack leaves live in pedagogy/computation/stack/. Each named tool is a vertex. Kafka is not in self/identity/skill.toon.md. Do not add it until sourced.
-- VERTEX Agent GeographicInformation CloudRuntime SearchHarness SpatialGraphics KVCache AgentLoop AgenticEngineering SoftwareEngineering MultiAgent RalphLoop ExperienceStore MobileRuntime Payment CursorSkill AgentCore AgentToolkit LambdaMicroVM Transformer RAG FineTuning Quantization VectorDatabase LLMOps AISafety Multimodal AgentConstitution AgentHook AgentPlugin
+- VERTEX Agent GeographicInformation CloudRuntime SearchHarness SpatialGraphics KVCache AgentLoop AgenticEngineering SoftwareEngineering MultiAgent RalphLoop ExperienceStore MobileRuntime Payment Ecommerce SEO GenerativeEngineOptimization AnswerEngineOptimization Disposition CrossBorderTrade CursorSkill AgentCore AgentHarness ContextEngineering AgentToolkit LambdaMicroVM Transformer RAG FineTuning Quantization VectorDatabase LLMOps AISafety Multimodal AgentConstitution AgentHook AgentPlugin
 - MEDIA CODE https://github.com/zhutoutoutousan
 - MEDIA PAGE https://owenshao.space
 - SOURCE self/identity/skill.toon.md

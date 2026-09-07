@@ -48,7 +48,7 @@ def write_ttl(*, last_run: str | None = None, last_expire: str | None = None) ->
         f"lapse_days: {LAPSE_DAYS}",
         f"last_run: {run}",
         f"last_expire: {expire}",
-        "note: only persistent file in tmp. ROOT reads this. After lapse_days janitor deletes every other file in tmp.",
+        "note: only persistent file in tmp. ROOT reads this. After lapse_days janitor promotes named caches then deletes every other file in tmp.",
         "",
     ]
     TTL_FILE.write_text("\n".join(lines), encoding="utf-8")
@@ -100,6 +100,10 @@ def expire(*, dry_run: bool = False, force: bool = False) -> list[Path]:
     if not force and not due():
         return gone
     import shutil
+
+    import tmp_promote
+
+    tmp_promote.promote_all(dry_run=dry_run)
 
     for child in sibling_paths():
         rel = child.relative_to(ROOT)

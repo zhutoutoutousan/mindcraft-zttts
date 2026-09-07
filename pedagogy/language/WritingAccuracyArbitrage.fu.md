@@ -1,0 +1,12 @@
+- VERTEX WritingAccuracyArbitrage
+- KIND praxis
+- GLOSS target-language-agent-instructions-as-writing-accuracy-byproduct
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM WritingAccuracyArbitrage ISA Pedagogy under NaturalLanguage. Do the real coding job in Cursor or Claude Code. Write the whole instruction in the target language. Capture writing accuracy as a byproduct. One utterance buys task completion and a genuine writing sample. Not a fake workbook drill.
+- CLAIM It PARTICIPATES CommunicativePractice more than Wordschatz: open task first, form second. LanguageDrilling RECEIVES only the one high-priority form forced into the next prompt. Standalone grammar teacher mode CONTRADICTS this vertex.
+- CLAIM Method store: pedagogy/_learn/writing-accuracy/. Lexicon graph (lemma chunk sentence usage) stays there, not as Person or Job on the ontology. Product git and learning logs stay separate. Hook injects todayFocus at sessionStart. beforeSubmitPrompt detects primaryLang and treats code-switch islands as unknown target expressions.
+- CLAIM Grammar pairs via GrammarFrame: oneFocus is a Frame; Wordschatz Lemmas fill Frame slots; cross-lang Concepts live in pedagogy/_learn/polyglot/bridge.graph.md under PolyglotHorizon.
+- CLAIM Success north star (human 2026-09-07): eventually write in the target language so intent is fully expressible and near error-free under real work. Absolute zero forever is asymptotic; operational bar is productive accuracy (native reader gets the ask in one pass; structure sticks across sessions). Fail if the learner writes worse on purpose to farm errors. If the main job fails, the method is void.
+- SOURCE pedagogy/_learn/writing-accuracy/method.toon.md
+- SOURCE human 2026-09-07 writing-accuracy-base-arbitrage
+- SOURCE human 2026-09-07 goal: fehlerfrei äußern auf Zielsprache

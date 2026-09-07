@@ -3,4 +3,7 @@
 - GLOSS more-than-text-as-input
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Interview titles from https://github.com/amitshekhariitbhu/ai-engineering-interview-questions that map here are the hire-pressure form of this techne. Answers stay at their SOURCE urls. Do not paste cheat-sheet answers into this body.
+- CLAIM VideoGeneration is Multimodal as publish craft: speech audio, still graphics, muted b-roll, DualSubtitle text on one timeline. PlantUML / matplotlib PNGs are SpatialGraphics inputs, not separate model modalities unless an LLM sees them.
 - SOURCE https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
+- SOURCE skills/video-generation.fu.md
+- SOURCE pedagogy/computation/VideoGeneration.fu.md

@@ -1,0 +1,10 @@
+- VERTEX PredictiveCoding
+- KIND formal
+- GLOSS brain-as-prediction-error-minimizer-with-precision-weights
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Predictive coding: cortex maintains hierarchical models of sensory causes; ascending prediction errors update models; precision (inverse variance / confidence) weights which errors are trusted. Dopamine is often cast as encoding precision of prediction errors or reward prediction teaching signals (Schultz; Friston-class; Jeong 2022 notes alternatives). Essence, not a therapy manual.
+- CLAIM Aesthetic chills: incoherent primes that raise surprisal can inhibit chills; narrative/music tension builds uncertain predictions until resolution yields pleasure. Schoeller & Perlovsky model AC near a local peak in learning fit where learning-rate derivative → 0 (curiosity temporarily satiated). Formula in paper is a schematic, not a lab recipe.
+- CLAIM Clinical hook in the review only: dysfunctional precision-weighting appears in psychosis/depression/addiction models. Preliminary chill-stimulus studies report shifts in anhedonic reward bias (PRT) and self-schema ratings — early, not a substitute for care. Do not invent a personal treatment from this vertex.
+- SOURCE https://doi.org/10.3758/s13415-024-01168-x
+- SOURCE pedagogy/biology/AestheticChills.fu.md
+- SOURCE pedagogy/biology/IncentiveSalience.fu.md

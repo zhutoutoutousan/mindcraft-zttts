@@ -1,0 +1,27 @@
+- KIND maintain. 保养 the repo as one living organism. Not inflow-news. Not dump-drip. Not a heartbeat that restates idle.
+- STORE PATH inflow/STATE.md
+- STORE PATH CPU.md
+- STORE PATH pedagogy/universe.graph.md
+- STORE PATH inflow/DUMP.md
+- RUN only when the human asks 保养 or arms AGENT maintain
+
+- AGENT $id=maintain $input=cron/maintain.fu.md $output=inflow/STATE.md $prompt=Follow cron/maintain.fu.md. One organ per tick. Produce a NEW sourced delta. Do not restate the previous tick. Do not invent ANSWER. Do not pile DAY. Do not add Chinese as native. Do not start a second maintain loop.
+
+- RULE 鬼打墙 is a failed tick. If this tick's work has high correlation with the last tick (same DUMP-empty, same PROBE-empty, same session-planned, same body-count, same janitor trash n=1), it is not 保养. Pick the next organ. Do something the last tick did not do.
+- RULE A tick MUST write a delta: a new sourced E or CLAIM, or a new DUMP CAPTURE with URL, or one HUMAN OPEN moved, or a STUDY stub that did not exist, or a PII strip, or a real janitor move. Stamping CPU NOTE with the same three idle facts is not a delta.
+- RULE Rotate organs. Read STATE Maintain last_organ. Use the next one. After the last, wrap to the first. Skip an organ only if it has no new work, then skip it in the log so the following tick does not land on it again.
+  - graph wire a missing sourced edge or CLAIM
+  - pedagogy-cpu one empty GAP STUDY that is not AgentCore if AgentCore was last
+  - ontology-weight python cron/ontology-weight.py. Refresh pedagogy/_learn/weights.toon.md from goals PLAN STUDY harvest zeitgeist Maslow heuristic + learn mastery. Delta is the weight file. Do not invent ANSWER. Do not invent V/E.
+  - interview-bank-enrich python cron/interview-bank-enrich.py --status --gap. Optionally --zeitgeist --stamp. Theme map only. Do not paste answer essays. Do not invent ANSWER.
+  - routine-enrich python cron/routine-enrich.py --due. Optionally APPEND one tip[] with SOURCE into self/routine.toon.md. Do not invent last_done or a dentist Termin. Do not diagnose.
+  - DUMP one NEW capture or skip with why the web had nothing new vs STATE ids
+  - HUMAN OPEN advance exactly one item without inventing the answer
+  - schedule clash or clock vs CPU, no invented times
+  - training log only if the human reported sets. Do not invent completed
+  - goals north vs PLAN NOW on pedagogy-cpu
+  - private splice tmp/take.html without copying particulars into tracked files
+  - janitor --dry-run then --trash only if dry-run shows more than bytecode
+- RULE STATE records last_organ and last_delta in one line. Next tick reads that line first.
+- RULE User-facing tick report is the delta, not the idle remainder. Idle facts may be one clause if they changed. Do not lead with them.
+- RULE Away: do not drip. PII stays in .private. Empty PROBE stays empty.

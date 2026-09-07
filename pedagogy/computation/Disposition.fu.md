@@ -1,0 +1,7 @@
+- VERTEX Disposition
+- KIND praxis
+- GLOSS scheduling-orders-stock-and-delivery-clocks
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Disposition in German commercial language is the planning of what is ordered, what sits in stock, and when it must arrive. Liefertermin and Warenfluss are the clocks. It PARTICIPATES Ecommerce. It is not a named employer. Do not invent an ERP.
+- MEDIA PAGE https://de.wikipedia.org/wiki/Disposition_(Logistik)
+- SOURCE https://de.wikipedia.org/wiki/Disposition_(Logistik)

@@ -1,0 +1,10 @@
+- VERTEX Interoception
+- KIND natural
+- GLOSS sensing-the-body-from-the-inside
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Interoception is perception of internal bodily signals (temperature, heartbeat, visceral state). The insula is a key hub integrating these signals into feeling (Craig; Damasio; Seth predictive-interoception lines). Not a diagnosis.
+- CLAIM In aesthetic chills, shivers/goosebumps are measurable bodily events that can enter consciousness with latency — a window on how unexpected interoceptive signals reshape valuation of outside cues. Left-insula structural damage can dissociate objective chill physiology from subjective chill report (Witt / Grunkina class findings cited in Schoeller 2024).
+- CLAIM Cold-prosthesis / wearable somatic-marker tricks that amplify chill-like cold can boost reported pleasure and some downstream effects — evidence that body feedback is not a side-show.
+- SOURCE https://doi.org/10.3758/s13415-024-01168-x
+- SOURCE pedagogy/biology/AestheticChills.fu.md
+- SOURCE pedagogy/biology/Neuroscience.fu.md

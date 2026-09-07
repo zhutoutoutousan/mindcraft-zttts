@@ -1,0 +1,14 @@
+- VERTEX LowDemandIntake
+- KIND praxis
+- GLOSS cheap-attention-while-effort-is-discounted
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM When SicknessBehavior discounts high-effort cognition, preferred intake is low-demand: short video, soft rest audio, light ASMR or mindfulness sits — not lexicon drills or open PROBE. That is motivational reorganization, not laziness.
+- CLAIM ASMR and mindfulness here are low-demand sensory or attention forms. They are not proven fog cures. Evidence is adjunct-class at best. Stop if they become another high-effort project.
+- CLAIM VideoGeneration cuts used as rest intake still obey IntellectualLoad: do not stack deep STUDY on the same window. Partner-length explainers can be intake; interview DAY cannot.
+- CLAIM CONTRAST named DSB (post-study sore): that stop follows a stretch of intellectual work and logs endurance. LowDemandIntake is for the inflammatory / sickness-behavior class, not a substitute SORE log.
+- CLAIM AestheticChills (warm ascending tingles, landscape/catharsis/binaural onset) may co-occur during rest audio. Treat as embodied reward class, not a mystical diagnosis. Session map: mezzanine/meditation-binaural-2026-09-06.toon.md.
+- SOURCE .cursor/skills/fog-rest/SKILL.md
+- SOURCE .cursor/skills/fog-rest/reference.md
+- SOURCE pedagogy/biology/SicknessBehavior.fu.md
+- SOURCE pedagogy/biology/IntellectualLoad.fu.md
+- SOURCE pedagogy/biology/AestheticChills.fu.md

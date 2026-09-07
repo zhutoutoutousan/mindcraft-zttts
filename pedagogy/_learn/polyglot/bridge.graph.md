@@ -1,0 +1,223 @@
+# Cross-language concept bridge (language-neutral Concept → per-lang Lemma/Frame)
+# Do not invent unnamed languages. Add EXPRESSES edges only for attested or session-proven forms.
+# Local edge labels: EXPRESSES NEEDS_FRAME GAP_IN FROM_SESSION
+
+V Concept_device_location kind=concept gloss=location-on-a-device
+V Concept_current_state kind=concept gloss=current-state-of-work
+V Concept_this_project kind=concept gloss=the-project-at-hand
+V Concept_lets_dive kind=concept gloss=invite-to-go-deeper
+V Concept_for_today kind=concept gloss=purpose-time-today
+V Concept_todo_list kind=concept gloss=task-list-for-human
+V Concept_no_changes kind=concept gloss=do-not-modify
+
+V Lemma_en_on_my_laptop kind=lemma lang=en surface=on-my-laptop
+V Lemma_de_auf_meinem_Laptop kind=lemma lang=de surface=auf-meinem-Laptop
+V Lemma_en_current_state kind=lemma lang=en surface=current-state
+V Lemma_de_aktueller_Zustand kind=lemma lang=de surface=der-aktuelle-Zustand
+V Lemma_en_lets_dive kind=lemma lang=en surface=lets-dive-deeper
+V Lemma_de_lass_uns_eintauchen kind=lemma lang=de surface=lass-uns-tiefer-eintauchen
+V Lemma_zh_rang_women kind=lemma lang=zh surface=让我们-deeper-calque note=L1-order-risk
+
+V Frame_de_auf_Dat_device kind=frame lang=de id=auf_Dat_device
+V Frame_de_lass_uns_Vinf kind=frame lang=de id=lass_uns_Vinf
+V Frame_de_det_Nom_masc kind=frame lang=de id=det_Nom_masc
+V Frame_de_fuer_purpose kind=frame lang=de id=fuer_purpose
+
+E Concept_device_location EXPRESSES Lemma_en_on_my_laptop
+E Concept_device_location EXPRESSES Lemma_de_auf_meinem_Laptop
+E Concept_device_location NEEDS_FRAME Frame_de_auf_Dat_device
+E Concept_current_state EXPRESSES Lemma_en_current_state
+E Concept_current_state EXPRESSES Lemma_de_aktueller_Zustand
+E Concept_current_state NEEDS_FRAME Frame_de_det_Nom_masc
+E Concept_lets_dive EXPRESSES Lemma_en_lets_dive
+E Concept_lets_dive EXPRESSES Lemma_de_lass_uns_eintauchen
+E Concept_lets_dive NEEDS_FRAME Frame_de_lass_uns_Vinf
+E Concept_for_today NEEDS_FRAME Frame_de_fuer_purpose
+E Lemma_zh_rang_women GAP_IN de SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-09-07.toon.md
+
+V Concept_first_test kind=concept gloss=my-first-test
+V Concept_view_dashboard kind=concept gloss=view-project-dashboard-now
+V Lemma_de_mein_erster_Test kind=lemma lang=de surface=mein-erster-Test
+V Lemma_de_Dashboard_einsehen kind=lemma lang=de surface=Dashboard-einsehen
+V Lemma_de_haette_gern kind=lemma lang=de surface=Ich-haette-gern
+V Frame_de_mein_erster_N_m kind=frame lang=de id=mein_erster_N_m
+V Frame_de_haette_gern_zuerst kind=frame lang=de id=haette_gern_zuerst
+
+E Concept_first_test EXPRESSES Lemma_de_mein_erster_Test
+E Concept_first_test NEEDS_FRAME Frame_de_mein_erster_N_m
+E Concept_view_dashboard EXPRESSES Lemma_de_Dashboard_einsehen
+E Concept_view_dashboard EXPRESSES Lemma_de_haette_gern
+E Concept_view_dashboard NEEDS_FRAME Frame_de_haette_gern_zuerst
+E Concept_this_project NEEDS_FRAME Frame_de_det_Akk_neut
+E Concept_first_test FROM_SESSION Session_dash
+E Concept_view_dashboard FROM_SESSION Session_dash
+
+V Session_dash kind=session date=2026-09-07 body=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-dashboard.toon.md
+
+# ingest-session 2026-09-07T12:17:58Z first-arbitrage-test-dashboard
+V Session_first_arbitrage_test_dashboard kind=session date=2026-09-07 body=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-dashboard.toon.md
+V Focus_first_arbitrage_test_dashboard kind=focus gloss=artikel_kasus_mein_erster_test_f_r_dieses_projekt status=active
+E Focus_first_arbitrage_test_dashboard FROM_SESSION Session_first_arbitrage_test_dashboard
+V Lemma_de_fix_first_arbitrage_test_dashboard kind=lemma lang=de surface=ach_so_das_ist_mein_erster_test_ich_h_tte_gern_zue role=minimal-rewrite
+E Lemma_de_fix_first_arbitrage_test_dashboard FROM_SESSION Session_first_arbitrage_test_dashboard SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-dashboard.toon.md
+V Form_fix_first_arbitrage_test_dashboard_0_ers kind=form lang=de surface=erster_test fixes=erste_test
+E Form_fix_first_arbitrage_test_dashboard_0_ers FROM_SESSION Session_first_arbitrage_test_dashboard
+V Form_fix_first_arbitrage_test_dashboard_1_h_t kind=form lang=de surface=h_tte_gern fixes=hatte_gern
+E Form_fix_first_arbitrage_test_dashboard_1_h_t FROM_SESSION Session_first_arbitrage_test_dashboard
+V Form_fix_first_arbitrage_test_dashboard_2_die kind=form lang=de surface=dieses_projekt fixes=diese_projekt
+E Form_fix_first_arbitrage_test_dashboard_2_die FROM_SESSION Session_first_arbitrage_test_dashboard
+V Form_fix_first_arbitrage_test_dashboard_3_kur kind=form lang=de surface=kurz_auf_einen_blick_einsehen fixes=augenblick_einsehen
+E Form_fix_first_arbitrage_test_dashboard_3_kur FROM_SESSION Session_first_arbitrage_test_dashboard
+V Form_fix_first_arbitrage_test_dashboard_4_kur kind=form lang=de surface=kurze_s_tze fixes=run_on
+E Form_fix_first_arbitrage_test_dashboard_4_kur FROM_SESSION Session_first_arbitrage_test_dashboard
+
+# ingest-session 2026-09-07T12:17:58Z ensure-errors-internalized-hook
+V Session_ensure_errors_internalized_hook kind=session date=2026-09-07 body=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-internalize-hook.toon.md
+V Focus_ensure_errors_internalized_hook kind=focus gloss=sichergestellt_dass_sprachfehler_artikel_wortstell status=active
+E Focus_ensure_errors_internalized_hook FROM_SESSION Session_ensure_errors_internalized_hook
+V Lemma_de_fix_ensure_errors_internalized_hook kind=lemma lang=de surface=ja_ich_h_tte_gern_sichergestellt_dass_meine_sprach role=minimal-rewrite
+E Lemma_de_fix_ensure_errors_internalized_hook FROM_SESSION Session_ensure_errors_internalized_hook SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-internalize-hook.toon.md
+V Form_fix_ensure_errors_internalized_hook_0_h_ kind=form lang=de surface=h_tte_gern_sichergestellt fixes=h_tte_gern_es_sicherstellen
+E Form_fix_ensure_errors_internalized_hook_0_h_ FROM_SESSION Session_ensure_errors_internalized_hook
+V Form_fix_ensure_errors_internalized_hook_1_sp kind=form lang=de surface=sprachfehler fixes=sprachefehler
+E Form_fix_ensure_errors_internalized_hook_1_sp FROM_SESSION Session_ensure_errors_internalized_hook
+V Form_fix_ensure_errors_internalized_hook_2_da kind=form lang=de surface=dass fixes=da
+E Form_fix_ensure_errors_internalized_hook_2_da FROM_SESSION Session_ensure_errors_internalized_hook
+V Form_fix_ensure_errors_internalized_hook_3_in kind=form lang=de surface=internalisiert_werden fixes=内化-ed
+E Form_fix_ensure_errors_internalized_hook_3_in FROM_SESSION Session_ensure_errors_internalized_hook
+V Form_fix_ensure_errors_internalized_hook_4_in kind=form lang=de surface=in_den_Sprach-Knowledge-Graph fixes=ins_Sprache-Knowledge-Graph
+E Form_fix_ensure_errors_internalized_hook_4_in FROM_SESSION Session_ensure_errors_internalized_hook
+V Form_fix_ensure_errors_internalized_hook_5_da kind=form lang=de surface=Das_ist_auch_der_Grund_warum_es_den_Hook_gibt fixes=run-on_warum_gibt_es_hook
+E Form_fix_ensure_errors_internalized_hook_5_da FROM_SESSION Session_ensure_errors_internalized_hook
+
+# auto-gap 2026-09-07T12:20:53Z surface=内化-ed
+V Concept_gap_zh_ed_238255878d kind=concept gloss=unknown-expression-in-de status=open
+V Gap_zh_ed_238255878d kind=gap lang=zh surface=内化-ed target=de status=open
+V Lemma_zh_zh_ed_238255878d kind=lemma lang=zh surface=内化-ed
+E Concept_gap_zh_ed_238255878d EXPRESSES Lemma_zh_zh_ed_238255878d SOURCE=hook/beforeSubmitPrompt
+E Lemma_zh_zh_ed_238255878d GAP_IN de SOURCE=hook/beforeSubmitPrompt
+E Concept_gap_zh_ed_238255878d GAP_IN de SOURCE=hook/beforeSubmitPrompt
+
+# ingest-session 2026-09-07T12:21:32Z cafe-mask-how-it-works
+V Session_cafe_mask_how_it_works kind=session date=2026-09-07 body=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-cafe-mask-how.toon.md
+V Focus_cafe_mask_how_it_works kind=focus gloss=gespielt_spielen_kein_en_ing_am_partizip status=active
+E Focus_cafe_mask_how_it_works FROM_SESSION Session_cafe_mask_how_it_works
+V Lemma_de_fix_cafe_mask_how_it_works kind=lemma lang=de surface=ok_also_ich_spiele_jetzt_meine_caf_mask_mp3_bei_mi role=minimal-rewrite
+E Lemma_de_fix_cafe_mask_how_it_works FROM_SESSION Session_cafe_mask_how_it_works SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-cafe-mask-how.toon.md
+V Form_fix_cafe_mask_how_it_works_0_spiele_jetz kind=form lang=de surface=spiele_jetzt fixes=gespielt-ing
+E Form_fix_cafe_mask_how_it_works_0_spiele_jetz FROM_SESSION Session_cafe_mask_how_it_works
+V Form_fix_cafe_mask_how_it_works_1_meine_caf_m kind=form lang=de surface=meine_Café-Mask-MP3 fixes=mit_meine_cafe-mask
+E Form_fix_cafe_mask_how_it_works_1_meine_caf_m FROM_SESSION Session_cafe_mask_how_it_works
+V Form_fix_cafe_mask_how_it_works_2_datei_mp3 kind=form lang=de surface=Datei_/_MP3 fixes=datei
+E Form_fix_cafe_mask_how_it_works_2_datei_mp3 FROM_SESSION Session_cafe_mask_how_it_works
+V Form_fix_cafe_mask_how_it_works_3_punkt_wie_f kind=form lang=de surface=Punkt_+_Wie_funktioniert_das? fixes=Run-on_so_wie
+E Form_fix_cafe_mask_how_it_works_3_punkt_wie_f FROM_SESSION Session_cafe_mask_how_it_works
+
+# ingest-session 2026-09-07T12:29:12Z language-panel-menu
+V Session_language_panel_menu kind=session date=2026-09-07 body=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-language-panel.toon.md
+V Focus_language_panel_menu kind=focus gloss=erfassen_abdecken_brauchen_kein_en_to_be_de_inf_56 status=active
+E Focus_language_panel_menu FROM_SESSION Session_language_panel_menu
+V Lemma_de_fix_language_panel_menu kind=lemma lang=de surface=ach_so_ich_brauche_im_left_panel_ein_men_language_ role=minimal-rewrite
+E Lemma_de_fix_language_panel_menu FROM_SESSION Session_language_panel_menu SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-language-panel.toon.md
+V Form_fix_language_panel_menu_0_abdecken_brauc kind=form lang=de surface=abdecken_/_brauchen fixes=to_be_erfassen
+E Form_fix_language_panel_menu_0_abdecken_brauc FROM_SESSION Session_language_panel_menu
+V Form_fix_language_panel_menu_1_grammatik kind=form lang=de surface=Grammatik fixes=gramatik
+E Form_fix_language_panel_menu_1_grammatik FROM_SESSION Session_language_panel_menu
+V Form_fix_language_panel_menu_2_einen_separate kind=form lang=de surface=einen_separaten_Knowledge_Graph fixes=ein_separate_Knowledge_graph
+E Form_fix_language_panel_menu_2_einen_separate FROM_SESSION Session_language_panel_menu
+V Form_fix_language_panel_menu_3_f_rs_sprachenl kind=form lang=de surface=fürs_Sprachenlernen fixes=für_Sprache_lernen
+E Form_fix_language_panel_menu_3_f_rs_sprachenl FROM_SESSION Session_language_panel_menu
+V Form_fix_language_panel_menu_4_klarer_nebensa kind=form lang=de surface=klarer_Nebensatz_/_Aufzählung fixes=Run-on_mit_sowieso
+E Form_fix_language_panel_menu_4_klarer_nebensa FROM_SESSION Session_language_panel_menu
+
+# ingest-session 2026-09-07T12:30:15Z method-goal-fehlerfrei-aeussern
+V Session_method_goal_fehlerfrei_aeussern kind=session date=2026-09-07 body=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-method-goal.toon.md
+V Focus_method_goal_fehlerfrei_aeussern kind=focus gloss=beherrschen_dass_orthografie_nebensatz status=active
+E Focus_method_goal_fehlerfrei_aeussern FROM_SESSION Session_method_goal_fehlerfrei_aeussern
+V Lemma_de_fix_method_goal_fehlerfrei_aeussern kind=lemma lang=de surface=ok_mein_ziel_bei_dieser_methode_besteht_darin_dass role=minimal-rewrite
+E Lemma_de_fix_method_goal_fehlerfrei_aeussern FROM_SESSION Session_method_goal_fehlerfrei_aeussern SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-method-goal.toon.md
+V Form_fix_method_goal_fehlerfrei_aeussern_0_di kind=form lang=de surface=dieser_Methode fixes=diesem_Methode
+E Form_fix_method_goal_fehlerfrei_aeussern_0_di FROM_SESSION Session_method_goal_fehlerfrei_aeussern
+V Form_fix_method_goal_fehlerfrei_aeussern_1_da kind=form lang=de surface=dass fixes=daß
+E Form_fix_method_goal_fehlerfrei_aeussern_1_da FROM_SESSION Session_method_goal_fehlerfrei_aeussern
+V Form_fix_method_goal_fehlerfrei_aeussern_2_ir kind=form lang=de surface=irgendwann_/_eventuell fixes=evetuell
+E Form_fix_method_goal_fehlerfrei_aeussern_2_ir FROM_SESSION Session_method_goal_fehlerfrei_aeussern
+V Form_fix_method_goal_fehlerfrei_aeussern_3_be kind=form lang=de surface=beherrsche fixes=behersscht
+E Form_fix_method_goal_fehlerfrei_aeussern_3_be FROM_SESSION Session_method_goal_fehlerfrei_aeussern
+V Form_fix_method_goal_fehlerfrei_aeussern_4_vo kind=form lang=de surface=vollständig_/_vollkommen fixes=vollkommend
+E Form_fix_method_goal_fehlerfrei_aeussern_4_vo FROM_SESSION Session_method_goal_fehlerfrei_aeussern
+V Form_fix_method_goal_fehlerfrei_aeussern_5_mi kind=form lang=de surface=mich_beim_Schreiben_…_äußern_zu_können fixes=bei_Schreiben_…_kann_ich_äußer
+E Form_fix_method_goal_fehlerfrei_aeussern_5_mi FROM_SESSION Session_method_goal_fehlerfrei_aeussern
+
+# ingest-session 2026-09-07T12:32:01Z fr-probe-expliquer-ajouter-kg lang=fr
+V Session_fr_probe_expliquer_ajouter_kg kind=session date=2026-09-07 lang=fr body=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-fr-probe.toon.md
+V Focus_fr_probe_expliquer_ajouter_kg kind=focus lang=fr gloss=ajouter_au_pas_sur_06ca34a78f status=active
+E Focus_fr_probe_expliquer_ajouter_kg FROM_SESSION Session_fr_probe_expliquer_ajouter_kg
+V Lemma_fr_fix_fr_probe_expliquer_ajouter_kg kind=lemma lang=fr surface=C'est_un_test_pour_mon_français._Pourriez-vous_me_ role=minimal-rewrite
+E Lemma_fr_fix_fr_probe_expliquer_ajouter_kg FROM_SESSION Session_fr_probe_expliquer_ajouter_kg SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-fr-probe.toon.md
+V Form_fix_fr_probe_expliquer_ajouter_kg_0_fran kind=form lang=fr surface=français fixes=Francais
+E Form_fix_fr_probe_expliquer_ajouter_kg_0_fran FROM_SESSION Session_fr_probe_expliquer_ajouter_kg
+V Form_fix_fr_probe_expliquer_ajouter_kg_1_l_aj kind=form lang=fr surface=l'ajouter_au_knowledge_graph fixes=ajouter_sur_le_knowledge_graph
+E Form_fix_fr_probe_expliquer_ajouter_kg_1_l_aj FROM_SESSION Session_fr_probe_expliquer_ajouter_kg
+V Form_fix_fr_probe_expliquer_ajouter_kg_2_me_l kind=form lang=fr surface=me_l'expliquer_et_l'ajouter fixes=me_expliquer_et_ajouter
+E Form_fix_fr_probe_expliquer_ajouter_kg_2_me_l FROM_SESSION Session_fr_probe_expliquer_ajouter_kg
+V Form_fix_fr_probe_expliquer_ajouter_kg_3_poin kind=form lang=fr surface=point_après_français_puis_nouvelle_requê fixes=une_phrase_longue
+E Form_fix_fr_probe_expliquer_ajouter_kg_3_poin FROM_SESSION Session_fr_probe_expliquer_ajouter_kg
+
+
+# fr-probe frames 2026-09-07
+V Concept_add_to_kg kind=concept gloss=add-to-knowledge-graph
+V Concept_fr_probe_explain kind=concept gloss=polite-ask-explain-and-add
+V Lemma_fr_ajouter_au_kg kind=lemma lang=fr surface=ajouter-au-knowledge-graph
+V Lemma_fr_pourriez_vous kind=lemma lang=fr surface=Pourriez-vous
+V Frame_fr_ajouter_a_NP kind=frame lang=fr id=ajouter_a_NP
+V Frame_fr_pourriez_vous_Inf kind=frame lang=fr id=pourriez_vous_Inf
+E Concept_add_to_kg EXPRESSES Lemma_fr_ajouter_au_kg
+E Concept_add_to_kg NEEDS_FRAME Frame_fr_ajouter_a_NP
+E Concept_fr_probe_explain EXPRESSES Lemma_fr_pourriez_vous
+E Concept_fr_probe_explain NEEDS_FRAME Frame_fr_pourriez_vous_Inf
+E Lemma_fr_ajouter_au_kg FROM_SESSION Session_fr_probe_expliquer_ajouter_kg
+
+# ingest-session 2026-09-07T14:25:21Z inflow-take-dsb-graph-persist lang=de
+V Session_inflow_take_dsb_graph_persist kind=session date=2026-09-07 lang=de body=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-inflow-dsb-persist.toon.md
+V Focus_inflow_take_dsb_graph_persist kind=focus lang=de gloss=sicherstellen_dass_widergespiegelt_wird_dass_finit status=active
+E Focus_inflow_take_dsb_graph_persist FROM_SESSION Session_inflow_take_dsb_graph_persist
+V Lemma_de_fix_inflow_take_dsb_graph_persist kind=lemma lang=de surface=Ich_möchte_sicherstellen,_dass_meine_manuelle_Eing role=minimal-rewrite
+E Lemma_de_fix_inflow_take_dsb_graph_persist FROM_SESSION Session_inflow_take_dsb_graph_persist SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-inflow-dsb-persist.toon.md
+V Form_fix_inflow_take_dsb_graph_persist_0_sich kind=form lang=de surface=sicherstellen,_dass fixes=sicherzustellen,_daß
+E Form_fix_inflow_take_dsb_graph_persist_0_sich FROM_SESSION Session_inflow_take_dsb_graph_persist
+V Form_fix_inflow_take_dsb_graph_persist_1_dass kind=form lang=de surface=dass fixes=daß
+E Form_fix_inflow_take_dsb_graph_persist_1_dass FROM_SESSION Session_inflow_take_dsb_graph_persist
+V Form_fix_inflow_take_dsb_graph_persist_2_zu_d kind=form lang=de surface=zu_den_Inflow-Informationen fixes=für_den_Inflowsinformationen
+E Form_fix_inflow_take_dsb_graph_persist_2_zu_d FROM_SESSION Session_inflow_take_dsb_graph_persist
+V Form_fix_inflow_take_dsb_graph_persist_3_dsb_ kind=form lang=de surface=DSB-Verfolgung fixes=DSB_Verfolgerung
+E Form_fix_inflow_take_dsb_graph_persist_3_dsb_ FROM_SESSION Session_inflow_take_dsb_graph_persist
+V Form_fix_inflow_take_dsb_graph_persist_4_und kind=form lang=de surface=und fixes=und_und
+E Form_fix_inflow_take_dsb_graph_persist_4_und FROM_SESSION Session_inflow_take_dsb_graph_persist
+V Form_fix_inflow_take_dsb_graph_persist_5_im_p kind=form lang=de surface=im_Pädagogik-Knowledge-Graph_widergespie fixes=Pädagogie_knowledge_graph_wide
+E Form_fix_inflow_take_dsb_graph_persist_5_im_p FROM_SESSION Session_inflow_take_dsb_graph_persist
+V Form_fix_inflow_take_dsb_graph_persist_6_g_nz kind=form lang=de surface=gänzlich_in_der_Zielsprache fixes=ganzlich_auf_Zielsprache
+E Form_fix_inflow_take_dsb_graph_persist_6_g_nz FROM_SESSION Session_inflow_take_dsb_graph_persist
+V Form_fix_inflow_take_dsb_graph_persist_7_ich kind=form lang=de surface=ich fixes=Ich_(mitte)
+E Form_fix_inflow_take_dsb_graph_persist_7_ich FROM_SESSION Session_inflow_take_dsb_graph_persist
+
+# ingest-session 2026-09-07T14:30:25Z chat-correct-kg-tmp-promote lang=de
+V Session_chat_correct_kg_tmp_promote kind=session date=2026-09-07 lang=de body=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-chat-kg-tmp-promote.toon.md
+V Focus_chat_correct_kg_tmp_promote kind=focus lang=de gloss=nach_meinen_eingaben_dativ_plural_korrektur_nicht_ status=active
+E Focus_chat_correct_kg_tmp_promote FROM_SESSION Session_chat_correct_kg_tmp_promote
+V Lemma_de_fix_chat_correct_kg_tmp_promote kind=lemma lang=de surface=Nein_—_nach_meinen_Eingaben_in_dieser_Chatbox_soll role=minimal-rewrite
+E Lemma_de_fix_chat_correct_kg_tmp_promote FROM_SESSION Session_chat_correct_kg_tmp_promote SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-09-07-chat-kg-tmp-promote.toon.md
+V Form_fix_chat_correct_kg_tmp_promote_0_nach_m kind=form lang=de surface=nach_meinen_Eingaben fixes=nach_meinem_Eingaben
+E Form_fix_chat_correct_kg_tmp_promote_0_nach_m FROM_SESSION Session_chat_correct_kg_tmp_promote
+V Form_fix_chat_correct_kg_tmp_promote_1_korrek kind=form lang=de surface=Korrektur fixes=Korrigierung
+E Form_fix_chat_correct_kg_tmp_promote_1_korrek FROM_SESSION Session_chat_correct_kg_tmp_promote
+V Form_fix_chat_correct_kg_tmp_promote_2_fehler kind=form lang=de surface=Fehler fixes=fehler
+E Form_fix_chat_correct_kg_tmp_promote_2_fehler FROM_SESSION Session_chat_correct_kg_tmp_promote
+V Form_fix_chat_correct_kg_tmp_promote_3_im_kno kind=form lang=de surface=im_Knowledge_Graph fixes=auf_Knowledge_graph
+E Form_fix_chat_correct_kg_tmp_promote_3_im_kno FROM_SESSION Session_chat_correct_kg_tmp_promote
+V Form_fix_chat_correct_kg_tmp_promote_4_lass_u kind=form lang=de surface=lass_uns_das_einführen fixes=lassen_es_einführen
+E Form_fix_chat_correct_kg_tmp_promote_4_lass_u FROM_SESSION Session_chat_correct_kg_tmp_promote
+V Form_fix_chat_correct_kg_tmp_promote_5_beim_c kind=form lang=de surface=beim_Cleaning_des_tmp-Ordners fixes=für_dem_Cleaning_der_tmp_Ordne
+E Form_fix_chat_correct_kg_tmp_promote_5_beim_c FROM_SESSION Session_chat_correct_kg_tmp_promote
+V Form_fix_chat_correct_kg_tmp_promote_6_ordnun kind=form lang=de surface=ordnungsgemäß_verarbeitet fixes=Ordnungsgemäß_gearbeitet
+E Form_fix_chat_correct_kg_tmp_promote_6_ordnun FROM_SESSION Session_chat_correct_kg_tmp_promote

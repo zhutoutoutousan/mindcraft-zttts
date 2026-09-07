@@ -1,0 +1,9 @@
+- VERTEX Caffeine
+- KIND natural
+- GLOSS adenosine-receptor-antagonist-as-load-class
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM EFSA 2015 (healthy adults, general population): single sitting up to 200 mg does not raise safety concerns; daily from all sources up to 400 mg (~5.7 mg/kg for a 70 kg reference adult) does not raise safety concerns; 100 mg near bedtime may change sleep in some adults; mean half-life about 5 h with wide individual range. This is a class ceiling, not a personal stack.
+- CLAIM Subjective "feels fine" above those sittings is often adenosine-receptor upregulation, not a new safety ceiling. Sleep architecture damage amplifies fog. L-theanine is studied with moderate caffeine, not with multi-fold EFSA sittings.
+- CLAIM Under SicknessBehavior / inflammatory fog, treat caffeine as a load class that can fight the rest window. Do not invent a diagnosis from intake. Personal bottles stay out of this vertex.
+- SOURCE https://www.efsa.europa.eu/en/efsajournal/pub/4102
+- SOURCE .cursor/skills/fog-rest/reference.md

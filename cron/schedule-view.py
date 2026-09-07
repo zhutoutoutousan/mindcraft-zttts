@@ -22,9 +22,10 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, Rectangle
 
+from coarse import coarse_place
+
 ROOT = Path(__file__).resolve().parent.parent
 ENRICH = ROOT / "schedule" / "enrich.toon.md"
-MONTH_FU = ROOT / "schedule" / "2026-9.fu.md"
 OUT = ROOT / "tmp" / "schedule"
 TZ = ZoneInfo("Europe/Berlin")
 WD = ("SO", "MO", "DI", "MI", "DO", "FR", "SA")
@@ -101,6 +102,11 @@ def parse_enrich(path: Path) -> list[dict]:
     return records
 
 
+def month_fu_path(day: date | None = None) -> Path:
+    d = day or datetime.now(TZ).date()
+    return ROOT / "schedule" / f"{d.year}-{d.month}.fu.md"
+
+
 def parse_status(path: Path) -> dict[str, str]:
     out: dict[str, str] = {}
     title = ""
@@ -118,8 +124,8 @@ def parse_status(path: Path) -> dict[str, str]:
     return out
 
 
-def load_events() -> list[Event]:
-    status_map = parse_status(MONTH_FU)
+def load_events(day: date | None = None) -> list[Event]:
+    status_map = parse_status(month_fu_path(day))
     events: list[Event] = []
     for rec in parse_enrich(ENRICH):
         title = rec.get("title", "").strip()
@@ -202,6 +208,18 @@ def stamp_ttl() -> None:
         [sys.executable, str(ROOT / "cron" / "janitor.py"), "--touch"],
         check=True,
     )
+
+
+def splice_private_take() -> Path:
+    """Public schedule stays clean. Private clocks go to tmp/take.html."""
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / "cron" / "private-take.py")],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    rel = (proc.stdout or "").strip().splitlines()[-1]
+    return ROOT / rel
 
 
 def assign_lanes(day_events: list[Event]) -> int:
@@ -382,9 +400,9 @@ def draw_agenda(events: list[Event], week: date, today: date, path: Path) -> Non
         ax.text(0.06, y + 0.042, when, color=C_TODAY, fontsize=9, va="top")
         body_y = y + 0.062
         lines: list[str] = []
-        lines.extend(wrap("WHERE  " + ev.where, 92)[:2])
+        lines.extend(wrap("WHERE  " + coarse_place(ev.where), 92)[:2])
         lines.extend(wrap("WHAT   " + ev.what, 92)[:3])
-        lines.extend(wrap("WHY    " + ev.why, 92)[:3])
+        lines.extend(wrap("WHY    " + coarse_place(ev.why), 92)[:3])
         if ev.url:
             lines.append(ev.url)
         for j, line in enumerate(lines[:9]):
@@ -448,9 +466,9 @@ def write_html(events: list[Event], weeks: list[date], today: date, path: Path) 
         parts.append(f"<article class='{klass}'>")
         parts.append(f"<h3>{html_esc(ev.title)}</h3>")
         parts.append(f"<p class='muted'>{html_esc(badge)} · {html_esc(when)}</p>")
-        parts.append(f"<p><b>WHERE</b> {html_esc(ev.where)}</p>")
+        parts.append(f"<p><b>WHERE</b> {html_esc(coarse_place(ev.where))}</p>")
         parts.append(f"<p><b>WHAT</b> {html_esc(ev.what)}</p>")
-        parts.append(f"<p><b>WHY</b> {html_esc(ev.why)}</p>")
+        parts.append(f"<p><b>WHY</b> {html_esc(coarse_place(ev.why))}</p>")
         if ev.url:
             parts.append(f"<p><a href='{html_esc(ev.url)}'>{html_esc(ev.url)}</a></p>")
         parts.append("</article>")
@@ -481,8 +499,19 @@ def cjk_font():
     return font_manager.FontProperties()
 
 
+def events_on(events: list[Event], day: date) -> list[Event]:
+    return [e for e in events if day in dates_of(e)]
+
+
+def event_row(ev: Event) -> tuple[str, str, str, str]:
+    when = "ganztags" if ev.allday else ev.start.strftime("%H:%M")
+    fill = C_CLASH if ev.clash else (C_CONF if ev.status == "confirmed" else C_CAND)
+    body = coarse_place(ev.where or ev.what) or ev.status
+    return (when, short_title(ev.title, 42), body[:90], fill)
+
+
 def draw_plate(today: date, path: Path) -> None:
-    """Share card for today's plate. Friend-facing. No phone numbers."""
+    """Share card for today's plate. Friend-facing. No streets, halls, or ID."""
     fp = cjk_font()
     fig = plt.figure(figsize=(9.0, 12.0), dpi=140, facecolor=C_BG)
     ax = fig.add_axes((0.0, 0.0, 1.0, 1.0))
@@ -496,16 +525,12 @@ def draw_plate(today: date, path: Path) -> None:
     wd = ("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag")[today.weekday()]
     ax.text(0.07, 0.04, "HEUTIGER TELLER", color=C_TODAY, fontsize=11, fontproperties=fp, fontweight="bold", va="top")
     ax.text(0.07, 0.075, f"{wd}  {today.day}. {MONTH_DE[today.month]} {today.year}", color=C_TEXT, fontsize=22, fontproperties=fp, fontweight="bold", va="top")
-    ax.text(0.07, 0.125, "DSB recovery  ·  walk only  ·  Europe/Berlin", color=C_MUTED, fontsize=11, fontproperties=fp, va="top")
+    ax.text(0.07, 0.125, "TZ Europe/Berlin  ·  sourced schedule", color=C_MUTED, fontsize=11, fontproperties=fp, va="top")
 
-    cards = [
-        ("12:30", "Amt Potsdam", "Empfang  ·  Horstweg 102–108\nAusweis + Terminbestätigung", C_CONF),
-        ("每天", "背单词 × 3", "德语助手  ·  法语助手  ·  西语助手\n各一轮，停就停", "#34a853"),
-        ("NOW", "AgentCore", "用自己的话：AgentCore 是什么，不是什么。\n一句就够。先别读 workshop。", C_TODAY),
-        ("body", "Walk only", "肩胛还酸  ·  转体残留痛\n胸 / 背阔 / 前臂 DOMS  ·  不练卧推", C_CLASH),
-        ("after", "如果头不晕", "Goethe B2 Schreiben 75 min\n然后可以停", C_CAND),
-        ("Fr 4.", "Morgen", "11:30 AWS workshop  ·  danach IFA\nkein heavy bench", "#8ab4f8"),
-    ]
+    day_events = events_on(load_events(today), today)
+    cards = [event_row(ev) for ev in day_events[:6]]
+    if not cards:
+        cards = [("—", "Keine Termine", "Nichts in der Store für heute.", C_CAND)]
     top = 0.17
     h = 0.12
     gap = 0.018
@@ -527,7 +552,7 @@ def draw_plate(today: date, path: Path) -> None:
         ax.text(0.28, y + 0.018, title, color=C_TEXT, fontsize=15, fontproperties=fp, fontweight="bold", va="top")
         ax.text(0.11, y + 0.052, body, color=C_MUTED, fontsize=11, fontproperties=fp, va="top", linespacing=1.45)
 
-    ax.text(0.07, 0.96, "kein Gym  ·  Croissants vorbei  ·  IFA Retail Summit heute skip", color=C_MUTED, fontsize=9, fontproperties=fp, va="top")
+    ax.text(0.07, 0.96, "keine Straße  ·  keine Hallen-ID  ·  keine Ausweiszeile", color=C_MUTED, fontsize=9, fontproperties=fp, va="top")
     path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(path, facecolor=C_BG)
     plt.close(fig)
@@ -564,51 +589,27 @@ def draw_next_board(path: Path, kicker: str, title: str, sub: str, rows: list[tu
     plt.close(fig)
 
 
-def draw_next_pack(out: Path) -> list[Path]:
+def draw_next_pack(out: Path, today: date) -> list[Path]:
     written: list[Path] = []
-    boards = [
-        (
-            out / "next-01-now.png",
-            "JETZT  ·  DO 3. SEP  ·  11:14",
-            "11:14  →  12:30",
-            "~76 min until Empfang. DSB recovery. Walk only. 30m loop is off.",
-            [
-                ("NOW", "Leave window", "Bag is in .private. Do not start a study DAY.\nDo not open workshop notes.", C_CLASH),
-                ("12:30", "Agentur Empfang", "~20 min. Confirmed. Street, tram, ID list\nstay in .private/after-agentur.fu.md", C_CONF),
-                ("SKIP", "Not today", "IFA halls. Retail Leaders Summit. Heavy press.\nWorkshop pre-reads. Inventing AgentCore ANSWER.", C_CAND),
-            ],
-            ["walk only", "PROBE empty", "助手 not logged"],
-            "Next board is the after-door order.",
-        ),
-        (
-            out / "next-02-after.png",
-            "AFTER THE DOOR  ·  SAME DAY",
-            "Sit, then one line",
-            "If the head is loud: water, walk, stop. Empty PROBE stays empty.",
-            [
-                ("1", "Sit and log", "Water. Log the visit in .private/after-agentur.fu.md.\nNo file number on the graph.", C_CONF),
-                ("2", "AgentCore PROBE", "One sentence, own words: what it is, and what it is not.\nWorkshop reading waits until this exists.", C_TODAY),
-                ("3", "助手 × 3", "德语 → 法语 → 西语. One unit each.\n--external --id de- / fr- / es-assistant-wordschatz", "#34a853"),
-                ("4", "Optional Goethe", "B2 Schreiben 75 min only if still quiet.\nOptional 18:00 Cognee/Fastino if energy. Stop if sore.", C_CAND),
-            ],
-            ["budget 4 = 3 lexicon + 1 probe", "stop on sore"],
-            "Do not pile DAY.",
-        ),
-        (
-            out / "next-03-fr.png",
-            "FREITAG 4. SEP",
-            "Workshop first",
-            "Registered. Online. Then Messe if the head is still quiet.",
-            [
-                ("11:30", "AWS workshop ~2h", "Sandboxed coding agents. Lambda MicroVMs.\nAgent Toolkit. Cedar on AgentCore. Drop CIC lunch.", C_TODAY),
-                ("13:30", "IFA after the call", "Privatbesucher from 12:00. Halls close 18:00.\nWalk for agent UX, not kitchen robots.", "#34a853"),
-                ("14:00", "Dream Stage UX Layer", "Interface for AI agents. Skip 11:00 AMD and\n12:00 Algorithmic Shopper — they clash.", C_CLASH),
-                ("evening", "Pick at most one", "Hertie 18:00 · Employed.world 17:00.\nNo heavy bench.", C_CAND),
-            ],
-            ["workshop wins", "no heavy bench", "IFA 4–8 Sep"],
-            "2026-09-03 11:14  ·  tmp/schedule/next.html",
-        ),
-    ]
+    events = load_events(today)
+    wd = ("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag")
+    boards: list[tuple] = []
+    for offset, name in ((0, "next-01-today.png"), (1, "next-02-plus1.png"), (2, "next-03-plus2.png")):
+        day = today + timedelta(days=offset)
+        rows = [event_row(ev) for ev in events_on(events, day)[:4]]
+        if not rows:
+            rows = [("—", "Keine Termine", "Nichts in der Store.", C_CAND)]
+        boards.append(
+            (
+                out / name,
+                f"TAG  ·  {wd[day.weekday()].upper()}",
+                f"{day.day}. {MONTH_DE[day.month]} {day.year}",
+                "Titel und Uhr. Keine Straße, keine Hallen-ID.",
+                rows,
+                ["sourced", "coarse place"],
+                "schedule/  ·  tmp/schedule/",
+            )
+        )
     for item in boards:
         draw_next_board(*item)
         written.append(item[0])
@@ -624,17 +625,21 @@ def main() -> int:
     today = date.fromisoformat(args.today) if args.today else datetime.now(TZ).date()
     if args.next:
         OUT.mkdir(parents=True, exist_ok=True)
-        written = draw_next_pack(OUT)
+        written = draw_next_pack(OUT, today)
+        take = splice_private_take()
         stamp_ttl()
         for path in written:
             print(path.relative_to(ROOT).as_posix())
+        print(take.relative_to(ROOT).as_posix())
         return 0
     if args.plate:
         OUT.mkdir(parents=True, exist_ok=True)
         path = OUT / f"plate-{today.isoformat()}.png"
         draw_plate(today, path)
+        take = splice_private_take()
         stamp_ttl()
         print(path.relative_to(ROOT).as_posix())
+        print(take.relative_to(ROOT).as_posix())
         return 0
     events = load_events()
     weeks = weeks_covering(events, today)
@@ -655,6 +660,8 @@ def main() -> int:
     if src.exists():
         alias.write_bytes(src.read_bytes())
         written.append(alias)
+    take = splice_private_take()
+    written.append(take)
     stamp_ttl()
     for path in written:
         print(path.relative_to(ROOT).as_posix())

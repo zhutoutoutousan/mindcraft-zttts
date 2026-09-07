@@ -1,0 +1,8 @@
+- VERTEX CrossBorderTrade
+- KIND praxis
+- GLOSS goods-moving-across-customs-and-languages
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM CrossBorderTrade is Ecommerce plus a second language and a second clock: supplier in one country, buyer in another. Mandarin as a trade language with CN partners is a CLAIM about the goods path. It is not a SPRACHEN native claim. Do not add Chinese as native.
+- CLAIM Coordination sits between Einkauf, logistics, sales, and service. That is Form of the work, not a CV line.
+- MEDIA PAGE https://en.wikipedia.org/wiki/International_trade
+- SOURCE https://en.wikipedia.org/wiki/International_trade

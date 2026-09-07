@@ -3,7 +3,15 @@
 - GLOSS bounded-study-before-repair
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Human 2026-09-02 reports post-study head/brain sore and names it DSB. Nature 2024: activity can induce transient DNA breaks in CA1 enhancers that repair within minutes. Persistent extranuclear genomic fragments are a different class. Do not write this calendar's study as CFC. Do not write sore as GenomicInstability. Stop on SORE. Log self/endurance.toon.md.
+- CLAIM Sickness behavior under peripheral inflammation is a different stop from named DSB. High-effort cognition is discounted. Skip lexicon and PROBE when that class is named. Prefer LowDemandIntake. Personal bottles are not a vertex. Do not diagnose.
+- CLAIM AgentStreamDrop and huge Agent tool storms also tax this budget: small turns when fog or retry is named. VideoGeneration as rest intake is not STUDY DONE.
 - CLAIM Ausdauer is the day's total intellectual units, not only interview DAY. Human 2026-09-03 attests daily 德语助手 法语助手 西语助手 背单词. That is Wordschatz. One session is one unit. DAY LOAD is remaining after planned daily external. Do not invent a word count. TESOL Lexical Press 2024-03-07: a drill that runs too long bores, and repetition stresses some learners. LanguageDrilling INFORMS IntellectualLoad. Keep the segment short.
+- CLAIM Human 2026-09-07 dual-lang docs intake (Cursor run-modes) is one logged unit when named. Inflow drawer takes of that session persist in inflow/takes.toon.md. tmp/pedagogy/inflow-takes.toon.md is cache; janitor may delete it. Gauge remains self/endurance.toon.md. Do not invent SORE. Empty PROBE stays empty.
+- SOURCE inflow/takes.toon.md
+- SOURCE mezzanine/cursor-run-modes-2026-09-07.toon.md
 - SOURCE https://www.nature.com/articles/s41586-024-07220-7
+- SOURCE https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2023.1305790/full
 - SOURCE https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
 - SOURCE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
+- SOURCE .cursor/skills/fog-rest/SKILL.md
+- SOURCE .cursor/skills/cursor-agent-retry/reference.md

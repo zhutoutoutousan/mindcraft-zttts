@@ -5,6 +5,8 @@
 - CLAIM A hook runs when the agent hits a lifecycle event. Infographic names PreToolUse PostToolUse SessionStart Stop SubagentStop. Official guide also names SubagentStart and others. Matcher then command. Examples in the card: auto-lint on Write, block rm -rf, notify on Stop.
 - CLAIM Infographic says hooks are not AI. Official hooks-guide: a hook may be a shell command, HTTP, MCP tool, prompt, or agent. Deterministic shell is the form that solves what an LLM cannot guarantee. Prompt-hooks exist. Do not flatten the docs to the card.
 - CLAIM This repo has no hook store. Cursor ships a create-hook skill. Gap here is infrastructure quality, not a missing CLAIM on AgentCore.
+- CLAIM Human 2026-09-06 psyche DUMP: want more learning pull on hooks (and subagents) for Cursor/Claude Code. That raises AgentHook on PLAN NEXT / goals.north. Still do not invent a local hooks.json without being asked.
 - SOURCE https://code.claude.com/docs/en/hooks-guide.md
 - SOURCE https://code.claude.com/docs/en/features-overview
 - SOURCE human 2026-09-02 infographic Claude Code five layers
+- SOURCE inflow/DUMP.md $id=psyche-hooks-subagents-learn
