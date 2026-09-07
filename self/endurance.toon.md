@@ -31,5 +31,8 @@ activity:
   units: 1
   note: human 2026-09-03. Daily ES lexicon. Attested Spanisch is verhandlungssicher. Do not invent a word count. Log --external --id es-assistant-wordschatz
 session[]{date,id,units,note}:
+  2026-09-07,run-modes-dual-lang,1,Dual-lang read of cursor run-modes. IntellectualLoad unit. Inflow take persisted to inflow/takes.toon.md. Not named DSB sore. Empty PROBE stays empty.
 log[]{date,done,budget,sore,external,note}:
+  2026-09-07,run-modes-dual-lang,4,,,Dual-lang docs intake logged as one unit. Not fog. Not DSB sore named. Take mirrored to AgentRunMode + endurance.
+  2026-09-06,,4,fog-not-dsb,,Human named inflammation-like fog and skip lexicon. Not DSB. Empty PROBE stays empty. Do not pile DAY.
   2026-09-03,,4,recovery,,DSB recovery. Planned daily external is now 3 (DE FR ES 助手). AgentCore PROBE is the remaining hire unit if the head is quiet. Do not pile --day. Do not diagnose.

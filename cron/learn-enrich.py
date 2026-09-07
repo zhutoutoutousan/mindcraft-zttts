@@ -36,6 +36,7 @@ LESSON_PACK = LESSON_DIR / "lesson.toon.md"
 STATE = LESSON_DIR / "state.toon.md"
 MEZZANINE = ROOT / "mezzanine" / "learn-enrich.toon.md"
 BASELINE_PROBES = LESSON_DIR / "baseline-probes.toon.md"
+VOICE_JS = Path(__file__).resolve().parent / "baseline-voice.js"
 BASELINE_HTML = temp_ttl.TMP / "pedagogy" / "baseline.html"
 BASELINE_ANSWERS = temp_ttl.TMP / "pedagogy" / "baseline-answers.toon.md"
 BASELINE_DURABLE = LESSON_DIR / "baseline.toon.md"
@@ -1073,9 +1074,15 @@ def render_baseline_html(probes: list[dict[str, str]], answers: dict[str, dict[s
             f"</article>"
         )
     body = "\n".join(cards)
-    payload = json.dumps([{"id": r["id"], "q": r["q"]} for r in probes], ensure_ascii=False)
-    langs_js = json.dumps(list(BASELINE_LANGS))
-    bcp_js = json.dumps(BASELINE_LANG_BCP47)
+    boot_json = json.dumps(
+        {
+            "probes": [{"id": r["id"], "q": r["q"]} for r in probes],
+            "langs": list(BASELINE_LANGS),
+            "bcp47": BASELINE_LANG_BCP47,
+            "key": "baseline-lang4-voice-2026-09-02",
+        },
+        ensure_ascii=False,
+    )
     return f"""<!doctype html>
 <html lang="de">
 <head>
@@ -1102,195 +1109,32 @@ def render_baseline_html(probes: list[dict[str, str]], answers: dict[str, dict[s
     button {{ background: #1a237e; color: #e8eef5; border: 1px solid #90caf9; padding: 10px 16px; cursor: pointer; border-radius: 8px; }}
     button.done {{ background: #004d40; border-color: #69f0ae; }}
     #status {{ color: #ce93d8; font-size: 13px; }}
+    #meter {{ width: 140px; height: 12px; background: #2a3544; border-radius: 6px; overflow: hidden; border: 1px solid #2a3544; }}
+    #meter-fill {{ height: 100%; width: 0; background: #69f0ae; }}
+    #meter-num {{ color: #8b9bb4; font-size: 12px; min-width: 4.5em; }}
   </style>
 </head>
 <body>
   <main>
     <h1>摸底 · first probe · four languages</h1>
     <p class="meta">Async. Same question, four boxes: English, 中文, Français, Deutsch. Skip any language. Stop if sore. Not today's DAY LOAD of 3.<br/>
-    Speak in Chrome or Edge on this page: each Speak button listens in that language and writes into that box. Grant the microphone. Edit the transcript if it errs. Type if you prefer.<br/>
+    Speak in Chrome or Edge (not the Cursor panel). Chrome speech uses Google and often returns error=network on this machine; Speak then records locally and transcribes with a small in-browser model (first run downloads it). Grant microphone for 127.0.0.1. Type if you prefer.<br/>
     Content grasp uses English if you filled it. Expression in each box stays separate for language assessment.<br/>
     en C1 and de B2+ are attested SPRACHEN. 中文 and Français are samples, not new SPRACHEN lines. Do not add Chinese as native.<br/>
     Answers: <code>tmp/pedagogy/baseline-answers.toon.md</code>. Empty is wait. Nothing is invented.</p>
     {body}
   </main>
   <div class="bar">
+    <button type="button" id="test-mic">Test mic</button>
+    <div id="meter" aria-hidden="true"><div id="meter-fill"></div></div>
+    <span id="meter-num">mic</span>
     <button type="button" id="save">Save now</button>
     <button type="button" id="dl">Download backup</button>
     <button type="button" id="done" class="done">I'm done</button>
     <span id="status">idle</span>
   </div>
-  <script>
-    const PROBES = {payload};
-    const LANGS = {langs_js};
-    const BCP47 = {bcp_js};
-    const KEY = "baseline-lang4-voice-2026-09-02";
-    const total = PROBES.length * LANGS.length;
-    const areas = [...document.querySelectorAll("article[data-id]")];
-    function collect() {{
-      const out = {{}};
-      areas.forEach((el) => {{
-        const id = el.getAttribute("data-id");
-        const row = {{}};
-        LANGS.forEach((lang) => {{
-          const box = el.querySelector('textarea[data-lang="' + lang + '"]');
-          row[lang] = (box && box.value || "").trim();
-        }});
-        out[id] = row;
-      }});
-      return out;
-    }}
-    function restore(data) {{
-      areas.forEach((el) => {{
-        const id = el.getAttribute("data-id");
-        let row = data[id];
-        if (typeof row === "string") row = {{ en: row, zh: "", fr: "", de: "" }};
-        if (!row) return;
-        LANGS.forEach((lang) => {{
-          const box = el.querySelector('textarea[data-lang="' + lang + '"]');
-          if (box && row[lang]) box.value = row[lang];
-        }});
-      }});
-    }}
-    try {{
-      const cached = JSON.parse(localStorage.getItem(KEY) || "{{}}");
-      restore(cached);
-      const old = JSON.parse(localStorage.getItem("baseline-2026-09-02") || "{{}}");
-      areas.forEach((el) => {{
-        const id = el.getAttribute("data-id");
-        const box = el.querySelector('textarea[data-lang="en"]');
-        if (box && !box.value && typeof old[id] === "string") box.value = old[id];
-      }});
-    }} catch (e) {{}}
-    function filledCount(data) {{
-      let n = 0;
-      Object.values(data).forEach((row) => {{
-        LANGS.forEach((lang) => {{ if ((row[lang] || "").trim()) n += 1; }});
-      }});
-      return n;
-    }}
-    async function save(status) {{
-      const data = collect();
-      localStorage.setItem(KEY, JSON.stringify(data));
-      const n = filledCount(data);
-      document.getElementById("status").textContent = "saving " + n + "/" + total;
-      try {{
-        const res = await fetch(status === "done" ? "/done" : "/save", {{
-          method: "POST",
-          headers: {{ "content-type": "application/json" }},
-          body: JSON.stringify({{ status: status || "open", answers: data }}),
-        }});
-        if (!res.ok) throw new Error("http " + res.status);
-        document.getElementById("status").textContent = (status === "done" ? "done · " : "saved · ") + n + "/" + total + " boxes · " + new Date().toLocaleTimeString();
-      }} catch (e) {{
-        document.getElementById("status").textContent = "local only · " + n + "/" + total + " · use Download backup";
-      }}
-    }}
-    let t = null;
-    areas.forEach((el) => {{
-      el.querySelectorAll("textarea").forEach((box) => {{
-        box.addEventListener("input", () => {{
-          clearTimeout(t);
-          t = setTimeout(() => save("open"), 1200);
-        }});
-      }});
-    }});
-    document.getElementById("save").onclick = () => save("open");
-    document.getElementById("done").onclick = () => save("done");
-    document.getElementById("dl").onclick = () => {{
-      const data = collect();
-      localStorage.setItem(KEY, JSON.stringify(data));
-      const blob = new Blob([JSON.stringify({{ schema: "learn/baseline-answers", langs: LANGS, answers: data }}, null, 2)], {{ type: "application/json" }});
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = "baseline-answers.json";
-      a.click();
-    }};
-    const SpeechAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
-    let live = null;
-    function clearLiveUi() {{
-      document.querySelectorAll("button.mic").forEach((b) => {{
-        b.classList.remove("live");
-        b.textContent = "Speak";
-      }});
-      document.querySelectorAll("textarea.listening").forEach((el) => el.classList.remove("listening"));
-    }}
-    function stopLive() {{
-      if (!live) return;
-      live.keep = false;
-      try {{ live.rec.stop(); }} catch (e) {{}}
-      live = null;
-      clearLiveUi();
-    }}
-    function startLive(btn) {{
-      const lang = btn.getAttribute("data-lang");
-      const box = btn.closest(".lang").querySelector("textarea");
-      if (!SpeechAPI) {{
-        document.getElementById("status").textContent = "voice needs Chrome or Edge at http://127.0.0.1:8765/";
-        return;
-      }}
-      if (live && live.btn === btn) {{
-        stopLive();
-        save("open");
-        return;
-      }}
-      stopLive();
-      const rec = new SpeechAPI();
-      rec.lang = BCP47[lang] || "en-GB";
-      rec.continuous = true;
-      rec.interimResults = true;
-      rec.maxAlternatives = 1;
-      let base = (box.value || "").replace(/\\s+$/, "");
-      if (base) base += " ";
-      live = {{ rec: rec, btn: btn, box: box, keep: true }};
-      rec.onresult = (ev) => {{
-        let acc = "";
-        let tmp = "";
-        for (let i = 0; i < ev.results.length; i++) {{
-          const t = ev.results[i][0].transcript;
-          if (ev.results[i].isFinal) acc += t;
-          else tmp += t;
-        }}
-        box.value = (base + acc + tmp).replace(/ +/g, " ").replace(/^ /, "");
-        box.dispatchEvent(new Event("input"));
-      }};
-      rec.onerror = (ev) => {{
-        document.getElementById("status").textContent = "voice: " + ev.error + " · " + (BCP47[lang] || lang);
-        if (ev.error === "not-allowed") stopLive();
-      }};
-      rec.onend = () => {{
-        if (live && live.rec === rec && live.keep) {{
-          base = (box.value || "").replace(/\\s+$/, "");
-          if (base) base += " ";
-          try {{ rec.start(); return; }} catch (e) {{}}
-        }}
-        if (live && live.rec === rec) {{
-          live = null;
-          clearLiveUi();
-          save("open");
-        }}
-      }};
-      try {{
-        rec.start();
-      }} catch (e) {{
-        document.getElementById("status").textContent = "voice failed to start";
-        live = null;
-        return;
-      }}
-      clearLiveUi();
-      btn.classList.add("live");
-      btn.textContent = "Stop";
-      box.classList.add("listening");
-      document.getElementById("status").textContent = "listening " + lang + " · " + rec.lang + " · speak, then Stop";
-    }}
-    document.querySelectorAll("button.mic").forEach((btn) => {{
-      btn.addEventListener("click", () => startLive(btn));
-    }});
-    if (!SpeechAPI) {{
-      document.querySelectorAll("button.mic").forEach((b) => {{ b.hidden = true; }});
-      document.getElementById("status").textContent = "type, or open in Chrome/Edge for Speak";
-    }}
-  </script>
+  <script>window.BASELINE_BOOT = {boot_json};</script>
+  <script type="module" src="/baseline-voice.js?v=7"></script>
 </body>
 </html>
 """
@@ -1324,14 +1168,15 @@ def cmd_baseline() -> dict:
 
 
 def cmd_baseline_serve(host: str = "127.0.0.1", port: int = BASELINE_PORT) -> None:
-    from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+    from http.server import BaseHTTPRequestHandler, HTTPServer
 
     cmd_baseline()
 
     class Handler(BaseHTTPRequestHandler):
+        protocol_version = "HTTP/1.0"
+
         def log_message(self, fmt: str, *args) -> None:
-            sys_stdout = __import__("sys").stderr
-            sys_stdout.write("BASELINE " + (fmt % args) + "\n")
+            print("BASELINE " + (fmt % args), flush=True)
 
         def _json(self, code: int, payload: dict) -> None:
             raw = json.dumps(payload).encode("utf-8")
@@ -1346,18 +1191,29 @@ def cmd_baseline_serve(host: str = "127.0.0.1", port: int = BASELINE_PORT) -> No
             self.send_response(200)
             self.send_header("content-type", "text/html; charset=utf-8")
             self.send_header("cache-control", "no-store")
+            self.send_header("Permissions-Policy", "microphone=(self)")
             self.send_header("content-length", str(len(raw)))
             self.end_headers()
             self.wfile.write(raw)
 
         def do_GET(self) -> None:
-            if self.path in {"/", "/index.html", "/baseline.html"}:
+            path = self.path.split("?", 1)[0]
+            if path in {"/", "/index.html", "/baseline.html"}:
                 self._html()
                 return
-            if self.path == "/health":
+            if path == "/baseline-voice.js":
+                raw = VOICE_JS.read_bytes()
+                self.send_response(200)
+                self.send_header("content-type", "text/javascript; charset=utf-8")
+                self.send_header("cache-control", "no-store")
+                self.send_header("content-length", str(len(raw)))
+                self.end_headers()
+                self.wfile.write(raw)
+                return
+            if path == "/health":
                 self._json(200, {"ok": True, "html": BASELINE_HTML.as_posix()})
                 return
-            if self.path == "/answers":
+            if path == "/answers":
                 self._json(200, parse_baseline_answers(BASELINE_ANSWERS))
                 return
             self.send_error(404)
@@ -1384,7 +1240,26 @@ def cmd_baseline_serve(host: str = "127.0.0.1", port: int = BASELINE_PORT) -> No
             filled = filled_boxes(clean)
             self._json(200, {"ok": True, "status": status, "filled": filled, "total": len(parse_baseline_probes(BASELINE_PROBES)) * len(BASELINE_LANGS)})
 
-    httpd = ThreadingHTTPServer((host, port), Handler)
+    class Server(HTTPServer):
+        allow_reuse_address = False
+
+        def handle_error(self, request, client_address) -> None:
+            import traceback
+
+            traceback.print_exc()
+
+    last_err: OSError | None = None
+    httpd = None
+    for try_port in (port, 8777, 8778):
+        try:
+            httpd = Server((host, try_port), Handler)
+            port = try_port
+            break
+        except OSError as exc:
+            last_err = exc
+            httpd = None
+    if httpd is None:
+        raise SystemExit(f"baseline-serve bind failed: {last_err}")
     print(f"BASELINE http://{host}:{port}/", flush=True)
     print(f"BASELINE answers {BASELINE_ANSWERS.as_posix()}", flush=True)
     httpd.serve_forever()

@@ -1,4 +1,5 @@
 - STORE PATH self/training.toon.md
+- STORE PATH mezzanine/athlean-ab-shuffle-6min.toon.md
 - PROFILE FITNESS
 
 - BLOCKER STORE flags.leftScapulaPain or radiating left arm
@@ -9,9 +10,13 @@
 - BLOCKER STORE flags.skipHeavyPressUntilClear
   - 40 percent relief on 2026-09-02 is not quiet. Rotation-evoked residual on 2026-09-03 is not quiet. No 92.5-95 until quiet.
 
-- SCHEDULE 2026-09-02–06 unplanned deload microcycle. Walk and optional Cavaliere technique test on 2026-09-06 only if not sharp. Overlap Agentur 2026-09-03 and IFA/AWS 2026-09-04–05.
+- SCHEDULE 2026-09-06 easy swim on the deload. Residual lats and a little ab DOMS. Not a pull session. Stop if left scapula nags. Mouth particulars stay in .private/health.fu.md.
 
-- SCHEDULE 2026-09-07 earliest heavy bench IF STORE flags.skipHeavyPressUntilClear is false
+- SCHEDULE 2026-09-07 rest. Not heavy bench.
+  - BLOCKER STORE flags.skipHeavyPressUntilClear
+  - BLOCKER human named burnout rest
+
+- SCHEDULE 2026-09-08+ earliest heavy bench IF STORE flags.skipHeavyPressUntilClear is false
   - BLOCKER STORE flags.skipHeavyPressUntilClear
 
 - AGENT $id=training-log $input=self/training.toon.md $output=self/training.toon.md $prompt=When the user pastes working sets as load x reps RIR, append log[] and rewrite session. Never drop a set. Reply in the user language.

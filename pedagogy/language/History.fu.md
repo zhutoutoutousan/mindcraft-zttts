@@ -1,0 +1,9 @@
+- VERTEX History
+- KIND semiosis
+- GLOSS collective-narrative-assembled-from-shared-memory
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM History here means collective narrative form — assembling coherent storylines from shared or domain knowledge — not a private diary and not a list of CLAIM facts alone. Digital-humanities and narrative-KG methods treat narrative as a layer generated from a graph with lineage. SOURCE https://research.vu.nl/ws/portalfiles/portal/453611861/blin-phd-manuscript%20-%2069452f95719dd.pdf
+- CLAIM History INFORMS Pedagogy when the human must explain a project arc to an interviewer: the graph holds Essence; the narrative is assembled on demand (dynamic GUI / spoken answer). Do not store uncited company gossip as History CLAIM.
+- CLAIM AutobiographicalMemory GROUNDS personal narrative; History GROUNDS collective narrative. Both sit beside ontology, not inside every techne vertex.
+- SOURCE https://research.vu.nl/ws/portalfiles/portal/453611861/blin-phd-manuscript%20-%2069452f95719dd.pdf
+- SOURCE pedagogy/biology/AutobiographicalMemory.fu.md

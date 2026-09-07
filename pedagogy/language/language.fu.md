@@ -4,8 +4,10 @@
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Language MEDIATES Agent. Without a shared Form, agents cannot transmit. Fu is a language. TypeScript is a language. Deutsch is a language.
 - CLAIM NaturalLanguage ISA Language. Pedagogy TRANSMITS Language. Do not put a phone number on this vertex.
-- VERTEX NaturalLanguage Pedagogy Study FuLanguage PromptEngineering SlashCommand DualSubtitle Wordschatz LanguageDrilling Automaticity ChoralRepetition ChainDrill SubstitutionDrill CommunicativePractice
+- VERTEX NaturalLanguage Pedagogy Study FuLanguage PromptEngineering SlashCommand DualSubtitle Wordschatz LanguageDrilling Automaticity ChoralRepetition ChainDrill SubstitutionDrill CommunicativePractice WritingAccuracyArbitrage InterviewPrep History PolyglotHorizon GrammarFrame
 - CLAIM TESOL Lexical Press 2024-03-07: LanguageDrilling is Pedagogy on NaturalLanguage. Species ChoralRepetition ChainDrill SubstitutionDrill. Aim Automaticity. CommunicativePractice RECEIVES the drilled Form. Drill-as-whole-lesson CONTRADICTS CommunicativePractice. Wordschatz APPLIES LanguageDrilling. Goethe Schreiben is not this tree. MEDIA PAGE the URL. Do not invent a Person for tesol.
+- CLAIM WritingAccuracyArbitrage: real agent instructions in the target language; writing accuracy is the byproduct. Store pedagogy/_learn/writing-accuracy/. Complements Wordschatz; not a fake workbook. Hook sessionStart.
+- CLAIM PolyglotHorizon: B2+ across 16 named languages by age 35. Roster horizon.toon.md. GrammarFrame pairs grammar slots with lexicon fills. Code-switch islands = unknown target expressions. Do not invent CEFR beyond self-rating bands.
 - MEDIA PAGE https://plato.stanford.edu/entries/language-thought/
 - MEDIA PAGE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 - SOURCE pedagogy/ontology.fu.md

@@ -13,11 +13,21 @@
 - HUMAN OPEN
   - CAPTURE $id=cursor-fetch-without-permission
     - TITLE Can a Cursor loop fetch a page without asking permission each time
-    - STATUS open
-    - NOTE asked 2026-09. Answer lives in chat history if already given. Do not invent a product setting.
+    - STATUS answered
+    - NOTE 2026-09-02 chat already answered. IDE: Settings → Agents → Approvals & Execution. Run Everything = zero fetch prompts. Auto-review still classifies Fetch. CLI: ~/.cursor/cli-config.json permissions allow WebFetch(*). sandbox.json does not control WebFetch. Human still closes this item.
+    - NOTE 2026-09-07 take promoted out of tmp. Dual-lang read of run-modes. Auto-review required. Open questions: sandbox vs classifier. Bookmark: classifier is Claude 4.5 Haiku or GPT-5.4 Mini. Vertex AgentRunMode. Empty STUDY GAP. Human still closes this item.
+    - SOURCE https://cursor.com/docs/agent/security/run-modes
+    - SOURCE skills-cursor/update-cli-config webFetchDomainAllowlist
+    - SOURCE https://cursor.com/docs/enterprise/model-and-integration-management#model-access-control
+    - STORE PATH mezzanine/cursor-run-modes-2026-09-07.toon.md
+    - STORE PATH pedagogy/computation/AgentRunMode.fu.md
   - CAPTURE $id=cursor-project-slash
     - TITLE Add slash commands to Cursor for this project
-    - STATUS open
+    - STATUS researched
+    - NOTE 2026-09-06 tick. New project slash workflows are Agent Skills at .cursor/skills/<name>/SKILL.md, not a new .cursor/commands/ tree. Official: disable-model-invocation true makes a skill human-only via /skill-name. Built-in /migrate-to-skills converts old commands that way. This repo has no .cursor/commands/. Existing project skill is learn-baseline (description-triggered, not disable-model-invocation). Catalog of pane slashes is already mezzanine/cursor-slash.toon.md. Do not invent extra /names. Human still picks verbs and closes this item.
+    - SOURCE https://cursor.com/docs/skills
+    - SOURCE mezzanine/cursor-slash.toon.md
+    - STORE PATH .cursor/skills/learn-baseline/SKILL.md
   - CAPTURE $id=claude-batch
     - TITLE Research and experiment with /batch in Claude Code
     - STATUS open
@@ -29,4 +39,81 @@
     - URL https://bfu.goethe.de/b2_mod_2MX6/schreiben.php
 
 - PENDING
-  - NOTE Loop ticks nest CAPTURE under a TICK below. Empty until the next away loop.
+  - TICK 2026-09-06T14:48Z human psyche DUMP (in-session drip)
+    - CAPTURE $id=psyche-hooks-subagents-learn
+      - TITLE Psyche: learn Cursor/Claude Code subagents and hooks more; bias system toward that
+      - STATUS dripped
+      - KIND unknown
+      - NOTE Human 2026-09-06 ~16:48 Europe/Berlin. Wants more study pull on subagents + hooks across Cursor and Claude Code. Not a fog rest veto on drip of intent. Empty PROBE stays empty. Do not invent hook store.
+      - WHY Hire north is agent engineer; harness layers AgentHook MultiAgent AgentPlugin were gap-not-now; psyche now pulls them forward on PLAN NEXT and goals.north without replacing AgentCore NOW.
+      - LEARN AgentHook MultiAgent AgentPlugin CursorSkill ClaudeCode
+      - DRIP 2026-09-06 goals.north += AgentHook MultiAgent AgentPlugin; PLAN NEXT front-loads those; STUDY AgentHook MultiAgent AgentPlugin stubs; mezzanine claude-code-layers eval.gap note; CPU DUMP pointer.
+  - TICK 2026-09-06T12:40Z human DUMP graft backlog
+    - CAPTURE $id=graft-context-layer-nanonets
+      - TITLE Graft: opensource context layer for large codebases (Nanonets)
+      - STATUS pending
+      - KIND tech
+      - URL https://graft.nanonets.ai
+      - URL https://github.com/NanoNets/graft
+      - NOTE v0.16.0 npm, MIT, Node >=20. Claims: map once vs cold re-read; tool-call −46%, tokens −42%, time −60%, correctness 54→66 on their Claude Code bench. GitHub App blast-radius PR review. Human: no energy to tap now. Queue only. Do not drip while fog/rest. Empty PROBE stays empty. Do not invent install.
+      - WHY Hire north is agent/IDE tooling. Could cut Cursor/Claude Code cost on big repos. Unknown: whether it helps this mindcraft-zttts graph store or fights AgentCore PROBE. Learn later as STUDY empty GAP or a CLAIM after a short try.
+      - LEARN AgentLoop ExperienceStore AgentToolkit
+  - TICK 2026-09-06T00:14Z organ goals skip training
+    - CAPTURE $id=hermes-skills-learn-agentskills
+      - TITLE Hermes skill_manage and /learn write SKILL.md from experience, agentskills.io
+      - STATUS pending
+      - KIND tech
+      - URL https://github.com/NousResearch/hermes-agent/blob/main/tools/skill_manager_tool.py
+      - URL https://nousresearch-hermes-agent.mintlify.app/user-guide/features/skills
+      - WHY Follows the hermes loop capture. Procedural memory as SKILL.md, portable to CursorSkill. Not AgentCore. Do not drip. Empty PROBE stays empty.
+      - LEARN ExperienceStore CursorSkill SlashCommand
+  - TICK 2026-09-05T23:44Z organ schedule
+    - CAPTURE $id=ifa-agent-ready-2026-09-08
+      - TITLE IFA Tue 8 Sep 13:45 Dream Stage Hall 25: Make Your Company Agent-Ready
+      - STATUS pending
+      - KIND news
+      - URL https://www.ifa-berlin.com/programme/make_your_company_agent_ready
+      - WHEN 2026-09-08 13:45–14:15 Europe/Berlin Dream Stage Hall 25 30 min
+      - WHY Context-as-code for company agents. Halls close 18:00 then named evening call. Rest still on. Do not invent attendance.
+      - LEARN Agent ExperienceStore
+  - TICK 2026-09-05T23:14Z organ HUMAN OPEN plus inflow-news
+    - CAPTURE $id=agentcore-mass-migrate-classic-2026-09-04
+      - TITLE AWS blog 2026-09-04: mass-migrate Bedrock Agents Classic to AgentCore Runtime
+      - STATUS pending
+      - KIND news
+      - URL https://aws.amazon.com/blogs/migration-and-modernization/mass-migrating-ai-agents-to-amazon-bedrock-agentcore/
+      - WHY Hire north is AgentCore. Classic closed to new customers 2026-07-30. Pattern-first plus parallel subagents; PR 275 on the HCLS toolkit. Read after rest, not instead of it. Empty PROBE stays empty.
+      - LEARN AgentCore
+  - TICK 2026-09-05T22:44Z organ DUMP restenrich
+    - CAPTURE $id=hermes-agent-self-improving-loop
+      - TITLE Nous Research hermes-agent: self-improving loop, skills from experience, MIT
+      - STATUS pending
+      - KIND tech
+      - URL https://github.com/NousResearch/hermes-agent
+      - URL https://hermes-agent.nousresearch.com/docs/developer-guide/agent-loop
+      - WHY CPU DUMP queued this repo. Loop lives in agent/conversation_loop.py. Skills from experience map to ExperienceStore. Not AgentCore. Do not drip while resting. Empty PROBE stays empty.
+      - LEARN AgentLoop ExperienceStore
+    - CAPTURE $id=agentcore-identity-consent-portal-2026-09-01
+      - TITLE AgentCore Identity managed consent portal for OAuth 3LO, posted 2026-09-01
+      - STATUS pending
+      - KIND news
+      - URL https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-agentcore/
+      - WHY Hire north is AgentCore. Each Gateway gets a hosted portalUrl so IDE clients need not own OAuth callback infra. Not in STATE skip. Read after the open PROBE, not instead of rest.
+      - LEARN AgentCore
+    - CAPTURE $id=ifa-ai-kitchen-hype-2026-09-07
+      - TITLE IFA Mon 7 Sep 10:50 Dream Stage Hall 25: AI in the Kitchen Helpful Hype or Harmful
+      - STATUS pending
+      - KIND news
+      - URL https://www.ifa-berlin.com/programme/ai_in_the_kitchen_helpful_hype_harmful
+      - WHEN 2026-09-07 10:50 Europe/Berlin Dream Stage Hall 25 30 min
+      - WHY Monday IFA still open 10:00–18:00. Rest wins. Do not invent attendance. AISafety and Agent in the kitchen, not a Robot vertex.
+      - LEARN AISafety Agent
+  - TICK 2026-09-03T21:06Z organ DUMP
+    - CAPTURE $id=ifa-robots-kitchen-2026-09-04
+      - TITLE Robots in the Kitchen and Home: From Task-Specific Tools to Humanoids
+      - STATUS pending
+      - KIND news
+      - URL https://www.ifa-berlin.com/programme/robots_in-_the_kitchen_and_home
+      - WHEN 2026-09-04 13:15–14:00 Europe/Berlin Dream Stage Hall 25
+      - WHY IFA Friday after 11:30 Empfang if the head is quiet. Home robots as agents in the kitchen, not the older kitchen-robot skip id.
+      - LEARN Agent

@@ -5,8 +5,12 @@
 - CLAIM An agent is not a LLM brand. It is whatever enacts Computation toward a goal. Fu AGENT tags spawn processes. Neurons enact Memory. A quant harness enacts search.
 - CLAIM Memory PARTICIPATES Agent. Language MEDIATES Agent. Pedagogy TRANSMITS Language so agents can share Form.
 - CLAIM Attested tools in the skill family: OpenAI/LLM Cursor AWS Kiro Claude Code MCP Semantic Kernel. AWS docs: production agents may run on AgentCore Runtime with session isolation, MCP, and A2A. The 2026-09-04 workshop remains a SCHEDULE. AgentCore is now a vertex.
+- CLAIM IFA 2026-09-04 13:15 Dream Stage Hall 25: kitchen and home robots from task-specific tools to humanoids (cooking, cleaning, mobile assistants). Trust, safety, and acceptance as physical automation enters the kitchen. That is Agent in the home-and-living category of Ecommerce. Not a Robot vertex. Not a Job. Do not invent attendance.
+- CLAIM IDE coding agents fail as AgentStreamDrop when the stream dies before durable save. That is reliability of enactment, not a change of goal. CursorSkill packages recovery ladders and load caps.
 - MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7
 - MEDIA CODE https://github.com/zhutoutoutousan/worldquant-miner
 - SOURCE pedagogy/ontology.fu.md
 - SOURCE self/identity/skill.toon.md
 - SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
+- SOURCE https://www.ifa-berlin.com/programme/robots_in-_the_kitchen_and_home
+- SOURCE .cursor/skills/cursor-agent-retry/SKILL.md

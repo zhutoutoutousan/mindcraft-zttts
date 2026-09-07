@@ -3,6 +3,8 @@
 - GLOSS installable-bundle-of-agent-behavior
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM A plugin packages skills, hooks, subagents, commands, and often MCP into one install. Official: marketplace or team install. Namespaced skill commands so plugins can coexist. Infographic: npm for what the agent knows how to do.
-- CLAIM This repo distributes nothing as a plugin. skills/ontology-showcase.fu.md is a local procedure, not a marketplace package. Gap. Not this week's hire probe.
+- CLAIM This repo distributes nothing as a plugin. skills/ontology-showcase.fu.md is a local procedure, not a marketplace package. Gap. Do not invent a marketplace install.
+- CLAIM Human 2026-09-06 psyche DUMP: hooks + subagents pull also raises AgentPlugin on PLAN NEXT / goals.north as the bundle layer. Still not NOW over AgentCore.
 - SOURCE https://code.claude.com/docs/en/features-overview
 - SOURCE human 2026-09-02 infographic Claude Code five layers
+- SOURCE inflow/DUMP.md $id=psyche-hooks-subagents-learn

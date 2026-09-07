@@ -1,0 +1,15 @@
+- VERTEX BinauralBeat
+- KIND natural
+- GLOSS stereo-frequency-difference-as-auditory-input
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A binaural beat is a perceptual difference tone when two close pure tones play one per ear. Stereo headphones required. It is Vibration at the ear, not a proven brain "entrainment" switch. Ingendoh et al. PLOS One 2023: EEG effects inconsistent; entrainment is not a reliable mechanism claim.
+- CLAIM Evidence class for anxiety adjunct and acute pain is mixed or low GRADE. Klichowski et al. 2023: 15 Hz binaural beats worsened intelligence-test scores in a large home sample. Do not use beats as a study overlay.
+- CLAIM Protocol class (not a personal clock): short sits 12–20 min; rest window after a crash or near sleep, not as a morning stimulant and not stacked on a large caffeine sitting; target difference about 8–10 Hz (alpha) or 4–6 Hz (theta); avoid beta/gamma and 15 Hz when cognition is the goal; cycle on/off days; change carrier rather than chase louder beats. The sit / no-screen ritual may be the active ingredient.
+- CLAIM Hemi-Sync and commercial "alpha tracks" nest beats with noise and voice. Independent RCTs sparse. Treat as the same rest-audio class, not a separate proven therapy.
+- CLAIM Under inflammatory fog / SicknessBehavior, low-demand audio can be intake while high-effort study is discounted. Not a cure. Not a diagnosis.
+- CLAIM Session phenomenology may include early mind-wandering, brief resistance, then calm; optional AestheticChills tingles when the beat percept forms. Entrainment is not required for the rest ritual to be useful.
+- SOURCE https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288948
+- SOURCE .cursor/skills/fog-rest/reference.md
+- SOURCE pedagogy/biology/SicknessBehavior.fu.md
+- SOURCE mezzanine/meditation-binaural-2026-09-06.toon.md
+- SOURCE https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0286023

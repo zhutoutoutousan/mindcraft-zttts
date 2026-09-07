@@ -111,11 +111,13 @@ def should_keep(rel: Path) -> bool:
         return True
     if rel.name == ".gitignore" and len(rel.parts) == 1:
         return True
+    if rel.name == ".coderabbit.yaml" and len(rel.parts) == 1:
+        return True
     if rel.name.lower() == "submit.ps1" and len(rel.parts) == 1:
         return True
     if rel.parts[:1] == ("schedule",) and rel.suffix.lower() == ".ics":
         return True
-    if rel.suffix.lower() == ".py" and rel.parts and rel.parts[0] in {"cron", "skills"}:
+    if rel.suffix.lower() in {".py", ".js"} and rel.parts and rel.parts[0] in {"cron", "skills"}:
         return True
     if rel.parts[:1] == ("skills",) and rel.suffix.lower() in {".puml", ".json"}:
         return True

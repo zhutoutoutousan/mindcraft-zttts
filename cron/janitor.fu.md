@@ -9,7 +9,7 @@
 
 - AGENT $id=janitor-trash $input=. $output=recycle/JOURNAL.md $prompt=python cron/janitor.py --trash. Delete __pycache__ .pytest_cache .mypy_cache .ruff_cache and loose *.pyc *.pyo. Also python cron/janitor.py --ttl logic: if last_run is 5 days old, delete tmp siblings. Keep tmp/ttl.toon.md. Do not recycle bytecode. Do not --apply.
 
-- AGENT $id=janitor-ttl $input=tmp/ttl.toon.md $output=recycle/JOURNAL.md $prompt=python cron/janitor.py --ttl. Read last_run. If 5 days have lapsed, delete every file in tmp except ttl.toon.md. Do not recycle. Do not --apply.
+- AGENT $id=janitor-ttl $input=tmp/ttl.toon.md $output=recycle/JOURNAL.md $prompt=python cron/janitor.py --ttl. Read last_run. If 5 days have lapsed, first python cron/tmp_promote.py (named caches → lasting stores), then delete every file in tmp except ttl.toon.md. Do not recycle. Do not --apply.
 
 - AGENT $id=janitor-purge $input=tmp/ttl.toon.md $output=recycle/JOURNAL.md $prompt=python cron/janitor.py --purge. Human asked to clear tmp now. Delete every sibling of ttl.toon.md. Keep ttl.toon.md. Do not recycle. Do not --apply.
 
@@ -19,8 +19,8 @@
 
 - RULE markdown stays in place. Recycle is the bin, not delete. Restore by moving back.
 - RULE bytecode cache is trash. Delete __pycache__ and *.pyc. Never KEEP them. Never recycle them.
-- RULE tmp is not recycle. ttl.toon.md stays. Siblings die after 5 days from last_run. Human may ask python cron/janitor.py --purge to clear now. cron/temp.fu.md is the job.
+- RULE tmp is not recycle. ttl.toon.md stays. Before siblings die, named caches are promoted (inflow/takes.toon.md, pedagogy/_learn/learner-notes.toon.md, baseline-answers). Then delete after 5 days from last_run. Human may ask python cron/janitor.py --purge to clear now. cron/temp.fu.md is the job.
 - RULE do not touch .git. Do not touch recycle/. Do not touch .cursor/. Do not recycle tmp/. Do not enter .private/.
-- RULE KEEP cron/*.py and skills/*.py so janitor and showcase still run after a sweep. KEEP skills/*.puml skills/*.json. KEEP root .gitignore. KEEP root LICENSE. KEEP root submit.ps1. KEEP schedule/*.ics when the human asked for a calendar export. Do not KEEP pedagogy/universe.html. That render lives in tmp/pedagogy/.
+- RULE KEEP cron/*.py cron/*.js and skills/*.py so janitor and showcase still run after a sweep. KEEP skills/*.puml skills/*.json. KEEP root .gitignore. KEEP root LICENSE. KEEP root submit.ps1. KEEP root .coderabbit.yaml. KEEP schedule/*.ics when the human asked for a calendar export. Do not KEEP pedagogy/universe.html. That render lives in tmp/pedagogy/.
 - RULE empty directories after a move may be removed. Do not remove pedagogy/ being math physics biology computation language tmp inflow even if empty.
 - RULE Windows: Being.fu.md is markdown. pedagogy/universe.html is a leftover deliverable. Move or delete it. Do not KEEP it in pedagogy/.

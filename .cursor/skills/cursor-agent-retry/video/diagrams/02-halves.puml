@@ -1,0 +1,21 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontColor #e8eef5
+title Two halves — both required
+
+rectangle "Network ladder\nHTTP/1.1 · proxy · hotspot" as A #121a24
+rectangle "Agent-side load\nsmall turns · no image storms" as B #121a24
+rectangle "Stable Agent stream" as OK #1a2530
+
+A -[#69f0ae]-> OK
+B -[#ffcc80]-> OK
+
+note bottom of A
+  Clash 规则 + mixed HTTP
+  disableHttp2
+end note
+note bottom of B
+  ≤3-4 tools / turn
+  PIL not GenerateImage batch
+end note
+@enduml

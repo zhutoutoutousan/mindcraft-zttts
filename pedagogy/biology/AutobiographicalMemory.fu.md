@@ -1,0 +1,11 @@
+- VERTEX AutobiographicalMemory
+- KIND natural
+- GLOSS hierarchical-self-memory-life-periods-events-details
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Autobiographical memory research (Conway & Pleydell-Pearce Self-Memory System) organizes personal knowledge as lifetime periods, general events, and event-specific knowledge, retrieved under a working self / goals. That is a different KIND than ontology Essence. SOURCE https://doi.org/10.1609/aiide.v9i1.12686
+- CLAIM In this repo: essence domains stay in pedagogy/universe.graph.md. Lived particulars (Amt, clinic, bag lists) stay in .private/ and gitignored self files. Do not promote a Person life story into a public V.
+- CLAIM Life-event / PKG designs propose registries of events as agent-friendly anchors between autobiography and institutional processes. Use as design hint for galaxy share membranes, not as a dump of private events. SOURCE https://ceur-ws.org/Vol-4210/paper2.pdf
+- MEDIA PAGE https://doi.org/10.1609/aiide.v9i1.12686
+- SOURCE https://doi.org/10.1609/aiide.v9i1.12686
+- SOURCE https://ceur-ws.org/Vol-4210/paper2.pdf
+- SOURCE https://doi.org/10.1109/devlrn.2007.4354039

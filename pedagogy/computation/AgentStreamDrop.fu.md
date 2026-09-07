@@ -1,0 +1,13 @@
+- VERTEX AgentStreamDrop
+- KIND techne
+- GLOSS agent-stream-dies-before-durable-save
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM "Agent stopped retrying" / Connection failed means the Agent stream to the IDE dropped before progress was saved. Retry resumes the last saved checkpoint. Staff reading: client went quiet on the path to the servers, not a server abort of the job. Do not invent private ports into this body.
+- CLAIM Network ladder (essence): Diagnostics; HTTP/2 bidirectional default vs HTTP/1.1 SSE fallback for proxies that buffer or break HTTP/2; proxySupport override with empty proxy can bare-connect; Clash-class rule mode + HTTP mixed port + disableHttp2 pattern; TUN only when IDE proxy never takes effect; allowlist cursor.sh cursor-cdn cursorapi hosts; SOCKS must not be pasted into http.proxy.
+- CLAIM Agent-side load amplifies drops: huge parallel tool batches, GenerateImage storms, gallery HTML scrapes. Small turns (about ≤3–4 tools when retry or fog is named), local PIL memes, CDN b-roll via Shell, encode in a later turn, inventory after interrupt. Network fix alone is not enough when the turn is a storm.
+- CLAIM Standalone app and VS Code extension can have separate proxy/HTTP settings. CLI may use network.useHttp1ForAgent. Do not conflate empty-terminal or sticky-index fixes with this toast.
+- SOURCE .cursor/skills/cursor-agent-retry/SKILL.md
+- SOURCE .cursor/skills/cursor-agent-retry/reference.md
+- SOURCE https://cursor.com/help/troubleshooting/network
+- SOURCE https://cursor.com/docs/enterprise/network-configuration
+- SOURCE https://forum.cursor.com/t/bug-agent-stopped-retrying-repeatedly-on-windows-standalone-desktop-app/169376/5

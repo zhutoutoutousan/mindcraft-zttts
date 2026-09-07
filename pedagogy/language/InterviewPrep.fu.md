@@ -1,0 +1,11 @@
+- VERTEX InterviewPrep
+- KIND praxis
+- GLOSS retrieval-first-practice-for-hire-surfaces
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM InterviewPrep is Pedagogy applied to hire surfaces: cold retrieval before model answers, spaced revisit of weak grasp, interleaved topics, deliberate practice with feedback. Reading answer sheets alone builds recognition, not production. SOURCE https://usegreenroom.app/blog/make-it-stick-summary-interview-prep
+- CLAIM Strategy store: pedagogy/_learn/interview-prep-strategy.toon.md. Question banks supply titles + company tags as zeitgeist, not as ANSWER paste. Multi-turn PROBE detects understanding. Do not invent metric percentages.
+- CLAIM Angle generation layers: (1) external tech zeitgeist, (2) enterprise demand themes from banks, (3) interviewer role heuristics, (4) job family (Agent eng vs algo). Particular employer names and Gehalt stay in .private.
+- MEDIA PAGE https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+- SOURCE https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+- SOURCE https://usegreenroom.app/blog/make-it-stick-summary-interview-prep
+- SOURCE https://the-learning-agency-lab.com/the-learning-curve/deliberate-practice-in-the-classroom/

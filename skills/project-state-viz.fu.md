@@ -1,0 +1,33 @@
+- STORE PATH ROOT.md
+- STORE PATH CPU.md
+- STORE PATH self/goals.toon.md
+- STORE PATH self/endurance.toon.md
+- STORE PATH self/training.toon.md
+- STORE PATH self/learn.toon.md
+- STORE PATH schedule/harvest.toon.md
+- STORE PATH schedule/enrich.toon.md
+- STORE PATH pedagogy/pedagogy-cpu.fu.md
+- STORE PATH pedagogy/universe.graph.md
+- STORE PATH inflow/DUMP.md
+- STORE PATH inflow/STATE.md
+- STORE PATH inflow/inflow.fu.md
+- STORE PATH cron/
+- STORE PATH mezzanine/
+- STORE PATH skills/
+- STORE PATH tmp/ttl.toon.md
+- STORE PATH pedagogy/_learn/weights.toon.md
+- STORE PATH pedagogy/_learn/polyglot/bridge.graph.md
+- STORE PATH pedagogy/_learn/polyglot/horizon.toon.md
+- STORE PATH pedagogy/_learn/polyglot/frames/
+- STORE PATH pedagogy/_learn/writing-accuracy/lexicon.graph.md
+- STORE PATH cron/ontology-weight.fu.md
+- RUN python skills/project-state-viz.py
+- OUTPUT PATH tmp/pedagogy/project-state.html
+- SKILL PATH .cursor/skills/project-state-viz/SKILL.md
+
+- AGENT $id=project-state-viz $input=ROOT.md $output=tmp/pedagogy/project-state.html $prompt=Optional first: python cron/ontology-weight.py. Then python skills/project-state-viz.py. Purposes include weights, ontology, schedule, lang-polyglot (readable word faces, not Form_fix ids). Never invent ANSWER. Never include .private/ bodies.
+
+- RULE HTML is a render under tmp/. Weights live in pedagogy/_learn/weights.toon.md — refresh via maintain organ ontology-weight or cron/ontology-weight.py.
+- RULE Ontology node click needs --serve. fu_render renders every CAPITAL TAG in the vertex .fu.md; unknown TAG still shows. Learner notes → pedagogy/_learn/learner-notes.toon.md (tmp cache). Never invent STUDY ANSWER.
+- RULE Language purposes (lang-polyglot / wortschatz / grammar / skilltree) read pedagogy/_learn stores, not universe.graph. Canvas labels = lang_node_label (词面/意思). Default Expanded; hide session/focus stars. Drawer clears the note field per node. Do not regress to underscore ids.
+- RULE Related PNG/mp4 stays skills/ontology-showcase.py.

@@ -55,3 +55,92 @@
   - TRASH tmp/pedagogy
 - SWEEP 2026-09-03T09:36:05Z moved=0 trash=1
   - TRASH cron/__pycache__
+- SWEEP 2026-09-03T19:14:19Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-03T19:25:05Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-03T19:34:59Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-03T19:44:55Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-03T19:54:47Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-03T20:04:53Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-03T20:14:58Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-03T20:24:46Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-03T20:34:47Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-03T20:44:48Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-03T21:37:25Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-05T22:46:55Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-07T15:09:31Z moved=0 trash=61
+  - TRASH tmp/aesthetic-chills-framework.aux
+  - TRASH tmp/aesthetic-chills-framework.log
+  - TRASH tmp/aesthetic-chills-framework.out
+  - TRASH tmp/aesthetic-chills-framework.pdf
+  - TRASH tmp/aesthetic-chills-framework.tex
+  - TRASH tmp/aesthetic-chills-study
+  - TRASH tmp/aesthetic-chills-study.aux
+  - TRASH tmp/aesthetic-chills-study.log
+  - TRASH tmp/aesthetic-chills-study.out
+  - TRASH tmp/aesthetic-chills-study.pdf
+  - TRASH tmp/aesthetic-chills-study.tex
+  - TRASH tmp/athlean-shuffle.png
+  - TRASH tmp/cursor-agent-retry-video
+  - TRASH tmp/cursor-agent-retry.aux
+  - TRASH tmp/cursor-agent-retry.log
+  - TRASH tmp/cursor-agent-retry.out
+  - TRASH tmp/cursor-agent-retry.pdf
+  - TRASH tmp/cursor-agent-retry.tex
+  - TRASH tmp/day-2026-09-06.aux
+  - TRASH tmp/day-2026-09-06.log
+  - TRASH tmp/day-2026-09-06.out
+  - TRASH tmp/day-2026-09-06.pdf
+  - TRASH tmp/day-2026-09-06.tex
+  - TRASH tmp/drill.png
+  - TRASH tmp/fog-partner
+  - TRASH tmp/fog-science
+  - TRASH tmp/gym-20.png
+  - TRASH tmp/meditation-report
+  - TRASH tmp/meditation-report.aux
+  - TRASH tmp/meditation-report.log
+  - TRASH tmp/meditation-report.out
+  - TRASH tmp/meditation-report.pdf
+  - TRASH tmp/meditation-report.tex
+  - TRASH tmp/mvag-gui
+  - TRASH tmp/paper-muscle.pdf
+  - TRASH tmp/pedagogy
+  - TRASH tmp/polyglot-gap-smoke.json
+  - TRASH tmp/relationship-lifecycle-2026
+  - TRASH tmp/schedule
+  - TRASH tmp/study-companion-2026-09-07
+  - TRASH tmp/take.html
+  - TRASH tmp/ulcer-compare
+  - TRASH tmp/video-pipeline
+  - TRASH tmp/video-pipeline.aux
+  - TRASH tmp/video-pipeline.log
+  - TRASH tmp/video-pipeline.out
+  - TRASH tmp/video-pipeline.pdf
+  - TRASH tmp/video-pipeline.tex
+  - TRASH tmp/video-upload.aux
+  - TRASH tmp/video-upload.log
+  - TRASH tmp/video-upload.out
+  - TRASH tmp/video-upload.pdf
+  - TRASH tmp/video-upload.tex
+  - TRASH tmp/xiangqin-knowledge-pay
+  - TRASH tmp/xu-closed.mp4
+  - TRASH tmp/xu-decline
+  - TRASH tmp/xu-decline.pdf
+  - TRASH tmp/xu-vs-gisma.pdf
+  - TRASH tmp/yongge-open-books.png
+  - TRASH tmp/yongge-xu-guiling.png
+  - TRASH tmp/yongge-yiyuan-no-cash.png
+- SWEEP 2026-09-07T15:09:31Z moved=0 trash=2
+  - TRASH cron/__pycache__
+  - TRASH skills/__pycache__

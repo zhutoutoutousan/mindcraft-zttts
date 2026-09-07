@@ -1,0 +1,13 @@
+- VERTEX GenerativeEngineOptimization
+- KIND praxis
+- GLOSS GEO-visibility-inside-synthesized-AI-answers
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Generative Engine Optimization (GEO) is the industry name for improving how often a source is cited or otherwise visible inside answers produced by generative engines (retrieve then synthesize), not merely a blue-link rank. Aggarwal et al. (KDD 2024) introduce GEO and GEO-bench; they report visibility lifts up to about 40 percent on their metrics when using strategies such as citations, quotations, and statistics — that is share-of-answer visibility, not organic sessions. SOURCE https://arxiv.org/abs/2311.09735
+- CLAIM Google Search Central uses RAG (grounding on the Search index) and query fan-out inside generative Search features. Foundational SEO is the ticket for Google AI Overviews / AI Mode; Google lists common AEO/GEO hacks that are not needed for Google Search (llms.txt, special AI files, mandatory chunking, inauthentic mentions). SOURCE https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+- CLAIM GEO PARTICIPATES Ecommerce and side-site praxis when the KPI is citation inside a generated answer. Separate that KPI from classic sessions. Do not invent quotes, stats, or third-party mentions. Restricted verticals may be omitted by model safety — same honesty rule as directory stars in .cursor/skills/dev-sidework.
+- CLAIM RAG is the techne under many generative engines: retrieve then generate. GEO is the creator-side praxis of becoming a selected, attributable source after retrieval.
+- MEDIA PAGE https://arxiv.org/abs/2311.09735
+- MEDIA PAGE https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+- SOURCE https://arxiv.org/abs/2311.09735
+- SOURCE https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+- SOURCE .cursor/skills/dev-sidework/geo.md

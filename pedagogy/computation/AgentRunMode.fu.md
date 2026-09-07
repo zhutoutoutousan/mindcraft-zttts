@@ -1,0 +1,13 @@
+- VERTEX AgentRunMode
+- KIND praxis
+- GLOSS how-the-agent-runs-tools-and-when-it-asks
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Cursor Run Modes are harness policy for tool calls: Auto-review, Allowlist, Run Everything. They decide autonomy for shell, MCP, and Fetch. Auto-review is the documented default useful setup: allowlisted calls run; sandboxable shell runs in the sandbox; the rest goes to a classifier. SOURCE https://cursor.com/docs/agent/security/run-modes
+- CLAIM Sandbox here is OS confinement of a terminal subprocess (macOS Seatbelt, Linux Landlock/seccomp), not a security synonym for Auto-review. It limits workspace files, protected paths, and network. It does not decide Fetch. sandbox.json is reach; permissions.json is Auto-review lean-allow / lean-block. SOURCE https://cursor.com/docs/agent/security/run-modes
+- CLAIM The Auto-review classifier is a small Cursor-managed model (docs: Claude 4.5 Haiku or GPT-5.4 Mini). It can err both ways. Auto-review is not a security boundary. Team model-access-control can disable Auto-review if those models are blocked; members then use Allowlist. SOURCE https://cursor.com/docs/agent/security/run-modes
+- CLAIM Cloud Agents do not use Run Modes; they run on a dedicated machine. Local agents do. SOURCE https://cursor.com/docs/agent/security/run-modes
+- CLAIM This vertex is not LambdaMicroVM. AWS MicroVMs sandbox generated code away from the laptop. Cursor sandbox confines the IDE's local shell. Do not collapse them.
+- MEDIA PAGE https://cursor.com/docs/agent/security/run-modes
+- SOURCE https://cursor.com/docs/agent/security/run-modes
+- SOURCE https://cursor.com/docs/enterprise/model-and-integration-management#model-access-control
+- SOURCE mezzanine/cursor-run-modes-2026-09-07.toon.md

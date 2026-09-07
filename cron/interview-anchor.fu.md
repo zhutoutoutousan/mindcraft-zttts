@@ -24,6 +24,6 @@
 
 - RULE the purpose is internalization for the AI-agent-engineer goal. A day slice is exact. The human says finished or sore. The agent does not pile more DO after SORE.
 - RULE answers stay at their SOURCE urls. This repo stores titles and vertices.
-- RULE IntellectualLoad is the bounded-study vertex. External Wordschatz (德语助手 法语助手 西语助手) is one unit per app session. DAY LOAD is remaining after planned daily external. Sore is a stop signal like scapular pain in training.toon.md. Hypothesis DSB is the human's name for the sore. Cite Nature 2024 only as the mouse DDR, with the contradiction that activity-induced enhancer breaks repair in minutes and persistent extranuclear fragments are a different class.
+- RULE IntellectualLoad is the bounded-study vertex. External Wordschatz (德语助手 法语助手 西语助手) is one unit per app session. DAY LOAD is remaining after planned daily external. Sore is a stop signal like a training pain flag in the training store. Hypothesis DSB is the human's name for the sore. Cite Nature 2024 only as the mouse DDR, with the contradiction that activity-induced enhancer breaks repair in minutes and persistent extranuclear fragments are a different class.
 - RULE this file is the reusable job. Perfect it when a day slice is vague or a title is stored without a vertex.
 - RULE do not copy the job into CPU.md as a bare AGENT. Do not spawn janitor.

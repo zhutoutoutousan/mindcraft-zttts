@@ -1,0 +1,13 @@
+- VERTEX SEO
+- KIND praxis
+- GLOSS search-engine-optimization-for-classic-link-lists
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM SEO is the craft of making pages discoverable, indexable, and rankable in classic web search so humans get a list of links. Crawl, canonical, snippet eligibility, and people-first content are the floor. It is not a Person and not a brand dossier. Named client domains NAP stay out of pedagogy.
+- CLAIM Google Search Central states generative AI features on Google Search are rooted in core Search ranking and quality systems, so foundational SEO remains relevant for AI Overviews and AI Mode. SOURCE https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+- CLAIM For Google Search generative features, a page must be indexed and snippet-eligible under Search technical requirements. There is no special AI-only markup requirement. SOURCE https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+- CLAIM Ecommerce and local-service sites APPLIES SEO when the offer must be found before it can be bought or booked. Trust and one NAP are site requirements in .cursor/skills/dev-sidework; do not invent phones or reviews here.
+- MEDIA PAGE https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+- MEDIA PAGE https://en.wikipedia.org/wiki/Search_engine_optimization
+- SOURCE https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+- SOURCE https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+- SOURCE https://en.wikipedia.org/wiki/Search_engine_optimization

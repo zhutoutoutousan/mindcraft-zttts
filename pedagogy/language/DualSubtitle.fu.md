@@ -2,6 +2,9 @@
 - KIND techne
 - GLOSS two-language-captions-on-one-picture
 - STORE PATH pedagogy/universe.graph.md
-- CLAIM Dual subtitles are Language projected onto a picture. Attested project: Bilibili dual-subtitle browser extension. The loop-slash cut burns DE over EN. MEDIA is URL or a generated deliverable, not copied lecture bytes.
+- CLAIM Dual subtitles are Language projected onto a picture. Attested project: Bilibili dual-subtitle browser extension. The loop-slash cut burns DE over EN. Partner and fog cuts burn DE gold over ZH cyan. MEDIA is URL or a generated deliverable, not copied lecture bytes.
+- CLAIM Type floor (landscape 1920×1080 class): spoken-language ASS about ≥40, second language ≥34; slide body labels ≥18; hero ≥30. Portrait safe zone: keep type out of top ~12% and bottom ~18%. Phone-unreadable captions fail the VideoGeneration cut.
+- CLAIM Sidecar .srt / .ass may ship beside the mp4. Windows ffmpeg ASS path needs drive-letter escaping (D\:/…). Burnt-in is the publish default when platforms strip sidecars.
 - SOURCE self/identity/project.toon.md
 - SOURCE skills/video-generation.fu.md
+- SOURCE tmp/video-pipeline.pdf

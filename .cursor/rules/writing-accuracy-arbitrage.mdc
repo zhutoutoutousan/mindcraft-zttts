@@ -1,0 +1,32 @@
+---
+description: Polyglot + writing-accuracy — auto-internalize errors into language KG via hooks
+alwaysApply: true
+---
+
+# Polyglot writing-accuracy
+
+Horizon: **16 named languages → B2+ by age 35**. Roster: `pedagogy/_learn/polyglot/horizon.toon.md`.
+
+## Why the hook exists
+
+**Language errors must land in the language knowledge graph**, not only in chat.
+
+1. `beforeSubmitPrompt` → detect `primaryLang` + code-switch gaps → **auto-write GAP vertices** into `pedagogy/_learn/polyglot/bridge.graph.md` + `last-signal.toon.md`.
+2. `sessionStart` → inject `targetLang` + `todayFocus` Frames.
+3. After minimal rewrite: write `pedagogy/_learn/writing-accuracy/sessions/<date>-….toon.md`, then run:
+
+```bash
+python pedagogy/_learn/writing-accuracy/ingest_session.py --session pedagogy/_learn/writing-accuracy/sessions/<file>.toon.md
+```
+
+That attaches Forms / session nodes to `lexicon.graph.md` + `bridge.graph.md`.
+
+## Agent behavior
+
+1. Job first. Language second.
+2. Read `last-signal.toon.md` if present (gaps may already be in the graph).
+3. Minimal rewrite + **one GrammarFrame** focus.
+4. **Always** write a session file + run `ingest_session.py` when you gave a DE rewrite / error tags — do not wait to be asked. That is the internalization loop.
+5. Never edit product code for language logging.
+
+Pairing: Frame × lexicon — `pedagogy/_learn/polyglot/pairing.toon.md`

@@ -28,14 +28,18 @@
   - INTERFACE pedagogy/pedagogy-cpu.fu.md
   - MEANING pedagogy-cpu is the study surface. GOALS in self/goals.toon.md. PROBE first. ANSWER. ASSESS onto the graph. PLAN adjusts. REVIEW TRAVERSE SHOWCASE. Life queue stays CPU.md.
   - FOLDERS being math physics biology computation language are human-readable branches. Each vertex with claims has pedagogy/<branch>/<id>.fu.md. On Windows the root vertex file is also the folder index. The graph is the truth.
+  - WRITING-ACCURACY pedagogy/_learn/writing-accuracy/ is the target-language agent-prompt method (method + state + sessions + lexicon.graph). Hook .cursor/hooks/writing-accuracy-session.py injects todayFocus on sessionStart. Not product code. Not Wordschatz apps.
+  - POLYGLOT pedagogy/_learn/polyglot/ holds horizon (16 named langs / age 35), GrammarFrame×lexicon pairing, per-lang frames, concept bridge graph, and last-signal from beforeSubmitPrompt (primaryLang + code-switch gaps). Do not invent CEFR beyond horizon bands.
 
 - DIR cron
   - KIND scheduled gatherers. Nest RECURRING AGENT.
   - Enrich ontology from RESEARCH DUMP LEARNING_DUMP. Additive. Cite SOURCE. Default $output=pedagogy/universe.graph.md
   - LEARN-ENRICH cron/learn-enrich.fu.md reads self/goals.toon.md, picks NORTH from the focused goal, writes pedagogy/_learn/lesson.toon.md, probes on pedagogy-cpu, assesses into self/learn.toon.md and E Study STUDIES. Study GUI is ephemeral. On SATISFY write mezzanine/learn-enrich.toon.md.
   - INTERVIEW-ANCHOR cron/interview-anchor.fu.md fetches AI-engineering interview titles, maps them onto graph vertices, writes a dated DAY slice on pedagogy-cpu, and logs intellectual load in self/endurance.toon.md. Titles and SOURCE urls only. Do not copy answers. Sore stops the day.
+  - INTERVIEW-BANK-ENRICH cron/interview-bank-enrich.fu.md watches public Agent interview banks (e.g. mianling 2026 themes) + zeitgeist signals. Theme→vertex map only. Strategy in pedagogy/_learn/interview-prep-strategy.toon.md. Do not paste answer essays. Do not invent ANSWER.
   - INFLOW-NEWS cron/inflow-news.fu.md gathers news, ideas, tech, and unknown unknowns into inflow/DUMP.md while the human is away. Skip ids in inflow/STATE.md. Not latex. Not pdf. Drip on return: cron/dump-drip.fu.md.
   - SCHEDULE-HARVEST cron/schedule-harvest.fu.md reads CPU.md inflow/ dumps, then the agent fills WHAT WHERE WHEN WHY from the open web into schedule/enrich.toon.md. Python merges that overlay. Slug titles are not a finished store. ICS only when the human asks python cron/schedule-harvest.py --ics.
+  - ROUTINE-ENRICH cron/routine-enrich.fu.md due-checks self/routine.toon.md (daily hygiene + preventive recall). Optionally APPEND tip[] with SOURCE. Do not invent last_done or clinic Termin. Today merge: pedagogy-cpu PROTOCOL TODAY + project-state-viz --purpose today|routine.
   - JANITOR cron/janitor.fu.md moves non-markdown files to recycle/. Markdown stays. Bytecode caches (__pycache__, *.pyc) are deleted, not recycled. Restore recycled files by moving back. tmp/ is not recycle: python cron/janitor.py --ttl deletes tmp siblings when tmp/ttl.toon.md last_run is 5 days old. Keep ttl.toon.md.
 
 - DIR inflow
@@ -66,7 +70,7 @@
 - DIR tmp
   - KIND on-demand human deliverables. Video, image, html. Not the store.
   - STORE PATH tmp/ttl.toon.md
-  - MEANING ttl.toon.md is the only persistent file in this folder. last_run is when a deliverable was written. On ingest python cron/janitor.py --ttl. If last_run is 5 days old, delete every sibling. Keep ttl.toon.md.
+  - MEANING ttl.toon.md is the only persistent file in this folder. last_run is when a deliverable was written. On ingest python cron/janitor.py --ttl. If last_run is 5 days old, promote named caches then delete every sibling. Keep ttl.toon.md.
   - VIDEO masters render into tmp/loop-slash/. Kit stays in skills/loop-slash/.
   - PEDAGOGY graph stays in pedagogy/. Showcase GUI and PNG/mp4 render into tmp/pedagogy/.
 

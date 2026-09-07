@@ -6,7 +6,12 @@
 - CLAIM This repo's skills/ontology-showcase.fu.md is the same essence in fu form. Janitor keeps skills/*.py so the procedure still runs.
 - CLAIM Agent Toolkit for AWS is the same shape at cloud scale: curated SKILL.md procedures a coding agent reads before touching AWS. Product page names Kiro Claude Code Codex MCP. Not a lebenslauf line.
 - CLAIM Claude Code skills: description matching, optional auto-invoke, may run in-session or with context fork into a subagent. Infographic says always fork. Official skills.md says fork is optional. CONTRADICTS the card on that point. Cursor on this machine reads SKILL.md on trigger. Do not write them as one implementation.
+- CLAIM Attested skill family in this repo (essence, not Job): video-generation (VideoGeneration contract), fog-rest (SicknessBehavior vs DSB), daily-brief (planner PDF), cursor-agent-retry (AgentStreamDrop ladder + load), learn-baseline. HARD rules in a skill are AgentConstitution-shaped always-ons for that trigger.
+- CLAIM Improvement backlog for a skill should promote from tmp explain cards into the SKILL.md when shipped (shared video_kit, --demo, TTS cache). Do not leave lasting contract only in tmp PDF.
 - SOURCE mezzanine/cursor-slash.toon.md
 - SOURCE skills/ontology-showcase.fu.md
+- SOURCE skills/video-generation.fu.md
+- SOURCE .cursor/skills/fog-rest/SKILL.md
+- SOURCE .cursor/skills/cursor-agent-retry/SKILL.md
 - SOURCE https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
 - SOURCE https://code.claude.com/docs/en/skills.md

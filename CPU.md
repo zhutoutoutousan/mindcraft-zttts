@@ -3,31 +3,34 @@
   - STORE PATH cron/interview-anchor.fu.md
   - STORE PATH cron/inflow-news.fu.md
   - STORE PATH cron/temp.fu.md
+  - STORE PATH cron/maintain.fu.md
   - STORE PATH tmp/ttl.toon.md
   - STORE PATH self/learn.toon.md
   - STORE PATH self/goals.toon.md
   - STORE PATH self/endurance.toon.md
   - STORE PATH self/training.toon.md
-  - NOTE 2026-09-03 DSB recovery. Walk only. Do not spawn interview-anchor --day. AgentCore PROBE still empty. Daily 德语助手 法语助手 西语助手 背单词, one unit each. Loop 20m inflow-news still running. Loop 30m maintain STOPPED 11:14 by human. Do not re-arm unless asked. Do not nest bare AGENT janitor --apply.
+  - STORE PATH self/routine.toon.md
+  - STORE PATH self/routine.fu.md
+  - STORE PATH cron/routine-enrich.fu.md
+  - NOTE 2026-09-03 ~23:51. Maintain STOPPED. Last organ pedagogy-cpu STUDY AISafety. Next would be DUMP.
 
-- NOTE TODAY 2026-09-03 packed 11:32 Europe/Berlin. tmp purged except ttl. Away inflow goes to DUMP.md. Drip when back.
-  - BODY DSB recovery. Scapular sore. Rotation residual. Chest lats forearm DOMS. Walk only.
-  - CLOCK 12:30 Agentur Potsdam Empfang. Bag street ID list in .private/after-agentur.fu.md
-  - RETURN after Agentur: sit. Log the visit in .private/after-agentur.fu.md. If quiet, AgentCore PROBE one sentence. Then three 助手 if not logged. Goethe Schreiben only if still quiet. Skip workshop pre-reads until PROBE. Skip IFA today.
-  - DAILY 德语助手 背单词. Log --external --id de-assistant-wordschatz
-  - DAILY 法语助手 背单词. Log --external --id fr-assistant-wordschatz. Do not invent a French CEFR.
-  - DAILY 西语助手 背单词. Log --external --id es-assistant-wordschatz
-  - LEARN AgentCore PROBE still empty. One sentence. Do not invent ANSWER. Do not pile --day.
-  - LEARN Goethe B2 Schreiben if quiet after Agentur. https://bfu.goethe.de/b2_mod_2MX6/schreiben.php
-  - LEARN Tomorrow: workshop 11:30 then IFA after 13:30. No heavy bench.
+- NOTE TODAY 2026-09-06 ~10:33 Europe/Berlin. Weigh-in logged in gitignored self/training.toon.md. Park Babelsberg walk then easy swim. Residual lats DOMS and a little ab DOMS. skipHeavyPressUntilClear still true. Mouth particulars stay in .private/health.fu.md.
+  - BODY easy swim, not a pull session. Stop if left scapula nags. No heavy bench. No IFA.
+  - CLOCK Monday 2026-09-07 REST. Skip IFA halls. Skip HPI AI RoundTable 16:00 Potsdam. Skip 10:50 Dream Stage kitchen AI panel.
+  - CLOCK Tuesday 2026-09-08: IFA Agent-Ready 13:45 Hall 25 skipped while rest is on. Halls close 18:00. ClickHouse/Grafana 18:00–21:00 CEST CLASH named evening call in .private/rosenblatt-2026-09-08.fu.md. Named call wins. Do not invent RSVP.
+  - LOOP STOPPED 2026-09-06 ~10:06. Human terminated AGENT_LOOP_TICK_restenrich. Do not re-arm. Pending DUMP stays in inflow/DUMP.md until dump-drip.
+  - LEARN AgentCore PROBE still empty. After swim, at most one sentence if the head is quiet. Do not invent ANSWER. Do not pile DAY.
+  - LEARN Home and living e-commerce plus Disposition as industry. Named employer Bewerbung Gehalt stay in .private/CPU.md. Do not copy those here.
 
 - AGENT $id=temp-ttl $input=tmp/ttl.toon.md $prompt=python cron/janitor.py --ttl. If last_run is 5 days old, delete tmp siblings. Keep ttl.toon.md. Do not recycle. Do not --apply.
 
 - SCHEDULE 2026-09-04–08 Attend IFA Berlin https://www.ifa-berlin.com/de/ Messe Berlin, Messedamm 22, 14055 Berlin — Fr 04.09. Privatbesucher 12:00–18:00 (Vormittag bis 12:00 nur Fachbesucher), Sa–Di 05.–08.09. 10:00–18:00; Hallen schließen 18:00
 
-- SCHEDULE 2026-09-04 11:30–13:30 REGISTERED Running Sandboxed Coding Agents in your CI/CD Pipeline — AWS Workshops, Online (~2h). Lambda MicroVMs, Agent Toolkit for AWS, Cedar policy in AgentCore. overlap IFA Fr 04.09 Privatbesucher from 12:00 — workshop first, Messe after 13:30 if same day.
+- SCHEDULE 2026-09-04 11:30–13:30 REGISTERED Running Sandboxed Coding Agents in your CI/CD Pipeline — AWS Workshops, Online (~2h). Lambda MicroVMs, Agent Toolkit for AWS, Cedar policy in AgentCore. CLASH: Empfang follow-up is the same 11:30. Particulars in .private. Empfang wins. IFA after Amt if quiet.
 
 - SCHEDULE 2026-09-03 12:30 ~20min Agentur für Arbeit Potsdam Empfang. Particulars and bag in .private/after-agentur.fu.md
+
+- AGENT $id=maintain $input=cron/maintain.fu.md $output=inflow/STATE.md $when=human asks 保养 or a maintain loop is armed $prompt=Follow cron/maintain.fu.md. One organ per tick. NEW sourced delta. If the work would match last_organ last_delta, skip to the next organ. Do not restate DUMP-empty PROBE-empty session-planned. Do not invent ANSWER. Do not pile DAY. Do not add Chinese as native. Do not start a second maintain loop.
 
 - AGENT $id=inflow-news $input=cron/inflow-news.fu.md $output=inflow/DUMP.md $prompt=Follow cron/inflow-news.fu.md. Away-loop: APPEND CAPTURE into inflow/DUMP.md. python cron/inflow-news.py --status then --stamp. Skip STATE ids. Unknown unknowns allowed. No PII. Not latex. Not pdf. Do not drip. Do not invent ANSWER.
 
@@ -81,5 +84,9 @@
   - STORE PATH pedagogy/language/LanguageDrilling.fu.md
   - STORE PATH mezzanine/tesol-drilling.toon.md
 
-
-- DUMP
+- DUMP Learn from hermes agent https://github.com/NousResearch/hermes-agent
+  - NOTE 2026-09-06 captured into inflow/DUMP.md $id=hermes-agent-self-improving-loop. Away: do not drip. Empty PROBE stays empty.
+- DUMP Graft context layer https://graft.nanonets.ai
+  - NOTE 2026-09-06 queued inflow/DUMP.md $id=graft-context-layer-nanonets. STATUS pending. Fog/rest: do not drip, do not invent install. Empty PROBE stays empty.
+- DUMP Psyche: learn Cursor/Claude Code subagents + hooks; bias system toward that
+  - NOTE 2026-09-06 ~16:48 dripped inflow/DUMP.md $id=psyche-hooks-subagents-learn. goals.north + PLAN NEXT front-load AgentHook MultiAgent AgentPlugin. STUDY stubs empty ANSWER. Empty AgentCore PROBE stays empty. Do not invent hook store.

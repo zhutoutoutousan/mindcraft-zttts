@@ -1,6 +1,8 @@
 # inflow STATE
-Loop: RUNNING 20m last_stamp 2026-09-03T09:12:24Z. Away-loop writes inflow/DUMP.md. Drip on return. Skip ids below.
-Maintain: STOPPED 2026-09-03T11:14+02 by human. Do not re-arm unless asked.
+Loop: RUNNING 20m last_stamp 2026-09-06T14:48:00Z. Read inflow/inflow.fu.md. Skip ids below. Psyche drip psyche-hooks-subagents-learn done.
+Maintain: STOPPED 2026-09-06T10:06+02. Last organ goals. Next would be private splice.
+Maintain last_organ: goals
+Maintain last_delta: skipped training (no sets). PLAN NOW still AgentCore from north; stripped stale Empfang/workshop clock. CAPTURE hermes-skills-learn-agentskills. Next organ private splice.
 
 Rule: later ticks MUST skip ids below. Do not re-arm a second inflow-news loop.
 
@@ -102,3 +104,12 @@ Rule: later ticks MUST skip ids below. Do not re-arm a second inflow-news loop.
 - hpi-ai-roundtable-2026-09-07
 - cognee-fastino-berlin-2026-09-03
 - agentcore-websearch-eu-west-1
+- hermes-skills-learn-agentskills
+- ifa-agent-ready-2026-09-08
+- agentcore-mass-migrate-classic-2026-09-04
+- hermes-agent-self-improving-loop
+- agentcore-identity-consent-portal-2026-09-01
+- ifa-ai-kitchen-hype-2026-09-07
+- ifa-robots-kitchen-2026-09-04
+- graft-context-layer-nanonets
+- psyche-hooks-subagents-learn
