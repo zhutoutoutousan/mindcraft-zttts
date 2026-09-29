@@ -5,5 +5,18 @@
 - CLAIM Mathematics STUDIES Form. It does not care which matter instantiates the form.
 - CLAIM Physics GROUNDS_IN Mathematics because motion is written as relation. Computation APPLIES Mathematics because an algorithm is a finite form that runs.
 - CLAIM Attested branches in this graph: DataScience GraphTraversal TypeSystem. Later: number geometry proof. Do not invent theorems not sourced.
+- CLAIM Nested integral memory, from the human's June 2026 notes, absorbed 2026-09-27. The monographs were removed. This is not a published theorem.
+  - Repeated integration and exponential forgetting sit on one kernel: polynomial memory times a stretched exponential, for positive time.
+  - Pure repeated integration closes under composition. The forgetting parameters break that closure. The size of the break says whether a fit can stay pure.
+  - Causal convolution of the kernel can be scanned in frequency. Recovering the three parameters from an observed pair was marked not built.
+- CLAIM Number and linear-algebra checks, absorbed 2026-09-27 from the mathematics notes, then that folder was removed. This is the note's wording, not a new theorem.
+  - A prime is an integer greater than 1 whose only positive divisors are 1 and itself. Every positive integer except 1 is a product of primes. Uniqueness was not recorded.
+  - An integer a is divisible by b, b not 0, when a = bc. Then c divides a whenever c divides b and b divides a. If c divides both a and b, c divides ma + nb for integers m and n.
+  - Choosing k items from n equals choosing k from n−1 plus choosing k−1 from n−1. Replacing the step with a negative was asked and not answered.
+  - A map from a nonempty X to Y sends each element of X to exactly one element of Y. The domain is X. The range is the set of images.
+  - The transpose of an m by n matrix turns row j into column j. A symmetric matrix equals its transpose. A skew-symmetric matrix equals the negative of its transpose.
+  - The coefficient matrix lists the unknowns' coefficients in place. The augmented matrix appends the right-hand side.
+  - A simple graph has no loops and no repeated edges. A path is a walk that does not repeat a vertex. The note's Eulerian graph has a walk through every edge once that ends where it started. Its Hamiltonian graph has a walk through every vertex once that ends where it started.
+  - Integral tables, a normal-density line, and a cosine-law line in the same notes were not installed. Bookmarks in Tao's Analysis, a commutative-algebra text, and an analysis problem set are not current progress. A random-graph script was not installed.
 - MEDIA PAGE https://plato.stanford.edu/entries/philosophy-mathematics/
 - SOURCE pedagogy/ontology.fu.md

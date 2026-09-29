@@ -208,6 +208,49 @@ TOKEN_RE = re.compile(
 )
 
 
+def extract_prompt(data: object) -> str:
+    """Pull user text from Cursor beforeSubmitPrompt JSON (prompt, nested content, parts)."""
+    if isinstance(data, str):
+        return data.strip()
+    if not isinstance(data, dict):
+        return ""
+    for key in ("prompt", "text", "content", "user_prompt", "message", "query"):
+        val = data.get(key)
+        if isinstance(val, str) and val.strip():
+            return val.strip()
+        if isinstance(val, dict):
+            inner = extract_prompt(val)
+            if inner:
+                return inner
+        if isinstance(val, list):
+            parts: list[str] = []
+            for item in val:
+                if isinstance(item, str) and item.strip():
+                    parts.append(item.strip())
+                elif isinstance(item, dict):
+                    t = item.get("text") or item.get("content") or ""
+                    if isinstance(t, str) and t.strip():
+                        parts.append(t.strip())
+            joined = "\n".join(parts).strip()
+            if joined:
+                return joined
+    nested = data.get("input") or data.get("payload")
+    if nested and nested is not data:
+        inner = extract_prompt(nested)
+        if inner:
+            return inner
+    msgs = data.get("messages")
+    if isinstance(msgs, list) and msgs:
+        last = msgs[-1]
+        if isinstance(last, dict):
+            inner = extract_prompt(last)
+            if inner:
+                return inner
+        elif isinstance(last, str) and last.strip():
+            return last.strip()
+    return ""
+
+
 def tokenize(text: str) -> list[str]:
     return TOKEN_RE.findall(text or "")
 

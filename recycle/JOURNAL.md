@@ -144,3 +144,94 @@
 - SWEEP 2026-09-07T15:09:31Z moved=0 trash=2
   - TRASH cron/__pycache__
   - TRASH skills/__pycache__
+- SWEEP 2026-09-08T16:57:01Z moved=0 trash=2
+  - TRASH cron/__pycache__
+  - TRASH skills/__pycache__
+- SWEEP 2026-09-09T01:52:54Z moved=0 trash=3
+  - TRASH cron/__pycache__
+  - TRASH pedagogy/_learn/writing-accuracy/__pycache__
+  - TRASH skills/__pycache__
+- SWEEP 2026-09-13T12:18:15Z moved=0 trash=36
+  - TRASH tmp/ancient-garden
+  - TRASH tmp/archify-diagram-arsenal.html
+  - TRASH tmp/archify-diagram-arsenal.visual-check.1440x900.dark.png
+  - TRASH tmp/archify-diagram-arsenal.visual-check.1440x900.light.png
+  - TRASH tmp/archify-diagram-arsenal.visual-check.2048x1320.dark.png
+  - TRASH tmp/archify-diagram-arsenal.visual-check.2048x1320.light.png
+  - TRASH tmp/archify-diagram-arsenal.visual-check.html
+  - TRASH tmp/archify-diagram-arsenal.visual-check.json
+  - TRASH tmp/archify-diagram-arsenal.workflow.json
+  - TRASH tmp/dancer.mp4
+  - TRASH tmp/day-2026-09-08.aux
+  - TRASH tmp/day-2026-09-08.log
+  - TRASH tmp/day-2026-09-08.md
+  - TRASH tmp/day-2026-09-08.out
+  - TRASH tmp/day-2026-09-08.pdf
+  - TRASH tmp/day-2026-09-08.tex
+  - TRASH tmp/day-2026-09-09.aux
+  - TRASH tmp/day-2026-09-09.log
+  - TRASH tmp/day-2026-09-09.out
+  - TRASH tmp/day-2026-09-09.pdf
+  - TRASH tmp/day-2026-09-09.tex
+  - TRASH tmp/friend-wine
+  - TRASH tmp/german-cloze-performance-2026-09-12.png
+  - TRASH tmp/hook-stdin-test.json
+  - TRASH tmp/partner-physique
+  - TRASH tmp/pedagogy/de-drills-progress.toon.md
+  - TRASH tmp/pedagogy/de-drills.html
+  - TRASH tmp/pedagogy/project-state.html
+  - TRASH tmp/plate.mp4
+  - TRASH tmp/recover-2026-09-08.aux
+  - TRASH tmp/recover-2026-09-08.log
+  - TRASH tmp/recover-2026-09-08.out
+  - TRASH tmp/recover-2026-09-08.pdf
+  - TRASH tmp/recover-2026-09-08.tex
+  - TRASH tmp/song.mp4
+  - TRASH tmp/take.html
+  - TRASH tmp/_archify
+- SWEEP 2026-09-23T14:05:51Z moved=0 trash=32
+  - TRASH tmp/ban-catcher
+  - TRASH tmp/bgm-id
+  - TRASH tmp/day-2026-09-19.aux
+  - TRASH tmp/day-2026-09-19.log
+  - TRASH tmp/day-2026-09-19.out
+  - TRASH tmp/day-2026-09-19.pdf
+  - TRASH tmp/day-2026-09-19.tex
+  - TRASH tmp/donut-wang
+  - TRASH tmp/face.png
+  - TRASH tmp/fog-state-2026-09-13
+  - TRASH tmp/fog-state-2026-09-13.aux
+  - TRASH tmp/fog-state-2026-09-13.log
+  - TRASH tmp/fog-state-2026-09-13.out
+  - TRASH tmp/fog-state-2026-09-13.pdf
+  - TRASH tmp/fog-state-2026-09-13.tex
+  - TRASH tmp/fr-canvas-items.json
+  - TRASH tmp/fr-harvest.json
+  - TRASH tmp/gotcha
+  - TRASH tmp/hall-promo
+  - TRASH tmp/huaqiang.mp4
+  - TRASH tmp/imap-triage
+  - TRASH tmp/kichiku-danzi
+  - TRASH tmp/minsec-masterclass
+  - TRASH tmp/odyssee-tag1-2026-09-18.pdf
+  - TRASH tmp/odyssee-tag1-2026-09-18.tex
+  - TRASH tmp/or-try
+  - TRASH tmp/pedagogy/baseline-answers.toon.md
+  - TRASH tmp/pedagogy/baseline.html
+  - TRASH tmp/pedagogy/de-drills.html
+  - TRASH tmp/pedagogy/project-state.html
+  - TRASH tmp/xishuashua.mp3
+  - TRASH tmp/传世经典，甜甜圈真好吃 - Original.mp4
+- SWEEP 2026-09-23T14:05:52Z moved=0 trash=2
+  - TRASH cron/__pycache__
+  - TRASH skills/__pycache__
+- SWEEP 2026-09-23T14:09:13Z moved=0 trash=2
+  - TRASH cron/__pycache__
+  - TRASH skills/__pycache__
+- SWEEP 2026-09-24T12:35:57Z moved=0 trash=2
+  - TRASH cron/__pycache__
+  - TRASH skills/__pycache__
+- SWEEP 2026-09-24T12:36:05Z moved=0 trash=1
+  - TRASH cron/__pycache__
+- SWEEP 2026-09-24T12:45:32Z moved=0 trash=1
+  - TRASH cron/__pycache__

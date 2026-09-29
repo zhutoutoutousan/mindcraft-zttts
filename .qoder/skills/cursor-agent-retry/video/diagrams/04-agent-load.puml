@@ -1,0 +1,19 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontColor #e8eef5
+title Agent-side load
+
+|Do|
+:≤3-4 tools / turn;
+:Local PIL / make_memes;
+:CDN URL + Shell ≤2 Fetch;
+:Encode next turn;
+:Inventory after interrupt;
+
+|Do not|
+:6+ long parallel tools;
+:GenerateImage storms;
+:Gallery HTML scrape batch;
+:XeLaTeX + mp4 + Fetch stacked;
+:Replay failed megabatch;
+@enduml

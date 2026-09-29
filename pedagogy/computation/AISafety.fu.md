@@ -5,4 +5,7 @@
 - CLAIM Interview titles from https://github.com/amitshekhariitbhu/ai-engineering-interview-questions that map here are the hire-pressure form of this techne. Answers stay at their SOURCE urls. Do not paste cheat-sheet answers into this body.
 - CLAIM IFA 2026-09-04 Hall 25: trust, safety, and acceptance as physical automation enters intimate spaces such as the kitchen. Same vertex. Not a medical claim.
 - SOURCE https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
-- SOURCE https://www.ifa-berlin.com/programme/robots_in-_the_kitchen_and_home
+- CLAIM Strands Swarm safety table: step/handoff caps, execution and per-node timeouts, repetitive-handoff (ping-pong) detection. Timeouts are cooperative AbortSignal. Docs claim. Do not invent a swarm run in this repo.
+- SOURCE https://strandsagents.com/docs/user-guide/concepts/multi-agent/swarm/
+- CLAIM Strands interrupt is HITL approval or extra input before a tool (or a whole tool batch) runs. Pause-and-ask, not a silent cancel. Distinct from Swarm handoff caps. Do not invent a HITL UI here.
+- SOURCE https://strandsagents.com/docs/user-guide/concepts/interrupts/

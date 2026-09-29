@@ -1,0 +1,8 @@
+- VERTEX Complexity
+- KIND formal
+- GLOSS many-parts-interacting-nonlinearly
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A complex system is a network of parts that interact, usually not in a straight line. It can organize itself. It is neither fully regular nor fully random. New behavior shows up at the larger scale. Absorbed 2026-09-27 from the study notes. That folder was then removed.
+- CLAIM Unread, grasp empty. Complexity Explained. Melanie Mitchell was a name only. Kalman and particle-filter books, and https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python . Strang's calculus and Kreyszig were named with old page counts. Those counts are not current progress. Lorenz and Poincaré recurrence were names only.
+- CLAIM A violent elimination note and an occult reading list were not installed.
+- SOURCE human study-note 2026-09-27

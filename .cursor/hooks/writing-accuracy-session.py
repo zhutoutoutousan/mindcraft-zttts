@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""sessionStart: inject WritingAccuracy + PolyglotHorizon + grammar×lexicon pairing."""
+"""sessionStart: inject WritingAccuracy + PolyglotHorizon + grammar×lexicon pairing.
+
+This hook does not rewrite the human's German. Cursor reads env +
+additional_context here; Qoder reads hookSpecificOutput.additionalContext.
+The Korrektur is the agent's reply after job-first.
+last-signal is written by writing-accuracy-prompt.py on beforeSubmitPrompt.
+"""
 from __future__ import annotations
 
 import json
@@ -13,6 +19,7 @@ METHOD = ROOT / "pedagogy" / "_learn" / "writing-accuracy" / "method.toon.md"
 PAIRING = ROOT / "pedagogy" / "_learn" / "polyglot" / "pairing.toon.md"
 HORIZON = ROOT / "pedagogy" / "_learn" / "polyglot" / "horizon.toon.md"
 SIGNAL = ROOT / "pedagogy" / "_learn" / "polyglot" / "last-signal.toon.md"
+TRACE = ROOT / "pedagogy" / "_learn" / "polyglot" / "hook-trace.toon.md"
 FRAMES = ROOT / "pedagogy" / "_learn" / "polyglot" / "frames" / "de.toon.md"
 
 
@@ -79,7 +86,8 @@ def main() -> int:
         f"Method: writing-accuracy-base-arbitrage · targetLang={target}\n"
         f"Horizon: B2+ in {count} languages by age {age_t}. Do not invent unnamed language names.\n"
         f"last-signal: primaryLang={last_p or 'none'} methodHit={last_hit or 'unknown'} "
-        f"({SIGNAL.as_posix()}). Empty tokenCount must not reset this to en.\n"
+        f"({SIGNAL.as_posix()}). Empty tokenCount must not reset this to en. "
+        f"Hook trace: {TRACE.as_posix()} (stdinKeys + promptChars; no prompt body).\n"
         "Hook flow: beforeSubmitPrompt runs polyglot_detect.analyze. If methodHit "
         "(DE/FR/ES markers ≥2), this turn is a writing sample even after a ZH stretch. "
         "Auto-writes GAP vertices into bridge.graph.md.\n"
@@ -90,6 +98,8 @@ def main() -> int:
         f"oneFocus = one Frame. See {PAIRING.as_posix()} and {FRAMES.as_posix()}.\n"
         "Rule: project job first. Minimal rewrite + one Frame focus. Not a grammar teacher. "
         "Do not edit product code for language logging.\n"
+        "This sessionStart hook never prints a Korrektur. If last-signal.updated is stale "
+        "or primaryLang=en with tokenCount 0, still treat a DE/FR/ES chatbox turn as a sample.\n"
         f"oneFocus: {one}\n"
         "todayFocus:\n"
         f"{bullets}\n"
@@ -111,6 +121,11 @@ def main() -> int:
             "POLYGLOT_LANG_COUNT": count,
         },
         "additional_context": ctx,
+        # Qoder injects hookSpecificOutput.additionalContext; Cursor uses additional_context.
+        "hookSpecificOutput": {
+            "hookEventName": "SessionStart",
+            "additionalContext": ctx,
+        },
     }
     print(json.dumps(payload, ensure_ascii=True))
     return 0

@@ -5,5 +5,7 @@
 - CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
 - CLAIM Named with Cursor / Claude Code on worldquant-miner evidence.
 - CLAIM Agent Toolkit for AWS names Kiro as a target IDE. That is a product page, not extra employment.
+- CLAIM Official Kiro skills page: packages follow the open Agent Skills standard. Progressive disclosure (name+description first). Workspace `.kiro/skills/` overrides global `~/.kiro/skills/` on name clash. Slash `/skill-name` also works. This repo's skills live under `.cursor/skills/`. Do not invent a Kiro install here.
 - SOURCE self/identity/skill.toon.md
 - SOURCE https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
+- SOURCE https://kiro.dev/docs/skills/

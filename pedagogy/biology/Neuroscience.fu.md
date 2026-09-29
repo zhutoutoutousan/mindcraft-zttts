@@ -8,3 +8,5 @@
 - MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7
 - MEDIA FIG https://www.nature.com/articles/s41586-024-07220-7/figures/1
 - SOURCE https://www.nature.com/articles/s41586-024-07220-7
+- CLAIM Neural encoding is the map from stimulus to response. The note's answer for how a neuron carries that map is a sequence of spikes in time. Absorbed 2026-09-27 from the neuroengineering notes, then that folder was removed. A paper in that stack is learned by rebuilding its process. Empty glossaries, conduction-speed numbers, and a glia census were not copied as grasp. An equation that set the autonomic system equal to peripheral plus sympathetic mixed two meanings of the same abbreviation and was not installed. A binaural-beat self-report and a retracted gamma-beat paper were not installed as a method. Unread: invasive versus non-invasive neuronal signals, the media page below.
+- MEDIA PAGE https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4921501/

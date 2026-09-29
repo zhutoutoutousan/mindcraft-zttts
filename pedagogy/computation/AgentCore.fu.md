@@ -9,10 +9,21 @@
 - CLAIM Attested nearby skills: Bedrock SQS ECS EKS Fargate CDK from Fictio/NovelMonkey. MCP GIS-Chat at RITS. AWS Developer Associate Nov 2021 and SysOps Associate Sep 2022. Cursor Kiro Claude Code Semantic Kernel in the AI family. AgentCore itself is not yet a line on the lebenslauf. Do not write it as a job.
 - CLAIM AWS Compute Blog on sandboxed coding agents names three pieces that must work together: Lambda MicroVMs as the execution sandbox, Agent Toolkit for AWS as curated domain procedure, and Policy in AgentCore as governance. Worked example: the agent builds inside a MicroVM then calls a deploy tool on Gateway with environment production. Cedar inspects the input and denies because the agent may only deploy to staging. That is AWS's example, not a metric.
 - MEDIA PAGE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
+- MEDIA PAGE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness.html
 - MEDIA PAGE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html
 - MEDIA PAGE https://aws.amazon.com/bedrock/agentcore/
 - SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
+- SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness.html
 - SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html
 - SOURCE CPU.md
 - SOURCE self/identity/skill.toon.md
 - SOURCE https://aws.amazon.com/blogs/compute/secure-code-execution-for-ai-agents-with-aws-lambda-microvms/
+- CLAIM YouTube supplements found 2026-09-18 for the escalation deep-dive: Getting started quickly with managed harness in AgentCore; Deep Dive series episodes Gateway and Runtime; the AgentCore Deep Dive Series playlist. The Gateway episode pairs with Policy/Cedar/Dogwood; the Runtime episode with MCP and A2A. Videos are learner supplements, not mastery claims. Do not invent video content beyond titles.
+- MEDIA PAGE https://www.youtube.com/watch?v=jXPvvJ_KX8s
+- MEDIA PAGE https://www.youtube.com/watch?v=atWXM5lziY8
+- MEDIA PAGE https://www.youtube.com/watch?v=wizEw5a4gvM
+- MEDIA PAGE https://www.youtube.com/playlist?list=PLhr1KZpdzukfZdp5SGgm2yBPglHNHn-Ig
+- SOURCE https://www.youtube.com/watch?v=jXPvvJ_KX8s
+- SOURCE https://www.youtube.com/watch?v=atWXM5lziY8
+- SOURCE https://www.youtube.com/watch?v=wizEw5a4gvM
+- SOURCE https://www.youtube.com/playlist?list=PLhr1KZpdzukfZdp5SGgm2yBPglHNHn-Ig

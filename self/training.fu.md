@@ -6,15 +6,22 @@
   - skip heavy press, skip kip, skip wide pullup
   - radiating left arm: skip all press
   - remaining scapular pain: no 92.5. Light Cavaliere technique press only if quality is not sharp.
+  - named recovered 2026-09-08: superseded 2026-09-15. Human named left scapula hurting again before 15 Sep. BLOCKER on. Quality unspecified. Cycle spans in self/recovery-cycle.toon.md.
 
 - BLOCKER STORE flags.skipHeavyPressUntilClear
   - 40 percent relief on 2026-09-02 is not quiet. Rotation-evoked residual on 2026-09-03 is not quiet. No 92.5-95 until quiet.
+  - named recovered 2026-09-08: superseded 2026-09-15. skipHeavyPressUntilClear true until quiet named again. No 92.5. Plan clock is not a clear.
+
+- STORE PATH self/recovery-cycle.toon.md
+  - LEARN named DOMS vs pain vs fog durations. Generic typical is literature class. Fog is endurance not injury.
 
 - SCHEDULE 2026-09-06 easy swim on the deload. Residual lats and a little ab DOMS. Not a pull session. Stop if left scapula nags. Mouth particulars stay in .private/health.fu.md.
 
 - SCHEDULE 2026-09-07 rest. Not heavy bench.
   - BLOCKER STORE flags.skipHeavyPressUntilClear
   - BLOCKER human named burnout rest
+
+- SCHEDULE 2026-09-08 evening gym named open then skipped. Human 19:02 named whole-body heat. No gym, no swim tonight. Not press. Heat particulars stay in .private/health.fu.md. Do not invent a temperature or laps.
 
 - SCHEDULE 2026-09-08+ earliest heavy bench IF STORE flags.skipHeavyPressUntilClear is false
   - BLOCKER STORE flags.skipHeavyPressUntilClear

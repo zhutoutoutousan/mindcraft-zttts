@@ -1,8 +1,8 @@
-"""On-demand deliverables live in tmp/. Only ttl.toon.md persists.
+"""On-demand deliverables live in tmp/. Persist ttl.toon.md + mindcraft-hall.
 
     python cron/janitor.py --touch   stamp last_run now
     python cron/janitor.py --ttl     delete tmp siblings if last_run is 5 days old
-    python cron/janitor.py --purge   delete tmp siblings now. Keep ttl.toon.md. Human asked.
+    python cron/janitor.py --purge   delete tmp siblings now. Keep ttl + hall. Human asked.
 """
 from __future__ import annotations
 
@@ -12,8 +12,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TMP = ROOT / "tmp"
 TTL_FILE = TMP / "ttl.toon.md"
+HALL_FILE = TMP / "pedagogy" / "mindcraft-hall.html"
 LAPSE_DAYS = 5
 SCHEMA = "deliver/ttl"
+KEEP_REL = (
+    Path("tmp") / "ttl.toon.md",
+    Path("tmp") / "pedagogy" / "mindcraft-hall.html",
+)
+TTL_NOTE = (
+    "persistent: ttl.toon.md + pedagogy/mindcraft-hall.html. "
+    "ROOT reads this. After lapse_days janitor promotes named caches then "
+    "deletes every other file in tmp. Keep hall."
+)
 
 
 def now_utc() -> datetime:
@@ -48,7 +58,7 @@ def write_ttl(*, last_run: str | None = None, last_expire: str | None = None) ->
         f"lapse_days: {LAPSE_DAYS}",
         f"last_run: {run}",
         f"last_expire: {expire}",
-        "note: only persistent file in tmp. ROOT reads this. After lapse_days janitor promotes named caches then deletes every other file in tmp.",
+        f"note: {TTL_NOTE}",
         "",
     ]
     TTL_FILE.write_text("\n".join(lines), encoding="utf-8")
@@ -69,25 +79,68 @@ def parse_iso(value: str) -> datetime | None:
     return dt.astimezone(timezone.utc)
 
 
+def keep_resolved() -> set[Path]:
+    keeps: set[Path] = set()
+    for rel in KEEP_REL:
+        keeps.add((ROOT / rel).resolve())
+    return keeps
+
+
+def _is_keep_file(path: Path, keeps: set[Path]) -> bool:
+    try:
+        return path.resolve() in keeps
+    except OSError:
+        return False
+
+
+def _is_keep_ancestor(path: Path, keeps: set[Path]) -> bool:
+    try:
+        resolved = path.resolve()
+    except OSError:
+        return False
+    for keep in keeps:
+        try:
+            keep.relative_to(resolved)
+            return True
+        except ValueError:
+            continue
+    return False
+
+
 def sibling_paths() -> list[Path]:
+    """Top-level tmp children that are not themselves keep files."""
     if not TMP.is_dir():
         return []
+    keeps = keep_resolved()
     found: list[Path] = []
     for child in TMP.iterdir():
-        if child.resolve() == TTL_FILE.resolve():
+        if _is_keep_file(child, keeps):
             continue
         found.append(child)
     found.sort(key=lambda p: p.as_posix())
     return found
 
 
+def has_expirable() -> bool:
+    """True if tmp still has files other than KEEP_REL."""
+    keeps = keep_resolved()
+    if not TMP.is_dir():
+        return False
+    for path in TMP.rglob("*"):
+        if path.is_dir():
+            continue
+        if _is_keep_file(path, keeps):
+            continue
+        return True
+    return False
+
+
 def due(now: datetime | None = None) -> bool:
     now = now or now_utc()
-    siblings = sibling_paths()
     last = parse_iso(read_ttl().get("last_run", ""))
     if last is None:
-        return bool(siblings)
-    return now >= last + timedelta(days=LAPSE_DAYS) and bool(siblings)
+        return has_expirable()
+    return now >= last + timedelta(days=LAPSE_DAYS) and has_expirable()
 
 
 def touch() -> Path:
@@ -105,22 +158,39 @@ def expire(*, dry_run: bool = False, force: bool = False) -> list[Path]:
 
     tmp_promote.promote_all(dry_run=dry_run)
 
-    for child in sibling_paths():
-        rel = child.relative_to(ROOT)
+    keeps = keep_resolved()
+
+    def expire_node(node: Path) -> None:
+        if _is_keep_file(node, keeps):
+            return
+        if node.is_dir() and _is_keep_ancestor(node, keeps):
+            try:
+                children = sorted(node.iterdir(), key=lambda p: p.as_posix())
+            except OSError as exc:
+                print(f"TTL FAIL {node.relative_to(ROOT).as_posix()}: {exc}")
+                return
+            for nested in children:
+                expire_node(nested)
+            return
+        rel = node.relative_to(ROOT)
         if dry_run:
             gone.append(rel)
-            continue
+            return
         try:
-            if child.is_dir():
-                shutil.rmtree(child)
-            elif child.is_file():
-                child.unlink()
+            if node.is_dir():
+                shutil.rmtree(node)
+            elif node.is_file() or node.is_symlink():
+                node.unlink()
             else:
-                continue
+                return
         except OSError as exc:
             print(f"TTL FAIL {rel.as_posix()}: {exc}")
-            continue
+            return
         gone.append(rel)
+
+    if TMP.is_dir():
+        for child in sorted(TMP.iterdir(), key=lambda p: p.as_posix()):
+            expire_node(child)
     if not dry_run:
         write_ttl(last_run="", last_expire=now_utc().strftime("%Y-%m-%dT%H:%M:%SZ"))
     return gone

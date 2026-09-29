@@ -1,0 +1,17 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontColor #e8eef5
+title Proxy pitfalls
+
+rectangle "Clash mixed/HTTP\n7890" as H #121a24
+rectangle "SOCKS 7891" as S #1a2530
+rectangle "http.proxy in Cursor" as P #121a24
+
+H -[#69f0ae]-> P : OK
+S -[#ff8a80]-> P : FAIL\ndo not put SOCKS here
+
+note right of P
+  proxySupport=override
+  + empty proxy = bare connect
+end note
+@enduml

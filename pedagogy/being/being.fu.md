@@ -5,6 +5,12 @@
 - CLAIM Being is not a thing among things. It is that there is anything rather than nothing.
 - CLAIM Every other vertex in this graph participates in Being. Pedagogy PARTICIPATES Being because teaching is a way Being is shown.
 - CLAIM Do not confuse Being with a person. A CV names one being. Ontology names being as such.
+- CLAIM Human 2026-09-11 named 神游自己也要进化 形而上进化. This repo's maintain loop is Form of 保养: organs rotate so the graph does not freeze as an idle stamp. The Form itself must take a new CLAIM or E, not only ingest DUMP. Named intent, not an Aristotle proof. Empty PROBE stays empty.
+- CLAIM Human 2026-09-11 later named 神游 must: collect multilingual learning URLs (ES/FR/DE first, rest on a commerce rotation) and hunt public 商机 on the open web. Those are organs polyglot-harvest and opportunity on cron/maintain.fu.md. Not idle CLOCK restamped as metaphysics. Do not invent a bid or ANSWER.
+- CLAIM 2026-09-27 ~23:43 The maintain Form skips an organ that has no new Matter. Training on 2026-09-27 ~23:03 had no reported sets, so the Form advanced and did not invent a completed set. SOURCE cron/maintain.fu.md training rule and CPU.md. Named rule, not an Aristotle proof. Empty PROBE stays empty.
+- CLAIM 2026-09-28 ~02:33 A skipped organ is written as last_organ so the next tick does not land on it again. Training at 2026-09-28 ~01:53 and goals at ~02:03 had no new Matter; the Form recorded the skip and moved on. SOURCE cron/maintain.fu.md rotate rule. Named rule, not an Aristotle proof. Distinct from the 2026-09-27 ~23:43 claim. Empty PROBE stays empty.
+- CLAIM 2026-09-28 ~05:23 The maintain Form withholds janitor --trash when the dry-run Matter is only bytecode. At 2026-09-28 ~05:13 recycle was 0 and the three trash dirs were __pycache__. SOURCE cron/maintain.fu.md janitor rule. Named rule, not an Aristotle proof. Distinct from the 2026-09-28 ~02:33 skip-organ claim. Empty PROBE stays empty.
+- CLAIM 2026-09-28 ~07:33 The harvest Form advances rest_pointer only after a rest-language URL is actually harvested. At 2026-09-28 ~06:53 the Finnish Selkouutiset URL was harvested and rest_pointer moved from fi to vi. The pointer does not move when that slot is merely next. SOURCE pedagogy/_learn/polyglot/commerce.toon.md rotation. Named rule, not an Aristotle proof. Distinct from the 2026-09-28 ~05:23 janitor-trash claim. Empty PROBE stays empty.
 - VERTEX Essence Form Matter
 - MEDIA PAGE https://plato.stanford.edu/entries/aristotle-metaphysics/
 - SOURCE pedagogy/ontology.fu.md

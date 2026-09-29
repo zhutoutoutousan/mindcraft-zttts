@@ -1,0 +1,8 @@
+- VERTEX CloudflareD1
+- KIND techne
+- GLOSS sqlite-sql-on-the-cloudflare-network
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM D1 is Cloudflare's serverless SQL database. Create and migrate with Wrangler (`npx wrangler d1 create`, `d1 execute`, bindings in wrangler.toml / wrangler.json). A Worker talks to D1 through a binding, not a public Postgres URL. Local `--local` and remote `--remote` are different databases. Do not invent a database_id in this repo.
+- MEDIA PAGE https://developers.cloudflare.com/d1/get-started/
+- SOURCE https://developers.cloudflare.com/d1/get-started/
+- SOURCE https://developers.cloudflare.com/workers/wrangler/commands/d1/

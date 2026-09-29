@@ -1261,6 +1261,14 @@ def cmd_baseline_serve(host: str = "127.0.0.1", port: int = BASELINE_PORT) -> No
     if httpd is None:
         raise SystemExit(f"baseline-serve bind failed: {last_err}")
     print(f"BASELINE http://{host}:{port}/", flush=True)
+    if host == "0.0.0.0":
+        import socket
+
+        try:
+            lan = socket.gethostbyname(socket.gethostname())
+            print(f"BASELINE phone-on-LAN http://{lan}:{port}/", flush=True)
+        except OSError:
+            pass
     print(f"BASELINE answers {BASELINE_ANSWERS.as_posix()}", flush=True)
     httpd.serve_forever()
 
@@ -1326,6 +1334,8 @@ def main() -> None:
     p.add_argument("--gui", action="store_true")
     p.add_argument("--baseline", action="store_true")
     p.add_argument("--baseline-serve", action="store_true")
+    p.add_argument("--host", default="127.0.0.1", help="bind for --baseline-serve (0.0.0.0 = phone on LAN)")
+    p.add_argument("--port", type=int, default=BASELINE_PORT)
     p.add_argument("--ingest-baseline", action="store_true")
     p.add_argument("--apply-study", action="store_true")
     p.add_argument("--satisfy", action="store_true")
@@ -1381,7 +1391,7 @@ def main() -> None:
         cmd_baseline()
         return
     if args.baseline_serve:
-        cmd_baseline_serve()
+        cmd_baseline_serve(host=args.host, port=args.port)
         return
     if args.ingest_baseline:
         cmd_ingest_baseline(apply_study=args.apply_study)

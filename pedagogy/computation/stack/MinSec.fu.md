@@ -1,0 +1,12 @@
+- VERTEX MinSec
+- KIND techne
+- GLOSS e2ee-env-vault-with-in-memory-inject
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM MinSec is a third-party CLI (`npm i -g minsec`) that stores config as VARIABLE or SECRET and injects via `minsec run -- <cmd>` into child `spawn` env. README claims zero-knowledge E2EE. That claim maps to ClientHeldSecret + EnvelopeEncryption, not to ZeroKnowledgeProof. Dual deploy: local SQLite or Cloudflare Workers + D1 via Wrangler. Non-commercial license. Human 2026-09-14 wired a skill and a masterclass. Do not invent a completed migrate or a wrangler login.
+- CLAIM VARIABLE items are stored as plaintext in the DB by design (ports, public URLs). SECRET items are envelope-encrypted. Mixing a password into VARIABLE is a SecretSurface miss, not a crypto bug. Ladder rungs 3–6 of mezzanine/minsec-ladder.toon.md.
+- CLAIM Edge surfaces named 2026-09-14: AgentTty (`minsec list` / env dumps in the agent terminal re-enter the model) and JavaProcessEnv (`System.getenv`, not `System.getProperty`).
+- CLAIM Dual deploy: local SQLite under `~/.minsec/` or Cloudflare Workers + D1. License is Non-Commercial Open Source; commercial use needs the author's authorization. Do not invent a completed migrate.
+- MEDIA CODE https://github.com/cgx9/minsec
+- SOURCE https://github.com/cgx9/minsec
+- SOURCE .cursor/skills/minsec-secrets/SKILL.md
+- SOURCE human 2026-09-14

@@ -3,6 +3,10 @@
 - GLOSS durable-lessons-across-agent-sessions
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM From BV1t9oZBDENp: an experience library lets later ticks work better. In this repo the same shape is STORE PATH and vertex bodies. Particulars of one person stay in self/. Claims about the world stay on the graph.
+- CLAIM Hermes (Nous) skills are SKILL.md procedural memory: created after a novel task, updated in place, Hub at agentskills.io. Docs say the format is portable to any agent that implements that standard — same shape as CursorSkill here. Not an install in this repo. Not AgentCore. DUMP hermes-skills-learn-agentskills stays pending.
+- CLAIM Nested Learning (Google, NeurIPS 2025) names a continuum of memory modules at different update rates. That INFORMS this vertex as the slow durable layer. Not an install of Hope. DUMP google-nested-learning-neurips-2025 stays pending drip.
 - MEDIA VIDEO https://www.bilibili.com/video/BV1t9oZBDENp
 - SOURCE https://www.bilibili.com/video/BV1t9oZBDENp
+- SOURCE https://nousresearch-hermes-agent.mintlify.app/user-guide/features/skills
+- SOURCE https://github.com/NousResearch/hermes-agent
 - SOURCE pedagogy/universe.graph.md

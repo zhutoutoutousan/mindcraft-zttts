@@ -3,4 +3,6 @@
 - GLOSS language-of-the-jvm
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Attested in self/identity/skill.toon.md. Particular job stays in self/identity/experience.toon.md.
+- CLAIM OS environment vs JVM properties: see JavaProcessEnv. MinSec inject is getenv, not getProperty.
 - SOURCE self/identity/skill.toon.md
+- SOURCE pedagogy/computation/stack/JavaProcessEnv.fu.md

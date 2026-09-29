@@ -3,10 +3,14 @@
 - GLOSS projecting-form-onto-a-screen
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Graphics is Form projected. WebGL Three.js Unity BIMFACE D3 are attested engines. Mesh compression and LOD are ways Matter on a GPU receives a cheaper Form.
+- CLAIM Archify is a named drawing tool: plain English to explorable architecture HTML. It sits in skills/arsenal.toon.md for CursorSkill maps. It does not replace PlantUML for page-bound PDF. Do not invent an install.
 - CLAIM Attested: MORIMATSU Frontend 2021-04 to 2021-06 MES Vue D3 Three.js BIMFACE mesh compression LOD. Inkdeeps 2020-10 to 2021-04 Unity WebGL Three.js virtual exhibition.
+- CLAIM On the art-note board, a bishop at file A and rank B shares one diagonal with the square at file X and rank B − A + X. The other diagonal was named and given no formula. Absorbed 2026-09-27 from Art-media-and-Hospitality, then that folder was removed. Blender there assumes a number pad and a mouse; framing the selection used the period key on the number pad. Before a layout, know what share of users are on which screen size and resolution. Face culling, frustum, and Phong were names with links only. Psychological-operations manuals were not installed.
 - CLAIM Android / Play / in-app purchases sit next to this as mobile presentation, attested via Fictio. Do not duplicate the 500K metric here beyond CloudRuntime and the project toon.
 - MEDIA PAGE https://threejs.org/
 - MEDIA PAGE https://unity.com/
 - MEDIA PAGE https://play.google.com/store/apps/details?id=topstory.fiction.novel
 - SOURCE self/identity/experience.toon.md
 - SOURCE self/identity/skill.toon.md
+- SOURCE https://tt-a1i.github.io/archify/
+- SOURCE skills/arsenal.toon.md

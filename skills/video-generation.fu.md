@@ -36,6 +36,10 @@ Do **not** ship a wall of tiny diagram slides alone when the human asked for 玩
 
 Partner reference kit: `tmp/fog-partner/` — `make_memes.py` then `build_mp4.py`.
 
+Sister kit (intimate whisper, DE-only captions): `.cursor/skills/whisper-asmr-vo` — 悄悄话 / ASMR / Flüstern. Do not use Katja `+38%` on that cut.
+
+Sister kit (different pipeline): body-on-concert-plate + third-party song is `.cursor/skills/stage-body-composite` / `skills/stage-body-composite.fu.md`. Do not run Katja TTS on that cut unless named.
+
 ## Style bar (fail the cut if any is true)
 
 - Sounds like a textbook being read

@@ -7,7 +7,11 @@
 - CLAIM Agent Toolkit for AWS names Claude Code as a target CLI. That is a product page, not extra employment.
 - CLAIM Official stack: CLAUDE.md always on, Skills on demand, Hooks on events, Subagents isolated, Plugins as installable bundles, MCP around them. Infographic 2026-09-02 names the same five layers. Hire-weight this week is below AgentCore. Lebenslauf already names Claude Code so the essence belongs on this vertex, not on CPU.md as NOW.
 - CLAIM Card vs docs: skills need not always fork; hooks need not be shell-only. See mezzanine/claude-code-layers.toon.md.
+- CLAIM Human 2026-09-08 queued Bilibili BV1JWEg6GEuv on what happens to Claude Code context after /compact, as interview prep. Not watched in this drip. Do not invent the compact algorithm.
+- CLAIM Official worktrees: `claude --worktree` / `-w` isolates a session under `.claude/worktrees/<name>/` on branch `worktree-<name>`. `/batch` packages subagents plus that isolation. Custom subagents may set `isolation: worktree`. Distinct from this metabolize /loop (one organ per tick, no worktree). Do not invent a local `/batch` run or write `.worktreeinclude` here.
 - SOURCE self/identity/skill.toon.md
 - SOURCE https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
 - SOURCE https://code.claude.com/docs/en/features-overview
+- SOURCE https://code.claude.com/docs/en/worktrees
 - SOURCE mezzanine/claude-code-layers.toon.md
+- SOURCE https://www.bilibili.com/video/BV1JWEg6GEuv

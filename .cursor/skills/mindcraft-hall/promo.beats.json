@@ -1,0 +1,43 @@
+{
+  "voice": "de-DE-KatjaNeural",
+  "rate": "-10%",
+  "pitch": "+0Hz",
+  "beats": [
+    {
+      "id": "sky",
+      "de": "Leise. Du stehst im Mittelschiff. Über dir die Milchstraße.",
+      "pose": { "x": 0, "z": 16.5, "yaw": 0, "pitch": -0.95 },
+      "look": { "x": 0, "z": 12, "yaw": 0, "pitch": -1.05 }
+    },
+    {
+      "id": "marble",
+      "de": "Der Marmor gibt das Licht zurück. Jeder Schritt ein Hauch.",
+      "pose": { "x": 0, "z": 12, "yaw": 0, "pitch": -0.22 },
+      "look": { "x": 0, "z": 2.5, "yaw": 0.15, "pitch": -0.38 }
+    },
+    {
+      "id": "organs",
+      "de": "Seitlich öffnen sich die Organe. Nichts vermischt sich.",
+      "pose": { "x": -4.2, "z": 0.4, "yaw": 1.15, "pitch": -0.05 },
+      "look": { "x": -11.2, "z": 0, "yaw": 1.55, "pitch": 0.02 }
+    },
+    {
+      "id": "library",
+      "de": "Ostwärts die Bibliothek. Lack und Holz. Flüstere zwischen den Regalen.",
+      "pose": { "x": 29.8, "z": 0, "yaw": -1.57, "pitch": -0.08 },
+      "look": { "x": 36.2, "z": 1.2, "yaw": -1.72, "pitch": 0.12 }
+    },
+    {
+      "id": "war",
+      "de": "Nördlich die Lagezentrale. Dunkel. Die Karte atmet.",
+      "pose": { "x": 0, "z": 23.6, "yaw": 3.14, "pitch": 0.04 },
+      "look": { "x": 0, "z": 28.4, "yaw": 3.14, "pitch": -0.12 }
+    },
+    {
+      "id": "close",
+      "de": "Mindcraft Hall. Dein Repo, zum Anfassen. Komm näher.",
+      "pose": { "x": 0, "z": 14, "yaw": 0.2, "pitch": -0.35 },
+      "look": { "x": 0, "z": 8, "yaw": -0.15, "pitch": -0.55 }
+    }
+  ]
+}

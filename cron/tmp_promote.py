@@ -28,6 +28,11 @@ ROUTES: list[tuple[str, str, str]] = [
         "pedagogy/_learn/baseline-answers.toon.md",
         "baseline-answers",
     ),
+    (
+        "tmp/pedagogy/de-drills-progress.toon.md",
+        "pedagogy/_learn/writing-accuracy/drill-progress.toon.md",
+        "de-drills-progress",
+    ),
 ]
 
 

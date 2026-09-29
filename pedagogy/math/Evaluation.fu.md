@@ -4,3 +4,5 @@
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Interview titles from https://github.com/amitshekhariitbhu/ai-engineering-interview-questions that map here are the hire-pressure form of this techne. Answers stay at their SOURCE urls. Do not paste cheat-sheet answers into this body.
 - SOURCE https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
+- CLAIM Cursor Bugbot publishes a GitHub check named Cursor Bugbot. Findings default to conclusion neutral — requiring the check alone does not block merge unless fail-on-unresolved is configured. Do not invent that Bugbot is enabled on this repo.
+- SOURCE https://cursor.com/docs/bugbot

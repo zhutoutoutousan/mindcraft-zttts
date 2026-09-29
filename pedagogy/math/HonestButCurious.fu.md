@@ -1,0 +1,8 @@
+- VERTEX HonestButCurious
+- KIND formal
+- GLOSS adversary-who-follows-the-protocol-but-reads-all-stored-bytes
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Honest-but-curious (semi-honest) is a standard cryptographic adversary: it runs the protocol correctly and still tries to learn plaintext from whatever it stores or logs. ClientHeldSecret is an argument against this host. It is not a ZeroKnowledgeProof, and it does not cover a malicious host, a stolen admin session, or Cloudflare reading Worker Secrets it injects. Named because the human treated vendor "ZK" as the GMR term. Grasp unknown.
+- SOURCE https://en.wikipedia.org/wiki/Secure_multi-party_computation
+- SOURCE https://en.wikipedia.org/wiki/Zero-knowledge_proof
+- SOURCE human 2026-09-14

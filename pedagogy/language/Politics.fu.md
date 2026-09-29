@@ -1,0 +1,9 @@
+- VERTEX Politics
+- KIND semiosis
+- GLOSS constituency-cost-and-sorting-of-power
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM An audience cost is the penalty a constituency charges a leader who escalates a foreign-policy crisis and then backs down. That penalty is separate from the military result. Absorbed 2026-09-27 from the politics notes, then that folder was removed.
+- CLAIM In those notes, 封建 names granting territory by rank as a fief. Under a Marxist usage the same word names a feudal society. Keep the two senses apart.
+- CLAIM Social stratification in the note is a society sorting people by wealth, income, education, occupation, status, or derived power. Populism there is an appeal to people who think established elites ignore them. The note did not supply a program.
+- CLAIM A conspiracy note, a slur recipe, stale population figures, and empty ideology headings were not installed. Unread: the Thirty-Six Stratagems at http://www.quanxue.cn/ct_bingfa/jiIndex.html , Corruption Perceptions Index 2020, and the corruption-history papers named in the log.
+- SOURCE human study-note 2026-09-27

@@ -1,0 +1,107 @@
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=1.45cm,top=1.5cm,bottom=1.65cm]{geometry}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit}
+
+\hypersetup{colorlinks=true,urlcolor=linkb,pdftitle={Paper Muscle Paradigm}}
+\definecolor{muted}{HTML}{5C5C5C}
+\definecolor{accent}{HTML}{1F4E3D}
+\definecolor{linkb}{HTML}{1F4E79}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\fancyhead[L]{\small\color{muted}paper-muscle skill}
+\fancyhead[R]{\small\color{accent}读论文 $\to$ 图谱肌肉}
+\fancyfoot[L]{\small\color{muted}tmp/paper-muscle.pdf}
+\fancyfoot[R]{\small\color{muted}\thepage}
+
+\setlist[itemize]{leftmargin=1.1em,itemsep=0.05em,topsep=0.05em}
+\setlist[enumerate]{leftmargin=1.2em,itemsep=0.05em,topsep=0.05em}
+\setlength{\parskip}{0.12em}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+{\LARGE\color{accent}\textbf{范式：学术肌肉（Paper Muscle）}}\\[0.15em]
+{\small\color{muted}Skill：\texttt{.cursor/skills/paper-muscle/} · 一篇论文 $\to$ 可扩张领域脚手架，而不是两页摘要}
+
+\section{一句话合同}
+
+把开放获取（或已存证）论文变成 \texttt{pedagogy/} 里的\textbf{领域框架}：分层图谱、方法肌肉、证据等级、留白 GAP。人之后用 PROBE/ANSWER 慢慢填。Agent 一次只问一阶。雾天最多一阶。
+
+\section{为什么需要这个 skill}
+
+\begin{itemize}
+  \item 旧病：读完只写「战栗=多巴胺」——没有邻接概念、没有边、没有以后往哪扩。
+  \item 新约：先铺\textbf{完整骨架}（框架 PDF + 顶点 + 边），再交互加肉。
+  \item 视频若要：必须\textbf{新 CDN b-roll}，禁止偷懒复用上一片的雾/公路/雨。
+\end{itemize}
+
+\section{管线（Agent 必走）}
+
+\begin{enumerate}
+  \item 种子：DOI、体裁（综述/RCT/方法）、图链。
+  \item 前置顶点：图上缺的本质才新建（如 IncentiveSalience）。
+  \item \textbf{领域框架 TeX}（厚）：分层图、词表、边表、方法分类、证据等级、开放 GAP。
+  \item 夹层课程 \texttt{mezzanine/<slug>.toon.md}：梯子顺序。
+  \item 接线 \texttt{universe.graph.md} + STUDY 空 ANSWER + 可选 AGENT ladder。
+  \item 可选 MP4：讲「怎么练」，不是念摘要；新鲜 Mixkit id 写入 \texttt{broll.toml}。
+  \item 本范式卡：编译本文件 $\to$ \texttt{tmp/paper-muscle.pdf}。
+\end{enumerate}
+
+\section{默认六阶梯子}
+
+\begin{enumerate}
+  \item 前置构念（wanting/liking 或形式定义）
+  \item 身体/测量层（内感受、仪器）
+  \item 计算/形式框架（预测编码等）
+  \item 论文图 A / 主结果图
+  \item 论文图 B / 主对照
+  \item 好处与\textbf{边界}（不能声称什么）
+\end{enumerate}
+
+\section{证据等级（写进框架表）}
+
+{\footnotesize
+\begin{tabularx}{\linewidth}{@{}p{0.12\linewidth} X@{}}
+\toprule
+A & 多源主研究汇合，方法清楚 \\
+B & 扎实主研究或强综述主张 \\
+C & 初步 / 小样本 / 单模态 \\
+Spec & 作者展望 \\
+Bound & 明确非声称（非处方、成像局限等） \\
+\bottomrule
+\end{tabularx}}
+
+\section{失败条件}
+
+\begin{itemize}
+  \item 框架 PDF 没有图谱/边表、没有留给以后填的 GAP
+  \item MP4 直接拷贝别的 slug 的 \texttt{\_broll/}
+  \item 发明 ANSWER，或把战栗论文写成个人诊疗
+  \item 把图字节写进顶点 body（只许 URL）
+\end{itemize}
+
+\section{命令}
+
+\begin{verbatim}
+python .cursor/skills/daily-brief/scripts/compile.py .cursor/skills/paper-muscle/template.tex
+python .cursor/skills/daily-brief/scripts/compile.py tmp/<slug>-framework.tex
+python cron/janitor.py --touch
+\end{verbatim}
+
+\section{与 Aesthetic Chills 样例的关系}
+
+样例种子：Schoeller et al.\ 2024。领域厚本：\texttt{tmp/aesthetic-chills-framework.pdf}。梯子 Agent：\texttt{aesthetic-chills-ladder}。本 PDF 只固定\textbf{范式}；领域肉在 framework + 图谱顶点里长。
+
+\end{document}

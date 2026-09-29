@@ -35,6 +35,7 @@ EXPECTED_V = [
     "CursorSkill",
     "MultiAgent",
     "ExperienceStore",
+    "NestedLearning",
     "RAG",
     "AISafety",
     "InterviewPrep",

@@ -1,0 +1,13 @@
+- VERTEX Astrophysics
+- KIND natural
+- GLOSS physics-of-stars-and-cosmos
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Astrophysics applies Physics (gravitation, radiation, nuclear processes) to celestial Matter: stars, compact objects, galaxies, and the large-scale cosmos. It is the physical model, not a job title.
+- CLAIM Distinct from Vibration: Vibration is attested lab oscillation. Astrophysics is named for learning (human 2026-09-16). Grasp unknown. Do not invent ANSWER.
+- CLAIM Intended GAP branches, empty until studied: Gravitation on cosmic scales; stellar structure and nuclear fusion; cosmology (expansion, background radiation). Do not invent equations or a paper ladder until a SOURCE paper is named.
+- CLAIM One unread paper was named in the study notes and absorbed 2026-09-27. Dust infrared maps for reddening and for the microwave background foreground: https://arxiv.org/abs/astro-ph/9710327. Grasp of that paper is still empty. The empty telescope note and the bare word Seismic were not installed.
+- MEDIA PAGE https://arxiv.org/abs/astro-ph/9710327
+- MEDIA PAGE https://science.nasa.gov/astrophysics/
+- MEDIA PAGE https://plato.stanford.edu/entries/philosophy-physics/
+- SOURCE human 2026-09-16
+- SOURCE https://science.nasa.gov/astrophysics/

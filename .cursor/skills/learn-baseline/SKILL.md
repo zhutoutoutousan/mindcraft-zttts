@@ -13,6 +13,14 @@ python cron/learn-enrich.py --baseline-serve
 
 Binds `127.0.0.1:8765`, then `8777`, then `8778` if busy. Print the URL it actually bound. Do not tell the human 8765 if the log says 8777.
 
+Phone on the same WLAN (laptop must be running it):
+
+```
+python cron/learn-enrich.py --baseline-serve --host 0.0.0.0
+```
+
+It prints a `phone-on-LAN http://<lan-ip>:<port>/` line. Allow python through Windows Firewall if asked. The built-in Speak button uses `getUserMedia`, which browsers only grant in a secure context — so on plain `http://<lan-ip>` the mic is blocked; type, use the phone keyboard's own dictation, or speak on the laptop. Saving still works over LAN.
+
 Open in **Chrome or Edge**. Not the Cursor Simple Browser. SpeechRecognition and getUserMedia fail there, so Speak never fills the box.
 
 ## Voice

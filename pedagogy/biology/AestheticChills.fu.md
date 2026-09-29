@@ -10,6 +10,7 @@
 - CLAIM Individual differences: openness/absorption; ~36% twin heritability estimate (Bignardi); white-matter tracts linking auditory association, anterior insula, mPFC (Sachs).
 - CLAIM Reported benefits in preliminary CS studies (not medical advice): emotional valence drift; in anhedonic depression samples, chills experiencers showed higher PRT reward bias vs non-chills; shifts in maladaptive self-beliefs; phenomenology overlap with emotional breakthrough / insight / connectedness ratings. Treat as early research, not a protocol to replace care.
 - CLAIM ASMR is related but distinct (often more relaxing). Personal warm ascending flow on binaural/landscape/catharsis maps here as phenomenology only.
+- CLAIM Human 2026-09-14 ~17:23: named the same AC feeling when pushing hard thought on complicated information, as if the brain activated. Fits science-moment CS + PredictiveCoding peak-fit, not a fog-clear and not a piled ladder rung. Personal bottles stay .private/.
 - MEDIA PAGE https://link.springer.com/article/10.3758/s13415-024-01168-x
 - MEDIA PAGE https://link.springer.com/article/10.3758/s13415-024-01168-x/figures/1
 - MEDIA PAGE https://link.springer.com/article/10.3758/s13415-024-01168-x/figures/2

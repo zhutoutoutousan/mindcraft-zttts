@@ -4,4 +4,5 @@
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Software engineering as NATO 1968 and Brooks: the design is the product. Decision rules D are written before the system sees input. Change costs grow with the size of D.
 - CLAIM This vertex is the traditional pole. AgenticEngineering CONTRADICTS it in Cao 2026. Computation still APPLIES Mathematics either way. Do not delete this vertex when ingesting agent papers.
+- CLAIM Single sign-on, absorbed 2026-09-27 from the software notes, then that folder was removed. The user logs in once and then enters the other applications that trust that login. The note's picture is a student system and a timetable. Covert redirect was named as a concern and not given a fix. A localized product in those notes has to carry language, time, and currency. Certificate cribs, attack notes, and puzzle solutions were not installed.
 - SOURCE https://arxiv.org/html/2606.05608v1

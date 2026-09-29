@@ -1,0 +1,10 @@
+- VERTEX JavaProcessEnv
+- KIND techne
+- GLOSS os-env-via-getenv-not-jvm-getproperty
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM On the JVM, `System.getenv(name)` reads the operating-system environment. `System.getProperty(name)` reads JVM properties (`-D` flags, `System.setProperty`). MinSec `run` injects OS env via `spawn({ env })`. A Spring Boot or other app that only calls `getProperty` for `DATABASE_URL` will miss the inject. README of MinSec states this. Human 2026-09-14 named `System.getProperty` as a graph gap. Grasp unknown.
+- MEDIA PAGE https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/System.html#getenv(java.lang.String)
+- SOURCE https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/System.html#getenv(java.lang.String)
+- SOURCE https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/System.html#getProperty(java.lang.String)
+- SOURCE https://github.com/cgx9/minsec
+- SOURCE human 2026-09-14

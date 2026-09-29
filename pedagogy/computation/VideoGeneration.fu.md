@@ -4,11 +4,18 @@
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM A video cut here is a contract, not a dump of slides. Spoken German (edge-tts Katja class, rate about +35% to +40%), dual burnt-in captions, presentation tone with analogy and punchline. Deep-dive publish wants both 16:9 and 9:16; short partner notes may ship 16:9 only under tmp. Type floor fails the cut if phone-unreadable.
 - CLAIM Pipeline form: author beats → TTS per beat → still PNG (matplotlib or PlantUML via Kroki) → local meme stickers (PIL) → ffmpeg still plus muted public b-roll → concat → mux AAC → burn ASS. Stamp tmp TTL. MEDIA bytes stay out of vertex bodies; deliverables are tmp paths or URL.
+- CLAIM Distinct cut: matte a dancer onto a concert singer's standing box and mux a third-party song (default recipe 许家印 × 帕瓦罗蒂唱位 × 朋友的酒). Skill `.cursor/skills/stage-body-composite`. Human supplies local files; agent does not fetch concert masters. Preview one still before encode. Not Katja TTS.
+- CLAIM Explorable skill-architecture HTML is Archify in skills/arsenal.toon.md, not this pipeline. Do not swap PlantUML stills for Archify HTML inside ffmpeg.
 - CLAIM Retry-safe production: no GenerateImage storms; Mixkit-class CDN URL not gallery HTML scrape; after interrupt inventory _memes _broll _audio and resume gaps. Encode may be a later turn than script+assets.
 - CLAIM Pain attested 2026-09-06: copied build_mp4 scripts, no --demo PNG-only preview, no word-level timestamps, portrait often missing on short kits, Kroki needs net. Improvement shape: shared video_kit, TTS text-hash cache, --aspect both, broll.toml, offline PlantUML JAR, QA for audio/video drift.
 - CLAIM Public GitHub forms to steal patterns from (do not vendor blindly): telegraph/script-to-video (YAML, TTS cache, xfade, QA); Anionex/banana-slides (edge-tts, ASS, Ken Burns); DEV CI pipelines that pre-render PNG then ffmpeg with --demo; jmjava/documentation-generator (PlantUML prerender, drift check); optional Whisper word-level captions for Shorts only.
 - CLAIM DualSubtitle and Multimodal PARTICIPATE this techne. CursorSkill packages the procedure. AgentStreamDrop INFORMS how large parallel asset storms fail mid-cut.
+- CLAIM Hard subtitles already burned into a picture are read from the frames, not from the audio. Absorbed 2026-09-27 from the study-note media log, then that folder was removed. The log named OCR tools and did not prove one of them. Do not treat those names as installed.
+- CLAIM A subtitle text pass can replace exact strings from a dictionary, one pair per line, in the caption file. Absorbed 2026-09-27 from the art notes. The sample scripts were not installed. Legatissimo in those notes asks for a line more connected than legato.
+- SOURCE https://www.bilibili.com/read/cv5719342/
+- SOURCE https://www.v2ex.com/t/555068
 - SOURCE skills/video-generation.fu.md
+- SOURCE skills/arsenal.toon.md
 - SOURCE tmp/video-pipeline.pdf
 - SOURCE https://github.com/telegraph/script-to-video
 - SOURCE https://github.com/Anionex/banana-slides

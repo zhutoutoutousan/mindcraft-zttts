@@ -3,12 +3,17 @@
 - GLOSS heartbeat-of-prompt-tool-result-until-text
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Inner agent loop is a heartbeat: prompt, tool, result, until the model speaks with empty hands. Outer slash-loop is an alarm: the same job again after N minutes. They are not the same vertex.
+- CLAIM Official Strands Agents: same inner cycle (invoke model, tool, result, until a terminal response). Invocation limits, cancel, stop reasons, concurrent-invocation guard, hooks, retries. Distinct from RalphLoop (new session + filesystem) and from this metabolize /loop (one organ per tick). Do not invent a strands-agents install in this repo.
 - CLAIM Attested in the loop-slash cut: four levers turn, goal, loop, schedule. Turn is the human at the door. /loop is the watch. /schedule puts the watch in the cloud. A heartbeat is not a Slash Loop.
 - CLAIM Lab claims in that cut (parser gaps, 30s ceil) stay in the mezzanine of that video. Do not copy unverified numbers here without the bench file.
 - CLAIM Hooks sit on the loop, not in the prompt. PreToolUse PostToolUse Stop fire around tool turns. That is AgentHook informing AgentLoop. This repo has no hook store.
+- CLAIM Strands interrupt is a pause for a human, not a stop-reason from a token cap: the heartbeat returns control, then continues from the same hook or tool. Distinct from LimitToolCounts cancel. Do not invent a strands-agents install.
 - CLAIM A single turn that opens a huge parallel tool batch or GenerateImage storm is still one heartbeat, but it amplifies AgentStreamDrop: unsaved progress on Retry. Prefer small turns; split asset gather from encode; inventory after interrupt. That is load informing the loop, not a second loop vertex.
+- CLAIM 2026-09-28 ~00:03 The outer maintain /loop is Form: it skips an organ when that organ has no new Matter. SOURCE pedagogy/being/being.fu.md. Distinct from the inner heartbeat. Do not invent a completed training set.
 - MEDIA PAGE skills/loop-slash/PUBLISH.md
 - SOURCE skills/loop-slash/PUBLISH.md
 - SOURCE skills/video-generation.fu.md
 - SOURCE .cursor/skills/cursor-agent-retry/reference.md
 - SOURCE https://code.claude.com/docs/en/hooks-guide.md
+- SOURCE https://strandsagents.com/docs/user-guide/concepts/agents/agent-loop/
+- SOURCE https://strandsagents.com/docs/user-guide/concepts/interrupts/

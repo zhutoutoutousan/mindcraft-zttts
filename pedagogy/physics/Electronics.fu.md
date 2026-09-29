@@ -1,0 +1,11 @@
+- VERTEX Electronics
+- KIND techne
+- GLOSS circuit-response-from-input-to-output
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A circuit in the note is useful when it has a response: the relation from input to output, read as current or voltage. Absorbed 2026-09-27 from the engineering notes, then that folder was removed.
+- CLAIM Analog there means a voltage or current magnitude stands for the signal along continuous time. Discrete-time means a sequence of numbers at discrete times. Digital means both time and amplitude are discrete. The note says signals almost always start analog.
+- CLAIM The note's coulomb is the charge on 6.242×10^18 electrons. A surplus of electrons is a negative charge. A deficit is a positive charge.
+- CLAIM A one-off circuit proves an idea and can then be scrap. Prefer a pre-assembled part, because time costs more than the components. A product built in quantity has to meet cost, function, and reliability. Cost is parts plus assembly labor. The named failures are recalls, warranty repairs, and field failures.
+- CLAIM A circuit document set in the note names a concept, a schematic, a PCB layout, a mechanical drawing, a bill of materials, and an assembly procedure. The note did not say how to write them.
+- CLAIM Holding a computer power button for 20 seconds was the note's way to release ESD. A sewage line that named a corrosive was not installed. An FFT sketch that added or subtracted powers of two was not installed as an algorithm. Textbook page counts are not current progress. Kalman filters stay unread. The note's gate before one is linear algebra, complex analysis, multivariable calculus, and ordinary differential equations, then frequency-domain and state-space control.
+- SOURCE human study-note 2026-09-27

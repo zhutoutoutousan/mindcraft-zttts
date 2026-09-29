@@ -51,6 +51,12 @@ KIND_FILL = {
     "band": "#263238",
     "lang": "#01579b",
     "horizon": "#004d40",
+    "skill_listen": "#006064",
+    "skill_read": "#1b5e20",
+    "skill_write": "#4a148c",
+    "skill_speak": "#bf360c",
+    "skill_lexis": "#0d47a1",
+    "skill_grammar": "#33691e",
 }
 KIND_EDGE = {
     "transcendental": "#90caf9",
@@ -74,6 +80,12 @@ KIND_EDGE = {
     "band": "#b0bec5",
     "lang": "#4fc3f7",
     "horizon": "#69f0ae",
+    "skill_listen": "#80deea",
+    "skill_read": "#a5d6a7",
+    "skill_write": "#ce93d8",
+    "skill_speak": "#ffab91",
+    "skill_lexis": "#82b1ff",
+    "skill_grammar": "#c5e1a5",
 }
 LABEL_COLOR = {
     "ISA": "#90caf9",
@@ -96,6 +108,7 @@ LABEL_COLOR = {
     "FILLED_BY": "#82b1ff",
     "IN_BAND": "#4fc3f7",
     "TARGETS": "#69f0ae",
+    "HAS_SKILL": "#80deea",
     "FIXES": "#ffab91",
 }
 
@@ -118,6 +131,12 @@ KIND_READ = {
     "lang": "语言",
     "band": "等级",
     "horizon": "目标",
+    "skill_listen": "Hörverstehen",
+    "skill_read": "Leseverstehen",
+    "skill_write": "Schreiben",
+    "skill_speak": "Sprechen",
+    "skill_lexis": "Wortschatz",
+    "skill_grammar": "Grammatik",
 }
 _ID_PREFIXES = (
     "Form_fix_",
@@ -146,6 +165,7 @@ _ID_PREFIXES = (
     "Horizon_",
     "Band_",
     "Lang_",
+    "Skill_",
 )
 _HOLE = (
     (re.compile(r"\bh tte\b", re.I), "hätte"),
@@ -222,6 +242,10 @@ def lang_node_label(v: dict) -> str:
         return ("缺口 · " + core)[:48]
     if kind == "lang":
         return " · ".join(x for x in ((v.get("surface") or ""), gloss) if x)[:48]
+    if kind.startswith("skill_"):
+        code = (v.get("lang") or v.get("surface") or "").strip()
+        name = gloss or KIND_READ.get(kind, kind)
+        return " · ".join(x for x in (code, name) if x)[:48]
     if kind in {"lemma", "form"}:
         if surface:
             return surface[:42]
@@ -390,10 +414,50 @@ def frames_to_graph(text: str, lang: str = "de") -> tuple[list[dict], list[dict]
     return verts, edges
 
 
-def skilltree_from_horizon(horizon_text: str) -> tuple[list[dict], list[dict], dict]:
-    """16-lang skill tree: Horizon → Band → Lang."""
+def parse_skill_facets(text: str) -> list[dict]:
+    """GER-style facets from skills.toon.md. Empty file → empty list."""
+    facets: list[dict] = []
+    in_block = False
+    for line in text.splitlines():
+        if line.startswith("facets["):
+            in_block = True
+            continue
+        if not in_block:
+            continue
+        if not line.strip() or (
+            re.match(r"^[a-zA-Z_]", line) and not line.startswith(" ")
+        ):
+            break
+        parts = [p.strip() for p in line.strip().split(",")]
+        if len(parts) >= 3:
+            facets.append(
+                {
+                    "id": parts[0],
+                    "kind": parts[1],
+                    "de": parts[2],
+                    "en": parts[3] if len(parts) > 3 else "",
+                }
+            )
+    return facets
+
+
+DEFAULT_SKILL_FACETS = [
+    {"id": "hoeren", "kind": "skill_listen", "de": "Hörverstehen", "en": "listening"},
+    {"id": "lesen", "kind": "skill_read", "de": "Leseverstehen", "en": "reading"},
+    {"id": "schreiben", "kind": "skill_write", "de": "Schreiben", "en": "writing"},
+    {"id": "sprechen", "kind": "skill_speak", "de": "Sprechen", "en": "speaking"},
+    {"id": "wortschatz", "kind": "skill_lexis", "de": "Wortschatz", "en": "lexicon"},
+    {"id": "grammatik", "kind": "skill_grammar", "de": "Grammatik", "en": "grammar"},
+]
+
+
+def skilltree_from_horizon(
+    horizon_text: str, facets: list[dict] | None = None
+) -> tuple[list[dict], list[dict], dict]:
+    """16-lang skill tree: Horizon → Band → Lang → GER facets."""
     langs = parse_horizon_langs(horizon_text)
-    meta: dict = {"count": len(langs), "age_target": "", "want": ""}
+    facets = facets or list(DEFAULT_SKILL_FACETS)
+    meta: dict = {"count": len(langs), "age_target": "", "want": "", "facets": facets}
     for line in horizon_text.splitlines():
         if line.startswith("age_target:"):
             meta["age_target"] = line.split(":", 1)[1].strip()
@@ -442,6 +506,22 @@ def skilltree_from_horizon(horizon_text: str) -> tuple[list[dict], list[dict], d
             }
         )
         edges.append({"src": bid, "label": "IN_BAND", "dst": lid})
+        for f in facets:
+            fid = f"Skill_{L['code']}_{f['id']}"
+            verts.append(
+                {
+                    "id": fid,
+                    "kind": f["kind"],
+                    "branch": "skilltree",
+                    "lang": L["code"],
+                    "gloss": f["de"],
+                    "surface": L["code"],
+                    "band": band,
+                    "facet": f["id"],
+                    "en": f.get("en") or "",
+                }
+            )
+            edges.append({"src": lid, "label": "HAS_SKILL", "dst": fid})
     return verts, edges, {"langs": langs, **meta}
 
 
@@ -460,7 +540,8 @@ def collect_language() -> dict:
             fr_v.extend(v)
             fr_e.extend(e)
     horizon_text = read(base / "polyglot" / "horizon.toon.md")
-    st_v, st_e, horizon_meta = skilltree_from_horizon(horizon_text)
+    facets = parse_skill_facets(read(base / "polyglot" / "skills.toon.md"))
+    st_v, st_e, horizon_meta = skilltree_from_horizon(horizon_text, facets)
     wa_state = read(base / "writing-accuracy" / "state.toon.md")
     target = "de"
     one_focus = ""
@@ -890,8 +971,12 @@ def parse_cpu_blocks(text: str) -> dict:
             payload = raw[len("- NOTE ") :].strip()
             notes.append(payload[:220])
             if payload.upper().startswith("TODAY ") or " TODAY " in f" {payload.upper()}":
-                in_today = True
-                note_today["headline"] = payload[:280]
+                # CPU.md is newest-first. Keep the first TODAY note; later ones are older days.
+                if not note_today["headline"]:
+                    in_today = True
+                    note_today["headline"] = payload[:280]
+                else:
+                    in_today = False
             else:
                 in_today = False
         elif re.match(r"^\s+- DONE ", raw) and todos:
@@ -1001,13 +1086,16 @@ def build_today(
             break
     if not last_log and logs:
         last_log = sorted(logs, key=lambda x: x.get("date") or "")[-1]
-    foggy = bool(
+    # Sore class only. A note that says "not named fog" must not flip the fog pill.
+    foggy = bool(last_log and "fog" in (last_log.get("sore") or "").lower())
+    illness_hold = bool(
         last_log
         and (
-            "fog" in (last_log.get("sore") or "").lower()
-            or "fog" in (last_log.get("note") or "").lower()
+            "illness" in (last_log.get("sore") or "").lower()
+            or "skip lexicon" in (last_log.get("note") or "").lower()
         )
     )
+    hold = foggy or illness_hold
     train = self_pack.get("training") or {}
     routine = self_pack.get("routine") or {}
     week_today = None
@@ -1115,14 +1203,22 @@ def build_today(
     for o in (routine.get("optimize") or [])[:2]:
         add(4, "routine", "routine.optimize", f"{o.get('change')} — {o.get('why')}")
 
-    if foggy:
+    if hold:
         add(
             1,
             "stop",
             "endurance.log",
             f"{last_log.get('date')}: {last_log.get('sore')} — {last_log.get('note')}",
         )
-        add(3, "rest", "endurance", "Fog/rest: do not pile DAY. Empty PROBE stays empty until asked.")
+        if foggy:
+            add(3, "rest", "endurance", "Fog/rest: do not pile DAY. Empty PROBE stays empty until asked.")
+        else:
+            add(
+                3,
+                "rest",
+                "endurance",
+                "Illness not re-named clear: skip Wordschatz and PROBE until asked. Not fog. Not DSB.",
+            )
     else:
         for act in endu.get("activities") or []:
             add(
@@ -1133,7 +1229,7 @@ def build_today(
             )
 
     if probe and not probe.get("answered"):
-        pri = 4 if foggy else 3
+        pri = 4 if hold else 3
         add(
             pri,
             "learn",
@@ -1142,7 +1238,7 @@ def build_today(
             or f"Open PROBE on {plan_now} (ANSWER empty). Do not invent ANSWER.",
         )
     for ln in nt.get("learn") or []:
-        add(3 if not foggy else 4, "learn", "CPU NOTE LEARN", ln)
+        add(3 if not hold else 4, "learn", "CPU NOTE LEARN", ln)
 
     if pending:
         add(
@@ -1152,7 +1248,7 @@ def build_today(
             f"{len(pending)} CAPTURE pending — drip when human is back (dump-drip).",
         )
 
-    if top_w and not foggy:
+    if top_w and not hold:
         ids = ", ".join(f"{n['id']}★{n['total']}" for n in top_w[:3])
         add(5, "north", "weights", f"If quiet later: highest attention {ids}")
 
@@ -1185,11 +1281,13 @@ def build_today(
         "cpu_sched_today": cpu_sched_today,
         "note_today": nt,
         "foggy": foggy,
+        "illness_hold": illness_hold,
         "budget_now": endu.get("budget_now") or "",
         "training_flags": train.get("flags_true") or [],
         "training_week": week_today,
         "training_sessions": sessions_today,
         "injury": injury,
+        "recovery": train.get("recovery") or {},
         "periodization": train.get("periodization") or {},
         "routine": routine,
         "pending_dumps": len(pending),
@@ -1258,7 +1356,8 @@ def parse_endurance(text: str) -> dict:
             )
     if cur and mode == "activity":
         out["activities"].append(cur)
-    out["logs"] = out["logs"][-8:]
+    # File order is newest-first. Keep the recent head, not the oldest tail.
+    out["logs"] = out["logs"][:8]
     return out
 
 
@@ -1280,6 +1379,60 @@ def parse_learn(text: str) -> dict:
                         "grasp": parts[1] if len(parts) > 1 else "",
                     }
                 )
+    return out
+
+
+def parse_recovery_cycle(text: str) -> dict:
+    """Named DOMS/pain/fog spans in self/recovery-cycle.toon.md."""
+    out: dict = {"typical": [], "episodes": [], "open": [], "updated": ""}
+    m = re.search(r'^updated:\s*"?([^"\n]+)"?', text, re.M)
+    if m:
+        out["updated"] = m.group(1).strip()
+    mode = ""
+    for line in text.splitlines():
+        if line.startswith("typical[]"):
+            mode = "typical"
+            continue
+        if line.startswith("episode[]"):
+            mode = "episode"
+            continue
+        if line.startswith("open[]"):
+            mode = "open"
+            continue
+        if mode and re.match(r"^[a-zA-Z]", line) and not line.startswith(" "):
+            mode = ""
+            continue
+        if not mode or not line.startswith("  "):
+            continue
+        raw = line.strip()
+        if not raw or raw.startswith("#") or raw.startswith("rule"):
+            continue
+        if mode == "typical":
+            parts = [p.strip() for p in raw.split(",", 5)]
+            if len(parts) >= 4:
+                out["typical"].append(
+                    {
+                        "kind": parts[0],
+                        "region": parts[1],
+                        "peak": parts[2],
+                        "usualClear": parts[3],
+                        "source": parts[4] if len(parts) > 4 else "",
+                        "note": parts[5] if len(parts) > 5 else "",
+                    }
+                )
+        elif mode in ("episode", "open"):
+            parts = [p.strip() for p in raw.split(",", 6)]
+            if len(parts) >= 6:
+                row = {
+                    "id": parts[0],
+                    "kind": parts[1],
+                    "region": parts[2],
+                    "onset": parts[3],
+                    "cleared": parts[4],
+                    "days": parts[5],
+                    "note": parts[6] if len(parts) > 6 else "",
+                }
+                out[mode if mode == "open" else "episodes"].append(row)
     return out
 
 
@@ -1505,7 +1658,7 @@ def parse_training_pulse(text: str) -> dict:
             elif line.strip().startswith("- "):
                 out["rules"].append(line.strip()[2:][:160])
 
-    # injury synthesis
+    # injury synthesis: live flags only. Recovered logs and completed session.pain are cycle history.
     blockers = []
     regions = []
     notes = []
@@ -1516,27 +1669,31 @@ def parse_training_pulse(text: str) -> dict:
         relief = out["flags"].get("leftScapulaReliefPct", "")
         if relief:
             notes.append(f"reliefPct {relief}% asOf {out['flags'].get('leftScapulaReliefAsOf', '')}")
+    if out["flags"].get("rightScapulaPain", "").lower() == "true":
+        out["injury"]["active"] = True
+        regions.append("right scapula / 右肩胛")
+        blockers.append("rightScapulaPain")
+        note = out["flags"].get("rightScapulaNote", "")
+        if note:
+            notes.append(note[:160])
+    if out["flags"].get("lowerTrapeziusNamed", "").lower() == "true":
+        out["injury"]["active"] = True
+        regions.append("lower trapezius")
+        blockers.append("lowerTrapeziusNamed")
+        note = out["flags"].get("lowerTrapeziusNote", "")
+        if note:
+            notes.append(note[:160])
     if out["flags"].get("skipHeavyPressUntilClear", "").lower() == "true":
         out["injury"]["active"] = True
         blockers.append("skipHeavyPressUntilClear")
         notes.append(out["flags"].get("nextHeavyBenchNote", "")[:160])
+        if out["flags"].get("nextHeavyBenchEarliest"):
+            notes.append(f"next heavy bench earliest {out['flags']['nextHeavyBenchEarliest']}")
     if out["flags"].get("rotationTorsoInvokesScapula", "").lower() == "true":
         out["injury"]["active"] = True
         blockers.append("rotationTorsoInvokesScapula")
         notes.append(out["flags"].get("rotationTorsoInvokesScapula.note", "")[:120])
-    if out["flags"].get("nextHeavyBenchEarliest"):
-        notes.append(f"next heavy bench earliest {out['flags']['nextHeavyBenchEarliest']}")
-    for s in out["sessions"]:
-        if s.get("pain"):
-            out["injury"]["active"] = True
-            if s["pain"].get("region"):
-                regions.append(s["pain"]["region"])
-            if s["pain"].get("regionZh"):
-                regions.append(s["pain"]["regionZh"])
-    # recent pain/doms logs
-    for lg in out["logs"][-12:]:
-        if lg["kind"] in ("pain", "doms"):
-            notes.append(f"{lg['date']} {lg['kind']}: {lg['note'][:100]}")
+    # recovered pain/DOMS logs belong in self/recovery-cycle.toon.md not this banner
     # uniq
     seen = set()
     out["injury"]["regions"] = []
@@ -1855,13 +2012,17 @@ def collect_self() -> dict:
             public_files.append({**f, "kind": "gitignored-particulars (name only)", "schema": "private-ish"})
         else:
             public_files.append(f)
+    train = parse_training_pulse(read(ROOT / "self" / "training.toon.md"))
+    recovery = parse_recovery_cycle(read(ROOT / "self" / "recovery-cycle.toon.md"))
+    train["recovery"] = recovery
     return {
         "files": public_files,
         "goals": parse_goals(read(ROOT / "self" / "goals.toon.md")),
         "endurance": parse_endurance(read(ROOT / "self" / "endurance.toon.md")),
         "learn": parse_learn(read(ROOT / "self" / "learn.toon.md")),
-        "training": parse_training_pulse(read(ROOT / "self" / "training.toon.md")),
+        "training": train,
         "routine": parse_routine(read(ROOT / "self" / "routine.toon.md")),
+        "recovery": recovery,
     }
 
 
@@ -2133,7 +2294,7 @@ def write_html(state: dict, path: Path, default_purpose: str) -> None:
             {"id": "lang-polyglot", "label": "Polyglot KG", "hint": "可读词面 · 意思/词/句法 · 检查结构"},
             {"id": "lang-wortschatz", "label": "Wortschatz", "hint": "词 / 词形 / 搭配 · 可读词面"},
             {"id": "lang-grammar", "label": "Grammatik", "hint": "句法框 · 槽 · 填充词"},
-            {"id": "lang-skilltree", "label": "Skill tree", "hint": "Horizon → 等级 → 16 种语言"},
+            {"id": "lang-skilltree", "label": "Skill tree", "hint": "Horizon → Band → 16 Sprachen → Hörverstehen/Schreiben/…"},
             {"id": "skills", "label": "Skills", "hint": "skills/ + .cursor/skills"},
             {"id": "mezzanine", "label": "Mezzanine", "hint": "ingest notes · not ontology"},
             {"id": "tmp", "label": "Tmp", "hint": "TTL deliverables"},
@@ -2350,6 +2511,7 @@ def write_html(state: dict, path: Path, default_purpose: str) -> None:
       FIXES: '改',
       IN_BAND: '在',
       TARGETS: '目标',
+      HAS_SKILL: '技能',
       COLLOCATES: '搭配',
       IN_SENTENCE: '句中',
       APPLIES: '用',
@@ -2389,7 +2551,7 @@ def write_html(state: dict, path: Path, default_purpose: str) -> None:
       box.querySelectorAll('.purpose').forEach(el => el.classList.toggle('active', el.dataset.id === id));
       if (String(id).startsWith('lang-')) {{
         GRAPH_UI.groupBy = 'kind';
-        GRAPH_UI.clustered = false;
+        GRAPH_UI.clustered = (id === 'lang-skilltree');
         GRAPH_UI.filters = (id === 'lang-polyglot' || id === 'lang-wortschatz')
           ? 'structure' : null;
       }}
@@ -2840,6 +3002,10 @@ def write_html(state: dict, path: Path, default_purpose: str) -> None:
         (v.lang ? '<span class="pill">' + esc(v.lang) + '</span>' : '') + '</p>';
       if (v.surfaceRead) html += '<h4>词面</h4><p style="font-size:16px;color:var(--text)">' + esc(v.surfaceRead) + '</p>';
       if (v.glossRead) html += '<h4>意思</h4><p>' + esc(v.glossRead) + '</p>';
+      if (v.band) html += '<h4>等级</h4><p>' + esc(v.band.replace(/_/g, ' ')) +
+        (String(v.kind || '').indexOf('skill_') === 0
+          ? ' · erbt die Sprache, kein extra CEFR'
+          : '') + '</p>';
       if (v.fixesRead) html += '<h4>改自</h4><p>' + esc(v.fixesRead) + ' → ' + esc(v.surfaceRead || v.label) + '</p>';
       if (v.date) html += '<h4>日期</h4><p>' + esc(v.date) + '</p>';
       if (neigh.length) {{
@@ -2987,6 +3153,7 @@ def write_html(state: dict, path: Path, default_purpose: str) -> None:
         '<span class="pill ok">focus ' + esc(t.focus) + '</span>' +
         '<span class="pill">PLAN NOW <code>' + esc(t.plan_now) + '</code></span>' +
         '<span class="pill">budget ' + esc(t.budget_now) + '</span>' +
+        (t.illness_hold ? '<span class="pill bad">illness hold</span>' : '') +
         (t.foggy ? '<span class="pill bad">fog/rest</span>' : '<span class="pill ok">head not fog-logged</span>') +
         ((t.injury && t.injury.active) ? '<span class="pill bad">injury active</span>' : '<span class="pill ok">no injury flags</span>') +
         '<span class="pill' + ((t.probe && t.probe.answered) ? ' ok' : ' warn') + '">PROBE ' +
@@ -3001,6 +3168,11 @@ def write_html(state: dict, path: Path, default_purpose: str) -> None:
         (t.injury.notes||[]).slice(0,5).forEach(n => {{
           html += '<p style="font-size:12px;margin-top:6px">' + esc(n) + '</p>';
         }});
+        html += '<p style="margin-top:8px"><span class="card click" data-go="train" style="display:inline-block">Open Train / Injury →</span></p></div></div>';
+      }} else if (t.foggy) {{
+        html += '<div class="section"><h2>Rest / fog</h2><div class="card">';
+        html += '<p class="wait">Named fog still present. Not an injury banner. Skip Wordschatz and PROBE.</p>';
+        html += '<p style="margin-top:8px;font-size:12px">Scapula and named muscle DOMS recovered. Cycle spans in <code>self/recovery-cycle.toon.md</code>.</p>';
         html += '<p style="margin-top:8px"><span class="card click" data-go="train" style="display:inline-block">Open Train / Injury →</span></p></div></div>';
       }}
 
@@ -3179,7 +3351,7 @@ def write_html(state: dict, path: Path, default_purpose: str) -> None:
 
       html += '<div class="section"><h2>Injury status</h2><div class="card">';
       if (!inj.active) {{
-        html += '<p class="ok">No active injury flags in store.</p>';
+        html += '<p class="ok">No active injury flags in store. Remaining stop is named fog in endurance if present.</p>';
       }} else {{
         html += '<p><strong style="color:var(--bad)">Regions: ' + esc((inj.regions||[]).join(' · ')) +
           '</strong></p><p>Blockers: <code>' + esc((inj.blockers||[]).join(' · ')) + '</code></p>';
@@ -3187,10 +3359,32 @@ def write_html(state: dict, path: Path, default_purpose: str) -> None:
       }}
       html += '<table style="margin-top:10px"><tr><th>flag</th><th>value</th></tr>';
       Object.entries(tr.flags || {{}}).forEach(([k,v]) => {{
-        const bad = String(v).toLowerCase() === 'true' || /pain|skip/i.test(k);
+        const bad = String(v).toLowerCase() === 'true';
         html += '<tr><td><code>' + esc(k) + '</code></td><td class="' + (bad?'bad':'') + '">' + esc(v) + '</td></tr>';
       }});
       html += '</table></div></div>';
+
+      const rec = tr.recovery || {{}};
+      html += '<div class="section"><h2>Recovery cycle</h2><p class="legend">Store <code>self/recovery-cycle.toon.md</code> · particular days beat generic typical. Fog is not injury.</p>';
+      html += '<div class="card"><h3>Named spans</h3><table><tr><th>kind</th><th>region</th><th>onset</th><th>cleared</th><th>days</th></tr>';
+      (rec.episodes||[]).forEach(e => {{
+        html += '<tr><td>' + esc(e.kind) + '</td><td>' + esc(e.region) + '</td><td>' +
+          esc(e.onset) + '</td><td class="ok">' + esc(e.cleared) + '</td><td>' + esc(e.days) + '</td></tr>';
+      }});
+      (rec.open||[]).forEach(e => {{
+        html += '<tr><td>' + esc(e.kind) + '</td><td>' + esc(e.region) + '</td><td>' +
+          esc(e.onset) + '</td><td class="wait">' + esc(e.cleared) + '</td><td>' + esc(e.days) + '</td></tr>';
+      }});
+      html += '</table></div>';
+      if ((rec.typical||[]).length) {{
+        html += '<div class="card" style="margin-top:8px"><h3>Generic typical (not this log)</h3><table><tr><th>kind</th><th>peak</th><th>usual clear</th><th>source</th></tr>';
+        rec.typical.forEach(t => {{
+          html += '<tr><td>' + esc(t.kind) + '</td><td>' + esc(t.peak) + '</td><td>' +
+            esc(t.usualClear) + '</td><td>' + esc(t.source) + '</td></tr>';
+        }});
+        html += '</table></div>';
+      }}
+      html += '</div>';
 
       const per = tr.periodization || {{}};
       html += '<div class="section"><h2>Periodization</h2><div class="card"><p><strong>' +
@@ -3210,7 +3404,12 @@ def write_html(state: dict, path: Path, default_purpose: str) -> None:
       html += '</table></div>';
 
       html += '<div class="section"><h2>Sessions</h2>';
-      (tr.sessions || []).forEach(s => {{
+      const sessOrder = {{planned:0, deferred:1, completed:2, missed:3}};
+      (tr.sessions || []).slice().sort((a,b) => {{
+        const ao = sessOrder[a.status] ?? 9, bo = sessOrder[b.status] ?? 9;
+        if (ao !== bo) return ao - bo;
+        return String(b.date||'').localeCompare(String(a.date||''));
+      }}).forEach(s => {{
         html += '<div class="card" style="margin-bottom:10px"><span class="tag">' + esc(s.status) +
           '</span><h3>' + esc(s.date) + ' · ' + esc(s.label) + '</h3>';
         if ((s.skip||[]).length) html += '<p>skip: <code>' + esc(s.skip.join(', ')) + '</code></p>';
@@ -3316,6 +3515,16 @@ def write_html(state: dict, path: Path, default_purpose: str) -> None:
       html += '</table><table><tr><th>date</th><th>sore</th><th>note</th></tr>';
       (s.endurance.logs||[]).forEach(l => {{
         html += '<tr><td>' + esc(l.date) + '</td><td class="wait">' + esc(l.sore) + '</td><td>' + esc(l.note) + '</td></tr>';
+      }});
+      html += '</table></div></div>';
+      html += '<div class="section"><h2>Recovery cycle</h2><div class="card"><p>Store <code>self/recovery-cycle.toon.md</code></p><table><tr><th>kind</th><th>region</th><th>days</th><th>cleared</th></tr>';
+      ((s.recovery&&s.recovery.episodes)||[]).forEach(e => {{
+        html += '<tr><td>' + esc(e.kind) + '</td><td>' + esc(e.region) + '</td><td>' +
+          esc(e.days) + '</td><td class="ok">' + esc(e.cleared) + '</td></tr>';
+      }});
+      ((s.recovery&&s.recovery.open)||[]).forEach(e => {{
+        html += '<tr><td>' + esc(e.kind) + '</td><td>' + esc(e.region) + '</td><td>' +
+          esc(e.days) + '</td><td class="wait">' + esc(e.cleared) + '</td></tr>';
       }});
       html += '</table></div></div>';
       html += '<div class="section"><h2>Training pulse</h2><div class="card"><p>bw ' +
@@ -3698,13 +3907,17 @@ def write_html(state: dict, path: Path, default_purpose: str) -> None:
       let html = '<div class="section"><h2>Polyglot skill tree</h2>' +
         '<p class="legend">Horizon: ' + esc(H.want || 'B2+') +
         ' · age target ' + esc(String(H.age_target || '')) +
-        ' · ' + esc(String(H.count || (H.langs||[]).length)) + ' langs · graph below = Band → Lang</p>';
+        ' · ' + esc(String(H.count || (H.langs||[]).length)) + ' langs · graph = Band → Lang → Teilfertigkeit. Band per language only — no extra CEFR on a skill node.</p>';
+      const facets = H.facets || [];
+      if (facets.length) {{
+        html += '<p class="legend">Facets: ' + facets.map(f => esc(f.de || f.id)).join(' · ') + '</p>';
+      }}
       Object.keys(bands).sort().forEach(b => {{
         html += '<div class="card" style="margin-bottom:10px"><h3>' + esc(b) +
           '</h3><p>' + bands[b].map(L => '<code>' + esc(L.code) + '</code> ' + esc(L.name)).join(' · ') +
           '</p></div>';
       }});
-      html += '<p class="legend">Stores: bridge.graph · lexicon.graph · frames/de · horizon.toon — not universe.graph</p></div>';
+      html += '<p class="legend">Stores: horizon.toon · skills.toon · not universe.graph</p></div>';
       document.getElementById('panel').innerHTML = html;
       document.getElementById('panel').classList.add('show');
       document.getElementById('net').classList.remove('hide');

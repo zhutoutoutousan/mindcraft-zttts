@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .cursor/hooks/writing-accuracy-session.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -u .cursor/hooks/writing-accuracy-prompt.py",
+            "timeout": 25
+          }
+        ]
+      }
+    ]
+  }
+}

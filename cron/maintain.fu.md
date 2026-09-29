@@ -3,9 +3,12 @@
 - STORE PATH CPU.md
 - STORE PATH pedagogy/universe.graph.md
 - STORE PATH inflow/DUMP.md
+- STORE PATH inflow/opportunity.toon.md
+- STORE PATH pedagogy/_learn/polyglot/commerce.toon.md
+- STORE PATH pedagogy/_learn/polyglot/harvest.toon.md
 - RUN only when the human asks 保养 or arms AGENT maintain
 
-- AGENT $id=maintain $input=cron/maintain.fu.md $output=inflow/STATE.md $prompt=Follow cron/maintain.fu.md. One organ per tick. Produce a NEW sourced delta. Do not restate the previous tick. Do not invent ANSWER. Do not pile DAY. Do not add Chinese as native. Do not start a second maintain loop.
+- AGENT $id=maintain $input=cron/maintain.fu.md $output=inflow/STATE.md $prompt=Follow cron/maintain.fu.md. One organ per tick. Produce a NEW sourced delta. Do not restate the previous tick. Do not invent ANSWER. Do not pile DAY. Do not add Chinese as native. Do not start a second maintain loop. Human 2026-09-11: 神游 MUST run polyglot-harvest and opportunity (ES/FR/DE first, rest on the commerce rotation; web 商机). Do not skip those two unless the same URL would be restamped. Human 2026-09-16: 包括我的邮件 — each 神游 tick also runs imap-mail-triage. Never send. Human 2026-09-17: email和html 3d hall也跟着神游更新 — each 神游 tick also regenerates tmp/pedagogy/mindcraft-hall.html via python skills/mindcraft-hall.py. Do not hand-edit the HTML.
 
 - RULE 鬼打墙 is a failed tick. If this tick's work has high correlation with the last tick (same DUMP-empty, same PROBE-empty, same session-planned, same body-count, same janitor trash n=1), it is not 保养. Pick the next organ. Do something the last tick did not do.
 - RULE A tick MUST write a delta: a new sourced E or CLAIM, or a new DUMP CAPTURE with URL, or one HUMAN OPEN moved, or a STUDY stub that did not exist, or a PII strip, or a real janitor move. Stamping CPU NOTE with the same three idle facts is not a delta.
@@ -16,12 +19,20 @@
   - interview-bank-enrich python cron/interview-bank-enrich.py --status --gap. Optionally --zeitgeist --stamp. Theme map only. Do not paste answer essays. Do not invent ANSWER.
   - routine-enrich python cron/routine-enrich.py --due. Optionally APPEND one tip[] with SOURCE into self/routine.toon.md. Do not invent last_done or a dentist Termin. Do not diagnose.
   - DUMP one NEW capture or skip with why the web had nothing new vs STATE ids
+  - polyglot-harvest one NEW sourced learning URL for next_lang/next_facet in pedagogy/_learn/polyglot/commerce.toon.md. Named priority es fr de; rest_cycle after two named passes; skip en/zh/wuu as learner harvest. Append pedagogy/_learn/polyglot/harvest.toon.md. Official institutes over random blogs. Do not invent CEFR or ANSWER. Do not pile DAY.
+  - opportunity one NEW sourced public 商机 URL (hire listing or sidework/GEO page). Write inflow/DUMP.md KIND opportunity + inflow/opportunity.toon.md. WHY must touch ai-agent-engineer or seo-geo-sidework or languages-b2-16. Do not invent a bid, Gehalt, client, or that the human applied. Away: do not drip.
+  - imap-mail-triage python .cursor/skills/imap-mail-triage/scripts/triage.py --apply --backlog --limit 100. Repeat until inbox 0 or tick budget. Headers only. Never send. Do not paste addresses or subjects into CPU/STATE. Counts only. Digest stays tmp.
+  - mindcraft-hall python skills/mindcraft-hall.py. Regenerates tmp/pedagogy/mindcraft-hall.html from live stores. Do not hand-edit the HTML. Do not paste .private. Empty PROBE stays empty.
   - HUMAN OPEN advance exactly one item without inventing the answer
   - schedule clash or clock vs CPU, no invented times
   - training log only if the human reported sets. Do not invent completed
   - goals north vs PLAN NOW on pedagogy-cpu
   - private splice tmp/take.html without copying particulars into tracked files
   - janitor --dry-run then --trash only if dry-run shows more than bytecode
+  - being one sourced CLAIM or E on Being/Essence/Form about this organism's own maintain Form. Human 2026-09-11 named 神游自己也要进化 形而上进化 then 神游必须收多语资料+探商机. Not idle CLOCK restamped as metaphysics. Do not invent Aristotle. SOURCE the named intent plus pedagogy/ontology.fu.md / Being.fu.md.
 - RULE STATE records last_organ and last_delta in one line. Next tick reads that line first.
 - RULE User-facing tick report is the delta, not the idle remainder. Idle facts may be one clause if they changed. Do not lead with them.
 - RULE Away: do not drip. PII stays in .private. Empty PROBE stays empty.
+- RULE 神游 must: polyglot-harvest and opportunity are not optional flavor. Skip only if the candidate URL is already in harvest.toon.md or STATE skip. Searching the open web is required. ES/FR/DE first per commerce.toon.md.
+- RULE 神游 mail: Human 2026-09-16 named 包括我的邮件都开始神游进去. Mail is a must organ on each 神游 tick until the human stops it. Never send. Headers only. Do not re-stop mail because an older STATE line said STOPPED.
+- RULE 神游 hall: Human 2026-09-17 named email和html 3d hall也跟着神游更新. Each 神游 tick regenerates tmp/pedagogy/mindcraft-hall.html via python skills/mindcraft-hall.py after harvest/opportunity/mail stamps. Do not hand-edit the HTML. Do not paste .private. Empty PROBE stays empty.

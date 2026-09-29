@@ -1,0 +1,9 @@
+- VERTEX Business
+- KIND praxis
+- GLOSS top-down-writing-and-order-quantity
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM In a pyramid of writing, every line summarizes the lines grouped under it. Lines in one group are the same kind of idea, and they are in a logical order. The clearest document presents that pyramid from the top, even when the thinking ran from the bottom. Absorbed 2026-09-27 from the business notes, then that folder was removed. The source book was marked at page 29 of 275, so the rest stays unread.
+- CLAIM A decision in those notes is split into the problem, the objectives, the alternatives, the consequences, the tradeoffs, the uncertainty, the risk tolerance, and the linked decisions. The note's test of the process is that it stays on what matters and stays logical. The rest of that test list was blank.
+- CLAIM Economic order quantity balances ordering cost and holding cost. Annual demand D, order cost C, holding cost H per unit per year. Ordering cost is C times D over Q. Holding cost is H times Q over 2. The order size is the square root of 2CD over H. Purchase cost does not change with Q. The rest of the accounting crib was not installed.
+- CLAIM Sales objection scripts, phrase lists for persuasion, and a one-click personnel portrait were not installed. Certificate names and course bookmarks are not current grasp.
+- SOURCE human study-note 2026-09-27

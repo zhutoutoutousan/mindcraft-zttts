@@ -11,6 +11,10 @@ Not a prescription. Personal bottles stay in `.private/fog-stack.fu.md`.
 
 Sources: Dantzer sickness-behavior literature; Frontiers Aging Neuroscience 2023 peripheral inflammation and neurocognitive impairment; Nature 2024 s41586-024-07220-7 (mouse CA1 only).
 
+## Time structure vs this fog class
+
+Sickness behavior often includes **social withdrawal**. A named pattern of **daily going-out / unstructured leisure** plus **no felt planned progress toward goals** is a different literature: **time structure** (Jahoda's latent function of employment; Bond & Feather 1988 *Time Structure Questionnaire*: structured routine + sense of purpose). Clock-side sibling: **lifestyle regularity** / Social Rhythm Metric (Monk et al. 1991, 2002) — whether wake, first work-like start, dinner, and bed hit a habitual window. Low regularity is associated with worse sleep and mood in that literature. It is **not** a bipolar diagnosis. Occupational science's **occupational imbalance** (Wilcock) is adjacent when play crowds valued work. Do not treat a routine-block want as a DAY pile or as proof the cytokine cluster is gone.
+
 ## Sickness behavior (generic)
 
 Hart 1988; Dantzer 2001; Dantzer *Nat Rev Neurosci* 2008 (nrn2297). This is a **motivational reorganization**, not a willpower failure.
@@ -28,7 +32,9 @@ Hart 1988; Dantzer 2001; Dantzer *Nat Rev Neurosci* 2008 (nrn2297). This is a **
 
 **If it stays on:** the same literature says prolonged immune-to-brain signaling can look more like depression in vulnerable people. That is about duration, not a same-day diagnosis.
 
-**Load:** skip high-effort study and sequential executive work (packing, inventory, multi-step procedures). Soft, non-acid food if mucosa is repairing. Do not invent fat loss from a few days of scale noise. Creatine still wants some food if they eat at all.
+**Load:** skip high-effort study and sequential executive work (packing, inventory, multi-step procedures). **Speech and light conversation are the same expensive class** when named: orofacial motor plus social contact. Unrefreshing sleep (hours in bed that do not restore) is a sickness-sleep pattern, not a cue to add more sleep debt experiments. Soft, non-acid food if mucosa is repairing. Do not invent fat loss from a few days of scale noise. Creatine still wants some food if they eat at all. A low-carbohydrate trial is not first-line while appetite is down and mucosa is repairing; ketogenic literature in this window is mostly epilepsy/ICU/COVID-context, not a cut protocol for this cluster.
+
+**Oro-lingual path (generic):** Dantzer *Nat Rev Neurosci* 2008 Fig. 1: trigeminal afferents carry oro-lingual immune signals. Mouth inflammation and talking that moves those muscles can share that channel. Not a diagnosis of the lesion.
 
 **Not this class:** post-study sore named DSB; Nature 2024 mouse CA1; DOMS; a planned cut.
 
@@ -62,6 +68,35 @@ EFSA 2015 (healthy adults, general population):
 Subjective "feels fine" at several times that amount is adenosine-receptor upregulation, not a new safety ceiling. Sleep architecture damage is the main fog amplifier.
 
 L-theanine 100–200 mg is studied with *moderate* caffeine (often ~1:1 or more theanine than caffeine), not with 4× EFSA sittings.
+
+**Withdrawal vs inflammatory fog:** Juliano & Griffiths 2004 validated “foggy / not clearheaded” as a caffeine-withdrawal symptom. Onset typically 12–24 h after a cut, peak 20–51 h, duration 2–9 days. StatPearls: taper ~25–50% every few days rather than a cliff from a high habitual sitting. Withdrawal fog is not proof the cytokine cluster got worse, and a large caffeine sitting is not a cytokine treatment. Sleep-architecture damage from late or oversized sittings remains the main amplifier (EFSA: 100 mg near bedtime may change sleep).
+
+**Theanine clock:** Combination RCTs used ~40–100 mg caffeine with ~97–200 mg L-theanine (Owen et al. 2008; Giesbrecht et al. 2010). That is a moderate-caffeine stack, not a buffer for several-times-EFSA sittings. If caffeine is already cut to the EFSA sitting, take theanine *with* that sitting. If the sitting stays huge, cut caffeine; do not add theanine as an antidote.
+
+## Interactions and GI (generic)
+
+Not personal bottles. Apply to a keep/pause list stored elsewhere.
+
+- **Creatine cognition:** UKNHCC found no cause-and-effect for ≤3 g/day and improved cognition in the claim dossier. Gordji-Nejad et al. 2024 (Sci Rep) used a *high single dose* (~0.35 g/kg) during sleep deprivation — experimental, GI-heavy, not a daily protocol. Everyday 3–5 g with food stays the food-like keep. Bolus >5 g raises GI distress in the same dossier. Loading is unnecessary for maintenance.
+- **Creatine × caffeine:** No reliable pharmacokinetic clash. Weak mixed evidence that *chronic high caffeine during a loading phase* may blunt muscle-ergogenic effects (opposite effects on muscle relaxation time). Co-ingestion can add GI load. On a tender gut, separate: creatine with food, caffeine after. Do not skip either class for the interaction rumor.
+- **Magnesium label:** NIH ODS: the Supplement Facts “Magnesium” line is **elemental** mg, not salt weight. A bottle that only says “magnesium glycinate 75 mg” may be compound (~14% elemental). Supplemental UL for adults is 350 mg/day elemental from supplements (food does not count). Glycinate is chosen for GI gentleness vs citrate/oxide; sleep RCTs remain small. Loose stools → drop toward the low end, do not chase the UL.
+- **Probiotics:** Strain-specific. Some candidate strains worsen IBS-like symptoms (e.g. *L. plantarum* MF1298 preferred placebo, Ligaarden 2010). Keep an already-tolerated product; pause if pain, urgency, or diarrhea *clearly worsen* after the capsule. Do not add a second blend the same week. Space ≥3 h from non-selective antimicrobials.
+- **Cod liver oil vs body fish oil:** NCCIH: liver oil = modest EPA/DHA **plus** vitamins A and D. Body fish oil is the n-3 class without retinol. Adult preformed vitamin A UL ~3000 µg RAE/day (NIH ODS). GI class effect of oils: burp, nausea, loose stool — take with food or skip the oil on a bad gut day. Do not stack liver oil with a retinol-containing multi.
+- **Acids:** Betaine HCl is contraindicated in peptic-ulcer class disease (Guilliams & Drake). ACV is acid; human ulcer-healing trials are not the reason to resume. Unspecified GI discomfort is a pause, not a hypochlorhydria diagnosis.
+- **Berberine:** Common GI effects (cramp, diarrhea). CYP3A4/2D6 class. Not first-line for acute fog. Pause on an unnamed gut-upset week unless it is an ongoing clinician glucose plan.
+- **Ceylon cinnamon:** Low coumarin vs cassia. Phase I (Ranasinghe 2017): occasional dyspepsia. Meal spice, not a fog RCT. Skip if it burns.
+
+## Acid / antimicrobial usage class (generic)
+
+Not a prescription. Not a fog, acne, or cough protocol. Personal resume gates stay in the private stack.
+
+- **Oregano oil (carvacrol/thymol):** Non-selective antimicrobial and mucosa irritant (mouth, throat, gut). Human trials that exist are short (days to a few weeks) and often topical/nasal, not months of oral capsules. LiverTox: culinary/supplement oregano is usually tolerated; higher doses: GI burn, nausea, diarrhea. Do not swallow undiluted essential oil. If used at all after mucosa is named healed: **short course, then off**; ≥3 h from probiotics; stop on burning. Pregnancy class abortifacient at supplement doses (LiverTox). Acne is not an indication.
+- **Neem / margosa:** Extracts, leaf, and seed oil are not interchangeable. Human cognitive data sparse. LiverTox (margosa oil): rare but severe metabolic acidosis, liver failure, Reye-like picture after oil ingestion, especially in children. Animal reproductive/liver signals. Resume only if a clinician named that product. Not an acne or fog bottle.
+- **Apple cider vinegar capsules:** Acetic acid. No RCT that they heal oral or peptic ulcers. Liquid ACV: enamel and esophageal burn if undiluted. Capsules still acidify; they are not a reason to resume during mucosa repair or unnamed GI discomfort. If used later: with food, not stacked on betaine HCl in the first sittings; stop on burn.
+- **Betaine HCl:** Transient gastric re-acidification in PPI-induced hypochlorhydria (Yago et al. 2013). Contraindicated in peptic-ulcer class disease (Guilliams & Drake). Swallow whole with the first bites of a **protein-containing meal**, never empty stomach, never opened onto teeth. Stop immediately on burning. Not a thinking aid. Unspecified GI discomfort is not a hypochlorhydria diagnosis.
+- **Berberine:** Metabolic / AMPK / CYP3A4–2D6. Common GI effects. With meals if a clinician glucose plan exists. ≥3 h from probiotics. Do not start in the same week as oregano or neem.
+
+Do not run two non-selective antimicrobials plus an acidifier in one sitting.
 
 ## Other classes
 

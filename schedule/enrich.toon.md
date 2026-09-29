@@ -75,33 +75,45 @@ record:
   source: https://www.ifa-berlin.com/programme/niq_breakfast
 
 record:
-  match: signals berlin
-  title: Signals Berlin 2026 — Reliability in the Age of AI
-  what: Two-day single-track conference. SRE. Observability. AI/MLOps. About 250 seats. No competing tracks.
-  where: Kulturbrauerei, Kesselhaus and Palais, Schönhauser Allee 36, 10435 Berlin, U Eberswalder Straße
-  when: 2026-09-10T00:00+02:00
-  end: 2026-09-12T00:00+02:00
-  allday: true
-  why: Why it matters: production agents fail on reliability. This is the Berlin room for SRE and MLOps people I need to sound hireable next to, not another demo stage.
+  match: signals welcome
+  title: Signals Berlin welcome reception
+  what: Official program Wednesday 17:30–20:00 Welcome Reception & Badge Pickup. Welcome by Graeme Smith, Zalando CTO at 18:00. Nested before Thu–Fri Kulturbrauerei days. Tickets SOLD OUT on the same page.
+  where: Zalando BHW Office, Berlin
+  when: 2026-09-09T17:30+02:00
+  end: 2026-09-09T20:00+02:00
+  allday: false
+  why: Nested Signals clock before the two-day conference. Do not invent attendance, a ticket, or a street. IFA is already past (halls closed 08.09 18:00).
   url: https://signalsconf.io/
   source: https://signalsconf.io/
 
 record:
+  match: signals berlin
+  title: Signals Berlin 2026 — Reliability in the Age of AI
+  what: Two-day. Day 1 Thu 10: 08:00; 09:00 Hartmann welcome on /program/; 09:15 Saucedo; 10:45 Vechtomova; 11:15 Khodadadi; 13:15 Leng; 15:30 Schäfer; panel 16:00. Day 2 Fri 11 refetch 06:34: 08:00; 09:15 Palcuie; 11:15 Langfuse; 11:45 Mykhailov; 13:30 lightning 6×5 min; 14:15 Sen PBT; 15:30 Murphy. Sold out. Named MBE is not this venue.
+  where: Kulturbrauerei, Kesselhaus and Palais, Schönhauser Allee 36, 10435 Berlin, U Eberswalder Straße
+  when: 2026-09-10T08:00+02:00
+  end: 2026-09-12T00:00+02:00
+  allday: true
+  why: Why it matters: production agents fail on reliability. Clock vs CPU 2026-09-12 00:28: day-2 WHEN ended 15:30 Friday; still sold out. Do not invent attendance. Do not map MBE.
+  url: https://signalsconf.io/
+  source: https://signalsconf.io/program/ fetched 2026-09-11 ~06:34+02
+
+record:
   match: agentic ai summit
   title: Agentic AI Summit Berlin
-  what: One-day engineering summit for production agents. Talks. NVIDIA workshop. Afternoon hackathon. AI Accelerator Institute. Listings disagree 08:00 vs 09:00; this row uses 09:00 from the Alliance agenda.
+  what: One-day. Fetched 2026-09-11 ~05:24: main stage 09:00–17:00; 09:15 Elhefnawy Deutsche Bank; Abouelnaga Lovable; Aleph Alpha panel production break; NVIDIA workshop 11:30–12:30 limited seats; hackathon 14:00–17:00 prizes 2000/1500/1000. Leftover 2025-agenda sentence ignored. CLASH with Berlin AI Day same hours. Do not invent a ticket.
   where: The Ritz-Carlton, Potsdamer Platz 3, 10785 Berlin
   when: 2026-09-15T09:00+02:00
   end: 2026-09-15T17:00+02:00
   allday: false
   why: Why it matters: this is the on-the-nose AI-agent-engineer conference in Berlin. CLASH with Berlin AI Day the same hours — pick one room.
   url: https://agenticaialliance.com/location/agenticaiberlin/agenda
-  source: https://agenticaialliance.com/location/agenticaiberlin/agenda
+  source: https://agenticaialliance.com/location/agenticaiberlin/agenda fetched 2026-09-11 ~05:24+02
 
 record:
   match: berlin ai day
   title: Berlin AI Day by buildersklub
-  what: Full-day case-study conference. Three tracks: leadership, revenue, product. No product demos. Practitioners from AWS, Personio, n8n and others.
+  what: Full-day. Fetched 2026-09-10 ~19:34: 09:00–21:30; tracks Leadership & Transformation, Revenue & Operations, Product & Development; no sales pitches or product demos. Speaker names not on sibb.de page — do not invent. CLASH Agentic AI Summit same hours.
   where: Festsaal Kreuzberg, Am Flutgraben 2, 12435 Berlin
   when: 2026-09-15T09:00+02:00
   end: 2026-09-15T21:30+02:00
@@ -113,19 +125,19 @@ record:
 record:
   match: productlab
   title: Productlab — Craft/AI Labs and Conference
-  what: 16 Sep Craft and AI workshops at The Social Hub. 17 Sep conference talks at CIC Berlin. Built for in-house product teams. CIC street not on the cited pages.
-  where: 16 Sep The Social Hub Berlin near Alexanderplatz; 17 Sep CIC Berlin
-  when: 2026-09-16T00:00+02:00
+  what: Fetched 2026-09-11 ~04:14: 15 Sep Leaders Lab (9 seats left, Ravi Mehta); 16 Sep Craft & AI Labs (4 of 5 workshops sold out); 17 Sep Conference CIC Berlin. Social Hub 15–16. Transfer cutoff 17:00 CET 2026-09-11 (today). Satellites OPEN TO ALL hours not cited: 14 Bonial rooftop; 15 Blind Dates; 16 Walk + Paddle; 18 Cagan ProductTank SOLD OUT. CLASH 15 Sep Summit + Berlin AI Day + Blind Dates. Do not invent a ticket.
+  where: 15–16 Sep The Social Hub Berlin-Mitte; 17 Sep CIC Berlin
+  when: 2026-09-15T00:00+02:00
   end: 2026-09-18T00:00+02:00
   allday: true
-  why: Why it matters: craft-with-AI for product teams is how agent engineers get hired into shipping orgs, not only into labs.
+  why: Why it matters: craft-with-AI for product teams. 15 Sep is a three-way clash — pick one room.
   url: https://productlab.app/
-  source: https://luma.com/productlab-conf-2026
+  source: https://productlab.app/ fetched 2026-09-11 ~04:14+02
 
 record:
   match: hpi
   title: Reinforcement Learning — Implementation
-  what: Interactive workshop. Turn a task into an RL setup. State, action, reward. Python Gym. Laptop required. Free. Binding registration.
+  what: Interactive workshop. Fetched 2026-09-10 ~20:34: 10:00–13:00; energy-storage example; Gym; laptop; binding registration. Photos/audio/film may be published by KI-Servicezentrum and HPI. Free. Do not invent a ticket.
   where: Hasso-Plattner-Institut, Prof.-Dr.-Helmert-Straße 2-3, 14482 Potsdam
   when: 2026-09-18T10:00+02:00
   end: 2026-09-18T13:00+02:00

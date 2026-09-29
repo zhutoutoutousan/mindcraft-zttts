@@ -84,3 +84,18 @@ agentRules:
   - Do not paste private employer/Gehalt into the lexicon
   - When logging: write under pedagogy/_learn/writing-accuracy/sessions/ only
   - Prefer minimal rewrite + oneFocus over long grammar essays
+
+drillQuality (learner feedback 2026-09-08, binding for every render):
+  point: every drill item must carry `point` naming the test point (考点), rendered visibly on the card — never hidden behind hints
+  derivable: the blank must be answerable from prompt + point alone. No clairvoyance items where the expected answer is unpredictable (e.g. a whole sentence after "Okay, ___ .")
+  attested: answers come only from session attestations, never invented workbook phrases
+  enforce: render_drills.py validates point/blank/stem at render time and fails loudly; a render without these fields is a bug, not a style choice
+  fixLoop: learner feedback on drills → update drills.toon.md items + this drillQuality block together, then re-render
+
+errorEscalation (learner feedback 2026-09-18, binding):
+  trigger: a drill or 摸底 probe shows errors on important knowledge, or a logged error pattern returns across sessions
+  domains: human-named 2026-09-18 — KI-Agent (pedagogy/computation/), Software Engineering (pedagogy/computation/SoftwareEngineering.fu.md), Mathematik (pedagogy/math/Mathematics.fu.md). These need sofortiges ganzheitliches Verständnis, not only single-error fixes
+  loop: sofortige Übung the same day → wiederholende Übungen spaced (+1 Tag, +3 Tage, +7 Tage) → Lesen the matching Frame / lexicon Form / .fu.md → Video + Probe hin und her (question → answer → counter-question, spoken)
+  exit: the human names vollständiges Verständnis. The agent never invents mastery, never marks the loop done on its own, and never invents ANSWER inside the loop
+  scope: language Forms and these knowledge domains alike
+  firstCases: daß→dass (logged 2026-09-12, returned 2026-09-18) and weak adjective declension -en after article/possessive (returned in 4+ sessions: privaten Bereich, vielen Insekten, dieser Beschränkung, sofortigen/wiederholenden Übungen)

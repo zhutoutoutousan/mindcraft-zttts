@@ -1,0 +1,9 @@
+- VERTEX GameTheory
+- KIND formal
+- GLOSS interactive-decisions-among-players
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM An interactive situation is several players taking actions that affect each other. The note's game theory is that interaction among agents who can calculate toward stated goals. Absorbed 2026-09-27 from the artificial-intelligence notes, then that folder was removed.
+- CLAIM Cooperative play in the note allows communication, coalitions, and binding agreements. Non-cooperative play is the case where players cannot communicate, or can communicate but cannot sign a binding contract. The note's example is firms that antitrust law stops from agreeing on price or output.
+- CLAIM Minimax returns a static evaluation at depth 0 or when the game is over. A maximizing player takes the best child. A minimizing player takes the worst child. Alpha-beta stops a branch once beta is less than or equal to alpha. The note's pruned listing called the unpruned function, so that listing is not a working implementation.
+- CLAIM A sales project that upset people on purpose, a mind-control note, and a rot13 assignment were not installed. Unread: Attention Is All You Need, https://arxiv.org/abs/1706.03762 ; X-ToM, https://arxiv.org/abs/1909.06907 . Book piles and page bookmarks are not current grasp.
+- SOURCE human study-note 2026-09-27

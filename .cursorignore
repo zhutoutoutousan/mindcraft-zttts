@@ -1,0 +1,11 @@
+﻿# Secret-shaped files. Gitignore is not enough: Cursor still indexes those paths.
+.env
+.env.*
+**/.env
+**/.env.*
+.private/*.env
+.private/**/*.env
+credentials.json
+*.pem
+*.key
+.minsec

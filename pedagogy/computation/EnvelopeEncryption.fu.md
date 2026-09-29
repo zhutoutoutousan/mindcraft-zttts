@@ -1,0 +1,8 @@
+- VERTEX EnvelopeEncryption
+- KIND techne
+- GLOSS data-key-wraps-bytes-master-key-wraps-the-data-key
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Envelope encryption: a data key encrypts the payload; a wrapping key encrypts the data key. AWS KMS documents this pattern. Losing the wrapping key makes ciphertext unrecoverable. That is a backup warning, not zero-knowledge in the GMR sense. Ladder rung 4 of mezzanine/minsec-ladder.toon.md.
+- CLAIM MinSec architecture: master passphrase → PBKDF2 → master key wraps a per-project AES key → that key wraps SECRET items. Inner primitive is AuthenticatedEncryption (AES-GCM). Grasp unknown. Do not invent an IV-handling audit.
+- SOURCE https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#enveloping
+- SOURCE https://github.com/cgx9/minsec

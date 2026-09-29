@@ -1,0 +1,40 @@
+{
+  "host": "imap.titan.email",
+  "port": 993,
+  "mailbox": "INBOX",
+  "rules": [
+    {
+      "folder": "Life-Subscription",
+      "from_domain": [
+        "linkedin.com",
+        "indeed.com",
+        "salesforce.com",
+        "mail.salesforce.com",
+        "e.salesforce.com",
+        "kleinanzeigen.de",
+        "ebay-kleinanzeigen.de",
+        "homary.com",
+        "mykik.com",
+        "startupschool.org"
+      ]
+    },
+    {
+      "folder": "Money-Job-Avature",
+      "from_domain": ["avature.net"]
+    },
+    {
+      "folder": "Money-Job",
+      "subject_contains": [
+        "Bewerbung",
+        "application",
+        "Interview",
+        "Stellenangebot",
+        "Job Alert"
+      ]
+    },
+    {
+      "folder": "Junk",
+      "from_contains": ["noreply", "no-reply", "newsletter"]
+    }
+  ]
+}

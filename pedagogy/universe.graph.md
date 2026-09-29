@@ -6,13 +6,18 @@ V Essence              kind=transcendental gloss=what-a-thing-is body=pedagogy/b
 V Form                 kind=transcendental gloss=intelligible-structure body=pedagogy/being/Form.fu.md
 V Matter               kind=transcendental gloss=that-which-receives-form body=pedagogy/being/Matter.fu.md
 V Mathematics          kind=formal gloss=study-of-form-and-relation body=pedagogy/math/Mathematics.fu.md
+V Complexity           kind=formal gloss=many-parts-interacting-nonlinearly body=pedagogy/math/Complexity.fu.md
 V DataScience          kind=formal gloss=inference-from-measured-form body=pedagogy/math/DataScience.fu.md
 V GraphTraversal       kind=formal gloss=walk-of-vertices-and-edges body=pedagogy/math/GraphTraversal.fu.md
 V TypeSystem           kind=formal gloss=constraints-on-what-a-symbol-may-be body=pedagogy/math/TypeSystem.fu.md
 V Physics              kind=natural gloss=study-of-matter-in-motion body=pedagogy/physics/Physics.fu.md
+V Electronics          kind=techne gloss=circuit-response-from-input-to-output body=pedagogy/physics/Electronics.fu.md
+V Philosophy           kind=praxis gloss=guide-for-other-disciplines body=pedagogy/philosophy/Philosophy.fu.md
 V Vibration            kind=natural gloss=oscillation-of-matter-in-time body=pedagogy/physics/Vibration.fu.md
+V Astrophysics         kind=natural gloss=physics-of-stars-and-cosmos body=pedagogy/physics/Astrophysics.fu.md
 V Biology              kind=natural gloss=living-matter-that-maintains-form body=pedagogy/biology/Biology.fu.md
 V Neuroscience         kind=natural gloss=study-of-nervous-systems body=pedagogy/biology/Neuroscience.fu.md
+V Psychology           kind=praxis gloss=judgment-under-group-pressure-and-contradiction body=pedagogy/biology/Psychology.fu.md
 V Memory               kind=praxis gloss=persistence-of-experience-in-an-agent body=pedagogy/biology/Memory.fu.md
 V MemoryAssembly       kind=natural gloss=cluster-of-neurons-representing-one-memory body=pedagogy/biology/MemoryAssembly.fu.md
 V HippocampalCA1       kind=natural gloss=CA1-slice-of-hippocampus-for-context body=pedagogy/biology/HippocampalCA1.fu.md
@@ -25,6 +30,7 @@ V PerineuronalNet      kind=natural gloss=extracellular-matrix-stabilizing-a-cir
 V ImmediateEarlyGene   kind=natural gloss=fast-transcriptional-mark-of-activity body=pedagogy/biology/ImmediateEarlyGene.fu.md
 V GenomicInstability   kind=natural gloss=unrepaired-breaks-as-gateway-to-decay body=pedagogy/biology/GenomicInstability.fu.md
 V Computation          kind=techne gloss=effective-form-on-matter body=pedagogy/computation/Computation.fu.md
+V GameTheory           kind=formal gloss=interactive-decisions-among-players body=pedagogy/computation/GameTheory.fu.md
 V Agent                kind=praxis gloss=that-which-enacts-computation-toward-a-goal body=pedagogy/computation/Agent.fu.md
 V GeographicInformation kind=techne gloss=form-of-place-as-queryable-layers body=pedagogy/computation/GeographicInformation.fu.md
 V CloudRuntime         kind=techne gloss=remote-machines-as-one-computer body=pedagogy/computation/CloudRuntime.fu.md
@@ -36,6 +42,7 @@ V Pedagogy             kind=praxis gloss=transmission-of-form-through-language b
 V Study                kind=praxis gloss=internalization-of-form-by-an-agent body=pedagogy/language/Study.fu.md
 V InterviewPrep        kind=praxis gloss=retrieval-first-practice-for-hire-surfaces body=pedagogy/language/InterviewPrep.fu.md
 V History              kind=semiosis gloss=collective-narrative-assembled-from-shared-memory body=pedagogy/language/History.fu.md
+V Politics             kind=semiosis gloss=constituency-cost-and-sorting-of-power body=pedagogy/language/Politics.fu.md
 V AutobiographicalMemory kind=natural gloss=hierarchical-self-memory-life-periods-events-details body=pedagogy/biology/AutobiographicalMemory.fu.md
 V FuLanguage           kind=semiosis gloss=nested-lists-with-capital-tags-as-control body=pedagogy/language/FuLanguage.fu.md
 V ResistanceTraining   kind=praxis gloss=progressive-load-on-living-matter body=pedagogy/biology/ResistanceTraining.fu.md
@@ -43,13 +50,16 @@ V KVCache              kind=techne gloss=elastic-virtual-memory-for-attention-st
 V AgentLoop            kind=praxis gloss=heartbeat-of-prompt-tool-result-until-text body=pedagogy/computation/AgentLoop.fu.md
 V AgenticEngineering   kind=praxis gloss=intent-and-audit-when-code-is-ephemeral body=pedagogy/computation/AgenticEngineering.fu.md
 V SoftwareEngineering  kind=praxis gloss=static-decision-logic-encoded-before-input body=pedagogy/computation/SoftwareEngineering.fu.md
+V ComputerSystem      kind=techne gloss=hardware-and-system-software-that-run-programs body=pedagogy/computation/ComputerSystem.fu.md
 V MultiAgent           kind=praxis gloss=coordinator-plus-specialists-for-long-work body=pedagogy/computation/MultiAgent.fu.md
 V RalphLoop            kind=praxis gloss=while-new-session-joined-by-filesystem body=pedagogy/computation/RalphLoop.fu.md
 V ExperienceStore      kind=techne gloss=durable-lessons-across-agent-sessions body=pedagogy/computation/ExperienceStore.fu.md
+V NestedLearning       kind=praxis gloss=nested-optimization-levels-at-different-update-rates body=pedagogy/computation/NestedLearning.fu.md
 V SlashCommand         kind=semiosis gloss=user-typed-lever-into-an-agent body=pedagogy/language/SlashCommand.fu.md
 V MobileRuntime        kind=techne gloss=computation-on-a-phone body=pedagogy/computation/MobileRuntime.fu.md
 V Payment              kind=techne gloss=transfer-of-value-as-an-api body=pedagogy/computation/Payment.fu.md
 V Ecommerce            kind=praxis gloss=selling-goods-over-the-network body=pedagogy/computation/Ecommerce.fu.md
+V Business             kind=praxis gloss=top-down-writing-and-order-quantity body=pedagogy/computation/Business.fu.md
 V SEO                  kind=praxis gloss=search-engine-optimization-for-classic-link-lists body=pedagogy/computation/SEO.fu.md
 V GenerativeEngineOptimization kind=praxis gloss=GEO-visibility-inside-synthesized-AI-answers body=pedagogy/computation/GenerativeEngineOptimization.fu.md
 V AnswerEngineOptimization kind=praxis gloss=AEO-extractable-direct-answers-in-search-surfaces body=pedagogy/computation/AnswerEngineOptimization.fu.md
@@ -75,6 +85,7 @@ V Vue                    kind=techne gloss=component-ui-on-javascript body=pedag
 V TailwindCSS            kind=techne gloss=utility-css-for-layout body=pedagogy/computation/stack/TailwindCSS.fu.md
 V Redux                  kind=techne gloss=ui-state-as-a-store body=pedagogy/computation/stack/Redux.fu.md
 V Figma                  kind=techne gloss=drawing-of-interface-form body=pedagogy/computation/stack/Figma.fu.md
+V Archify                kind=techne gloss=plain-english-to-explorable-architecture-html body=pedagogy/computation/stack/Archify.fu.md
 V MicroFrontend          kind=techne gloss=ui-split-across-deployable-parts body=pedagogy/computation/stack/MicroFrontend.fu.md
 V SpringBoot             kind=techne gloss=java-server-framework body=pedagogy/computation/stack/SpringBoot.fu.md
 V FastAPI                kind=techne gloss=python-http-framework body=pedagogy/computation/stack/FastAPI.fu.md
@@ -128,6 +139,28 @@ V GeneticSearch          kind=techne gloss=search-by-variation-and-select body=p
 V AST                    kind=techne gloss=program-as-a-tree body=pedagogy/computation/stack/AST.fu.md
 V InAppPurchase          kind=techne gloss=payment-inside-a-phone-app body=pedagogy/computation/stack/InAppPurchase.fu.md
 V AzureCosmosGremlin     kind=techne gloss=hosted-property-graph body=pedagogy/computation/stack/AzureCosmosGremlin.fu.md
+V InformationSecurity    kind=praxis gloss=protecting-confidentiality-integrity-availability-of-information body=pedagogy/computation/InformationSecurity.fu.md
+V ZeroKnowledgeProof     kind=formal gloss=proof-of-a-statement-without-revealing-the-witness body=pedagogy/math/ZeroKnowledgeProof.fu.md
+V ClientHeldSecret       kind=techne gloss=ciphertext-at-rest-keys-stay-with-the-client body=pedagogy/computation/ClientHeldSecret.fu.md
+V EnvelopeEncryption     kind=techne gloss=data-key-wraps-bytes-master-key-wraps-the-data-key body=pedagogy/computation/EnvelopeEncryption.fu.md
+V Cloudflare             kind=techne gloss=edge-network-as-one-computer body=pedagogy/computation/stack/Cloudflare.fu.md
+V CloudflareWorkers      kind=techne gloss=v8-isolates-at-the-cloudflare-edge body=pedagogy/computation/stack/CloudflareWorkers.fu.md
+V CloudflareD1           kind=techne gloss=sqlite-sql-on-the-cloudflare-network body=pedagogy/computation/stack/CloudflareD1.fu.md
+V Wrangler               kind=techne gloss=cli-for-cloudflare-workers-and-d1 body=pedagogy/computation/stack/Wrangler.fu.md
+V MinSec                 kind=techne gloss=e2ee-env-vault-with-in-memory-inject body=pedagogy/computation/stack/MinSec.fu.md
+V AgentTty               kind=techne gloss=agent-terminal-stdout-as-model-context body=pedagogy/computation/AgentTty.fu.md
+V JavaProcessEnv         kind=techne gloss=os-env-via-getenv-not-jvm-getproperty body=pedagogy/computation/stack/JavaProcessEnv.fu.md
+V SecretSurface          kind=praxis gloss=where-a-secret-can-appear-and-who-can-read-it body=pedagogy/computation/SecretSurface.fu.md
+V HonestButCurious       kind=formal gloss=adversary-who-follows-the-protocol-but-reads-all-stored-bytes body=pedagogy/math/HonestButCurious.fu.md
+V OAuthAuthorization     kind=techne gloss=delegated-login-without-sharing-the-account-password body=pedagogy/computation/OAuthAuthorization.fu.md
+V AuthenticatedEncryption kind=formal gloss=confidentiality-plus-integrity-in-one-construction body=pedagogy/math/AuthenticatedEncryption.fu.md
+V SpawnEnv               kind=techne gloss=child-process-environment-block-merged-from-parent-plus-inject body=pedagogy/computation/SpawnEnv.fu.md
+V WorkerBinding          kind=techne gloss=named-handle-from-cloudflare-into-the-isolate body=pedagogy/computation/stack/WorkerBinding.fu.md
+V SecretRotation         kind=praxis gloss=change-the-secret-and-drop-the-old-authority body=pedagogy/computation/SecretRotation.fu.md
+V EnvFile                kind=praxis gloss=plaintext-key-value-file-in-the-workspace body=pedagogy/computation/EnvFile.fu.md
+V ProcessEnvironment     kind=techne gloss=os-environment-block-of-a-running-process body=pedagogy/computation/ProcessEnvironment.fu.md
+V MinSecBinding          kind=techne gloss=workspace-linkage-file-not-the-vault body=pedagogy/computation/stack/MinSecBinding.fu.md
+V ApiToken               kind=techne gloss=bearer-secret-that-authenticates-an-http-client body=pedagogy/computation/ApiToken.fu.md
 
 V Transformer kind=techne gloss=sequence-model-of-attention body=pedagogy/computation/Transformer.fu.md
 V PromptEngineering kind=praxis gloss=steering-a-model-with-language body=pedagogy/language/PromptEngineering.fu.md
@@ -155,6 +188,7 @@ V AgentConstitution kind=praxis gloss=always-on-rules-for-an-agent body=pedagogy
 V AgentHook kind=techne gloss=event-fired-lifecycle-command body=pedagogy/computation/AgentHook.fu.md
 V AgentPlugin kind=techne gloss=installable-bundle-of-agent-behavior body=pedagogy/computation/AgentPlugin.fu.md
 V Scapula kind=natural gloss=shoulder-blade-on-the-ribcage body=pedagogy/biology/Scapula.fu.md
+V DelayedOnsetMuscleSoreness kind=natural gloss=load-then-delayed-muscle-soreness body=pedagogy/biology/DelayedOnsetMuscleSoreness.fu.md
 V SerratusAnterior kind=natural gloss=protracts-and-holds-the-scapula-on-the-ribs body=pedagogy/biology/SerratusAnterior.fu.md
 V Periodization kind=praxis gloss=planned-overload-then-planned-fatigue-drop body=pedagogy/biology/Periodization.fu.md
 V VideoGeneration kind=techne gloss=script-to-spoken-picture-with-captions body=pedagogy/computation/VideoGeneration.fu.md
@@ -233,6 +267,7 @@ E Study STUDIES GrammarFrame SOURCE=pedagogy/_learn/polyglot/pairing.toon.md
 E Automaticity GROUNDS_IN Form SOURCE=https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 E Study STUDIES Transformer SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
 E Study STUDIES RAG SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
+E Study                STUDIES      RAG grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
 E Study STUDIES PromptEngineering SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
 E Study STUDIES FineTuning SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
 E Study STUDIES MCP SOURCE=https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
@@ -241,18 +276,25 @@ E Study STUDIES AgentLoop SOURCE=https://github.com/amitshekhariitbhu/ai-enginee
 E AgentConstitution INFORMS Agent SOURCE=https://code.claude.com/docs/en/features-overview
 E FuLanguage MEDIATES AgentConstitution SOURCE=ROOT.md
 E ClaudeCode APPLIES AgentConstitution SOURCE=https://code.claude.com/docs/en/features-overview
+E Study                STUDIES      AgentConstitution grasp=unknown SOURCE=https://code.claude.com/docs/en/features-overview
 E ClaudeCode APPLIES CursorSkill SOURCE=https://code.claude.com/docs/en/skills.md
 E ClaudeCode APPLIES AgentHook SOURCE=https://code.claude.com/docs/en/hooks-guide.md
 E ClaudeCode APPLIES MultiAgent SOURCE=https://code.claude.com/docs/en/features-overview
+E ClaudeCode APPLIES MultiAgent SOURCE=https://code.claude.com/docs/en/worktrees
+E ClaudeCode INFORMS AgentLoop SOURCE=https://code.claude.com/docs/en/worktrees
 E ClaudeCode APPLIES AgentPlugin SOURCE=https://code.claude.com/docs/en/features-overview
 E ClaudeCode APPLIES MCP SOURCE=https://code.claude.com/docs/en/features-overview
 E AgentHook INFORMS AgentLoop SOURCE=https://code.claude.com/docs/en/hooks-guide.md
+E AgentHook            INFORMS      AgentLoop SOURCE=https://strandsagents.com/docs/user-guide/concepts/agents/agent-loop/
 E AgentHook APPLIES Computation SOURCE=https://code.claude.com/docs/en/hooks-guide.md
 E AgentPlugin PARTICIPATES CursorSkill SOURCE=https://code.claude.com/docs/en/features-overview
 E AgentPlugin PARTICIPATES AgentHook SOURCE=https://code.claude.com/docs/en/features-overview
 E AgentPlugin PARTICIPATES MultiAgent SOURCE=https://code.claude.com/docs/en/features-overview
 E AgentPlugin APPLIES Computation SOURCE=https://code.claude.com/docs/en/features-overview
 E Scapula PARTICIPATES Biology SOURCE=https://www.ncbi.nlm.nih.gov/books/NBK541005/
+E DelayedOnsetMuscleSoreness PARTICIPATES Biology SOURCE=https://pubmed.ncbi.nlm.nih.gov/12617692/
+E DelayedOnsetMuscleSoreness INFORMS Periodization SOURCE=https://pubmed.ncbi.nlm.nih.gov/12617692/
+E ResistanceTraining APPLIES DelayedOnsetMuscleSoreness SOURCE=https://pubmed.ncbi.nlm.nih.gov/12617692/
 E SerratusAnterior PARTICIPATES Scapula SOURCE=https://www.ncbi.nlm.nih.gov/books/NBK541005/
 E SerratusAnterior INFORMS Scapula SOURCE=https://www.youtube.com/watch?v=VCPp1DUypo0
 E ResistanceTraining APPLIES Scapula SOURCE=https://learn.athleanx.com/articles/shoulders-for-men/my-shoulder-hurts-when-i-bench-press-not-anymore
@@ -266,13 +308,25 @@ E Matter               RECEIVES     Form
 E Mathematics          STUDIES      Form
 E Physics              STUDIES      Matter
 E Physics              GROUNDS_IN   Mathematics
+E Electronics          GROUNDS_IN   Physics SOURCE=human study-note 2026-09-27
+E Complexity           GROUNDS_IN   Mathematics SOURCE=human study-note 2026-09-27
+E Philosophy           INFORMS      Study SOURCE=human study-note 2026-09-27
+E Psychology           INFORMS      Study SOURCE=human study-note 2026-09-27
 E Biology              STUDIES      Matter
 E Biology              GROUNDS_IN   Physics
 E Computation          APPLIES      Mathematics
+E GameTheory           GROUNDS_IN   Mathematics SOURCE=human study-note 2026-09-27
+E Computation          APPLIES      GameTheory SOURCE=human study-note 2026-09-27
 E Agent                ENACTS       Computation
 E Language             MEDIATES     Agent
 E Pedagogy             TRANSMITS    Language
 E Pedagogy             PARTICIPATES Being
+E AgentLoop            INFORMS      Form SOURCE=cron/maintain.fu.md
+E AgentLoop            GROUNDS_IN   Form SOURCE=pedagogy/being/being.fu.md
+E Form                 INFORMS      AgentLoop SOURCE=pedagogy/being/being.fu.md
+E Form                 INFORMS      Matter SOURCE=pedagogy/being/being.fu.md
+E Form                 INFORMS      PolyglotHorizon SOURCE=pedagogy/being/being.fu.md
+E AgentLoop            PARTICIPATES Being SOURCE=cron/maintain.fu.md
 
 E DataScience          APPLIES      Mathematics SOURCE=self/lebenslauf.toon.md
 E DataScience          APPLIES      Computation SOURCE=self/lebenslauf.toon.md
@@ -282,6 +336,10 @@ E TypeSystem           STUDIES      Form SOURCE=self/lebenslauf.toon.md
 E TypeSystem           INFORMS      Computation SOURCE=self/lebenslauf.toon.md
 E Vibration            STUDIES      Physics SOURCE=self/identity/experience.toon.md
 E Vibration            GROUNDS_IN   Mathematics SOURCE=https://ieeexplore.ieee.org/document/9044105
+E Astrophysics         STUDIES      Physics SOURCE=human 2026-09-16
+E Astrophysics         GROUNDS_IN   Physics SOURCE=https://science.nasa.gov/astrophysics/
+E Astrophysics         GROUNDS_IN   Mathematics SOURCE=https://science.nasa.gov/astrophysics/
+E Astrophysics         STUDIES      Matter SOURCE=https://science.nasa.gov/astrophysics/
 E GeographicInformation APPLIES     Mathematics SOURCE=self/identity/experience.toon.md
 E GeographicInformation APPLIES     Computation SOURCE=self/identity/experience.toon.md
 E CloudRuntime         APPLIES      Computation SOURCE=self/identity/credential.toon.md
@@ -300,10 +358,13 @@ E KVCache              APPLIES      Computation SOURCE=https://github.com/ovg-pr
 E KVCache              INFORMS      Agent SOURCE=https://github.com/ovg-project/kvcached
 E AgentLoop            ENACTS       Agent SOURCE=skills/loop-slash/PUBLISH.md
 E SoftwareEngineering  APPLIES      Computation SOURCE=https://arxiv.org/html/2606.05608v1
+E ComputerSystem       PARTICIPATES Computation SOURCE=human study-note 2026-09-27
 E AgenticEngineering   STUDIES      Agent SOURCE=https://arxiv.org/html/2606.05608v1
 E AgenticEngineering   CONTRADICTS  SoftwareEngineering SOURCE=https://arxiv.org/html/2606.05608v1
+E Study                STUDIES      SoftwareEngineering grasp=unknown SOURCE=https://arxiv.org/html/2606.05608v1
 E MultiAgent           ENACTS       AgentLoop SOURCE=https://www.bilibili.com/video/BV1t9oZBDENp
 E RalphLoop            ENACTS       AgentLoop SOURCE=https://www.bilibili.com/video/BV1t9oZBDENp
+E Study                STUDIES      RalphLoop grasp=unknown SOURCE=https://www.bilibili.com/video/BV1t9oZBDENp
 E ExperienceStore      INFORMS      Agent SOURCE=https://www.bilibili.com/video/BV1t9oZBDENp
 E SlashCommand         MEDIATES     AgentLoop SOURCE=skills/loop-slash/PUBLISH.md
 E MobileRuntime        APPLIES      Computation SOURCE=self/identity/skill.toon.md
@@ -311,6 +372,8 @@ E Payment              APPLIES      Computation SOURCE=self/identity/skill.toon.
 E Ecommerce            APPLIES      Computation SOURCE=https://en.wikipedia.org/wiki/E-commerce
 E Ecommerce            APPLIES      Payment SOURCE=https://en.wikipedia.org/wiki/E-commerce
 E Ecommerce            APPLIES      SEO SOURCE=https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+E Business             APPLIES      Mathematics SOURCE=human study-note 2026-09-27
+E Business             INFORMS      Study SOURCE=human study-note 2026-09-27
 E SEO                  APPLIES      Computation SOURCE=https://en.wikipedia.org/wiki/Search_engine_optimization
 E AnswerEngineOptimization APPLIES SEO SOURCE=https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
 E GenerativeEngineOptimization APPLIES SEO SOURCE=https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
@@ -344,6 +407,10 @@ E Vue                    APPLIES      JavaScript SOURCE=self/identity/experience
 E TailwindCSS            APPLIES      Computation SOURCE=self/identity/skill.toon.md
 E Redux                  APPLIES      React SOURCE=self/identity/skill.toon.md
 E Figma                  APPLIES      SpatialGraphics SOURCE=self/identity/experience.toon.md
+E Archify                APPLIES      SpatialGraphics SOURCE=https://tt-a1i.github.io/archify/
+E Archify                INFORMS      CursorSkill SOURCE=https://tt-a1i.github.io/archify/
+E Archify                INFORMS      CursorSkill SOURCE=skills/arsenal.toon.md
+E Study                STUDIES      Archify grasp=unknown SOURCE=https://tt-a1i.github.io/archify/
 E MicroFrontend          APPLIES      Computation SOURCE=self/identity/skill.toon.md
 E SpringBoot             APPLIES      Java SOURCE=self/identity/skill.toon.md
 E FastAPI                APPLIES      Python SOURCE=self/identity/experience.toon.md
@@ -422,7 +489,10 @@ E AgentCore            APPLIES      AWS SOURCE=https://docs.aws.amazon.com/bedro
 E AgentCore            APPLIES      Bedrock SOURCE=https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
 E AgentCore            INFORMS      Agent SOURCE=https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
 E AgentCore            PARTICIPATES AgentLoop SOURCE=https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
+E AgentCore            INFORMS      AgentLoop SOURCE=https://strandsagents.com/docs/user-guide/concepts/agents/agent-loop/
 E AgentCore            INFORMS      MCP SOURCE=https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
+E AgentCore            INFORMS      RAG SOURCE=https://docs.aws.amazon.com/bedrock/latest/userguide/kb-gateway-target.html
+E RAG                  APPLIES      MCP SOURCE=https://docs.aws.amazon.com/bedrock/latest/userguide/kb-gateway-target.html
 E AgentCore            INFORMS      SearchHarness SOURCE=https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
 E Study                STUDIES      AgentCore grasp=unknown SOURCE=self/learn.toon.md
 E AgentToolkit         APPLIES      AWS SOURCE=https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
@@ -430,6 +500,9 @@ E AgentToolkit         INFORMS      CursorSkill SOURCE=https://aws.amazon.com/pr
 E AgentToolkit         INFORMS      Agent SOURCE=https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
 E AgentToolkit         INFORMS      MCP SOURCE=https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
 E Kiro                 PARTICIPATES AgentToolkit SOURCE=https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
+E Kiro                 INFORMS      CursorSkill SOURCE=https://kiro.dev/docs/skills/
+E Kiro                 INFORMS      AgentHarness SOURCE=https://kiro.dev/docs/skills/
+E Kiro                 INFORMS      SlashCommand SOURCE=https://kiro.dev/docs/skills/
 E ClaudeCode           PARTICIPATES AgentToolkit SOURCE=https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
 E LambdaMicroVM        APPLIES      AWS SOURCE=https://aws.amazon.com/blogs/compute/secure-code-execution-for-ai-agents-with-aws-lambda-microvms/
 E LambdaMicroVM        INFORMS      Agent SOURCE=https://aws.amazon.com/blogs/compute/secure-code-execution-for-ai-agents-with-aws-lambda-microvms/
@@ -457,6 +530,7 @@ E VideoGeneration      APPLIES      Multimodal SOURCE=skills/video-generation.fu
 E VideoGeneration      APPLIES      DualSubtitle SOURCE=skills/video-generation.fu.md
 E VideoGeneration      APPLIES      SpatialGraphics SOURCE=skills/video-generation.fu.md
 E VideoGeneration      PARTICIPATES CursorSkill SOURCE=skills/video-generation.fu.md
+E VideoGeneration      INFORMS      CursorSkill SOURCE=skills/stage-body-composite.fu.md
 E VideoGeneration      INFORMS      Pedagogy SOURCE=tmp/video-pipeline.pdf
 E AgentStreamDrop      INFORMS      Agent SOURCE=.cursor/skills/cursor-agent-retry/SKILL.md
 E AgentStreamDrop      INFORMS      AgentLoop SOURCE=.cursor/skills/cursor-agent-retry/reference.md
@@ -485,7 +559,10 @@ E Study                STUDIES      AphthousUlcer grasp=unknown SOURCE=pedagogy/
 E Study                STUDIES      LowDemandIntake grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
 E Study                STUDIES      SicknessBehavior grasp=partial SOURCE=.cursor/skills/fog-rest/SKILL.md
 E Study                STUDIES      DualSubtitle grasp=unknown SOURCE=skills/video-generation.fu.md
+E Study                STUDIES      DualSubtitle grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
 E Study                STUDIES      CursorSkill grasp=unknown SOURCE=mezzanine/cursor-slash.toon.md
+E Study                STUDIES      ExperienceStore grasp=unknown SOURCE=https://nousresearch-hermes-agent.mintlify.app/user-guide/features/skills
+E Study                STUDIES      NestedLearning grasp=unknown SOURCE=https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/
 E AestheticChills      GROUNDS_IN   Neuroscience SOURCE=https://doi.org/10.3758/s13415-024-01168-x
 E AestheticChills      INFORMS      BinauralBeat SOURCE=mezzanine/meditation-binaural-2026-09-06.toon.md
 E AestheticChills      PARTICIPATES LowDemandIntake SOURCE=mezzanine/meditation-binaural-2026-09-06.toon.md
@@ -509,6 +586,8 @@ E Study                STUDIES      PredictiveCoding grasp=unknown SOURCE=pedago
 E AgentHarness         APPLIES      AgenticEngineering SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
 E AgentHarness         INFORMS      AgentLoop SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
 E AgentCore            PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E AgentCore            INFORMS      AgentHarness SOURCE=https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness.html
+E LambdaMicroVM        INFORMS      AgentHarness SOURCE=https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness.html
 E CursorSkill          PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
 E AgentHook            PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
 E AgentPlugin          PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
@@ -519,6 +598,11 @@ E Study                STUDIES      AgentRunMode grasp=unknown SOURCE=mezzanine/
 E ContextEngineering   INFORMS      PromptEngineering SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
 E ContextEngineering   APPLIES      RAG SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
 E ExperienceStore      APPLIES      ContextEngineering SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+E ExperienceStore      INFORMS      CursorSkill SOURCE=https://nousresearch-hermes-agent.mintlify.app/user-guide/features/skills
+E NestedLearning       INFORMS      ExperienceStore SOURCE=https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/
+E NestedLearning       INFORMS      ContextEngineering SOURCE=https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/
+E NestedLearning       GROUNDS_IN   Memory SOURCE=https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/
+E NestedLearning       INFORMS      AgentLoop SOURCE=https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/
 E MCP                  PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
 E MultiAgent           PARTICIPATES AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
 E AISafety             INFORMS      AgentHarness SOURCE=https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
@@ -528,9 +612,137 @@ E InterviewPrep        PARTICIPATES IntellectualLoad SOURCE=https://www.mianling
 E AutobiographicalMemory GROUNDS_IN Memory SOURCE=https://doi.org/10.1609/aiide.v9i1.12686
 E AutobiographicalMemory INFORMS History SOURCE=https://ceur-ws.org/Vol-4210/paper2.pdf
 E History              INFORMS      Pedagogy SOURCE=https://research.vu.nl/ws/portalfiles/portal/453611861/blin-phd-manuscript%20-%2069452f95719dd.pdf
+E Politics             INFORMS      History SOURCE=human study-note 2026-09-27
 E History              INFORMS      InterviewPrep SOURCE=pedagogy/language/InterviewPrep.fu.md
 E Study                STUDIES      AgentHarness grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
 E Study                STUDIES      ContextEngineering grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
 E Study                STUDIES      InterviewPrep grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
 E Study                STUDIES      AutobiographicalMemory grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
 E Study                STUDIES      History grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E CursorSkill          INFORMS      GitHubCI SOURCE=https://cursor.com/docs/origin
+E AgentLoop            INFORMS      CloudRuntime SOURCE=https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/
+E AgentHook            INFORMS      LLMOps SOURCE=https://langfuse.com/resources/engineering/coding-agent-tracing
+E CursorSkill          INFORMS      LLMOps SOURCE=https://langfuse.com/resources/engineering/coding-agent-tracing
+E AgentLoop            INFORMS      LLMOps SOURCE=https://langfuse.com/resources/engineering/coding-agent-tracing
+E Study                STUDIES      LLMOps grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      AgentToolkit grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      Kiro grasp=unknown SOURCE=https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
+E Study                STUDIES      LambdaMicroVM grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      MCP grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      GitHubCI grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E LLMOps               INFORMS      AgentHarness SOURCE=https://agenticaialliance.com/location/agenticaiberlin/agenda
+E Agent                INFORMS      AgentLoop SOURCE=https://agenticaialliance.com/location/agenticaiberlin/agenda
+E AgentPlugin          INFORMS      CursorSkill SOURCE=https://langfuse.com/docs/api-and-data-platform/features/agent-skill
+E CursorSkill          INFORMS      ExperienceStore SOURCE=https://langfuse.com/docs/api-and-data-platform/features/agent-skill
+E LambdaMicroVM        INFORMS      AgentCore SOURCE=https://aws.amazon.com/blogs/compute/announcing-lambda-microvms-serverless-compute-environments-with-vm-level-isolation-and-near-instant-startup/
+E LambdaMicroVM        INFORMS      AgentToolkit SOURCE=https://aws.amazon.com/blogs/compute/announcing-lambda-microvms-serverless-compute-environments-with-vm-level-isolation-and-near-instant-startup/
+E MCP                  INFORMS      CursorSkill SOURCE=https://langfuse.com/docs/api-and-data-platform/features/mcp-server
+E MCP                  INFORMS      LLMOps SOURCE=https://langfuse.com/docs/api-and-data-platform/features/mcp-server
+E GitHubCI             INFORMS      AgentLoop SOURCE=https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent
+E LambdaMicroVM        INFORMS      AgentRunMode SOURCE=https://cursor.com/docs/cloud-agent/security
+E Study                STUDIES      Evaluation grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Evaluation           INFORMS      GitHubCI SOURCE=https://cursor.com/docs/bugbot
+E Study                STUDIES      CloudRuntime grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E CloudRuntime         INFORMS      AgentLoop SOURCE=https://cursor.com/docs/cloud-agent/self-hosted/choose-runtime
+E AgentCore            INFORMS      LLMOps SOURCE=https://strandsagents.com/docs/user-guide/deploy/operating-agents-in-production/
+E AgentHarness         INFORMS      LLMOps SOURCE=https://strandsagents.com/docs/user-guide/deploy/operating-agents-in-production/
+E MultiAgent           INFORMS      LLMOps SOURCE=https://strandsagents.com/docs/user-guide/deploy/operating-agents-in-production/
+E ContextEngineering   INFORMS      AgentLoop SOURCE=https://strandsagents.com/docs/user-guide/deploy/operating-agents-in-production/
+E AISafety             INFORMS      MultiAgent SOURCE=https://strandsagents.com/docs/user-guide/concepts/multi-agent/swarm/
+E AgentHook            INFORMS      MultiAgent SOURCE=https://strandsagents.com/docs/user-guide/concepts/multi-agent/swarm/
+E AgentHook            INFORMS      AISafety SOURCE=https://strandsagents.com/docs/user-guide/concepts/agents/hooks/
+E AgentHook            INFORMS      AgentHarness SOURCE=https://strandsagents.com/docs/user-guide/concepts/agents/hooks/
+E AgentHook            INFORMS      AgentLoop SOURCE=https://strandsagents.com/docs/user-guide/concepts/interrupts/
+E AgentHook            INFORMS      AISafety SOURCE=https://strandsagents.com/docs/user-guide/concepts/interrupts/
+E AgentLoop            INFORMS      PolyglotHorizon SOURCE=cron/maintain.fu.md
+E PolyglotHorizon      INFORMS      Ecommerce SOURCE=pedagogy/_learn/polyglot/commerce.toon.md
+E PolyglotHorizon      INFORMS      InterviewPrep SOURCE=https://www.freelancermap.de/projekt/cloud-software-architect-ai-und-platform-m-w-d
+V CopticOrthodoxChurch kind=semiosis gloss=coptic-orthodox-community-as-living-narrative body=pedagogy/language/CopticOrthodoxChurch.fu.md
+E CopticOrthodoxChurch INFORMS History SOURCE=pedagogy/language/CopticOrthodoxChurch.fu.md
+E History              INFORMS      CopticOrthodoxChurch SOURCE=pedagogy/language/CopticOrthodoxChurch.fu.md
+E InformationSecurity  ISA          Computation SOURCE=human 2026-09-14
+E ZeroKnowledgeProof   GROUNDS_IN   Mathematics SOURCE=https://en.wikipedia.org/wiki/Zero-knowledge_proof
+E ZeroKnowledgeProof   APPLIES      InformationSecurity SOURCE=https://en.wikipedia.org/wiki/Zero-knowledge_proof
+E ClientHeldSecret     APPLIES      InformationSecurity SOURCE=https://github.com/cgx9/minsec
+E ClientHeldSecret     CONTRADICTS  ZeroKnowledgeProof SOURCE=https://github.com/cgx9/minsec
+E EnvelopeEncryption   APPLIES      ClientHeldSecret SOURCE=https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#enveloping
+E EnvelopeEncryption   APPLIES      InformationSecurity SOURCE=https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#enveloping
+E Cloudflare           APPLIES      CloudRuntime SOURCE=https://developers.cloudflare.com/workers/
+E CloudflareWorkers    APPLIES      Cloudflare SOURCE=https://developers.cloudflare.com/workers/
+E CloudflareD1         APPLIES      Cloudflare SOURCE=https://developers.cloudflare.com/d1/get-started/
+E Wrangler             APPLIES      Cloudflare SOURCE=https://developers.cloudflare.com/workers/wrangler/commands/general/
+E Wrangler             APPLIES      NodeJS SOURCE=https://developers.cloudflare.com/workers/wrangler/install-and-update/
+E Wrangler             INFORMS      CloudflareWorkers SOURCE=https://developers.cloudflare.com/workers/wrangler/commands/general/
+E Wrangler             INFORMS      CloudflareD1 SOURCE=https://developers.cloudflare.com/workers/wrangler/commands/d1/
+E CloudflareD1         INFORMS      CloudflareWorkers SOURCE=https://developers.cloudflare.com/d1/get-started/
+E MinSec               APPLIES      ClientHeldSecret SOURCE=https://github.com/cgx9/minsec
+E MinSec               APPLIES      EnvelopeEncryption SOURCE=https://github.com/cgx9/minsec
+E MinSec               APPLIES      Wrangler SOURCE=https://github.com/cgx9/minsec
+E MinSec               APPLIES      CloudflareWorkers SOURCE=https://github.com/cgx9/minsec
+E MinSec               APPLIES      CloudflareD1 SOURCE=https://github.com/cgx9/minsec
+E MinSec               CONTRADICTS  ZeroKnowledgeProof SOURCE=https://github.com/cgx9/minsec
+E MinSec               APPLIES      CursorSkill SOURCE=.cursor/skills/minsec-secrets/SKILL.md
+E AgentTty             INFORMS      Agent SOURCE=mezzanine/minsec-masterclass.toon.md
+E AgentTty             INFORMS      ContextEngineering SOURCE=mezzanine/minsec-masterclass.toon.md
+E AgentTty             APPLIES      InformationSecurity SOURCE=human 2026-09-14
+E AgentTty             CONTRADICTS  ClientHeldSecret SOURCE=mezzanine/minsec-masterclass.toon.md
+E MinSec               INFORMS      AgentTty SOURCE=https://github.com/cgx9/minsec
+E CursorSkill          INFORMS      AgentTty SOURCE=.cursor/skills/minsec-secrets/SKILL.md
+E JavaProcessEnv       APPLIES      Java SOURCE=https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/System.html#getenv(java.lang.String)
+E JavaProcessEnv       APPLIES      InformationSecurity SOURCE=https://github.com/cgx9/minsec
+E MinSec               APPLIES      JavaProcessEnv SOURCE=https://github.com/cgx9/minsec
+E Study                STUDIES      AgentTty grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      JavaProcessEnv grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E SecretSurface        APPLIES      InformationSecurity SOURCE=human 2026-09-14
+E SecretSurface        INFORMS      MinSec SOURCE=human 2026-09-14
+E HonestButCurious     GROUNDS_IN   Mathematics SOURCE=https://en.wikipedia.org/wiki/Secure_multi-party_computation
+E HonestButCurious     INFORMS      ClientHeldSecret SOURCE=https://en.wikipedia.org/wiki/Zero-knowledge_proof
+E HonestButCurious     APPLIES      InformationSecurity SOURCE=https://en.wikipedia.org/wiki/Secure_multi-party_computation
+E OAuthAuthorization   APPLIES      Wrangler SOURCE=https://developers.cloudflare.com/workers/wrangler/commands/general/
+E OAuthAuthorization   APPLIES      InformationSecurity SOURCE=https://datatracker.ietf.org/doc/html/rfc6749
+E AuthenticatedEncryption GROUNDS_IN Mathematics SOURCE=https://en.wikipedia.org/wiki/Authenticated_encryption
+E AuthenticatedEncryption INFORMS EnvelopeEncryption SOURCE=https://github.com/cgx9/minsec
+E SpawnEnv             APPLIES      MinSec SOURCE=https://github.com/cgx9/minsec
+E SpawnEnv             INFORMS      JavaProcessEnv SOURCE=https://github.com/cgx9/minsec
+E WorkerBinding        APPLIES      CloudflareWorkers SOURCE=https://developers.cloudflare.com/workers/configuration/secrets/
+E WorkerBinding        INFORMS      CloudflareD1 SOURCE=https://developers.cloudflare.com/d1/get-started/
+E WorkerBinding        APPLIES      SecretSurface SOURCE=https://developers.cloudflare.com/workers/configuration/secrets/
+E SecretRotation       APPLIES      InformationSecurity SOURCE=human 2026-09-14
+E SecretRotation       INFORMS      MinSec SOURCE=https://github.com/cgx9/minsec
+E SecretRotation       INFORMS      WorkerBinding SOURCE=https://developers.cloudflare.com/workers/configuration/secrets/
+E GitHubCI             INFORMS      SecretSurface SOURCE=pedagogy/computation/stack/GitHubCI.fu.md
+E Study                STUDIES      SecretSurface grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      HonestButCurious grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      OAuthAuthorization grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      AuthenticatedEncryption grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      SpawnEnv grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      WorkerBinding grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      SecretRotation grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E CloudflareWorkers    INFORMS      ClientHeldSecret SOURCE=https://developers.cloudflare.com/workers/configuration/secrets/
+E Study                STUDIES      InformationSecurity grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      ZeroKnowledgeProof grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      ClientHeldSecret grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      Wrangler grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      Cloudflare grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      CloudflareWorkers grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      CloudflareD1 grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      MinSec grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E EnvFile              APPLIES      InformationSecurity SOURCE=https://github.com/cgx9/minsec
+E EnvFile              INFORMS      SecretSurface SOURCE=https://github.com/cgx9/minsec
+E MinSec               INFORMS      EnvFile SOURCE=https://github.com/cgx9/minsec
+E ProcessEnvironment   APPLIES      Computation SOURCE=https://nodejs.org/api/process.html#processenv
+E ProcessEnvironment   APPLIES      InformationSecurity SOURCE=human 2026-09-14
+E SpawnEnv             APPLIES      ProcessEnvironment SOURCE=https://nodejs.org/api/child_process.html#child_processspawncommand-args-options
+E JavaProcessEnv       APPLIES      ProcessEnvironment SOURCE=https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/System.html#getenv()
+E MinSec               APPLIES      ProcessEnvironment SOURCE=https://github.com/cgx9/minsec
+E MinSecBinding        APPLIES      MinSec SOURCE=https://github.com/cgx9/minsec
+E MinSecBinding        INFORMS      SecretSurface SOURCE=https://github.com/cgx9/minsec
+E ApiToken             APPLIES      InformationSecurity SOURCE=https://datatracker.ietf.org/doc/html/rfc6750
+E ApiToken             CONTRADICTS  OAuthAuthorization SOURCE=https://github.com/cgx9/minsec
+E ApiToken             INFORMS      MinSec SOURCE=https://github.com/cgx9/minsec
+E Study                STUDIES      EnvFile grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      ProcessEnvironment grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      MinSecBinding grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+E Study                STUDIES      ApiToken grasp=unknown SOURCE=pedagogy/pedagogy-cpu.fu.md
+V GermanPolity          kind=praxis gloss=constitutional-order-of-parties-elections-and-states body=pedagogy/politics/GermanPolity.fu.md
+E GermanPolity          INFORMS      Agent SOURCE=https://www.deutschlandfunk.de/der-kanzler-und-die-landtagswahlen-vielleicht-der-letzte-riss-im-eis-100.html

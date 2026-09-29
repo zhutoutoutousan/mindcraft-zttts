@@ -8,6 +8,8 @@
 - CLAIM TESOL Lexical Press 2024-03-07: LanguageDrilling is Pedagogy on NaturalLanguage. Species ChoralRepetition ChainDrill SubstitutionDrill. Aim Automaticity. CommunicativePractice RECEIVES the drilled Form. Drill-as-whole-lesson CONTRADICTS CommunicativePractice. Wordschatz APPLIES LanguageDrilling. Goethe Schreiben is not this tree. MEDIA PAGE the URL. Do not invent a Person for tesol.
 - CLAIM WritingAccuracyArbitrage: real agent instructions in the target language; writing accuracy is the byproduct. Store pedagogy/_learn/writing-accuracy/. Complements Wordschatz; not a fake workbook. Hook sessionStart.
 - CLAIM PolyglotHorizon: B2+ across 16 named languages by age 35. Roster horizon.toon.md. GrammarFrame pairs grammar slots with lexicon fills. Code-switch islands = unknown target expressions. Do not invent CEFR beyond self-rating bands.
+- CLAIM A sign combines an exponent, a sequence of letters or sounds, with a meaning, and is the same as neither. A language in the old notes is a set of signs. Language there is a tool. Perfection is not the aim. Absorbed 2026-09-27 from the language notes, then that folder was removed.
+- CLAIM A known plot can be replayed with the target language on screen and a dictionary beside it. Dual subtitles put the target line next to a known line. A translation pass checks the term base, the punctuation, and whether a line is a reference. Word lists were not copied. Self-graded bands in that folder were not written onto the horizon. Sexual motives were not installed.
 - MEDIA PAGE https://plato.stanford.edu/entries/language-thought/
 - MEDIA PAGE https://americantesol.com/blogger/drilling-old-school-technique-modern-applications-in-esl/
 - SOURCE pedagogy/ontology.fu.md

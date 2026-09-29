@@ -1,0 +1,12 @@
+{
+  "slug": "example-donut",
+  "tune": "invented meter — not a real song",
+  "lang": "zh",
+  "voice": "zh-CN-YunxiNeural",
+  "lines": [
+    {"n": 7, "text": "盘古开口其形圆"},
+    {"n": 7, "text": "尧舜禅让半盒甜"},
+    {"n": 8, "text": "张骞凿空走线去美"},
+    {"n": 8, "text": "店员多赠封神那年"}
+  ]
+}

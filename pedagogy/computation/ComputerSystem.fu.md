@@ -1,0 +1,11 @@
+- VERTEX ComputerSystem
+- KIND techne
+- GLOSS hardware-and-system-software-that-run-programs
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A computer system is hardware plus systems software that run application programs. A byte in the system note is an 8-bit chunk. A file is a sequence of bytes. A source program is bits grouped into those bytes. A line that set one byte equal to four bits was not installed. Absorbed 2026-09-27 from the computer-science notes, then that folder was removed.
+- CLAIM A process is the operating system's abstraction for a running program. A thread is an execution unit inside that process. Threads in one process share code and global data. A context switch moves the CPU from one task to another without letting the tasks conflict. Virtual memory gives each process the illusion of exclusive main memory, and each process sees the same shape of address space.
+- CLAIM The note's memory ladder, top to bottom, is register, cache, DRAM, then disk. Instruction-level parallelism means more than one instruction at a time. SIMD means one instruction drives several data operations. A conventional processor in the note takes about 20,000 clock cycles to shift threads. A hyperthreaded processor picks a thread on each cycle.
+- CLAIM A network layer uses only the layer below it and exports only to the layer above. Protocol names under that rule were empty. An algorithm is a well-defined procedure from input values to output values. It is correct when every input halts with the correct output. A just-in-time compiler turns bytecode into machine language immediately before that program runs.
+- CLAIM C in the note was written from 1969 to 1973 by Dennis Ritchie at Bell Laboratories, tied to Unix, and used for system-level programming. Compilation was named as preprocess, compile, assemble, then link. Questions about which loop is faster were left open.
+- CLAIM Confidentiality means an eavesdropper does not learn the contents. Authentication is proof of who sent a message, including if that sender later denies it. Integrity is evidence that a third party did not change the data. A method for hiding bits in an image was not installed. The ADAM paper stays locked and unread. Algorithm cribs were not installed.
+- SOURCE human study-note 2026-09-27

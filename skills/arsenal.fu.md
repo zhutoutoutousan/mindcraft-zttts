@@ -1,0 +1,14 @@
+- KIND diagram arsenal. Which drawing tool an agent picks. Not a Person. Not an install.
+- STORE PATH skills/arsenal.toon.md
+- STORE PATH pedagogy/computation/stack/Archify.fu.md
+- STORE PATH pedagogy/universe.graph.md
+- STORE PATH mezzanine/archify.toon.md
+- SKILL PATH .cursor/skills/diagram-arsenal/SKILL.md
+- SOURCE https://tt-a1i.github.io/archify/
+- SOURCE https://github.com/tt-a1i/archify
+
+- RULE Read skills/arsenal.toon.md before drawing skill or harness architecture.
+- RULE Archify is the HTML architecture pick. PlantUML/Kroki stays for LaTeX PDF and video stills. ontology-showcase stays for universe.graph.
+- RULE Archify was not installed as a global Cursor skill this tick. npx skills needs Node >=22; this machine is 20. Fallback: git clone into tmp/_archify then `node bin/archify.mjs`. Do not vendor their tree into this repo.
+- RULE Deliver HTML/PNG into tmp/. python cron/janitor.py --touch. Do not invent a diagram.
+- RULE Privacy: no streets, join URLs, private names, or lesion sites on a figure.

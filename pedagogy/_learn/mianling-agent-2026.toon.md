@@ -1,6 +1,6 @@
 schema: learn/interview-bank-themes
 note: Theme map from public Agent interview banks. Titles/themes only. Do not paste model answers. Do not invent ANSWER. Companies in theme tags are zeitgeist labels from the bank page, not job offers.
-as_of: 2026-09-06
+as_of: 2026-09-09
 tz: Europe/Berlin
 primary.SOURCE: https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
 secondary.SOURCE: https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
@@ -10,7 +10,7 @@ theme[]{id,label_zh,vertex,hire_heat,note}:
   arch,基础概念与架构模式,Agent AgentLoop AgenticEngineering,high,ReAct vs Plan-Execute; Agent vs Workflow
   harness,Agent Harness 与运行时工程,AgentHarness AgentCore CursorSkill AgentHook AgentPlugin,critical,2026 disaster zone per bank — design motive not brand memorization
   tools,工具调用 MCP 与 Skills,MCP CursorSkill AgentToolkit,critical,FC vs MCP vs Skill boundaries; progressive disclosure
-  memory,记忆管理与上下文工程,ContextEngineering ExperienceStore RAG KVCache Memory,critical,compress/unload/pollution; long-horizon memory
+  memory,记忆管理与上下文工程,ContextEngineering ExperienceStore NestedLearning RAG KVCache Memory,critical,compress/unload/pollution; Nested Learning CMS / multi-rate updates
   multi,多智能体协作与编排,MultiAgent AgentLoop,high,isolation; failure rollback; markdown task handoff risks
   safety,评估幻觉与安全兜底,AISafety Evaluation LLMOps,high,loop kill; HITL pause; injection; observability
   sysdesign,系统设计题,AgentHarness MultiAgent RAG AISafety,high,PR review agent; ops agent; knowledge agent — project storytelling required

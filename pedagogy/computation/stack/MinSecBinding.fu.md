@@ -1,0 +1,7 @@
+- VERTEX MinSecBinding
+- KIND techne
+- GLOSS workspace-linkage-file-not-the-vault
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM MinSec's workspace file is metadata: projectId, env, path, optional endpoint/apiKey. It is not the ciphertext store. CLI lookup order in `src/cli/config.js`: `.minsec`, then `.minsec.json`, then `.envproject`. `minsec init` writes `.minsec`. Empty `apiKey` inherits `~/.minsec`. Ladder rung 3 of mezzanine/minsec-ladder.toon.md.
+- CLAIM Docs that say only `.minsec.json` or errors that say only `.envproject` are the same object under three names. Grasp unknown. Do not invent a completed `minsec init` here.
+- SOURCE https://github.com/cgx9/minsec

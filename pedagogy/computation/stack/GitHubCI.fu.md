@@ -6,4 +6,10 @@
 - CLAIM AWS Lambda MicroVMs skill lists multi-tenant CI executors as a use. The 2026-09-04 workshop is sandboxed coding agents in CI/CD. Do not claim this repo's GitHub CI already runs MicroVMs.
 - SOURCE self/identity/skill.toon.md
 - SOURCE https://github.com/aws/agent-toolkit-for-aws/blob/d6ad2e44d5e3077b85b63f322e007c84f94f3a6c/skills/specialized-skills/serverless-skills/aws-lambda-microvms/SKILL.md
+- CLAIM Cursor Origin docs: GitHub-synced repos keep GitHub as source of truth. This workspace remote named origin stays GitHub until the human names a second remote. Do not invent that Origin already runs this repo's CI.
+- SOURCE https://cursor.com/docs/origin
 - SOURCE CPU.md
+- CLAIM Official GitHub: Copilot cloud agent works in an ephemeral GitHub Actions environment (explore, edit, tests). Distinct from IDE agent mode. Do not invent that this repo assigns Copilot.
+- SOURCE https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent
+- CLAIM Origin settings: Depot and Buildkite CI run on Origin-hosted repos only. Mirrored GitHub repos keep CI on GitHub. Do not invent a mirror of this workspace.
+- SOURCE https://cursor.com/docs/origin/settings

@@ -3,6 +3,7 @@
 - GLOSS localized-oral-mucosa-lesion-class
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Aphthous / oral ulcer is a mucosa lesion class. Red flags either way: fever, spreading infection, ulcer lasting beyond about 1–2 weeks, allergy → clinician. Not a diagnosis from a calendar note. Soft non-acid food while mucosa repairs is a load note under SicknessBehavior, not a diet protocol.
+- CLAIM Human 2026-09-11: oral ulcers named 几乎已经完全愈合, not named fully healed. Acid pause stays until healed plus brush aversion gone. Personal sites stay .private/. Not a diagnosis.
 - CLAIM Fair compare (search 2026-09-06): Guilin watermelon frost spray (multi-herb TCM powder class) versus Kamistad gel (lidocaine + chamomile class). No head-to-head RCT between those two products was found. Do not read absence of H2H as equivalence.
 - CLAIM Evidence lenses, not a purchase order: pain mechanism (cover/TCM claim vs explicit local anesthetic); healing-literature quality (Chinese RCTs vs lozenge class often weakly blinded; Kamistad-class RCT and animal cytokine data exist but heterogeneous); form (powder spray vs gel); access (import/Chinese pharmacy vs DE OTC traditional medicine class). User reports are a separate lens from RCT.
 - CLAIM This vertex holds the evidence class. Personal lesion sites, counts, photos, and bottles stay in .private/. Do not prescribe.

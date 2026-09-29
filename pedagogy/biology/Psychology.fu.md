@@ -1,0 +1,10 @@
+- VERTEX Psychology
+- KIND praxis
+- GLOSS judgment-under-group-pressure-and-contradiction
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Cognitive dissonance, as the note defines it, is the stress of holding contradictory beliefs and then acting against one of them. Festinger 1957 is named and unread. Absorbed 2026-09-27 from the psychology notes, then that folder was removed.
+- CLAIM The note's retelling of a line-matching test: alone, mistakes were under 1 percent. Under a majority stating the wrong match, the minority accepted that wrong match on 36.8 percent of selections, among 123 subjects. The book named is The Social Animal. This is the note's retelling, not a re-run.
+- CLAIM The Ovsiankina effect in the note is the tendency to resume an interrupted action that is still unfinished.
+- CLAIM Jung in the note separates a personal unconscious, whose contents are feeling-toned complexes, from a deeper inborn layer he calls collective. An archetype there is a hypothetical pattern, distinct from an archetypal idea. Astrology is marked a pseudoscience in the same glossary.
+- CLAIM A family profile, a pornography note, and a question about nesting hypocrisy were not installed. Big-five headings were empty and left out Extraversion, so they were not installed as trait definitions. Unread: the clown-on-a-unicycle retelling of 151 students, of whom the note says 25 percent noticed.
+- SOURCE human study-note 2026-09-27

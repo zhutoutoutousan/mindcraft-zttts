@@ -1,7 +1,7 @@
 schema: self/routine
 note: Daily hygiene and preventive-care particulars. Not a Person vertex. Not a diagnosis. Tips need SOURCE. Do not invent last_done dates. Clinic streets and insurance numbers stay in .private/.
 tz: Europe/Berlin
-updated: 2026-09-06T17:30:00+02:00
+updated: 2026-09-10T17:14:00+02:00
 protocol.note: When the human asks 今天干什么 / what should I do today, merge this store into Today with training fog learn calendar. Empty PROBE stays empty. Medical intervals are reminders to confirm with a clinician, not prescriptions.
 
 daily[]{id,slot,label,label_zh,active,minutes,protocol,source}:
@@ -25,6 +25,9 @@ tip[]{id,topic,text,source,added}:
   fluoride-spit,brush,"After fluoride toothpaste, spit; avoid immediate full rinse so fluoride stays. Label wins over tip.",https://www.ada.org/resources/research/science-and-research-institute/oral-health-topics/toothpastes,2026-09-06
   soft-bristle,brush,"Soft bristles; hard scrubbing can harm gums/enamel. Replace brush ~every 3 months or when splayed.",https://www.ada.org/resources/research/science-and-research-institute/oral-health-topics/toothbrushes,2026-09-06
   tongue-optional,brush,"Tongue cleaning is optional adjunct; not a substitute for brush+interdental.",https://www.ada.org/resources/research/science-and-research-institute/oral-health-topics/toothbrushes,2026-09-06
+  nidcr-acid-spice,ulcer-class,"NIDCR: avoid hot, acidic, or spicy foods while canker sores are present (pain + possible trigger). Skip alcohol mouthwash. Class tip, not a diagnosis of this log. Particulars stay .private/.",https://www.nidcr.nih.gov/health-info/fever-blisters-canker-sores,2026-09-08
+  ada-rinse-after-acid,brush,"ADA dental erosion: after acidic drinks/food, rinse with water rather than brushing immediately (enamel can be temporarily softer). Nested clock vs nidcr-acid-spice (avoid acid while sores). Not a diagnosis.",https://www.ada.org/resources/ada-library/oral-health-topics/dental-erosion,2026-09-09
+  nidcr-self-limit,ulcer-class,"NIDCR: fever blisters and canker sores typically go away in 1–2 weeks; treatment usually not required. See a clinician if sores are frequent or severe enough that eating or drinking is difficult. Class clock, not a diagnosis of this log. Do not invent healed.",https://www.nidcr.nih.gov/health-info/fever-blisters-canker-sores,2026-09-10
 
 optimize[]{id,habit,change,why,status,source}:
   stack-floss-pm,floss,Do floss immediately after brush-pm,Same cue reduces skip rate. Behavioral stacking — not medical.,open,human 2026-09-06

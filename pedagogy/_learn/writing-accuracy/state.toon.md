@@ -1,22 +1,21 @@
 schema: learn/writing-accuracy-state
 targetLang: de
-updated: 2026-09-07
+updated: 2026-09-10
 method: writing-accuracy-base-arbitrage
 status: active
 
 # Force these into sentence one of the next DE coding prompt.
-todayFocus[4]:
-  nach meinen Eingaben (Dativ Plural, nicht meinem)
-  Korrektur (nicht Korrigierung)
-  sicherstellen, dass … widergespiegelt wird
-  Ein Gedanke = ein Satz
+todayFocus[3]:
+  Nimm das in .private auf (in + Akk)
+  eine Zusammenfassung (Akk. f.)
+  meinen Tag (Akk. m.)
 
-oneFocus: nach meinen Eingaben / Korrektur
-reuseNextSession: Nach meinen Eingaben in dieser Chatbox soll eine Korrektur kommen.
+oneFocus: Nimm das in .private auf (in + Akk)
+reuseNextSession: Nimm das in .private auf.
 confidence: medium
 
-lastSession: 2026-09-07-chat-kg-tmp-promote
-oneFocusFrame: nach_meinen_eingaben_korrektur
+lastSession: 2026-09-10-in-private-aufnehmen
+oneFocusFrame: in_Akk_private
 
 activeErrors[5]:
   word_order_particles,priority=1,streakClear=0
@@ -46,3 +45,19 @@ northStar: Auf Zielsprache vollständig und möglichst fehlerfrei äußern (unte
 lastFrSession: 2026-09-07-fr-probe
 frOneFocus: ajouter à / au (pas sur)
 frFrames: pedagogy/_learn/polyglot/frames/fr.toon.md
+
+publicDashboard:
+  activeLanguage: de
+  activeFocus: Kasus und Artikel
+  activeErrorLabels[5]:
+    Wortstellung und Partikeln
+    Wortendungen und Morphologie
+    Rechtschreibung
+    Kasus, Genus und Artikel
+    Sprachwechsel-Lücken
+  formGroups[4]:
+    Artikel und Kasus
+    Präpositionen und Rektion
+    Satzstellung und Partikelverben
+    Formelles Bitten und Verbformen
+  nextAction: Einen deutschen Arbeitssatz mit genau einem Fokus schreiben.
