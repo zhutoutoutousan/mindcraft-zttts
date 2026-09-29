@@ -1,0 +1,8 @@
+- VERTEX WorkerBinding
+- KIND techne
+- GLOSS named-handle-from-cloudflare-into-the-isolate
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A Worker reads D1, secrets, and KV through bindings on `env`, not through a workspace `.env` on the edge. Local Wrangler uses `.dev.vars` or `.env` and tells you not to commit them. That local file is the same class of leftover as IMAP `.env`. Distinct from SpawnEnv (Node/OS child) and from JavaProcessEnv. Grasp unknown. Do not invent a binding name in this repo.
+- SOURCE https://developers.cloudflare.com/workers/configuration/secrets/
+- SOURCE https://developers.cloudflare.com/d1/get-started/
+- SOURCE human 2026-09-14

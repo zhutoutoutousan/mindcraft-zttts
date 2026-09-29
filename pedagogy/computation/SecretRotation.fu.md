@@ -1,0 +1,8 @@
+- VERTEX SecretRotation
+- KIND praxis
+- GLOSS change-the-secret-and-drop-the-old-authority
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Rotation updates the value; revocation drops a person's or token's right to fetch it. MinSec dashboard claims scoped API tokens and one-click revoke. Wrangler `secret put` replaces a Worker secret and deploys a new version. Completeness of this cluster requires distinguishing rotate vs revoke vs leftover disk copy vs leftover AgentTty log. Grasp unknown. Do not invent that rotation was performed here.
+- SOURCE https://github.com/cgx9/minsec
+- SOURCE https://developers.cloudflare.com/workers/configuration/secrets/
+- SOURCE human 2026-09-14

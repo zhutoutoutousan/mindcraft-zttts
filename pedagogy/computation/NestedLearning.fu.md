@@ -1,0 +1,11 @@
+- VERTEX NestedLearning
+- KIND praxis
+- GLOSS nested-optimization-levels-at-different-update-rates
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Google Research (Behrouz, Mirrokni; NeurIPS 2025 paper Nested Learning: The Illusion of Deep Learning Architectures) treats a model as nested and/or parallel optimization problems, each with its own context flow and update frequency. Architecture and optimizer are the same kind of thing at different levels. That is a product/paper claim. It is not an install in this repo.
+- CLAIM Continual learning analog of the brain: multi-time-scale updates vs catastrophic forgetting from uniformly overwriting parameters. Continuum Memory System (CMS) is a spectrum of modules at different frequencies, not a binary short/long split.
+- CLAIM Hope is their self-modifying Titans variant with unbounded in-context learning levels plus CMS blocks. Do not invent scores. Do not add a Hope vertex. Do not vendor their code.
+- CLAIM In this graph the same nested shape is organ-inside-organism (maintain rotation vs vertex store vs CursorSkill). ExperienceStore is the durable layer. Empty PROBE stays empty. DUMP google-nested-learning-neurips-2025 stays pending drip.
+- MEDIA PAGE https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/
+- SOURCE https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/
+- SOURCE https://openreview.net/forum?id=nbMeRvNb7A

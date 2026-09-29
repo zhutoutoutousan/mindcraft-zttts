@@ -1,0 +1,11 @@
+- VERTEX SecretSurface
+- KIND praxis
+- GLOSS where-a-secret-can-appear-and-who-can-read-it
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Completeness map for the 2026-09-14 MinSec/ZK/Cloudflare pull. Named gaps were slogan-ZK, wrangler login, AgentTty, Java getProperty. High-probability missing neighbors are listed as Forderungen below. Grasp unknown. Do not invent ANSWER. Do not paste secret values.
+- CLAIM Surfaces to distinguish: git tree, editor index, home-dir ciphertext, OS env of parent vs child, JVM -D, Worker binding, Wrangler `.dev.vars` / `.env` for local, CI secret store, agent TTY stdout, crash dump / swap, chat paste.
+- CLAIM Hub of mezzanine/minsec-ladder.toon.md (six rungs, shallow to deep). Beginner neighbors grafted 2026-09-14 evening: EnvFile, ProcessEnvironment, MinSecBinding, ApiToken. Grasp unknown. AgentCore stays PLAN NOW. Not a hire north line.
+- SOURCE human 2026-09-14
+- SOURCE pedagogy/computation/InformationSecurity.fu.md
+- SOURCE https://github.com/cgx9/minsec
+- SOURCE https://developers.cloudflare.com/workers/configuration/secrets/

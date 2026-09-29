@@ -9,8 +9,8 @@
     ],
     "beforeSubmitPrompt": [
       {
-        "command": "python .cursor/hooks/writing-accuracy-prompt.py",
-        "timeout": 8
+        "command": "python -u .cursor/hooks/writing-accuracy-prompt.py",
+        "timeout": 20
       }
     ]
   }

@@ -1,0 +1,9 @@
+- VERTEX AgentTty
+- KIND techne
+- GLOSS agent-terminal-stdout-as-model-context
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM An agent TTY is the terminal the coding agent owns: command stdout and stderr become tool results in the model window. ClientHeldSecret and .cursorignore stop a disk indexer. They do not stop `minsec list`, `printenv`, or a Java dump that the agent just ran. Human 2026-09-14 named this leak from the MinSec masterclass. Grasp unknown. Do not paste secret values into this body.
+- CLAIM Distinct from AgentStreamDrop (stream dies before save). This is a confidentiality surface on a live tool call. Completeness neighbor: treat tool stdout as untrusted input to ContextEngineering (same family as prompt injection, without needing a new vertex).
+- SOURCE https://github.com/cgx9/minsec
+- SOURCE mezzanine/minsec-masterclass.toon.md
+- SOURCE human 2026-09-14

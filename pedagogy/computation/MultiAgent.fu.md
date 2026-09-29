@@ -6,7 +6,9 @@
 - CLAIM Flow named on that page: split the task, design the prompt, the one who writes a bug fixes it, the one who files a bug accepts it. Experience store makes later ticks better. Do not invent extra protocol names.
 - CLAIM Claude Code subagents: own context, model, tools, permissions. Main delegates down, results up. Infographic: no infinite recursion. Official: isolated loop, returns a summary. Agent-hook type can spawn a subagent. Do not write this repo's Task tool as Claude Code.
 - CLAIM Human 2026-09-06 psyche DUMP: learn more about subagents (Cursor Task/subagent family and Claude Code). Pull MultiAgent earlier on the hire PLAN without replacing AgentCore NOW.
+- CLAIM Strands Swarm docs: peer handoffs with shared working memory, not a central coordinator. Python bounds `max_handoffs`/`max_iterations` (default 20), `execution_timeout` 900s, `node_timeout` 300s, optional repetitive-handoff window. TypeScript: `maxSteps`/`timeout`/`nodeTimeout`; unbounded swarm warns at construct. Nested vs the BV1t9oZBDENp coordinator pattern on this same vertex. Product/docs claim. Do not invent a strands-agents install.
 - MEDIA VIDEO https://www.bilibili.com/video/BV1t9oZBDENp
+- SOURCE https://strandsagents.com/docs/user-guide/concepts/multi-agent/swarm/
 - SOURCE https://www.bilibili.com/video/BV1t9oZBDENp
 - SOURCE https://code.claude.com/docs/en/features-overview
 - SOURCE inflow/DUMP.md $id=psyche-hooks-subagents-learn

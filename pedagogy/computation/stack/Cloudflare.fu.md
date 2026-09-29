@@ -1,0 +1,8 @@
+- VERTEX Cloudflare
+- KIND techne
+- GLOSS edge-network-as-one-computer
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Cloudflare is a CloudRuntime sibling of AWS and Azure: someone else's machines, addressed as one edge network. Workers run JS/WASM at the edge. D1 is SQLite-shaped SQL on that network. Wrangler is the CLI. Human 2026-09-14 named a deeper study while using MinSec deploy. Do not invent an account, a login, or a deployed Worker in this repo.
+- MEDIA PAGE https://developers.cloudflare.com/workers/
+- SOURCE https://developers.cloudflare.com/workers/
+- SOURCE human 2026-09-14

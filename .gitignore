@@ -53,6 +53,13 @@ __pycache__/
 credentials.json
 *.pem
 *.key
+.minsec
+
+# Local model weights. Not source.
+checkpoints/
+
+# Machine-local IDE allowlist
+.qoder/settings.local.json
 
 # OS
 Thumbs.db

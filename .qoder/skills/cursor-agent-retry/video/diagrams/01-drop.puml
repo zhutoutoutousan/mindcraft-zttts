@@ -1,0 +1,19 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontColor #e8eef5
+title Agent stopped retrying
+
+rectangle "Cursor Client" as C #121a24
+rectangle "Network path\n(proxy / HTTP2 / TUN)" as N #1a2530
+rectangle "Cursor servers" as S #121a24
+database "Last saved\nchat state" as D #1a2530
+
+C -[#69f0ae]-> N : Agent stream
+N -[#ff8a80]-> S : DROP\nbefore progress saved
+C -[#90caf9]-> D : Retry resumes here
+
+note right of N
+  Not a server abort.
+  Client went quiet.
+end note
+@enduml

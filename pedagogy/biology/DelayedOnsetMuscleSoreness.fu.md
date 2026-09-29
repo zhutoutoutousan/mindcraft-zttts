@@ -1,0 +1,10 @@
+- VERTEX DelayedOnsetMuscleSoreness
+- KIND natural
+- GLOSS load-then-delayed-muscle-soreness
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM DOMS is delayed muscle soreness after unaccustomed or eccentric load. It is not the same class as joint-like scapular pain and not sickness-behavior fog. Particular spans live in self/recovery-cycle.toon.md.
+- CLAIM Generic class (Cheung et al. 2003): soreness often peaks 24–72 h after the session and commonly settles over a few days; some bouts run near a week. That is a literature band not a diagnosis of this log.
+- CLAIM A named recovered date in the training store clears the muscle as a session chooser. It does not invent the next working set. Do not copy kg here.
+- SOURCE https://pubmed.ncbi.nlm.nih.gov/12617692/
+- SOURCE self/recovery-cycle.toon.md
+- SOURCE self/training.toon.md

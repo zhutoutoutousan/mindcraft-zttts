@@ -450,3 +450,75 @@
     - ASK After the door: sit, log the visit in .private, then if quiet write the AgentCore PROBE. Then three 助手. Goethe Schreiben only if still quiet.
     - ASK Optional tonight 18:00 Cognee/Fastino in Berlin if energy after Amt. Street not sourced. Stop if sore.
     - ASK AgentCore PROBE still empty. DSB recovery: do not pile DAY.
+
+- TICK $date=2026-09-08T17:18+02
+  - NEWS $id=claude-code-compact-bilibili-BV1JWEg6GEuv
+    - TITLE Claude Code after /compact: what happens to the context (Bilibili)
+    - URL https://www.bilibili.com/video/BV1JWEg6GEuv
+    - WHY Human named this for interview talk: how Claude Code context changes after /compact. Hire north includes the Claude Code harness (skills, hooks, subagents). Distinct from DUMP /batch. Page fetch hit captcha; do not invent the video title or the compact algorithm. Official command list stays https://code.claude.com/docs/en/features-overview — watch the clip, then you can say one hireable sentence.
+    - LEARN ClaudeCode ExperienceStore
+  - LEARN
+    - ASK Watch BV1JWEg6GEuv before quoting /compact in an interview. Do not invent what it deletes vs keeps.
+    - ASK AgentCore PROBE still empty. Do not skip it for this clip.
+    - ASK DUMP /batch in Claude Code stays HUMAN OPEN.
+
+- TICK $date=2026-09-10T15:51+02
+  - NEWS $id=cursor-origin-github-down-2026-09-10
+    - TITLE Cursor Origin: git forge next to agents (GitHub down)
+    - URL https://cursor.com/docs/origin
+    - URL https://cursor.com/changelog/origin-code-hosting
+    - WHY Human named GitHub down plus Musk GitHub-tool. Product is Cursor Origin (SpaceX-owned Cursor, early beta 2026-08-17). Agent-scale forge: repos, PRs, GitHub sync. Hire talk: GitHub designed for human PR cadence; agents commit faster. Paid plans only. Native Windows: origin CLI not yet. This repo remote origin is still GitHub; do not replace it.
+    - LEARN CursorSkill ExperienceStore AgentLoop
+  - LEARN
+    - ASK Open https://cursor.com/codebase and claim a codebase name if Origin shows on the plan. Do not curl install.sh on native Windows.
+    - ASK AgentCore PROBE still empty. Do not skip it for Origin.
+    - ASK HUMAN OPEN cursor-origin-start-using until the Codebase tab is claimed. Beta: namespace cannot be changed after claim. Origin Apps / cloud agents are on the overview. Native Windows CLI still no (WSL only).
+
+- TICK $date=2026-09-13T20:53+02
+  - NEWS $id=eu-startups-radar
+    - TITLE EU-Startups: EU startup radar since 2010
+    - URL https://www.eu-startups.com/
+    - WHY Human read HiddenCurrents 2026-08-08 and named it a good source for German startups https://mp.weixin.qq.com/s/h_X4qMMBixtL6HgBCC5QXg Open goal is hire in Berlin/Europe. EU-Startups covers funding, launches, lists, founder interviews across the EU, not only London-Paris-Berlin. Freshly funded companies are the ones adding headcount. Scan for Berlin AI/agent teams.
+    - LEARN InterviewPrep NaturalLanguage
+  - NEWS $id=sifted-eu-magazine
+    - TITLE Sifted: FT-backed European startup magazine, sector analysis plus rankings
+    - URL https://sifted.eu/
+    - WHY Same HiddenCurrents source. Sifted explains why capital moves: track heating, investor surveys, company deep dives, rankings. Most depth is paywalled; free articles plus newsletter are enough for a radar. Do not invent a subscription.
+    - LEARN InterviewPrep NaturalLanguage
+  - NEWS $id=scaling-europe-podcast
+    - TITLE Scaling Europe: founder and VC interview podcast by Seb Johnson, presented by Deel
+    - URL https://scalingeurope.co.uk/
+    - WHY Same HiddenCurrents source. Guests: Lovable, Cleo, Voi, Zilch founders; Index Ventures, Balderton, Creandum VCs on scaling from Europe. Use for interview-prep narratives and how the room talks. Interviews are self-narration, not objective fact.
+    - LEARN InterviewPrep
+
+- TICK $date=2026-09-14T00:27+02
+  - NEWS $id=orca-ade-dazzlog-2026-08-23
+    - TITLE Orca Is My Agent Development Environment Now (DazzLog)
+    - URL https://blog.dazzlog.de/posts/2026-08-23_orca-is-my-agent-development-environment/
+    - URL https://onorca.dev/
+    - WHY Human named this post for inflow. Hire north is agent engineer plus harness. Dazz (2026-08-23) uses Orca as an ADE: git worktrees isolate parallel agent sessions, a coordinator can spawn workers, `orca serve` keeps the runtime on a box so the operator laptop can close. Product page: worktrees, terminals, Claude Code / Codex / Cursor / Pi and other CLIs, MIT. Distinct from AgentCore Runtime laptop-lid already logged, from Cursor Cloud Agent, and from Claude Code `/batch` worktrees. Sequels on the same blog (factory stages 2026-09-02, factory under pressure 2026-09-07) are not this NEWS. Do not invent an install in this repo. Empty AgentCore PROBE stays empty.
+    - LEARN AgenticEngineering AgentLoop MultiAgent CursorSkill
+  - LEARN
+    - ASK This is the ADE hire sentence next to the already-logged AgentCore close-laptop post: you operate the system, agents operate the tools. Read after the open PROBE, not instead of it.
+    - ASK Do not install Orca in this workspace this tick. Do not drip PENDING 神游 captures. Do not re-arm a second loop.
+
+- TICK $date=2026-09-14T01:21+02
+  - NEWS $id=book-to-skill-github
+    - TITLE book-to-skill compiles books into hierarchical Agent Skills: SKILL.md plus chapters glossary patterns cheatsheet
+    - URL https://github.com/virgiliojr94/book-to-skill
+    - WHY Human read 小华同学ai 2026-08-04 https://mp.weixin.qq.com/s/nMhyp44TmMORP-TIKBz1Rw Repo verified 2026-09-14: exists, MIT, 30.4k stars (article said 15k; do not quote 15k as current). Same shape as this repo's Fu organs: pay the structuring cost once, agent loads on demand. Docling route for technical PDFs, pdftotext/pypdf/pdfminer fallbacks, EPUB DOCX HTML MOBI extractors, fold-in update mode for merging new material into an existing skill. 24–51x token claim is the project's own benchmark, not verified. Candidate uses: compile language textbooks and interview books into skills beside pedagogy/. Do not run it in this repo this tick.
+    - LEARN CursorSkill ContextEngineering ExperienceStore
+
+- TICK $date=2026-09-14T01:40+02
+  - NEWS $id=github-ai-skills-top-repos
+    - TITLE Top GitHub AI Skills repos: mattpocock, karpathy CLAUDE.md, anthropics/skills, addyosmani verified
+    - URL https://mp.weixin.qq.com/s/o3oDuDZT2TQsf1fXwNzteQ
+    - URL https://github.com/mattpocock/skills
+    - URL https://github.com/multica-ai/andrej-karpathy-skills
+    - URL https://github.com/anthropics/skills
+    - URL https://github.com/addyosmani/agent-skills
+    - WHY Human read a WeChat top-10 listicle of AI Skills repos (author and date not visible in the fetch). North is CursorSkill, so the verified top four matter more than the ranking. Verified 2026-09-14: mattpocock/skills 261k stars MIT (article said 216k; stale); multica-ai/andrej-karpathy-skills 212.8k stars, a single CLAUDE.md from Karpathy's LLM coding-pitfall observations (article called it "andrej-karpathy-skills"); anthropics/skills 176.1k stars, the official Agent Skills spec, template, and example skills behind the SKILL.md standard this repo's organs already follow; addyosmani/agent-skills 94k stars, 25 production-grade engineering skills (article said 87k). The other six listicle entries (awesome-claude-skills, awesome-openclaw-skills, obsidian-skills, agentic-awesome-skills, academic-research-skills, nature-skills) were not verified this tick — do not quote their star counts. Karpathy CLAUDE.md is read-material for the AgentConstitution pole; do not write a CLAUDE.md in this repo.
+    - LEARN CursorSkill ContextEngineering AgentConstitution
+  - LEARN
+    - ASK anthropics/skills spec plus template is the canonical read for the CursorSkill north. Read after the open PROBE.
+    - ASK Article advice worth keeping: install at most 3 skills, read the README first 30 lines before installing. Do not bulk-install into this repo.

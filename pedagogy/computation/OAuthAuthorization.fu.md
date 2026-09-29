@@ -1,0 +1,10 @@
+- VERTEX OAuthAuthorization
+- KIND techne
+- GLOSS delegated-login-without-sharing-the-account-password
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM OAuth 2.0 lets an app act for a user without holding the user's password. `npx wrangler login` is this flow against a Cloudflare account (browser + localhost callback, or `--device` / RFC 8628). Distinct from a MinSec `ms_tok_` API token and from `wrangler secret put` (a Worker binding). Human did not know wrangler login; this vertex is the likely missing protocol. Grasp unknown. Do not invent a completed login.
+- MEDIA PAGE https://developers.cloudflare.com/workers/wrangler/commands/general/
+- SOURCE https://developers.cloudflare.com/workers/wrangler/commands/general/
+- SOURCE https://datatracker.ietf.org/doc/html/rfc6749
+- SOURCE https://datatracker.ietf.org/doc/html/rfc8628
+- SOURCE human 2026-09-14

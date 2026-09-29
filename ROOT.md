@@ -27,9 +27,9 @@
   - GRAPH pedagogy/universe.graph.md
   - INTERFACE pedagogy/pedagogy-cpu.fu.md
   - MEANING pedagogy-cpu is the study surface. GOALS in self/goals.toon.md. PROBE first. ANSWER. ASSESS onto the graph. PLAN adjusts. REVIEW TRAVERSE SHOWCASE. Life queue stays CPU.md.
-  - FOLDERS being math physics biology computation language are human-readable branches. Each vertex with claims has pedagogy/<branch>/<id>.fu.md. On Windows the root vertex file is also the folder index. The graph is the truth.
+  - FOLDERS being math physics biology computation language politics are human-readable branches. Each vertex with claims has pedagogy/<branch>/<id>.fu.md. On Windows the root vertex file is also the folder index. The graph is the truth.
   - WRITING-ACCURACY pedagogy/_learn/writing-accuracy/ is the target-language agent-prompt method (method + state + sessions + lexicon.graph). Hook .cursor/hooks/writing-accuracy-session.py injects todayFocus on sessionStart. Not product code. Not Wordschatz apps.
-  - POLYGLOT pedagogy/_learn/polyglot/ holds horizon (16 named langs / age 35), GrammarFrame×lexicon pairing, per-lang frames, concept bridge graph, and last-signal from beforeSubmitPrompt (primaryLang + code-switch gaps). Do not invent CEFR beyond horizon bands.
+  - POLYGLOT pedagogy/_learn/polyglot/ holds horizon (16 named langs / age 35), GrammarFrame×lexicon pairing, per-lang frames, concept bridge graph, last-signal, plus 神游 commerce.toon.md (ES/FR/DE first) and harvest.toon.md (sourced learning URLs). Do not invent CEFR beyond horizon bands.
 
 - DIR cron
   - KIND scheduled gatherers. Nest RECURRING AGENT.
@@ -40,7 +40,7 @@
   - INFLOW-NEWS cron/inflow-news.fu.md gathers news, ideas, tech, and unknown unknowns into inflow/DUMP.md while the human is away. Skip ids in inflow/STATE.md. Not latex. Not pdf. Drip on return: cron/dump-drip.fu.md.
   - SCHEDULE-HARVEST cron/schedule-harvest.fu.md reads CPU.md inflow/ dumps, then the agent fills WHAT WHERE WHEN WHY from the open web into schedule/enrich.toon.md. Python merges that overlay. Slug titles are not a finished store. ICS only when the human asks python cron/schedule-harvest.py --ics.
   - ROUTINE-ENRICH cron/routine-enrich.fu.md due-checks self/routine.toon.md (daily hygiene + preventive recall). Optionally APPEND tip[] with SOURCE. Do not invent last_done or clinic Termin. Today merge: pedagogy-cpu PROTOCOL TODAY + project-state-viz --purpose today|routine.
-  - JANITOR cron/janitor.fu.md moves non-markdown files to recycle/. Markdown stays. Bytecode caches (__pycache__, *.pyc) are deleted, not recycled. Restore recycled files by moving back. tmp/ is not recycle: python cron/janitor.py --ttl deletes tmp siblings when tmp/ttl.toon.md last_run is 5 days old. Keep ttl.toon.md.
+  - JANITOR cron/janitor.fu.md moves non-markdown files to recycle/. Markdown stays. Bytecode caches (__pycache__, *.pyc) are deleted, not recycled. Restore recycled files by moving back. tmp/ is not recycle: python cron/janitor.py --ttl deletes tmp siblings when tmp/ttl.toon.md last_run is 5 days old. Keep ttl.toon.md and tmp/pedagogy/mindcraft-hall.html.
 
 - DIR inflow
   - KIND inbound news the human can read. Not the life queue. Not the ontology.
@@ -64,15 +64,18 @@
 
 - DIR skills
   - KIND agent libraries. Visualization and other tools. Spawn only when CPU.md or pedagogy-cpu.fu.md names them.
+  - SECRETS `.cursor/skills/minsec-secrets` plus `.cursorignore` keep plaintext `.env` off the AI index. Do not paste keys. Do not invent a completed MinSec migrate.
+  - ARSENAL skills/arsenal.toon.md picks the drawing tool. Archify for explorable skill/harness HTML. PlantUML/Kroki for LaTeX and video stills. ontology-showcase for universe.graph. Router .cursor/skills/diagram-arsenal. Do not invent an Archify install.
   - SHOWCASE skills/ontology-showcase.fu.md renders core PNG, stack-family PNG, and pan-zoom HTML into tmp/pedagogy/. ASK image or video on deliver. Stamp tmp/ttl.toon.md. Intermediates may die after the delivered file exists.
   - VIDEO kit is skills/loop-slash/. Masters render only into tmp/loop-slash/. No videos/ folder.
 
 - DIR tmp
-  - KIND on-demand human deliverables. Video, image, html. Not the store.
+  - KIND on-demand human deliverables. Video, image, html, latex pdf. Not the store.
   - STORE PATH tmp/ttl.toon.md
-  - MEANING ttl.toon.md is the only persistent file in this folder. last_run is when a deliverable was written. On ingest python cron/janitor.py --ttl. If last_run is 5 days old, promote named caches then delete every sibling. Keep ttl.toon.md.
+  - MEANING persist ttl.toon.md and tmp/pedagogy/mindcraft-hall.html. last_run is when a deliverable was written. On ingest python cron/janitor.py --ttl. If last_run is 5 days old, promote named caches then delete every other sibling. Keep hall.
   - VIDEO masters render into tmp/loop-slash/. Kit stays in skills/loop-slash/.
   - PEDAGOGY graph stays in pedagogy/. Showcase GUI and PNG/mp4 render into tmp/pedagogy/.
+  - LATEX PDF always tmp/. Never .private/ or other organs. Personal health particulars still live in .private/; only the render is tmp.
 
 - TAG AGENT
   - KIND declaration. Runtime creates a real agent process. Not a comment. Not a label.

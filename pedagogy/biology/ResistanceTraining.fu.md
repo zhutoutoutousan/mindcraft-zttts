@@ -3,9 +3,10 @@
 - GLOSS progressive-load-on-living-matter
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Resistance training is Physics of load APPLIED to Biology. The session log is not this vertex. Particulars live in self/training.toon.md.
-- CLAIM Particulars (bodyweight, loads, pain flags) live in gitignored self/training.toon.md. Session estimate bench 1RM is below claimed 120. Left scapula pain after 2026-09-01 top set blocked the next heavy bench until quiet. Do not invent later sessions. Do not copy kg into this vertex.
+- CLAIM Particulars (bodyweight, loads, pain flags) live in gitignored self/training.toon.md. Session estimate bench 1RM is below claimed 120. Left scapula pain after 2026-09-01 top set blocked the next heavy bench until quiet. Human 2026-09-08 named DOMS and scapula recovered. Human 2026-09-15 named scapula hurting again before 15 Sep. Gate closed. Named duration spans live in self/recovery-cycle.toon.md. Do not invent later sessions. Do not copy kg into this vertex.
 - CLAIM Periodization INFORMS this praxis. Scapula is the anatomical limiter on the press. Pain is a blocker like IntellectualLoad SORE. Not a Person vertex. Not a medical claim.
-- CLAIM 2026-09-03 evening: no-DOMS legs then Athlean no-equipment ab shuffle 6:30. Pack mezzanine/athlean-ab-shuffle-6min.toon.md. Wordschatz may PARTICIPATE the easy bike. Rotation rows GATE on scapula. Do not invent that the session was completed.
+- CLAIM 2026-09-03 evening: no-DOMS legs then Athlean no-equipment ab shuffle 6:30. Pack mezzanine/athlean-ab-shuffle-6min.toon.md. Human 2026-09-08 named that session completed. No loads or RIR were given. Do not invent sets.
+- CLAIM The old health notebook was absorbed 2026-09-27 and then removed. It cited reviews that aerobic and resistance work change cognition and BDNF. Those papers were not read here. Old lift numbers were marked as possible false memory, so they were not copied. Illness notes stay out of this vertex.
 - SOURCE mezzanine/athlean-ab-shuffle-6min.toon.md
 - SOURCE self/training.toon.md
 - SOURCE self/training.fu.md

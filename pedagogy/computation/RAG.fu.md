@@ -3,4 +3,7 @@
 - GLOSS retrieve-then-generate
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Interview titles from https://github.com/amitshekhariitbhu/ai-engineering-interview-questions that map here are the hire-pressure form of this techne. Answers stay at their SOURCE urls. Do not paste cheat-sheet answers into this body.
+- CLAIM Official: AgentCore Gateway can expose a Bedrock managed knowledge base as MCP tools (`Retrieve` and `AgenticRetrieveStream`). That is retrieve-then-generate as a tool on the harness, not a pasted context dump. Do not invent a Knowledge Base or Gateway in this repo.
 - SOURCE https://github.com/amitshekhariitbhu/ai-engineering-interview-questions
+- SOURCE https://www.mianlingai.com/topics/ai-agent-interview-questions-2026/
+- SOURCE https://docs.aws.amazon.com/bedrock/latest/userguide/kb-gateway-target.html

@@ -1,0 +1,7 @@
+- VERTEX SpawnEnv
+- KIND techne
+- GLOSS child-process-environment-block-merged-from-parent-plus-inject
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM `child_process.spawn(cmd, { env })` sets the OS environment of the child. MinSec merges `process.env` with injected keys. The parent process environment is therefore also in the child unless overwritten. On Windows MinSec sets `shell: true`, which widens how the command string is parsed. JavaProcessEnv is how a JVM child then reads that block. Grasp unknown. Do not write exploit steps.
+- SOURCE https://github.com/cgx9/minsec
+- SOURCE https://nodejs.org/api/child_process.html#child_processspawncommand-args-options

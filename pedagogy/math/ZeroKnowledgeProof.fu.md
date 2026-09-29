@@ -1,0 +1,9 @@
+- VERTEX ZeroKnowledgeProof
+- KIND formal
+- GLOSS proof-of-a-statement-without-revealing-the-witness
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A zero-knowledge proof lets a prover convince a verifier that a statement is true without revealing the witness that makes it true. Classic interactive definition: Goldwasser, Micali, Rackoff. Later: non-interactive SNARK/STARK families. Completeness, soundness, zero-knowledge are the three properties. This is mathematics, not a product slogan.
+- CLAIM Vendor copy that says "zero-knowledge E2EE" usually means ClientHeldSecret (ciphertext at rest, keys on the client). That is a different claim. Graph CONTRADICTS that conflation; it does not delete either vertex.
+- MEDIA PAGE https://en.wikipedia.org/wiki/Zero-knowledge_proof
+- SOURCE https://en.wikipedia.org/wiki/Zero-knowledge_proof
+- SOURCE human 2026-09-14

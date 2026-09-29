@@ -2,10 +2,12 @@
 - KIND natural
 - GLOSS study-of-matter-in-motion
 - STORE PATH pedagogy/universe.graph.md
-- CLAIM Physics STUDIES Matter and GROUNDS_IN Mathematics. Energy field measurement remain TODO branches. Vibration is the first filled child because it is attested.
+- CLAIM Physics STUDIES Matter and GROUNDS_IN Mathematics. Energy field measurement remain TODO branches. Vibration is the first filled child because it is attested. Astrophysics is a named learning child (human 2026-09-16); empty GAP until studied.
 - CLAIM Biology GROUNDS_IN Physics: a neuron is matter; TLR9 trafficking is vesicle motion; a centrosome is a material hub.
 - CLAIM Do not paste engineering job titles here. Put the physical essence (oscillation, field) and cite the paper or the CV as SOURCE.
-- VERTEX Vibration
+- CLAIM Mechanics split, absorbed 2026-09-27 from the study-note physics folder, then that folder was removed. Kinematics is motion without the forces. Kinetics is the same motion with the forces. Two quiz lines in the notes were left unmarked, so they stay unmarked.
+- CLAIM Unread, grasp empty: Young and Freedman, Halliday, Serway, Neamen, Hibbeler, Thide on electromagnetism around page 17, the LHC design note bookmarked at page 3, and continuum-mechanics coordinate transforms. A copied path-integral formula was marked locked until more physics. It was not installed as a working equation. Textbook page counts are not current progress.
+- VERTEX Vibration Electronics
 - MEDIA PAGE https://plato.stanford.edu/entries/philosophy-physics/
 - SOURCE pedagogy/ontology.fu.md
 - NOTE Windows cannot store Physics.fu.md and physics.fu.md as two files. This file is both the branch index and the Physics body.

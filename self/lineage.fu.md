@@ -1,0 +1,80 @@
+- LINEAGE
+  - ABSORBED 2026-09-27
+  - FROM D:\A-study-note-as-a-beginner
+  - FROM a prior local notes directory (path not stored)
+  - STORE PATH self/ancestry/study-note
+  - STORE PATH self/ancestry/palace
+  - NOTE those two directories were removed after this file and the text copies existed. Exam PDFs, _temp.zip, course-platform build, rendered panoramas, and profile contact sheets were not copied.
+  - NOW self/goals.toon.md focus stays ai-agent-engineer. This file does not replace that.
+
+- STUDY-FRAME
+  - SOURCE A-study-note-as-a-beginner README and Heuristics/study-system-design.md
+  - MEANING a framework is a path you think along, the way a React hook is a path. It is opinionated enough to use, and tunable per field.
+  - STATE the path takes the person's psychological, physiological, and intellectual state into the same equation.
+  - UPGRADE it absorbs evidence-based study research and anecdotal cases, then changes.
+  - RECALL the point of the store is a higher-dimensional hashmap. A pattern you have indexed comes back in one step. Life is short, so time cost matters more than keeping every note small.
+  - ROLES three jobs, used on purpose.
+    - COACH active recall, a training plan, and a monitor for skills that have to stay fluid. Use this on problem-solving: mathematics, circuits, algorithms, CSS, logical reasoning.
+    - HUB one coupled store, not parallel notebooks. Use this where the subject is terminology and theorems: a dictionary, a roadmap with progress, a mental model.
+    - RESTORE a save point for reading and for work that gets interrupted. Top-level unsolved questions go in a return tray, not into a fake finished note.
+  - ACTIVATE when a concept, pattern, or pathway keeps coming back and the person's goal says it is worth the structure.
+  - SKIP rewriting a technical manual. Speed-read it and write down what to look at next time.
+  - ORDER the notebook was chaos first. Order is what the later passes made. Do not pretend the first pass was a taxonomy.
+  - SHAPE per subject: terminology, roadmap, mental model, then nested subtopics. Frequent open questions have their own tray.
+  - ABSORBED Heuristics 2026-09-27 into pedagogy/language/Study.fu.md. The folder is gone. Runnable rules live on vertex Study. Manipulation notes from that folder were discarded, not installed.
+  - DROP a file that is only a placeholder is removed with no vertex. epistemotology/roadmap_EPT.md was the word Allez. Folder removed 2026-09-27.
+  - ABSORBED palace/cognitive-training 2026-09-27 into pedagogy/language/Study.fu.md. TR-01 and TR-05 are runnable. TR-02, TR-03, TR-04 stay unbuilt. Folder removed.
+  - ABSORBED palace/tracking 2026-09-27 into pedagogy/language/Study.fu.md. The four questions were already in this file. The status legend and the test rule are now on vertex Study. Row-level self-grades and the June 2026 exam week were not installed. Folder removed.
+  - ABSORBED palace/study-guides 2026-09-27 into pedagogy/language/Study.fu.md. The hour-cap rule is on vertex Study. The climate-first ranking and the week-by-week plans were not installed. Folder removed.
+  - ABSORBED palace/journal 2026-09-27 into pedagogy/language/Study.fu.md. The day order is on vertex Study. The June diary was not copied. Folder removed.
+  - ABSORBED palace/arxiv 2026-09-27 into pedagogy/language/Study.fu.md. Three unread questions keep their arXiv URLs. Keyword lists and empty note blanks were not installed. Folder removed.
+  - ABSORBED palace/research 2026-09-27 into pedagogy/math/Mathematics.fu.md. The kernel claim is on vertex Mathematics. Monographs and upload guides were not copied. Folder removed.
+  - ABSORBED palace/panoramas 2026-09-27 into pedagogy/language/Study.fu.md. The map chain is on vertex Study. The eleven figures were not copied. Folder removed.
+  - ABSORBED palace/README.tex 2026-09-27 into pedagogy/language/Study.fu.md. Weekly evidence scan is on vertex Study. Birth date was not installed. Palace directory removed.
+  - ABSORBED study-note/biology 2026-09-27 into pedagogy/biology/Biology.fu.md. Hayflick and MAPK/ERK are named with their URLs. The "create a section" line was not installed. Folder removed.
+  - ABSORBED study-note/Astronomy 2026-09-27 into pedagogy/physics/Astrophysics.fu.md. One unread dust-map paper is named. Empty telescope and seismic stubs were dropped. Folder removed.
+  - ABSORBED study-note/media 2026-09-27 into pedagogy/computation/VideoGeneration.fu.md. Burned-in captions are an image read. Named OCR tools were not installed. Folder removed.
+  - ABSORBED study-note/botany 2026-09-27 into pedagogy/biology/Biology.fu.md. One unread textbook URL. The pet line was not installed. Folder removed.
+  - DROPPED study-note/weird-research 2026-09-27. Jokes, empty headings, and personal tallies. No agent rule. Young's modulus was named and not developed. Folder removed.
+  - ABSORBED study-note/pedagogy 2026-09-27. Two names only: the book Make It Stick, link empty, unread; Justin Sung, no method extracted. Empty roadmap and empty lifecycle headings were not installed. The folder under ancestry was removed. The live pedagogy tree was not touched.
+  - ABSORBED study-note/anthropology 2026-09-27 into this file. Kinship there meant a blood relationship. The rest of the glossary was empty. Unread: Writing Ethnographic Fieldnotes, https://edisciplinas.usp.br/pluginfile.php/5569087/mod_folder/content/0/Textos/Emerson%2C%20et%20al%2C%20Writing%20Ethnographic%20Fieldnotes.pdf and one Chinese paper on intergenerational time, http://www.ssaj.org.cn/UploadFile/Issue/zoon0jdm.pdf. A personal note about predicting other people was not installed. Folder removed.
+  - ABSORBED study-note/history 2026-09-27 into pedagogy/_learn/polyglot/horizon.toon.md. The Odyssey PDF stays locked while Greek is elementary. Guild was a bare word. A WiMAX video and a line about not being deceived were not installed as history. Folder removed.
+  - ABSORBED study-note/law-and-regulations 2026-09-27 into this file. Chinese statutes named at zero grasp: labor contract, contract, copyright, inheritance, company. Inheritance text: http://www.npc.gov.cn/wxzl/gongbao/2000-12/06/content_5004457.htm . Company-law page was stored rot13; decoded http://gkml.samr.gov.cn/nsjg/fgs/201906/t20190625_302790.html . Unread: Rawls, A Theory of Justice, bookmark page 13; legal visualization https://arxiv.org/abs/2011.00571 . Fly-by-night in the note meant a shell company, already covered by BOSS diligence. A slur heading, Pinocchio, and immigration-consultant pages were not installed. Folder removed.
+  - ABSORBED study-note/Entrepreneurship 2026-09-27 into pedagogy/language/Study.fu.md. Contribute before founding. Unread names only: Blue Ocean Strategy, VIE, Davis double, Y Combinator, TechStars, simulation neuroscience https://www.frontiersin.org/articles/10.3389/fninf.2019.00032/full . Meditation-house, helium bed, and personal outing paths were not installed. Folder removed.
+  - DROPPED study-note/_util 2026-09-27. Empty readme and a three-level list used as a parser example. No parser was built. Folder removed.
+  - ABSORBED study-note/philosophy 2026-09-27 into pedagogy/philosophy/Philosophy.fu.md. Philosophy guides other disciplines. Unread books stay unread. A secret-looking line was discarded and not stored. Folder removed.
+  - ABSORBED study-note/_intel-core 2026-09-27 into pedagogy/language/Study.fu.md. The Rust UTF-8 dep-info failure is the rule. Scaffold readmes were not installed. Folder removed.
+  - ABSORBED study-note/physics 2026-09-27 into pedagogy/physics/Physics.fu.md. Kinematics versus kinetics is the rule. Book piles and a locked formula were not installed as grasp. Folder removed.
+  - ABSORBED study-note/complexity-and-chaos 2026-09-27 into pedagogy/math/Complexity.fu.md. The network definition is the rule. A violent note and an occult list were not installed. Folder removed.
+  - ABSORBED study-note/erudition 2026-09-27 into pedagogy/language/Study.fu.md. A compact sheet enters a field only when its structure matches one already known. Unread lists, empty forensic headers, and supplement papers were not installed. Folder removed.
+  - ABSORBED study-note/academic-engineering 2026-09-27 into pedagogy/language/Study.fu.md. A rejected paper is revised against the experiment, the comparison, and the structure. A publisher-targeting pipeline, manipulation notes, and a slur were not installed. Folder removed.
+  - DROPPED study-note/justice-and-investigation 2026-09-27. Attack headings, a person profile, and harm-method files were discarded and not stored. Job-check links stay unread. Living diligence stays in the BOSS skill. Folder removed.
+  - ABSORBED study-note/neuroengineering 2026-09-27 into pedagogy/biology/Neuroscience.fu.md. Neural encoding is the map from stimulus to response. A paper is learned by rebuilding its process. A broken autonomic equation, a self-report, and a retracted paper were not installed. Folder removed.
+  - ABSORBED study-note/politics 2026-09-27 into pedagogy/language/Politics.fu.md. Audience cost is the constituency penalty after an escalation and a retreat. A conspiracy note, a slur recipe, and stale population figures were not installed. Folder removed.
+  - ABSORBED study-note/mathematics 2026-09-27 into pedagogy/math/Mathematics.fu.md. Primes, divisibility, Pascal's step, maps, transpose, and the note's graph walks are the rules. Formula sheets and a random-graph script were not installed. Folder removed.
+  - ABSORBED study-note/artificial-intelligence 2026-09-27 into pedagogy/computation/GameTheory.fu.md and pedagogy/language/Study.fu.md. Minimax and cooperative versus non-cooperative play are the rules. The pruned listing did not recurse into itself. A manipulation project and a rot13 assignment were not installed. Folder removed.
+  - ABSORBED study-note/psychology 2026-09-27 into pedagogy/biology/Psychology.fu.md. Dissonance, the line-matching retelling, the Ovsiankina effect, and Jung's two unconscious layers are the rules. A family profile and a pornography note were not installed. Folder removed.
+  - ABSORBED study-note/Art-media-and-Hospitality 2026-09-27 into pedagogy/computation/SpatialGraphics.fu.md and VideoGeneration.fu.md. The bishop diagonal, the screen-share check, and exact caption replacement are the rules. Psychological-operations manuals were not installed. Folder removed.
+  - ABSORBED study-note/engineering-and-design 2026-09-27 into pedagogy/physics/Electronics.fu.md. Circuit response, analog versus discrete, and the one-off versus quantity split are the rules. A corrosive note and a broken FFT sketch were not installed. Folder removed.
+  - ABSORBED study-note/__semantic-scripts__ 2026-09-27 into pedagogy/language/Study.fu.md. The inbound filter, the one-store quit, the five-task cap, and a written commitment boundary are the rules. The study-frame heuristic was already in lineage. Course grades and a contempt note were not installed. Folder removed.
+  - ABSORBED study-note/business 2026-09-27 into pedagogy/computation/Business.fu.md. The writing pyramid, the eight-part decision split, and economic order quantity are the rules. Sales scripts and a personnel portrait were not installed. Folder removed.
+  - ABSORBED study-note/computer-science 2026-09-27 into pedagogy/computation/ComputerSystem.fu.md. Byte, process, thread, virtual memory, and the layer rule are the rules. A four-bit byte line and a bit-hiding method were not installed. Folder removed.
+  - ABSORBED study-note/language 2026-09-27 into pedagogy/language/language.fu.md. A sign is an exponent plus a meaning. A known plot, dual subtitles, and a term-base check are the rules. Word lists and self-graded bands were not installed. Folder removed.
+  - ABSORBED study-note/software 2026-09-27 into pedagogy/computation/SoftwareEngineering.fu.md. Single sign-on is one login across trusted applications. Localization carries language, time, and currency. Certificate cribs, attack notes, and puzzle solutions were not installed. Folder removed.
+  - ABSORBED study-note/self 2026-09-27 into pedagogy/language/Study.fu.md. A carryable asset is a result, a reputation, or a published voice. Daily logs, a person sheet, attack headings, and supplement notes were not installed. Focus stays ai-agent-engineer. Folder removed.
+  - DROPPED study-note/README.md 2026-09-27. The study-frame heuristic was already in this file. Not copied again.
+  - DROPPED study-note/MB_GIT.md 2026-09-27. The file said to terminate it. A hormone theory was not installed.
+  - DROPPED study-note/router.md 2026-09-27. It pointed at a computer-science router that was already removed.
+  - ancestry empty 2026-09-27. Directory removed. Loop stopped.
+  - ABSORBED study-note/health-for-engineers-and-scientists 2026-09-27 into pedagogy/biology/ResistanceTraining.fu.md. Exercise-and-cognition reviews stay unread. Old loads and the illness diary were not copied. Folder removed.
+
+- MIND-PALACE
+  - SOURCE prior palace tracking/00-INDEX.tex and tracking/01-learning-panorama.tex
+  - NORTH older long aim: planetary terraforming, at the scale of making a planet habitable or a climate steerable. Decade steps, falsifiable, iterable.
+  - MAP the aim breaks into subjects, not into a mood. Mathematics and physics, thermo and fluids, atmosphere and radiation and ocean, planetary climate, numerical models, control and optimization, research method, and the 16-language horizon already in pedagogy/_learn/polyglot/horizon.toon.md.
+  - FUNNEL short and mid cashflow exist to buy time, compute, and study for that aim. Quant trading is the mid funnel. Fast AI production is the short funnel and stays capped so it does not eat the main study. Income is budget for the long work, not a second north star.
+  - TWO-WAYS top-down reads the bottleneck paper and studies only the block that bottleneck needs. Bottom-up climbs the subject ladder. Pierrehumbert is the named bridge between Earth climate and planetary climate.
+  - LOOP four questions, kept separate. What subjects the aim needs. Whether a point is understood. Whether a capability can be shown, with a dated piece of evidence. When a self-test sits on the calendar.
+  - DAY a journal line is not a diary for its own sake. It is the evidence that updates the knowledge tracker and the capability tracker.
+  - FRONTIER a panorama is a map of a field with the red nodes marked. It is not a second copy of the papers.
+  - AGE the palace text said 29 in 2026. goals.toon.md says 30, stated by the human on 2026-09-02. Use 30. Do not import a birth date.

@@ -1,0 +1,8 @@
+- VERTEX Philosophy
+- KIND praxis
+- GLOSS guide-for-other-disciplines
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Philosophy here keeps other disciplines honest. It does not try to be one grand model of the world. Absorbed 2026-09-27 from the study notes. That folder was then removed.
+- CLAIM Unread, grasp empty. Warburton, Philosophy: the basics. The Philosophy Book. English Principia, https://antilogicalism.com/wp-content/uploads/2017/07/math-principles-natural-phil.pdf . Schopenhauer, Die Welt als Wille und Vorstellung, bookmark page 4. Nietzsche, Also sprach Zarathustra. Dawkins, The Selfish Gene. Causal emergence, where a macro description can beat a micro one, https://www.pnas.org/content/110/49/19790 . A neutrosophy paper that the note said needs mathematics first, https://digitalrepository.unm.edu/cgi/viewcontent.cgi?article=1270&context=math_fsp .
+- CLAIM The Latin Principia and a Czech booklet need languages that are not on the 16-language horizon. No unlock path was added. Idealism, phenomenology, and nihilism were names only. A secret-looking line, a freelance game-review note, and an isolated-brain aside were not installed.
+- SOURCE human study-note 2026-09-27

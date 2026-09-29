@@ -1,0 +1,245 @@
+% Cursor Agent stream-drop card. ZH body. No private ports, nodes, or credentials.
+% Heading then \par before every tabularx.
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=1.55cm,top=1.6cm,bottom=1.75cm]{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{listings}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=linkb,
+  pdftitle={Agent stopped retrying --- 中文圈土方法与官方阶梯}
+}
+
+\definecolor{ink}{HTML}{1A1A1A}
+\definecolor{muted}{HTML}{5C5C5C}
+\definecolor{accent}{HTML}{1F4E3D}
+\definecolor{linkb}{HTML}{1F4E79}
+\definecolor{paper}{HTML}{F7F4EE}
+\definecolor{yes}{HTML}{E8F0EA}
+\definecolor{no}{HTML}{F6E8E6}
+\definecolor{mid}{HTML}{F7F0E4}
+\definecolor{unk}{HTML}{E8E6E1}
+\definecolor{codebg}{HTML}{EFEBE3}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\fancyhead[L]{\small\color{muted}Europe/Berlin $\cdot$ 2026-09-06}
+\fancyhead[R]{\small\color{accent}Cursor Agent 断流}
+\fancyfoot[L]{\small\color{muted}tmp/cursor-agent-retry.pdf $\cdot$ cursor-agent-retry}
+\fancyfoot[R]{\small\color{muted}\thepage}
+
+\setlist[itemize]{leftmargin=1.1em,itemsep=0.06em,topsep=0.08em}
+\setlist[enumerate]{leftmargin=1.2em,itemsep=0.06em,topsep=0.08em}
+\setlength{\parskip}{0.14em}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{0}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  backgroundcolor=\color{codebg},
+  frame=none,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  aboveskip=0.4em,
+  belowskip=0.3em
+}
+
+\newcommand{\blocktable}[1]{%
+\par
+{\footnotesize
+\noindent
+\begin{tabularx}{\linewidth}{@{}
+  >{\raggedright\arraybackslash}p{0.22\linewidth}
+  >{\raggedright\arraybackslash}X
+  >{\raggedright\arraybackslash}p{0.16\linewidth}@{}}
+#1
+\end{tabularx}}%
+\par
+}
+
+\newcommand{\gradetable}[1]{%
+\par
+{\footnotesize
+\noindent
+\begin{tabularx}{\linewidth}{@{}
+  >{\raggedright\arraybackslash}p{0.18\linewidth}
+  >{\raggedright\arraybackslash}X
+  >{\raggedright\arraybackslash}p{0.14\linewidth}@{}}
+#1
+\end{tabularx}}%
+\par
+}
+
+\begin{document}
+\pagecolor{paper}
+\color{ink}
+
+{\LARGE\bfseries\color{accent} Agent stopped retrying}\\[0.12em]
+{\large 不是服务端掐你，是本机到 Cursor 的长连接在存盘前断了}
+
+\vspace{0.25em}
+{\color{muted}\small
+官方帖 \href{https://forum.cursor.com/t/bug-agent-stopped-retrying-repeatedly-on-windows-standalone-desktop-app/169376/5}{forum 169376/5} $\cdot$
+网络说明 \href{https://cursor.com/help/troubleshooting/network}{cursor.com/help/troubleshooting/network} $\cdot$
+日文同页 \href{https://cursor.com/ja/help/troubleshooting/network}{JA} $\cdot$
+CSDN / 掘金 / 博客园 / Easton 土方法对照。
+Retry 从上次已保存状态接着跑，不是从头重做。}
+
+\section{这句话在说什么}
+
+Windows 独立客户端里，Agent 正在读文件、跑工具，流突然静音。客户端没法安全续跑同一段未保存工作，就停下来。员工看 Request ID：服务端还在流，是\textbf{你这头的连接变安静}。独立桌面版和 VS Code 扩展是两套设置，所以同一网络上扩展能跑、桌面版反复停，并不矛盾。
+
+原帖作者已经试过：杀进程、HTTP/1.1、清 \texttt{workspaceStorage}、\texttt{.cursorignore}、关硬件加速。\textbf{对这条报错没用}。那些是别的病（空终端、索引卡死）。
+
+\section{先走阶梯，再叠土方法}
+
+改 Network 或 \texttt{settings.json} 之后：任务管理器里把所有 \texttt{Cursor.exe} 杀干净再开。Reload Window 不够。
+
+\begin{enumerate}
+  \item \textbf{Cursor Settings $\rightarrow$ Network $\rightarrow$ Run Diagnostics}，把结果留着。
+  \item \textbf{HTTP Compatibility Mode $\rightarrow$ HTTP/1.1}（等同 \texttt{cursor.general.disableHttp2: true}）。仍断再试 \textbf{HTTP/1.0}（短请求，同类帖里换节点后恢复）。
+  \item \textbf{手机热点对照}几分钟。热点稳、当前网不稳，就是当前路径。
+  \item 把代理和 HTTP 模式对齐 VS Code 里的 Cursor 扩展。
+  \item Clash / Mihomo / v2rayN：\textbf{规则模式}，把 \textbf{mixed/HTTP 端口}填进 \texttt{http.proxy}。不要填 SOCKS 口。能不走 TUN / 系统全局就先不走。
+  \item \texttt{proxySupport} 默认 override、地址为空 $=$ \textbf{裸连}。填口，或改成 \texttt{on}/\texttt{fallback}。
+  \item 诊断里握手失败：系统 DNS 改 \texttt{1.1.1.1} 或 \texttt{8.8.8.8}。
+\end{enumerate}
+
+\begin{center}
+\begin{tikzpicture}[
+  font=\small,
+  box/.style={draw=accent,rounded corners=2pt,align=center,inner sep=5pt,fill=yes,text width=3.15cm},
+  bad/.style={draw=accent,rounded corners=2pt,align=center,inner sep=5pt,fill=no,text width=3.15cm},
+  midb/.style={draw=accent,rounded corners=2pt,align=center,inner sep=5pt,fill=mid,text width=3.15cm},
+  arr/.style={-{Latex},accent,thick}
+]
+\node[box] (d) {Run Diagnostics};
+\node[box,right=0.55cm of d] (h) {HTTP/1.1\\再试 1.0};
+\node[midb,right=0.55cm of h] (n) {热点对照\\对齐扩展设置};
+\node[box,below=0.55cm of d] (p) {规则模式\\填 HTTP 口};
+\node[midb,below=0.55cm of h] (s) {override+空代理\\改成 on 或填口};
+\node[bad,below=0.55cm of n] (x) {不要先清缓存\\不要 disableHttp1SSE};
+\draw[arr] (d) -- (h);
+\draw[arr] (h) -- (n);
+\draw[arr] (d) -- (p);
+\draw[arr] (h) -- (s);
+\draw[arr] (n) -- (x);
+\end{tikzpicture}
+\end{center}
+
+\section{中文圈土方法：能用 / 慎用 / 别用}
+
+\gradetable{
+\rowcolor{yes}
+\textbf{做法} & \textbf{出处与要点} & \textbf{判定} \\
+\addlinespace[0.12em]
+HTTP/1.1 面板 &
+CSDN 排坑、DeepSeek 社区「有魔法仍无模型」、掘金锁区补充。校园网 / 公司网 / VPN 最常见。CSDN 写「不用重启」——\textbf{官方要求整进程退出}。 &
+先做 \\
+\addlinespace[0.08em]
+IDE 只给 Cursor 走代理 &
+CSDN / 博客园 / 掘金：Clash \textbf{规则模式}，不需要全局、不需要虚拟网卡。\texttt{http.proxy} 填 mixed 口（常见 7890；Verge 常见 7897）。海外节点；香港也可能锁区。 &
+先做 \\
+\addlinespace[0.08em]
+\texttt{proxySupport} &
+Easton：默认 override $+$ 空 \texttt{http.proxy} $=$ 浏览器能翻、Cursor 裸连。改 \texttt{on}/\texttt{fallback}，或手填后再 override。 &
+先做 \\
+\addlinespace[0.08em]
+换 DNS / 换节点 &
+Easton：HTTP/2 失败有时是解析到坏的 Cloudflare 边。Clash 文：长连接被差线路重置。论坛 170410：换 VPN 节点 $+$ HTTP/1.0。 &
+对照后做 \\
+\addlinespace[0.08em]
+Clash \texttt{http-version: "1.1"} &
+Easton 兜底：代理链自己协商 HTTP/2 时，在 \texttt{config.yaml} 强制 1.1。 &
+对照后做 \\
+\addlinespace[0.08em]
+PAC 把 \texttt{cursor.sh} 直连 &
+少华：域名没墙 $\rightarrow$ 真实 IP $\rightarrow$ 锁区。规则里强制 \texttt{cursor.sh} 走代理。残留系统代理指向已死的 7897 也会 \texttt{ERR\_PROXY\_CONNECTION\_FAILED}。 &
+登录/锁区时 \\
+\rowcolor{mid}
+\addlinespace[0.08em]
+\texttt{proxyStrictSSL: false} &
+CSDN 标配。公司 SSL 检查时才需要。会关掉证书校验。 &
+慎用 \\
+\rowcolor{mid}
+\addlinespace[0.08em]
+启动参数 &
+Easton：旧版 \texttt{--disable-http2}；企业 \texttt{--proxy-auto-detect}。\texttt{--ignore-certificate-errors} 最后才用。Windows 可用 \texttt{Cursor.exe --no-proxy-server} 测系统代理残留。 &
+慎用 \\
+\rowcolor{no}
+\addlinespace[0.08em]
+\texttt{disableHttp1SSE: true} &
+CSDN / 博客园当企业网「强化」。官方回退路径\textbf{就是} HTTP/1.1 SSE。先关 SSE 等于拆掉兼容层。 &
+别先用 \\
+\rowcolor{no}
+\addlinespace[0.08em]
+清缓存 / 关 GPU &
+原帖已试，独立客户端仍复现。\texttt{workspaceStorage} 删的是聊天与工作区状态，治的是空终端，不是这条断流。 &
+别先用 \\
+}
+
+\section{一份可粘的 settings.json}
+
+端口只是例子。打开代理软件看 \textbf{mixed / HTTP} 口，不要填 SOCKS（v2rayN 的 10808 常被填错）。HTTP 与 HTTPS 都写。
+
+\begin{lstlisting}
+{
+  "http.proxy": "http://127.0.0.1:7890",
+  "https.proxy": "http://127.0.0.1:7890",
+  "http.proxySupport": "override",
+  "http.proxyStrictSSL": false,
+  "cursor.general.disableHttp2": true
+}
+\end{lstlisting}
+
+CLI：\texttt{\%USERPROFILE\%/.cursor/cli-config.json} 里加 \texttt{"network": \{"useHttp1ForAgent": true\}}，然后重启 \texttt{cursor-agent}。
+
+\section{端口别混}
+
+\blocktable{
+\rowcolor{yes}
+\textbf{软件} & \textbf{典型 mixed/HTTP} & \textbf{SOCKS} \\
+\addlinespace[0.1em]
+Clash / Mihomo & 7890 填这个 & 7891 不要填进 http.proxy \\
+Clash Verge & 7897 Mixed Port & --- \\
+v2rayN & 10809 HTTP & 10808 SOCKS \\
+}
+
+\section{防火墙要放的域名}
+
+\texttt{*.cursor.sh}（含 \texttt{api2.cursor.sh}、\texttt{agent.api5.cursor.sh}）、\texttt{*.cursor-cdn.com}、\texttt{*.cursorapi.com}。企业代理还须：长连接不被强拆、SSE 不被缓冲。诊断若写 \texttt{HTTP/1.1 SSE responses are being buffered}，换节点或让网管关缓冲，再叠客户端开关也没用。
+
+\section{日志与上报}
+
+Windows 日志：\texttt{\%APPDATA\%/Cursor/logs/main.log}。搜 \texttt{ERR\_HTTP2}、\texttt{ECONNREFUSED}、证书失败、\texttt{ETIMEDOUT}。聊天菜单 Copy Request ID。诊断加 Request ID 才能让官方看路径，而不是猜版本。
+
+\section{来源（中文优先）}
+
+\begin{itemize}
+  \item CSDN 排坑：\url{https://blog.csdn.net/weixin_41496173/article/details/149153599}
+  \item CSDN 内置代理、关 TUN：\url{https://blog.csdn.net/weixin_66397563/article/details/155617027}
+  \item 博客园同思路：\url{https://www.cnblogs.com/jzssuanfa/p/19503708}
+  \item 掘金锁区 7897：\url{https://juejin.cn/post/7529020018618695730}
+  \item Easton 中文排查：\url{https://eastondev.com/blog/zh/posts/dev/20260119-cursor-network-fix/}
+  \item Easton 企业证书：\url{https://eastondev.com/blog/zh/posts/ai/20260529-cursor-proxy-config/}
+  \item Clash 与长连接：\url{https://clashopen.com/zh-CN/blog/articles/cursor-clash-proxy-ai-ide-2026.html}
+  \item 日文官方网络页：\url{https://cursor.com/ja/help/troubleshooting/network}
+\end{itemize}
+
+{\color{muted}\small 土方法能接上线，不保证安全。\texttt{proxyStrictSSL: false} 与忽略证书只在你知道公司在做 TLS 检查时用。本页不写私人节点、账号、PAC URL。}
+
+\end{document}

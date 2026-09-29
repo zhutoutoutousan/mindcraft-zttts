@@ -3,4 +3,9 @@
 - GLOSS operating-models-in-production
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Interview titles from https://github.com/amitshekhariitbhu/ai-engineering-interview-questions that map here are the hire-pressure form of this techne. Answers stay at their SOURCE urls. Do not paste cheat-sheet answers into this body.
+- CLAIM Langfuse (July 2026 coding-agent tracing page): Copilot native OpenTelemetry; Claude Code and Codex via Stop hooks; Cursor named as agent-session tracing. Hooks are per-machine and user-disableable; assembled CLAUDE.md/skills context is not captured. Product claim. Do not invent that this repo is instrumented.
+- CLAIM Agentic AI Summit Berlin 2026-09-15 agenda: main stage 09:00–17:00; NVIDIA multimodality workshop 11:30–12:30; panel title includes why agent systems break in production. Event page claim. Do not invent a ticket or attendance.
+- CLAIM Strands "Operating Agents in Production": four independent execution bounds (loop turns, tool-count quotas, token budget, wall-clock cancel). Multi-agent: limits at orchestrator and node (Swarm/Graph). Named AWS deploy options include Bedrock AgentCore, Lambda, Fargate, App Runner, EKS, EC2. Product/docs claim. Do not invent a strands-agents install in this repo.
+- SOURCE https://strandsagents.com/docs/user-guide/deploy/operating-agents-in-production/
+- SOURCE https://agenticaialliance.com/location/agenticaiberlin/agenda
 - SOURCE https://github.com/amitshekhariitbhu/ai-engineering-interview-questions

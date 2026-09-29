@@ -9,4 +9,5 @@
 - SOURCE self/identity/skill.toon.md
 - SOURCE self/identity/experience.toon.md
 - SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
-- SOURCE https://code.claude.com/docs/en/features-overview
+- CLAIM Langfuse data-platform MCP (docs): streamable HTTP + Basic Auth; Cursor path is Add Custom MCP. They prefer the Agent Skill when the agent can run bash. Distinct from the 2026-07-28 MCP spec and from AgentCore Gateway. Product claim. Do not invent that this workspace has the server configured.
+- SOURCE https://langfuse.com/docs/api-and-data-platform/features/mcp-server

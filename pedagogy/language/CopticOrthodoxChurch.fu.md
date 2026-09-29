@@ -1,0 +1,12 @@
+- VERTEX CopticOrthodoxChurch
+- KIND semiosis
+- GLOSS coptic-orthodox-community-as-living-narrative
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM CopticOrthodoxChurch here means the knowledge extracted from the info board of St. Antonius Koptisch-Orthodoxe Kirche — a parish church, not a general history of Egypt or of Christianity. Deliberately omitted from the graph: the Spendenkonto IBAN (bank data, no learning value) and the exact location (not named on the board). SOURCE pedagogy/language/CopticOrthodoxChurch.fu.md
+- CLAIM Board header: St. Antonius Koptisch-Orthodoxe Kirche. Arabic parallel line كنيسة الأنبا أنطونيوس القبطية الأرثوذكسية — Anba (أنبا) is the Coptic saint title "Father". The board's emblem is an ornate Coptic cross with the nomina sacra Ⲓⲏⲥ̅ (Jesus) and Ⲡⲭ̅ⲥ̅ (Christ) in the quadrants.
+- CLAIM Sheet "Wir sind die Kopten": Copts are the largest Christian minority in Egypt; their church was founded by St. Mark in Alexandria in the 1st century. Christology: miaphysite — Christ as "true God and true man", one united nature; this is the Oriental Orthodox position, distinct from both Chalcedonian (dyophysite) and from Eutychian monophysitism. The Coptic language is the last stage of the ancient Egyptian language, written in Greek-derived letters plus a handful of demotic signs. Current head: Pope Tawadros II, 118th Pope of Alexandria, seated on the See of St. Mark.
+- CLAIM Sheet "Die 21 Märtyrer von Libyen": 20 Coptic workers + 1 Ghanaian were beheaded by ISIS on 15.02.2015; the Coptic Church canonized them as martyrs.
+- CLAIM Sheet "Die Orientalisch-Orthodoxe Kirche": family tree of the non-Chalcedonian (miaphysite) churches that split from the imperial church after the Council of Chalcedon 451 — Coptic (Egypt), Ethiopian (Tewahedo), Eritrean, Syrian (Jacobite), Armenian, Malankara (India).
+- CLAIM Service times on the board (parish-level fact, may drift): Sonntag ~09:00–12:00, Samstag Abendgebet 18:00–20:00, Jugendtreffen ~13:30–15:30. Do not treat as current without re-checking.
+- CLAIM CopticOrthodoxChurch INFORMS History: a living example of how a 1st-century community narrative (St. Mark → 118 popes → 21 modern martyrs) survives in a diaspora parish, carried by language (Coptic as last stage of Egyptian), calendar (martyrdom feasts), and iconography (cross + nomina sacra). Same class of evidence as the History vertex: narrative assembled from shared memory, here embodied in a physical board.
+- SOURCE photo read 2026-09-12: info board, St. Antonius Koptisch-Orthodoxe Kirche (user-supplied image)

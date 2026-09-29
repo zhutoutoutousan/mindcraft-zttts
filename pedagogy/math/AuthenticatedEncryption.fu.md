@@ -1,0 +1,7 @@
+- VERTEX AuthenticatedEncryption
+- KIND formal
+- GLOSS confidentiality-plus-integrity-in-one-construction
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM AES-GCM (as in MinSec / Web Crypto) is authenticated encryption: ciphertext comes with a tag so a flipped bit fails decrypt instead of yielding garbage that looks like config. Nonce/IV reuse under the same key is a break. EnvelopeEncryption wraps a data key; this vertex is the inner primitive. Distinct from ZeroKnowledgeProof. Grasp unknown. Do not invent an audit of MinSec's nonce handling.
+- SOURCE https://en.wikipedia.org/wiki/Authenticated_encryption
+- SOURCE https://github.com/cgx9/minsec

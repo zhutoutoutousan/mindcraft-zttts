@@ -1,0 +1,8 @@
+- VERTEX EnvFile
+- KIND praxis
+- GLOSS plaintext-key-value-file-in-the-workspace
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A `.env` file is a plaintext key=value store sitting in the project tree. AI IDEs index it. Git may commit it. That is the leak MinSec's "zero-disk" slogan is aimed at. Ladder rung 1 of mezzanine/minsec-ladder.toon.md.
+- CLAIM `minsec import .env` copies items into the vault as VARIABLE. It does not delete the source file. Completeness of SecretSurface requires treating leftover `.env` as still live. Grasp unknown. Do not paste values from any `.env` into this body.
+- SOURCE https://github.com/cgx9/minsec
+- SOURCE human 2026-09-14

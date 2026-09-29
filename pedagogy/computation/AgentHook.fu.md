@@ -6,6 +6,10 @@
 - CLAIM Infographic says hooks are not AI. Official hooks-guide: a hook may be a shell command, HTTP, MCP tool, prompt, or agent. Deterministic shell is the form that solves what an LLM cannot guarantee. Prompt-hooks exist. Do not flatten the docs to the card.
 - CLAIM This repo has no hook store. Cursor ships a create-hook skill. Gap here is infrastructure quality, not a missing CLAIM on AgentCore.
 - CLAIM Human 2026-09-06 psyche DUMP: want more learning pull on hooks (and subagents) for Cursor/Claude Code. That raises AgentHook on PLAN NEXT / goals.north. Still do not invent a local hooks.json without being asked.
+- CLAIM Strands hooks docs: LimitToolCounts is a HookProvider that resets on BeforeInvocationEvent and sets cancel_tool (TS: cancel) on BeforeToolCallEvent after N calls per tool per invocation. Unlisted tools stay unbounded. Product/docs claim. Distinct from Claude Code Stop/PreToolUse names on this vertex. Do not invent a strands-agents install or that this repo implements LimitToolCounts.
+- CLAIM Strands interrupts docs: HITL pause, not a quota cancel. Agent stops the loop, returns control, user responds, execution continues from the interruption. Hook callbacks may raise it on BeforeToolCallEvent (one tool) and BeforeToolsEvent (whole batch before any execute). Distinct from LimitToolCounts cancel_tool. Do not invent a strands-agents install or a HITL UI in this repo.
+- SOURCE https://strandsagents.com/docs/user-guide/concepts/agents/hooks/
+- SOURCE https://strandsagents.com/docs/user-guide/concepts/interrupts/
 - SOURCE https://code.claude.com/docs/en/hooks-guide.md
 - SOURCE https://code.claude.com/docs/en/features-overview
 - SOURCE human 2026-09-02 infographic Claude Code five layers

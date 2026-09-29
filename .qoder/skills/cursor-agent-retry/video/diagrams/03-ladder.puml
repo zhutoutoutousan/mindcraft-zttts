@@ -1,0 +1,20 @@
+@startuml
+skinparam backgroundColor #0a0e14
+skinparam defaultFontColor #e8eef5
+title Network ladder (Windows standalone)
+
+start
+:Diagnostics;
+:HTTP Compatibility → HTTP/1.1;
+:Hotspot对照;
+if (Clash / Mihomo?) then (yes)
+  :规则模式 + mixed/HTTP port\n→ http.proxy;
+  :Prefer no TUN / no 全局;
+else (no)
+  :Check proxySupport override\n+ empty proxy = 裸连;
+endif
+:DNS 1.1.1.1 if SSL edge fails;
+:Kill ALL Cursor.exe · relaunch;
+:Click Retry;
+stop
+@enduml

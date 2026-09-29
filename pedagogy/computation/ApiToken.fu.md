@@ -1,0 +1,9 @@
+- VERTEX ApiToken
+- KIND techne
+- GLOSS bearer-secret-that-authenticates-an-http-client
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM An API token is a secret the client sends as a credential, typically `Authorization: Bearer …`. MinSec CLI tokens are documented as `ms_tok_<entropy>`. The server stores a hash. This is not OAuthAuthorization (delegated login without sharing the account password) and not a WorkerBinding (platform injects `env.SECRET`). Ladder rung 5 of mezzanine/minsec-ladder.toon.md.
+- CLAIM Conflating `npx wrangler login`, `minsec config --key ms_tok_…`, and `wrangler secret put` collapses three surfaces. Grasp unknown. Do not paste live tokens into this body.
+- SOURCE https://github.com/cgx9/minsec
+- SOURCE https://datatracker.ietf.org/doc/html/rfc6750
+- SOURCE human 2026-09-14

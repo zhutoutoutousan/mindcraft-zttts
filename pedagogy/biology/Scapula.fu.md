@@ -4,6 +4,7 @@
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM The scapula is a bone that must stay controlled against the thorax while the humerus moves. Pressing without that control loads the glenoid instead of the chest. Particular pain lives in self/training.toon.md. This vertex is the anatomy.
 - CLAIM Cavaliere: zero pain in the range or stop. That stop INFORMS Periodization: an unplanned deload, not another accumulation week. Particular pain lives in self/training.toon.md.
+- CLAIM Human 2026-09-08 named left scapula recovered the same day as muscle DOMS. Human 2026-09-15 named it started hurting again before 15 Sep. That closes the press gate in the training store. Quality unspecified. It is not a completed session. Do not invent sets. Do not copy loads here.
 - CLAIM NCBI StatPearls: abnormal scapular motion is often a stabilizer problem (serratus, trapezius, rhomboids), not a diagnosis of this log. Do not write 2026-09-01 pain as winging.
 - MEDIA PAGE https://learn.athleanx.com/articles/shoulders-for-men/my-shoulder-hurts-when-i-bench-press-not-anymore
 - MEDIA PAGE https://www.ncbi.nlm.nih.gov/books/NBK541005/

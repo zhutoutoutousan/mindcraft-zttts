@@ -25,7 +25,7 @@ KEEP_FILES = {
     Path("cron") / "janitor.py",
     Path("skills") / "ontology-showcase.py",
 }
-NEVER_DIR = {".git", "recycle", ".cursor", "tmp", ".private"}
+NEVER_DIR = {".git", "recycle", ".cursor", ".qoder", "tmp", ".private", "checkpoints"}
 TRASH_DIR_NAMES = {"__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
 TRASH_SUFFIXES = {".pyc", ".pyo"}
 KEEP_DIR_EMPTY = {
@@ -111,6 +111,8 @@ def should_keep(rel: Path) -> bool:
         return True
     if rel.name == ".gitignore" and len(rel.parts) == 1:
         return True
+    if rel.name == ".cursorignore" and len(rel.parts) == 1:
+        return True
     if rel.name == ".coderabbit.yaml" and len(rel.parts) == 1:
         return True
     if rel.name.lower() == "submit.ps1" and len(rel.parts) == 1:
@@ -119,7 +121,13 @@ def should_keep(rel: Path) -> bool:
         return True
     if rel.suffix.lower() in {".py", ".js"} and rel.parts and rel.parts[0] in {"cron", "skills"}:
         return True
+    if rel.parts[:2] == ("pedagogy", "_learn") and rel.suffix.lower() == ".py":
+        return True
+    if rel.parts[:1] == ("docs",) and rel.suffix.lower() in {".png", ".svg", ".jpg", ".jpeg", ".webp"}:
+        return True
     if rel.parts[:1] == ("skills",) and rel.suffix.lower() in {".puml", ".json"}:
+        return True
+    if rel == Path("skills") / "mindcraft-hall.html":
         return True
     return False
 
@@ -226,13 +234,21 @@ def main() -> int:
         gone = temp_ttl.expire(dry_run=False)
         if gone:
             append_journal([], gone)
-        print(f"TTL n={len(gone)} keep {temp_ttl.TTL_FILE.relative_to(ROOT).as_posix()}")
+        print(
+            f"TTL n={len(gone)} keep "
+            f"{temp_ttl.TTL_FILE.relative_to(ROOT).as_posix()} "
+            f"{temp_ttl.HALL_FILE.relative_to(ROOT).as_posix()}"
+        )
         return 0
     if args.purge:
         gone = temp_ttl.expire(dry_run=False, force=True)
         if gone:
             append_journal([], gone)
-        print(f"PURGE n={len(gone)} keep {temp_ttl.TTL_FILE.relative_to(ROOT).as_posix()}")
+        print(
+            f"PURGE n={len(gone)} keep "
+            f"{temp_ttl.TTL_FILE.relative_to(ROOT).as_posix()} "
+            f"{temp_ttl.HALL_FILE.relative_to(ROOT).as_posix()}"
+        )
         return 0
     trashed = trash_now(trash_dirs, trash_files)
     if args.trash or args.apply:

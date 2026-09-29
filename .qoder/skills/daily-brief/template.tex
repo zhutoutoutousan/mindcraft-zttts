@@ -1,0 +1,76 @@
+% Daily brief skeleton. German body. Agent fills BODY from stores.
+% No venues, streets, GPS, private names, or health sites in this file.
+% Do not drop \par before tables.
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=1.6cm,top=1.65cm,bottom=1.8cm]{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+
+\hypersetup{colorlinks=true,urlcolor=linkb,pdftitle={DATE TITLE}}
+
+\definecolor{ink}{HTML}{1A1A1A}
+\definecolor{muted}{HTML}{5C5C5C}
+\definecolor{accent}{HTML}{1F4E3D}
+\definecolor{linkb}{HTML}{1F4E79}
+\definecolor{paper}{HTML}{F7F4EE}
+\definecolor{yes}{HTML}{E8F0EA}
+\definecolor{no}{HTML}{F6E8E6}
+\definecolor{mid}{HTML}{F7F0E4}
+\definecolor{unk}{HTML}{E8E6E1}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\fancyhead[L]{\small\color{muted}TZ}
+\fancyhead[R]{\small\color{accent}Tagesbericht}
+\fancyfoot[L]{\small\color{muted}tmp/day-DATE.pdf}
+\fancyfoot[R]{\small\color{muted}\thepage}
+
+\setlist[itemize]{leftmargin=1.15em,itemsep=0.08em,topsep=0.1em}
+\setlist[enumerate]{leftmargin=1.25em,itemsep=0.08em,topsep=0.1em}
+\setlength{\parskip}{0.18em}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{0}
+
+\newcommand{\blocktable}[1]{%
+\par
+{\footnotesize
+\noindent
+\begin{tabularx}{\linewidth}{@{}
+  >{\raggedright\arraybackslash}p{0.26\linewidth}
+  >{\raggedright\arraybackslash}X
+  >{\raggedright\arraybackslash}p{0.22\linewidth}@{}}
+#1
+\end{tabularx}}%
+\par
+}
+
+\newcommand{\muscletable}[1]{%
+\par
+{\scriptsize
+\noindent
+\begin{tabularx}{\linewidth}{@{}
+  >{\raggedright\arraybackslash}p{0.16\linewidth}
+  >{\raggedright\arraybackslash}p{0.18\linewidth}
+  >{\raggedright\arraybackslash}X
+  >{\raggedright\arraybackslash}p{0.18\linewidth}
+  >{\raggedright\arraybackslash}p{0.20\linewidth}@{}}
+#1
+\end{tabularx}}%
+\par
+}
+
+\begin{document}
+\pagecolor{paper}
+\color{ink}
+\end{document}

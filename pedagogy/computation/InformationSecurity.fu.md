@@ -1,0 +1,8 @@
+- VERTEX InformationSecurity
+- KIND praxis
+- GLOSS protecting-confidentiality-integrity-availability-of-information
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Information security is the praxis of keeping information confidential, intact, and available. Cryptographic Zero-Knowledge is one technique inside that praxis, not a synonym for "the server cannot read my .env".
+- CLAIM Human 2026-09-14 named a study pull: more knowledge of ZK inside this Gebiet, plus Cloudflare/Wrangler while using MinSec. Completeness hub is SecretSurface. Beginner ladder: mezzanine/minsec-ladder.toon.md. Grasp unknown until ANSWER. Do not invent a completed study.
+- SOURCE human 2026-09-14
+- SOURCE https://en.wikipedia.org/wiki/Information_security

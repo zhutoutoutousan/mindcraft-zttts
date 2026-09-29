@@ -5,6 +5,12 @@
 - CLAIM Biology STUDIES Matter that keeps Form against decay. A cell is matter plus a program of repair. When repair fails, GenomicInstability.
 - CLAIM The Nature 2024 paper shows that in CA1 neurons, an immune DNA-sensing pathway is not an infection leftover but part of how living matter stores a memory.
 - CLAIM Neuroscience STUDIES Biology. Do not collapse Biology into Physics even though Biology GROUNDS_IN Physics.
+- CLAIM A cultured cell line stops dividing after a finite run of divisions. Absorbed 2026-09-27 from the study-note biology log. The log itself was removed.
+- MEDIA PAGE https://embryo.asu.edu/pages/hayflick-limit
+- CLAIM MAPK/ERK is a cell signaling path named in that same log. The log did not state a mechanism beyond the name.
+- MEDIA PAGE https://en.wikipedia.org/wiki/MAPK/ERK_pathway
+- CLAIM An unread plant textbook was named 2026-09-27 from the botany note, then that folder was removed. Grasp is empty. A personal line about keeping plants and not pets was not installed as biology.
+- MEDIA PAGE http://herba.msu.ru/shipunov/school/biol_154/textbook/intro_botany.pdf
 - MEDIA PAGE https://www.nature.com/articles/s41586-024-07220-7
 - MEDIA PAGE https://www.nature.com/subjects/cellular-neuroscience
 - VERTEX Neuroscience Memory MemoryAssembly HippocampalCA1 DNADamageResponse TLR9Signalling NuclearEnvelopeRupture CentrosomeDDR Ciliogenesis PerineuronalNet ImmediateEarlyGene GenomicInstability ResistanceTraining IntellectualLoad Scapula SerratusAnterior Periodization

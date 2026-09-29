@@ -1,0 +1,12 @@
+- VERTEX GermanPolity
+- KIND praxis
+- GLOSS constitutional-order-of-parties-elections-and-states
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Bundesebene: Bundestag ist die gewaehlte Volksvertretung, Wahlperiode vier Jahre, gemischtes Verhaeltniswahlrecht mit 5-Prozent-Huerde (plus Grundmandatsklausel). Bundesrat ist die Laenderkammer und wirkt bei Gesetzen mit, die die Laender betreffen. Bundespraesident ist Staatsoberhaupt und vorwiegend repraesentativ. Der Bundeskanzler ist Regierungschef, wird vom Bundestag gewaehlt und kann nur durch ein konstruktives Misstrauensvotum abgeloest werden. Das Bundesverfassungsgericht kontrolliert die Verfassungsmaessigkeit.
+- CLAIM Laenderebene: 16 Bundeslaender mit eigener Verfassung, Landtag (Landesparlament) und Landesregierung unter einem Ministerpraesidenten. Landtagswahlen finden turnusgemaess statt und sind zeitlich versetzt ueber den Kalender verstreut; einzelne Landtagswahlen gelten bundespolitisch als Stimmungstest fuer die Bundesregierung.
+- CLAIM Parteien im Bundestag der Berichterstattung: CDU bundesweit mit Schwesterpartei CSU nur in Bayern, gemeinsam "Union"; SPD; Buendnis 90/Die Gruenen; FDP; Die Linke; AfD; BSW. Nach einer Wahl werden Koalitionen sondiert und verhandelt; der Kanzler braucht die Mehrheit des Bundestags.
+- CLAIM Koalitionsvokabular fuer Nachrichten: Jamaika-Koalition = Union + FDP + Gruene; Ampel = SPD + Gruene + FDP; GroKo = Union + SPD; Sondierungen, Koalitionsvertrag, Fraktionszwang, Direktmandat, Landesliste, Sonntagsfrage.
+- CLAIM Aktueller Bezug 2026-09-19 (DLF-Kommentar): Landtagswahl in Mecklenburg-Vorpommern 2026; ein SPD-Erfolg koennte Kanzler Merz' Reformkurs beenden; Unruhe in den CDU-Ortsvereinen. Der Artikel ist ein Kommentar, keine Nachrichtenmeldung. Keine Zahlen uebernommen, nichts erfunden.
+- MEDIA PAGE https://www.deutschlandfunk.de/der-kanzler-und-die-landtagswahlen-vielleicht-der-letzte-riss-im-eis-100.html
+- SOURCE https://www.deutschlandfunk.de/der-kanzler-und-die-landtagswahlen-vielleicht-der-letzte-riss-im-eis-100.html
+- SOURCE human 2026-09-19 user-request structured German politics basics

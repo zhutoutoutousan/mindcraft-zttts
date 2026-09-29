@@ -1,0 +1,8 @@
+- VERTEX ProcessEnvironment
+- KIND techne
+- GLOSS os-environment-block-of-a-running-process
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Every OS process has an environment block: a map of string names to string values (`PATH`, `HOME`, later `DATABASE_URL`). Programs read it with language APIs (`process.env`, `os.environ`, `System.getenv`). It is RAM of that process, not a file in the git tree. Ladder rung 2 of mezzanine/minsec-ladder.toon.md.
+- CLAIM Distinct from EnvFile (disk) and from JVM `-D` properties (JavaProcessEnv). SpawnEnv is how a parent writes this block for a child. Grasp unknown.
+- SOURCE https://nodejs.org/api/process.html#processenv
+- SOURCE https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/System.html#getenv()

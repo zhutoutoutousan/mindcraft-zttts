@@ -1,0 +1,14 @@
+- VERTEX Archify
+- KIND techne
+- GLOSS plain-english-to-explorable-architecture-html
+- STORE PATH pedagogy/universe.graph.md
+- STORE PATH skills/arsenal.toon.md
+- CLAIM Archify is an agent skill that turns a plain-language system description into an explorable self-contained HTML diagram. Product page names five types: Architecture, Workflow, Sequence, Data Flow, Lifecycle. MAP → READ → FULL detail. Export is HTML plus raster up to 4× and dual-theme SVG. That is a product claim. It is not a lebenslauf line.
+- CLAIM This repo keeps it in the diagram arsenal for CursorSkill maps (harness, tool-call policy, skill topology). It does not replace PlantUML/Kroki for LaTeX PDF or video stills. ontology-showcase still renders universe.graph.
+- CLAIM Install is a global Cursor skill via npx skills add tt-a1i/archify (CLI wants Node >=22). Human 2026-09-08 named the tool and asked for a test diagram. This machine ran Node 20 so npx failed. Test used a tmp clone and `node bin/archify.mjs deliver`. Do not invent a global install. Do not vendor their tree into this repo.
+- MEDIA PAGE https://tt-a1i.github.io/archify/
+- MEDIA CODE https://github.com/tt-a1i/archify
+- SOURCE https://tt-a1i.github.io/archify/
+- SOURCE https://github.com/tt-a1i/archify
+- SOURCE skills/arsenal.toon.md
+- SOURCE mezzanine/archify.toon.md

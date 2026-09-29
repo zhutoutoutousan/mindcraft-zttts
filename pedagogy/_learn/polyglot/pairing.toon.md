@@ -35,7 +35,7 @@ codeSwitchPolicy:
 
 hookFlow:
   sessionStart: inject targetLang + todayFocus Frames + polyglot horizon reminder
-  beforeSubmitPrompt: detect primaryLang + foreignIslands → write last-signal + **auto GAP vertices into bridge.graph.md**
+  beforeSubmitPrompt: detect primaryLang + foreignIslands → write last-signal + **auto GAP vertices into bridge.graph.md**. Cursor does not show user_message unless the prompt is blocked. Korrektur = agent reply. Stamp pedagogy/_learn/polyglot/hook-trace.toon.md (keys + promptChars + jsonMode, no body). Do not block on stdin EOF.
   afterRewrite: write sessions/*.toon.md then `python pedagogy/_learn/writing-accuracy/ingest_session.py --session …` to attach Forms
   agent: job first; gaps already in graph; ingest Forms without waiting to be asked
 

@@ -1,0 +1,8 @@
+- VERTEX ClientHeldSecret
+- KIND techne
+- GLOSS ciphertext-at-rest-keys-stay-with-the-client
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Client-held secret / "zero-access" encryption: the storage service is meant to see only ciphertext. Decryption happens on the client. EnvelopeEncryption is a common construction (data key wraps values; a higher key wraps the data key).
+- CLAIM This is not a ZeroKnowledgeProof. A honest-but-curious host, a stolen admin session, Worker Secrets, or a leftover plaintext .env can still leak. MinSec README uses "zero-knowledge E2EE" in this product sense. Grasp unknown. Do not invent an audit.
+- SOURCE https://github.com/cgx9/minsec
+- SOURCE human 2026-09-14

@@ -55,7 +55,13 @@ stores:
   signal: pedagogy/_learn/polyglot/last-signal.toon.md
   lexicon_de: pedagogy/_learn/writing-accuracy/lexicon.graph.md
   frames_de: pedagogy/_learn/polyglot/frames/de.toon.md
+  commerce: pedagogy/_learn/polyglot/commerce.toon.md
+  harvest: pedagogy/_learn/polyglot/harvest.toon.md
   bridge: pedagogy/_learn/polyglot/bridge.graph.md
 
 source: human 2026-09-07 named 16-language proficiency list
 source: self/goals.toon.md
+source: study-note/history 2026-09-27
+
+locked_until_band:
+  el: Odyssey text stays unread while Ελληνικά is elementary. URL https://grevenart.gr/wp-content/uploads/2016/11/%CE%BF%CE%BC%CE%AE%CF%81%CE%BF%CF%85-%CE%BF%CE%B4%CF%8D%CF%83%CF%83%CE%B5%CE%B9%CE%B1.pdf . The note said B2 to unlock. Do not mark it read.

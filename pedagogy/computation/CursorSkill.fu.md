@@ -6,8 +6,9 @@
 - CLAIM This repo's skills/ontology-showcase.fu.md is the same essence in fu form. Janitor keeps skills/*.py so the procedure still runs.
 - CLAIM Agent Toolkit for AWS is the same shape at cloud scale: curated SKILL.md procedures a coding agent reads before touching AWS. Product page names Kiro Claude Code Codex MCP. Not a lebenslauf line.
 - CLAIM Claude Code skills: description matching, optional auto-invoke, may run in-session or with context fork into a subagent. Infographic says always fork. Official skills.md says fork is optional. CONTRADICTS the card on that point. Cursor on this machine reads SKILL.md on trigger. Do not write them as one implementation.
-- CLAIM Attested skill family in this repo (essence, not Job): video-generation (VideoGeneration contract), fog-rest (SicknessBehavior vs DSB), daily-brief (planner PDF), cursor-agent-retry (AgentStreamDrop ladder + load), learn-baseline. HARD rules in a skill are AgentConstitution-shaped always-ons for that trigger.
+- CLAIM Attested skill family in this repo (essence, not Job): video-generation (VideoGeneration contract), stage-body-composite (matte dancer onto concert plate + mux song), fog-rest (SicknessBehavior vs DSB), daily-brief (planner PDF), cursor-agent-retry (AgentStreamDrop ladder + load), learn-baseline. HARD rules in a skill are AgentConstitution-shaped always-ons for that trigger.
 - CLAIM Improvement backlog for a skill should promote from tmp explain cards into the SKILL.md when shipped (shared video_kit, --demo, TTS cache). Do not leave lasting contract only in tmp PDF.
+- CLAIM Diagram arsenal for skill and harness maps is Archify (explorable HTML). Catalog skills/arsenal.toon.md. Router skill .cursor/skills/diagram-arsenal. PlantUML/Kroki stays for LaTeX and video stills. Human 2026-09-08 named Archify. Do not invent that npx install ran.
 - SOURCE mezzanine/cursor-slash.toon.md
 - SOURCE skills/ontology-showcase.fu.md
 - SOURCE skills/video-generation.fu.md
@@ -15,3 +16,11 @@
 - SOURCE .cursor/skills/cursor-agent-retry/SKILL.md
 - SOURCE https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/
 - SOURCE https://code.claude.com/docs/en/skills.md
+- SOURCE https://tt-a1i.github.io/archify/
+- CLAIM Human 2026-09-10: GitHub down; named Musk GitHub-tool. Product is Cursor Origin (docs cursor.com/docs/origin). Early-beta git forge on paid Cursor plans. GitHub-synced repos keep GitHub as source of truth. Native Windows origin CLI not supported yet. Do not invent a local install. This repo remote named origin stays GitHub until the human names a second remote.
+- SOURCE https://cursor.com/docs/origin
+- SOURCE https://cursor.com/changelog/origin-code-hosting
+- SOURCE mezzanine/cursor-origin-2026-09-10.toon.md
+- CLAIM Langfuse Agent Skill (docs): open Agent Skills standard; SKILL.md plus on-demand references (progressive disclosure); Cursor Plugin includes the skill. Product claim. Distinct from Hermes /learn. Do not invent that npx skills add ran in this repo.
+- SOURCE https://langfuse.com/docs/api-and-data-platform/features/agent-skill
+- SOURCE https://github.com/langfuse/skills

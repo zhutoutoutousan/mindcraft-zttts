@@ -4,11 +4,15 @@
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM Cloud is Computation whose Matter is someone else's machine, addressed as one computer.
 - CLAIM Attested credentials: AWS Certified Developer Associate Nov 2021. AWS Certified SysOps Administrator Associate Sep 2022. Do not invent extra cert dates.
-- CLAIM Child vertices: AWS Azure ECS EKS Fargate Bedrock SQS CDK CloudFormation DynamoDB. Kafka is not in the skill toon.
+- CLAIM Child vertices: AWS Azure Cloudflare ECS EKS Fargate Bedrock SQS CDK CloudFormation DynamoDB. Kafka is not in the skill toon.
 - MEDIA PAGE https://aws.amazon.com/certification/certified-developer-associate/
 - MEDIA PAGE https://aws.amazon.com/certification/certified-sysops-admin-associate/
 - MEDIA PAGE https://play.google.com/store/apps/details?id=topstory.fiction.novel
 - MEDIA PAGE https://www.novelmonkey.ai/
+- CLAIM GitHub 2026-08-20 postmortem: 17 Aug 2026 outage 7h47m; Azure ~58% platform load; they name agentic traffic as the capacity story. Product claim. Not a diagnosis of a 2026-09-10 live incident. Do not drip.
+- SOURCE https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/
+- CLAIM Cursor Cloud Agent choose-runtime: in managed, My Machines, and Team Pools the agent loop still runs in Cursor's cloud; only tool-call hosts differ. Do not invent that My Machines or Team Pools are configured here.
+- SOURCE https://cursor.com/docs/cloud-agent/self-hosted/choose-runtime
 - SOURCE self/identity/credential.toon.md
 - SOURCE self/identity/experience.toon.md
 - SOURCE self/identity/project.toon.md

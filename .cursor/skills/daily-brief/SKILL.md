@@ -11,7 +11,7 @@ Write `tmp/day-YYYY-MM-DD.tex` from [template.tex](template.tex). Compile with:
 python .cursor/skills/daily-brief/scripts/compile.py tmp/day-YYYY-MM-DD.tex
 ```
 
-Body language is **German**. Keep Wordschatz app names as stored (德语助手 法语助手 西语助手). Do not invent ANSWER, sets, laps, RSVP, or a cleared joint.
+LaTeX and PDF **only** in `tmp/`. Never `.private/` or other organs. Body language is **German**. Keep Wordschatz app names as stored (德语助手 法语助手 西语助手). Do not invent ANSWER, sets, laps, RSVP, or a cleared joint.
 
 This skill stays generic. Do not bake venues, streets, GPS, halls, employers, private counterparties, lesion sites, or today's itinerary into `SKILL.md` or `template.tex`. Read particulars from stores each run.
 

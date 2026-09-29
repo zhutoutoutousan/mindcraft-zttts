@@ -11,3 +11,4 @@
 - SOURCE self/identity/experience.toon.md
 - SOURCE self/identity/project.toon.md
 - SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
+- SOURCE https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness.html

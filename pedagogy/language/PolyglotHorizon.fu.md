@@ -3,8 +3,11 @@
 - GLOSS sixteen-languages-to-b2-by-age-thirty-five
 - STORE PATH pedagogy/universe.graph.md
 - CLAIM PolyglotHorizon is the learner particular for NaturalLanguage growth: age 30 now, age 35 target, about 5 years, B2+ productive skill across sixteen named languages. Roster and bands: pedagogy/_learn/polyglot/horizon.toon.md (human 2026-09-07). Native/bilingual: en zh wuu. Professional working: de. Limited working: es fr it pt ru ja. Elementary: fi vi el ar hi ko. Zero unnamed slots.
-- CLAIM Cross-lingual lexicon lives under pedagogy/_learn/polyglot/ and per-lang writing-accuracy stores. Ontology keeps essence (NaturalLanguage Pedagogy GrammarFrame WritingAccuracyArbitrage). Particular pace and slot fills stay in _learn and self/goals. Do not invent CEFR beyond the named bands.
+- CLAIM Human 2026-09-08: the skill tree hangs GER facets under each named language (Hörverstehen, Leseverstehen, Schreiben, Sprechen, Wortschatz, Grammatik). Facet list: pedagogy/_learn/polyglot/skills.toon.md. Band still inherits the language self-rating. Do not invent per-skill CEFR numbers.
 - CLAIM Code-switch islands in a targetLang coding prompt are treated as Concepts the learner could not express in the target language. Hook beforeSubmitPrompt writes last-signal. Allowlisted tech nouns are not gaps.
+- CLAIM Human 2026-09-11: 神游 allocates learning harvest by commercial attention, not invented CEFR. Named priority Español Français Deutsch; rest still rotate. Store pedagogy/_learn/polyglot/commerce.toon.md + harvest.toon.md. Official institutes (Cervantes CVC, TV5MONDE, DW). Do not pile DAY. Do not invent ANSWER.
 - SOURCE pedagogy/_learn/polyglot/horizon.toon.md
+- SOURCE pedagogy/_learn/polyglot/commerce.toon.md
+- SOURCE human 2026-09-11
 - SOURCE self/goals.toon.md
 - SOURCE human 2026-09-07

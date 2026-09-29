@@ -9,4 +9,12 @@
 - MEDIA PAGE https://aws.amazon.com/blogs/compute/announcing-lambda-microvms-serverless-compute-environments-with-vm-level-isolation-and-near-instant-startup/
 - SOURCE https://aws.amazon.com/blogs/compute/secure-code-execution-for-ai-agents-with-aws-lambda-microvms/
 - SOURCE https://github.com/aws/agent-toolkit-for-aws/blob/d6ad2e44d5e3077b85b63f322e007c84f94f3a6c/skills/specialized-skills/serverless-skills/aws-lambda-microvms/SKILL.md
-- SOURCE CPU.md
+- CLAIM Compute Blog 2026-07-10 announce: MicroVMs as a primitive for AI coding-assistant sandboxes and CI/CD; Agent Toolkit / console skill to build; named sandbox provider for Claude Managed Agents (orchestration stays Anthropic-side). Snapshot uniqueness and stale-credential caveats. Do not invent startup milliseconds. Do not invent that this repo's CI runs MicroVMs.
+- SOURCE https://aws.amazon.com/blogs/compute/announcing-lambda-microvms-serverless-compute-environments-with-vm-level-isolation-and-near-instant-startup/
+- CLAIM YouTube supplements found 2026-09-18 for the escalation deep-dive: Introducing AWS Lambda MicroVMs (official AWS video); AWS's New Compute Primitive for AI Agents and Code Sandboxes; How AWS's Firecracker virtual machines work (Firecracker explainer). Videos are learner supplements, not claims about this repo's CI. Do not invent video content beyond titles.
+- MEDIA PAGE https://www.youtube.com/watch?v=lIOjTOGh-po
+- MEDIA PAGE https://www.youtube.com/watch?v=r0UfGwJ7Pkk
+- MEDIA PAGE https://www.youtube.com/watch?v=BIRv2FnHJAg
+- SOURCE https://www.youtube.com/watch?v=lIOjTOGh-po
+- SOURCE https://www.youtube.com/watch?v=r0UfGwJ7Pkk
+- SOURCE https://www.youtube.com/watch?v=BIRv2FnHJAg

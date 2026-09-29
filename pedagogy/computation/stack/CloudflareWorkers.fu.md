@@ -1,0 +1,8 @@
+- VERTEX CloudflareWorkers
+- KIND techne
+- GLOSS v8-isolates-at-the-cloudflare-edge
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM A Worker is a script Cloudflare runs close to the client. Bindings attach D1, KV, R2, secrets. `npx wrangler secret put KEY` stores a secret as a Worker binding. After put, the value is hidden in Wrangler and the dashboard UI, but it remains a platform-held binding injected into the isolate — not ClientHeldSecret against Cloudflare, and not a ZeroKnowledgeProof.
+- MEDIA PAGE https://developers.cloudflare.com/workers/
+- SOURCE https://developers.cloudflare.com/workers/
+- SOURCE https://developers.cloudflare.com/workers/configuration/secrets/

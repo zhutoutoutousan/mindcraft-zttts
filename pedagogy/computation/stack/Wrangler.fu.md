@@ -1,0 +1,10 @@
+- VERTEX Wrangler
+- KIND techne
+- GLOSS cli-for-cloudflare-workers-and-d1
+- STORE PATH pedagogy/universe.graph.md
+- CLAIM Wrangler is Cloudflare's CLI. Preferred install is local `npm i -D wrangler` so the project pins a version. `npx wrangler` runs that package (or the latest if none is installed). `npx` is Node's package runner, not a Cloudflare product.
+- CLAIM `npx wrangler login` starts OAuth against a Cloudflare account and tries to open a browser. Default flow listens on localhost for the callback. `--browser=false` prints the URL. `--device` uses OAuth 2.0 Device Authorization Grant (RFC 8628) when there is no local callback server. Human 2026-09-14 named this command as unfamiliar. Do not invent a completed login on this machine.
+- MEDIA PAGE https://developers.cloudflare.com/workers/wrangler/commands/general/
+- SOURCE https://developers.cloudflare.com/workers/wrangler/commands/general/
+- SOURCE https://developers.cloudflare.com/workers/wrangler/install-and-update/
+- SOURCE human 2026-09-14

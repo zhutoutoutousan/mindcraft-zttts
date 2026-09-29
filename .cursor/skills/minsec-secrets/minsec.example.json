@@ -1,0 +1,8 @@
+{
+  "endpoint": "",
+  "apiKey": "",
+  "projectId": "mindcraft",
+  "projectName": "mindcraft",
+  "defaultEnv": "dev",
+  "defaultPath": "/"
+}

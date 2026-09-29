@@ -5,5 +5,7 @@
 - CLAIM Form is the intelligible structure a thing can be known by. Mathematics STUDIES Form. A type system INFORMS Computation by freezing form into symbols.
 - CLAIM Matter RECEIVES Form. DNA is matter. A memory assembly is form held in living matter for a while.
 - CLAIM GraphTraversal STUDIES Form because a graph is form with direction.
+- CLAIM Human 2026-09-11: 神游 Form now includes polyglot-harvest (sourced learning URLs by named-priority languages) and opportunity (sourced public 商机). Same AgentLoop, new organs. SOURCE cron/maintain.fu.md. Do not invent Aristotle.
 - MEDIA PAGE https://plato.stanford.edu/entries/form-matter/
 - SOURCE pedagogy/ontology.fu.md
+- SOURCE cron/maintain.fu.md
