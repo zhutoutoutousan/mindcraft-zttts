@@ -3062,3 +3062,11 @@ V Sent_eine_fehlerliste_fix kind=sentence date=2026-10-09 lang=de role=corrected
 E Sent_eine_fehlerliste_fix FIXES Sent_eine_fehlerliste_raw
 E Sent_eine_fehlerliste_raw FROM_SESSION Session_eine_fehlerliste
 E Sent_eine_fehlerliste_fix FROM_SESSION Session_eine_fehlerliste
+
+# ingest-session 2026-10-09T18:05:01Z darauf-zugreifen lang=de
+V Session_darauf_zugreifen kind=session date=2026-10-09 lang=de body=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-darauf-zugreifen.toon.md
+V Sent_darauf_zugreifen_raw kind=sentence date=2026-10-09 lang=de role=raw
+V Sent_darauf_zugreifen_fix kind=sentence date=2026-10-09 lang=de role=corrected
+E Sent_darauf_zugreifen_fix FIXES Sent_darauf_zugreifen_raw
+E Sent_darauf_zugreifen_raw FROM_SESSION Session_darauf_zugreifen
+E Sent_darauf_zugreifen_fix FROM_SESSION Session_darauf_zugreifen

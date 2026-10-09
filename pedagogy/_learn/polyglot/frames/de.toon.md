@@ -354,3 +354,13 @@ frame:
   concept: an-error-list
   from_session: 2026-10-09-eine-fehlerliste
 
+frame:
+  id: darauf_zugreifen
+  gloss: access-it-auf-accusative
+  pattern: darauf zugreifen (auf + Akk)
+  slots[1]: PRON_da
+  fillers[1]: darauf-zugreifen
+  anti: es zugreifen; zugreifen es
+  concept: access-it
+  from_session: 2026-10-09-darauf-zugreifen
+

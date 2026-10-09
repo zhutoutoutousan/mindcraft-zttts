@@ -5137,3 +5137,14 @@ V Form_fix_eine_fehlerliste_1_korrektur kind=form lang=de surface=Korrektur fixe
 E Form_fix_eine_fehlerliste_1_korrektur FROM_SESSION Session_eine_fehlerliste
 V Form_fix_eine_fehlerliste_2_in_einer_latex_pd kind=form lang=de surface="in einer LaTeX-PDF-Datei" fixes="ins PDF LATEX Datei"
 E Form_fix_eine_fehlerliste_2_in_einer_latex_pd FROM_SESSION Session_eine_fehlerliste
+
+# ingest-session 2026-10-09T18:05:01Z darauf-zugreifen lang=de
+V Session_darauf_zugreifen kind=session date=2026-10-09 lang=de body=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-darauf-zugreifen.toon.md
+V Focus_darauf_zugreifen kind=focus lang=de gloss="darauf zugreifen (auf + Akk)" status=active
+E Focus_darauf_zugreifen FROM_SESSION Session_darauf_zugreifen
+V Lemma_de_fix_darauf_zugreifen kind=lemma lang=de surface="Also bin ich jetzt an meinem Handy. Wie kann ich d" role=minimal-rewrite
+E Lemma_de_fix_darauf_zugreifen FROM_SESSION Session_darauf_zugreifen SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-darauf-zugreifen.toon.md
+V Form_fix_darauf_zugreifen_0_an_meinem_handy kind=form lang=de surface="an meinem Handy" fixes="bei meinem Handy"
+E Form_fix_darauf_zugreifen_0_an_meinem_handy FROM_SESSION Session_darauf_zugreifen
+V Form_fix_darauf_zugreifen_1_darauf_zugreifen kind=form lang=de surface="darauf zugreifen" fixes="es zugreifen"
+E Form_fix_darauf_zugreifen_1_darauf_zugreifen FROM_SESSION Session_darauf_zugreifen
