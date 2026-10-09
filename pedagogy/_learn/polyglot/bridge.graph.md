@@ -5124,3 +5124,16 @@ V Form_fix_oeffentlicher_pr_bereich_1_im_ffentl kind=form lang=de surface="im ö
 E Form_fix_oeffentlicher_pr_bereich_1_im_ffentl FROM_SESSION Session_oeffentlicher_pr_bereich
 V Form_fix_oeffentlicher_pr_bereich_2_im_ffentl kind=form lang=de surface="im öffentlichen Bereich des PRs" fixes="ins öffentliche Bereich PR"
 E Form_fix_oeffentlicher_pr_bereich_2_im_ffentl FROM_SESSION Session_oeffentlicher_pr_bereich
+
+# ingest-session 2026-10-09T18:01:05Z eine-fehlerliste lang=de
+V Session_eine_fehlerliste kind=session date=2026-10-09 lang=de body=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-eine-fehlerliste.toon.md
+V Focus_eine_fehlerliste kind=focus lang=de gloss="eine Fehlerliste (Akk. f.)" status=active
+E Focus_eine_fehlerliste FROM_SESSION Session_eine_fehlerliste
+V Lemma_de_fix_eine_fehlerliste kind=lemma lang=de surface="Also gut. Gib mir eine Fehlerliste meiner vorherig" role=minimal-rewrite
+E Lemma_de_fix_eine_fehlerliste FROM_SESSION Session_eine_fehlerliste SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-eine-fehlerliste.toon.md
+V Form_fix_eine_fehlerliste_0_eine_fehlerliste kind=form lang=de surface="eine Fehlerliste" fixes="ein Fehlerlist"
+E Form_fix_eine_fehlerliste_0_eine_fehlerliste FROM_SESSION Session_eine_fehlerliste
+V Form_fix_eine_fehlerliste_1_korrektur kind=form lang=de surface=Korrektur fixes=Korrigierung
+E Form_fix_eine_fehlerliste_1_korrektur FROM_SESSION Session_eine_fehlerliste
+V Form_fix_eine_fehlerliste_2_in_einer_latex_pd kind=form lang=de surface="in einer LaTeX-PDF-Datei" fixes="ins PDF LATEX Datei"
+E Form_fix_eine_fehlerliste_2_in_einer_latex_pd FROM_SESSION Session_eine_fehlerliste

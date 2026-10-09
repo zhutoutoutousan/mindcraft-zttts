@@ -3054,3 +3054,11 @@ V Sent_oeffentlicher_pr_bereich_fix kind=sentence date=2026-10-09 lang=de role=c
 E Sent_oeffentlicher_pr_bereich_fix FIXES Sent_oeffentlicher_pr_bereich_raw
 E Sent_oeffentlicher_pr_bereich_raw FROM_SESSION Session_oeffentlicher_pr_bereich
 E Sent_oeffentlicher_pr_bereich_fix FROM_SESSION Session_oeffentlicher_pr_bereich
+
+# ingest-session 2026-10-09T18:01:05Z eine-fehlerliste lang=de
+V Session_eine_fehlerliste kind=session date=2026-10-09 lang=de body=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-eine-fehlerliste.toon.md
+V Sent_eine_fehlerliste_raw kind=sentence date=2026-10-09 lang=de role=raw
+V Sent_eine_fehlerliste_fix kind=sentence date=2026-10-09 lang=de role=corrected
+E Sent_eine_fehlerliste_fix FIXES Sent_eine_fehlerliste_raw
+E Sent_eine_fehlerliste_raw FROM_SESSION Session_eine_fehlerliste
+E Sent_eine_fehlerliste_fix FROM_SESSION Session_eine_fehlerliste

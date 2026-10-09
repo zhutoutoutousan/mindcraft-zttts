@@ -344,3 +344,13 @@ frame:
   concept: in-the-public-area
   from_session: 2026-10-09-oeffentlicher-pr-bereich
 
+frame:
+  id: eine_Fehlerliste_Akk
+  gloss: feminine-accusative-error-list
+  pattern: eine + Fehlerliste (Akk. f.)
+  slots[1]: NP_acc_f
+  fillers[1]: eine-Fehlerliste
+  anti: ein Fehlerlist; die Fehlerlist
+  concept: an-error-list
+  from_session: 2026-10-09-eine-fehlerliste
+
