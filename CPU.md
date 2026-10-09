@@ -135,6 +135,7 @@
   - TODO couple-management scheduling Woche/Monat
   - TODO couple-management education-career Goethe B2
   - TODO couple-management nutrition-workout
+    - NOTE 2026-10-09 STORE PATH self/nutrition.toon.md. Shared cups + protein drinks logged for self. Partner row pending the other project chat. No given names or contact in this public note.
   - TODO couple-management spending vacation upskilling
   - NOTE health-management ist leer. Archiv-TODO Arbeitsgericht nicht hierher kopiert.
 

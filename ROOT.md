@@ -57,7 +57,7 @@
 
 - DIR .private
   - KIND gitignored life notes. Pinpointable particulars: bag lists, Ausweis, Melde, personal phone, Amt file numbers, what a clerk said.
-  - MEANING CPU.md may name a public office and a clock. Ontology stays universal. self/identity and lebenslauf are also gitignored. Do not paste those facts into inflow/ or pedagogy/.
+  - MEANING CPU.md may name a public office and a clock. Ontology stays universal. self/identity and lebenslauf are also gitignored. Do not paste those facts into inflow/ or pedagogy/. This GitHub repo is public: never put given names, email, phone, or health numbers into a PR title, PR body, or a committed store. Rule: .cursor/rules/public-pr-pii.mdc.
 
 - DIR recycle
   - KIND bin for non-markdown swept by janitor. Not delete. JOURNAL.md is markdown so it stays.

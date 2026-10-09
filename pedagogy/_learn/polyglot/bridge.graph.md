@@ -5094,3 +5094,33 @@ V Lemma_de_fix_anfang_des_tages kind=lemma lang=de surface="Ok, heute ist der 29
 E Lemma_de_fix_anfang_des_tages FROM_SESSION Session_anfang_des_tages SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-09-29-anfang-des-tages.toon.md
 V Form_fix_anfang_des_tages_0_am_anfang_des_tag kind=form lang=de surface="am Anfang des Tages" fixes="Anfang bei dem Tag"
 E Form_fix_anfang_des_tages_0_am_anfang_des_tag FROM_SESSION Session_anfang_des_tages
+
+# ingest-session 2026-10-09T17:32:15Z proteingetraenke-becher lang=de
+V Session_proteingetraenke_becher kind=session date=2026-10-09 lang=de body=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-proteingetraenke-becher.toon.md
+V Focus_proteingetraenke_becher kind=focus lang=de gloss="Wenn es Unsicherheit gibt (wenn + es gibt)" status=active
+E Focus_proteingetraenke_becher FROM_SESSION Session_proteingetraenke_becher
+V Lemma_de_fix_proteingetraenke_becher kind=lemma lang=de surface="Die Proteingetränke – beide gleich – haben ich und" role=minimal-rewrite
+E Lemma_de_fix_proteingetraenke_becher FROM_SESSION Session_proteingetraenke_becher SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-proteingetraenke-becher.toon.md
+V Form_fix_proteingetraenke_becher_0_proteinget kind=form lang=de surface=Proteingetränke fixes=Proteinesgetränks
+E Form_fix_proteingetraenke_becher_0_proteinget FROM_SESSION Session_proteingetraenke_becher
+V Form_fix_proteingetraenke_becher_1_jeweils_ge kind=form lang=de surface="jeweils getrunken" fixes="jeden getrunken"
+E Form_fix_proteingetraenke_becher_1_jeweils_ge FROM_SESSION Session_proteingetraenke_becher
+V Form_fix_proteingetraenke_becher_2_wenn_es_be kind=form lang=de surface="Wenn es Unsicherheit gibt" fixes="Wenn bei … gibt es Unsicherheit"
+E Form_fix_proteingetraenke_becher_2_wenn_es_be FROM_SESSION Session_proteingetraenke_becher
+V Form_fix_proteingetraenke_becher_3_fragst_du_ kind=form lang=de surface="fragst du in der anderen Projektsitzung nach" fixes="fragst du zur anderen Projektsitzung"
+E Form_fix_proteingetraenke_becher_3_fragst_du_ FROM_SESSION Session_proteingetraenke_becher
+V Form_fix_proteingetraenke_becher_4_aus_dem_st kind=form lang=de surface="aus dem statischen Projekt selbst" fixes="von Statik Projekt selbst"
+E Form_fix_proteingetraenke_becher_4_aus_dem_st FROM_SESSION Session_proteingetraenke_becher
+
+# ingest-session 2026-10-09T17:39:36Z oeffentlicher-pr-bereich lang=de
+V Session_oeffentlicher_pr_bereich kind=session date=2026-10-09 lang=de body=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-oeffentlicher-pr-bereich.toon.md
+V Focus_oeffentlicher_pr_bereich kind=focus lang=de gloss="im öffentlichen Bereich (im + Dat, Bereich m.)" status=active
+E Focus_oeffentlicher_pr_bereich FROM_SESSION Session_oeffentlicher_pr_bereich
+V Lemma_de_fix_oeffentlicher_pr_bereich kind=lemma lang=de surface="Also gut, aber bitte stellen Sie ganz sicher, dass" role=minimal-rewrite
+E Lemma_de_fix_oeffentlicher_pr_bereich FROM_SESSION Session_oeffentlicher_pr_bereich SOURCE=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-oeffentlicher-pr-bereich.toon.md
+V Form_fix_oeffentlicher_pr_bereich_0_kontaktin kind=form lang=de surface=Kontaktinfos fixes="Kontakt Info"
+E Form_fix_oeffentlicher_pr_bereich_0_kontaktin FROM_SESSION Session_oeffentlicher_pr_bereich
+V Form_fix_oeffentlicher_pr_bereich_1_im_ffentl kind=form lang=de surface="im öffentlichen Bereich" fixes="ins öffentliche Bereich"
+E Form_fix_oeffentlicher_pr_bereich_1_im_ffentl FROM_SESSION Session_oeffentlicher_pr_bereich
+V Form_fix_oeffentlicher_pr_bereich_2_im_ffentl kind=form lang=de surface="im öffentlichen Bereich des PRs" fixes="ins öffentliche Bereich PR"
+E Form_fix_oeffentlicher_pr_bereich_2_im_ffentl FROM_SESSION Session_oeffentlicher_pr_bereich

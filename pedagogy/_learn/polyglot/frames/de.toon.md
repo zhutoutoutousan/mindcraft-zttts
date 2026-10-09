@@ -324,3 +324,23 @@ frame:
   concept: pressure-from-a-person
   from_session: 2026-09-24-umgang-vier-wendungen
 
+frame:
+  id: wenn_es_gibt
+  gloss: wenn-clause-with-es-gibt
+  pattern: Wenn es + PP + NP + gibt
+  slots[2]: PP, NP_nom
+  fillers[1]: Wenn-es-Unsicherheit-gibt
+  anti: Wenn bei X gibt es; Wenn X gibt es
+  concept: if-there-is-uncertainty
+  from_session: 2026-10-09-proteingetraenke-becher
+
+frame:
+  id: im_oeffentlichen_bereich
+  gloss: in-the-public-area-dative
+  pattern: im + Adj + Bereich (Dat m.)
+  slots[1]: NP_dat_m
+  fillers[1]: im-öffentlichen-Bereich
+  anti: ins öffentliche Bereich (Bereich is m., not n.)
+  concept: in-the-public-area
+  from_session: 2026-10-09-oeffentlicher-pr-bereich
+

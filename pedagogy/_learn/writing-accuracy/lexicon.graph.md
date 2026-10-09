@@ -3038,3 +3038,19 @@ V Sent_anfang_des_tages_fix kind=sentence date=2026-09-29 lang=de role=corrected
 E Sent_anfang_des_tages_fix FIXES Sent_anfang_des_tages_raw
 E Sent_anfang_des_tages_raw FROM_SESSION Session_anfang_des_tages
 E Sent_anfang_des_tages_fix FROM_SESSION Session_anfang_des_tages
+
+# ingest-session 2026-10-09T17:32:15Z proteingetraenke-becher lang=de
+V Session_proteingetraenke_becher kind=session date=2026-10-09 lang=de body=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-proteingetraenke-becher.toon.md
+V Sent_proteingetraenke_becher_raw kind=sentence date=2026-10-09 lang=de role=raw
+V Sent_proteingetraenke_becher_fix kind=sentence date=2026-10-09 lang=de role=corrected
+E Sent_proteingetraenke_becher_fix FIXES Sent_proteingetraenke_becher_raw
+E Sent_proteingetraenke_becher_raw FROM_SESSION Session_proteingetraenke_becher
+E Sent_proteingetraenke_becher_fix FROM_SESSION Session_proteingetraenke_becher
+
+# ingest-session 2026-10-09T17:39:05Z oeffentlicher-pr-bereich lang=de
+V Session_oeffentlicher_pr_bereich kind=session date=2026-10-09 lang=de body=pedagogy/_learn/writing-accuracy/sessions/2026-10-09-oeffentlicher-pr-bereich.toon.md
+V Sent_oeffentlicher_pr_bereich_raw kind=sentence date=2026-10-09 lang=de role=raw
+V Sent_oeffentlicher_pr_bereich_fix kind=sentence date=2026-10-09 lang=de role=corrected
+E Sent_oeffentlicher_pr_bereich_fix FIXES Sent_oeffentlicher_pr_bereich_raw
+E Sent_oeffentlicher_pr_bereich_raw FROM_SESSION Session_oeffentlicher_pr_bereich
+E Sent_oeffentlicher_pr_bereich_fix FROM_SESSION Session_oeffentlicher_pr_bereich
