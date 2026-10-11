@@ -11,3 +11,7 @@
 - PROFILE GOALS
   - STORE PATH self/goals.toon.md
   - NOTE age language job-seeking intent. Particulars. pedagogy-cpu and cron/learn-enrich read this.
+- PROFILE NUTRITION
+  - STORE PATH self/nutrition.toon.md
+  - STORE PATH self/messages.toon.md
+  - NOTE Meals for this person. Partner state comes from the other project chat, not a checkout here. No given names, contact, or body metrics in the public store. Do not invent TDEE.

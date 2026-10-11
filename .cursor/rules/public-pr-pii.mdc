@@ -1,0 +1,21 @@
+# Public PR / GitHub: no PII, no contact
+
+mindcraft-zttts is **public** on GitHub. Anything on a branch or in a PR is public.
+
+## Never commit or put in a PR title/body
+
+- Given names of private counterparties
+- Email, phone, messenger id, mailbox, IBAN
+- Street, GPS, Amt file numbers, Ausweis
+- Bodyweight, BMI, body-fat, lesion sites, clinic names
+- URLs that point at another person's health or identity store
+
+## Where particulars go
+
+`.private/` (gitignored). CPU.md may keep a clock + public title only.
+
+## Before every commit / PR update
+
+Search the diff and the PR body for names, `@`, `tel`, `kg`, `BMI`. Redact. If a prior commit on this branch already leaked, rewrite that branch commit (do not leave the name in history).
+
+Language-session originals: replace a private given name with `Partnerin` / `Partner` before the file is public.
