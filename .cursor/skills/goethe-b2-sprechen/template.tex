@@ -1,0 +1,43 @@
+% Goethe-Zertifikat B2 Sprechen Beschluss. Copy to tmp/goethe-b2-sprechen-YYYY-MM-DD.tex and fill BODY.
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=1.7cm,top=1.7cm,bottom=1.8cm]{geometry}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+
+\hypersetup{colorlinks=true,urlcolor=linkb,pdftitle={Beschluss Sprechen B2 DATE}}
+
+\definecolor{ink}{HTML}{1A1A1A}
+\definecolor{muted}{HTML}{5C5C5C}
+\definecolor{accent}{HTML}{1F4E3D}
+\definecolor{linkb}{HTML}{1F4E79}
+\definecolor{no}{HTML}{F6E8E6}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\fancyhead[L]{\small\color{muted}DATE}
+\fancyhead[R]{\small\color{accent}Beschluss Modul Sprechen}
+\fancyfoot[L]{\small\color{muted}tmp/goethe-b2-sprechen-DATE.pdf}
+\fancyfoot[R]{\small\color{muted}\thepage}
+
+\setlist[itemize]{leftmargin=1.15em,itemsep=0.12em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=0.2em,topsep=0.25em}
+\setlength{\parskip}{0.35em}
+\setlength{\parindent}{0pt}
+\color{ink}
+\emergencystretch=2em
+
+\newcommand{\orig}[1]{\begin{quote}\small #1\end{quote}}
+
+\begin{document}
+% BODY: Beschluss, Vorgang, Frage/Antwort/Vorgang/Korrektur per Teil,
+% Analyse, Empfehlungen, Rubrik, Fehlerliste, Modellantworten.
+\end{document}
