@@ -6,11 +6,11 @@ meta:
   task: written_expression
   methodHit: true
   method: writing-accuracy-base-arbitrage
-  note: Job was adding Owen's open May wage and an attachment list to the Migrationsamt draft. Amount from the 21.05 payroll in the archive. No new lawsuit invented.
+  note: Job was adding [Name]'s open May wage and an attachment list to the Migrationsamt draft. Amount from the 21.05 payroll in the archive. No new lawsuit invented.
 
-original: So es gibt immer noch den Offene Gehaltsschuldung vom FH für Owen gemäß Arbeitsvertrag bzw. Gehalt für Mai. So es gibt Benötigkeit für folgende Rechtliche Verfolgung von Owen. So bei dem Email zur Ausländerbehörde zu schicken benötigt es Anlagen ja
+original: So es gibt immer noch den Offene Gehaltsschuldung vom FH für [Name] gemäß Arbeitsvertrag bzw. Gehalt für Mai. So es gibt Benötigkeit für folgende Rechtliche Verfolgung von [Name]. So bei dem Email zur Ausländerbehörde zu schicken benötigt es Anlagen ja
 
-corrected: Es gibt immer noch die offene Gehaltsschuld der Fachhochschule gegenüber Owen gemäß Arbeitsvertrag, nämlich das Gehalt für Mai. Es besteht die Notwendigkeit einer anschließenden rechtlichen Verfolgung durch Owen. Bei der E-Mail an die Ausländerbehörde werden Anlagen benötigt.
+corrected: Es gibt immer noch die offene Gehaltsschuld der Fachhochschule gegenüber [Name] gemäß Arbeitsvertrag, nämlich das Gehalt für Mai. Es besteht die Notwendigkeit einer anschließenden rechtlichen Verfolgung durch [Name]. Bei der E-Mail an die Ausländerbehörde werden Anlagen benötigt.
 
 oneFocus: die offene Gehaltsschuld (f.)
 reuseNextSession: die offene Gehaltsschuld
