@@ -44,68 +44,78 @@
             z-index: 1;
         }
         
-        /* Language Switcher */
+        /* Language Switcher - Minimized by default */
         .lang-switcher {
             position: fixed;
             top: 80px;
             right: 20px;
             z-index: 9999;
+            transition: all 0.3s;
+        }
+        
+        .lang-toggle {
+            background: rgba(0, 0, 0, 0.95);
+            border: 2px solid #0F0;
+            border-radius: 50%;
+            color: #0F0;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #0F0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        
+        .lang-toggle:hover {
+            background: rgba(0, 255, 0, 0.1);
+            box-shadow: 0 0 25px rgba(0, 255, 0, 0.7);
+            transform: scale(1.05);
+        }
+        
+        .lang-toggle:active {
+            transform: scale(0.95);
+        }
+        
+        #currentLangDisplay {
+            display: none;
+        }
+        
+        .lang-toggle-icon {
+            display: none;
+        }
+        
+        .lang-options {
+            position: absolute;
+            top: 55px;
+            right: 0;
             background: rgba(0, 0, 0, 0.95);
             border: 2px solid #0F0;
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
             backdrop-filter: blur(10px);
-            overflow: hidden;
-            transition: all 0.3s;
-            min-width: 120px;
-        }
-        
-        .lang-toggle {
-            background: transparent;
-            border: none;
-            color: #0F0;
-            padding: 12px 15px;
-            cursor: pointer;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
-            font-weight: bold;
-            text-shadow: 0 0 5px #0F0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px;
-            width: 100%;
-            transition: all 0.3s;
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
-        }
-        
-        .lang-toggle:hover {
-            background: rgba(0, 255, 0, 0.1);
-        }
-        
-        .lang-toggle:active {
-            background: rgba(0, 255, 0, 0.2);
-        }
-        
-        .lang-options {
+            padding: 10px;
             display: none;
             flex-direction: column;
             gap: 5px;
-            padding: 10px;
-            padding-top: 0;
+            min-width: 120px;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 0.3s, transform 0.3s;
         }
         
         .lang-switcher.expanded .lang-options {
             display: flex;
-        }
-        
-        .lang-toggle-icon {
-            transition: transform 0.3s;
-        }
-        
-        .lang-switcher.expanded .lang-toggle-icon {
-            transform: rotate(180deg);
+            opacity: 1;
+            transform: translateY(0);
         }
         
         .lang-btn {
@@ -509,8 +519,14 @@
             }
             
             .lang-toggle {
-                font-size: 12px;
-                padding: 8px 12px;
+                width: 44px;
+                height: 44px;
+                font-size: 18px;
+            }
+            
+            .lang-options {
+                right: 0;
+                min-width: 100px;
             }
             
             .lang-btn {
@@ -924,9 +940,8 @@
     
     <!-- Language Switcher -->
     <div class="lang-switcher" id="langSwitcher">
-        <button class="lang-toggle" onclick="toggleLanguageMenu()">
-            <span id="currentLangDisplay">English</span>
-            <span class="lang-toggle-icon">▼</span>
+        <button class="lang-toggle" onclick="toggleLanguageMenu()" title="Change Language">
+            🌐
         </button>
         <div class="lang-options">
             <button class="lang-btn" data-lang="zh" onclick="setLanguage('zh')">中文</button>

@@ -902,19 +902,19 @@ function toggleLanguageMenu() {
     }
 }
 
-// Update current language display
+// Update current language display (now just a globe icon, no text needed)
 function updateCurrentLangDisplay() {
-    const display = document.getElementById('currentLangDisplay');
-    const langNames = {
-        'zh': '中文',
-        'en': 'English',
-        'de': 'Deutsch',
-        'ru': 'Русский'
-    };
-    if (display) {
-        display.textContent = langNames[currentLang] || 'English';
-    }
+    // Icon is static, no need to update
+    console.log('Current language icon displayed');
 }
+
+// Close language menu when clicking outside
+document.addEventListener('click', (e) => {
+    const switcher = document.getElementById('langSwitcher');
+    if (switcher && !switcher.contains(e.target)) {
+        switcher.classList.remove('expanded');
+    }
+});
 
 // Expose functions to global scope for onclick handlers
 window.setLanguage = setLanguage;
