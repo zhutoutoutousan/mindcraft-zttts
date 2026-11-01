@@ -732,11 +732,25 @@ function setLanguage(lang) {
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
     });
-    document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
+    const activeBtn = document.querySelector(`[data-lang="${lang}"]`);
+    if (activeBtn) {
+        activeBtn.classList.add('active');
+    }
+    
+    // Update current language display
+    updateCurrentLangDisplay();
+    
+    // Close the language menu
+    const switcher = document.getElementById('langSwitcher');
+    if (switcher) {
+        switcher.classList.remove('expanded');
+    }
 }
 
 // Update all text on page
 function updatePageText() {
+    console.log('Updating page text to language:', currentLang);
+    
     // Header
     const logoH1 = document.querySelector('.logo-text h1');
     const logoP = document.querySelector('.logo-text p');
@@ -749,11 +763,19 @@ function updatePageText() {
         link.innerHTML = t(`nav.${keys[i]}`);
     });
     
-    // Hero
+    // Hero section
     const heroH2 = document.querySelector('.hero h2');
     const heroP = document.querySelector('.hero > p');
-    if (heroH2) heroH2.textContent = t('hero.title');
-    if (heroP) heroP.textContent = t('hero.description');
+    console.log('Hero h2 element:', heroH2);
+    console.log('Hero title translation:', t('hero.title'));
+    if (heroH2) {
+        heroH2.textContent = t('hero.title');
+        console.log('Updated hero h2 to:', heroH2.textContent);
+    }
+    if (heroP) {
+        heroP.textContent = t('hero.description');
+        console.log('Updated hero p to:', heroP.textContent);
+    }
     
     const statLabels = document.querySelectorAll('.stat-label');
     if (statLabels[0]) statLabels[0].textContent = t('hero.stats.investment');
@@ -829,13 +851,17 @@ function updateChartLanguage() {
 
 // Initialize on load
 window.addEventListener('load', () => {
+    console.log('Page loaded, initializing i18n...');
+    
     // Ensure default is English if no saved preference
     const savedLang = localStorage.getItem('preferredLanguage');
     if (savedLang && translations[savedLang]) {
         currentLang = savedLang;
+        console.log('Loaded saved language:', savedLang);
     } else {
         // Default to English
         currentLang = 'en';
+        console.log('Using default language: en');
     }
     
     // Update active button
@@ -845,11 +871,38 @@ window.addEventListener('load', () => {
         activeBtn.classList.add('active');
     }
     
+    // Update current language display
+    updateCurrentLangDisplay();
+    
     // Update all text immediately
     setTimeout(() => {
+        console.log('Calling updatePageText after 100ms delay');
         updatePageText();
     }, 100);
 });
 
-// Expose setLanguage to global scope for onclick handlers
+// Toggle language menu
+function toggleLanguageMenu() {
+    const switcher = document.getElementById('langSwitcher');
+    if (switcher) {
+        switcher.classList.toggle('expanded');
+    }
+}
+
+// Update current language display
+function updateCurrentLangDisplay() {
+    const display = document.getElementById('currentLangDisplay');
+    const langNames = {
+        'zh': '中文',
+        'en': 'English',
+        'de': 'Deutsch',
+        'ru': 'Русский'
+    };
+    if (display) {
+        display.textContent = langNames[currentLang] || 'English';
+    }
+}
+
+// Expose functions to global scope for onclick handlers
 window.setLanguage = setLanguage;
+window.toggleLanguageMenu = toggleLanguageMenu;
