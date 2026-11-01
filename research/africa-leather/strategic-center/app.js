@@ -160,7 +160,7 @@ routes.forEach(route => {
 // CHARTS - DATA VISUALIZATION
 // ============================================
 
-// Chart 1: Container Economics
+// Chart 1: Container Economics - MATRIX STYLE
 const containerCtx = document.getElementById('containerChart').getContext('2d');
 new Chart(containerCtx, {
     type: 'bar',
@@ -170,19 +170,13 @@ new Chart(containerCtx, {
             label: '美元 (USD)',
             data: [44200, 4500, 3200, 800, 130000],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.7)',
-                'rgba(54, 162, 235, 0.7)',
-                'rgba(255, 206, 86, 0.7)',
-                'rgba(75, 192, 192, 0.7)',
-                'rgba(75, 255, 75, 0.9)'
+                'rgba(0, 255, 0, 0.6)',
+                'rgba(0, 255, 0, 0.7)',
+                'rgba(0, 255, 0, 0.5)',
+                'rgba(0, 255, 0, 0.6)',
+                'rgba(0, 255, 0, 0.9)'
             ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(75, 255, 75, 1)'
-            ],
+            borderColor: '#0F0',
             borderWidth: 2
         }]
     },
@@ -196,10 +190,11 @@ new Chart(containerCtx, {
             title: {
                 display: true,
                 text: '首个40ft集装箱成本与收入',
-                color: '#FFD700',
+                color: '#0F0',
                 font: {
                     size: 16,
-                    weight: 'bold'
+                    weight: 'bold',
+                    family: "'Courier New', monospace"
                 }
             }
         },
@@ -207,28 +202,34 @@ new Chart(containerCtx, {
             y: {
                 beginAtZero: true,
                 ticks: {
-                    color: '#fff',
+                    color: '#0F0',
                     callback: function(value) {
                         return '$' + value.toLocaleString();
+                    },
+                    font: {
+                        family: "'Courier New', monospace"
                     }
                 },
                 grid: {
-                    color: 'rgba(255, 255, 255, 0.1)'
+                    color: 'rgba(0, 255, 0, 0.1)'
                 }
             },
             x: {
                 ticks: {
-                    color: '#fff'
+                    color: '#0F0',
+                    font: {
+                        family: "'Courier New', monospace"
+                    }
                 },
                 grid: {
-                    color: 'rgba(255, 255, 255, 0.1)'
+                    color: 'rgba(0, 255, 0, 0.1)'
                 }
             }
         }
     }
 });
 
-// Chart 2: Market Size
+// Chart 2: Market Size - MATRIX STYLE
 const marketCtx = document.getElementById('marketChart').getContext('2d');
 new Chart(marketCtx, {
     type: 'doughnut',
@@ -238,16 +239,16 @@ new Chart(marketCtx, {
             label: '市场规模 (百万美元)',
             data: [580, 450, 320, 280, 210, 190, 150, 130],
             backgroundColor: [
-                'rgba(255, 215, 0, 0.8)',
-                'rgba(255, 165, 0, 0.8)',
-                'rgba(255, 99, 132, 0.8)',
-                'rgba(54, 162, 235, 0.8)',
-                'rgba(255, 206, 86, 0.8)',
-                'rgba(75, 192, 192, 0.8)',
-                'rgba(153, 102, 255, 0.8)',
-                'rgba(255, 159, 64, 0.8)'
+                'rgba(0, 255, 0, 0.9)',
+                'rgba(0, 255, 0, 0.8)',
+                'rgba(0, 255, 0, 0.7)',
+                'rgba(0, 255, 0, 0.6)',
+                'rgba(0, 255, 0, 0.5)',
+                'rgba(0, 200, 0, 0.8)',
+                'rgba(0, 200, 0, 0.7)',
+                'rgba(0, 200, 0, 0.6)'
             ],
-            borderColor: '#fff',
+            borderColor: '#000',
             borderWidth: 2
         }]
     },
@@ -258,26 +259,28 @@ new Chart(marketCtx, {
             legend: {
                 position: 'right',
                 labels: {
-                    color: '#fff',
+                    color: '#0F0',
                     font: {
-                        size: 12
+                        size: 12,
+                        family: "'Courier New', monospace"
                     }
                 }
             },
             title: {
                 display: true,
                 text: '非洲八国皮革市场规模 (2026)',
-                color: '#FFD700',
+                color: '#0F0',
                 font: {
                     size: 16,
-                    weight: 'bold'
+                    weight: 'bold',
+                    family: "'Courier New', monospace"
                 }
             }
         }
     }
 });
 
-// Chart 3: Product Profit Margins
+// Chart 3: Product Profit Margins - MATRIX STYLE
 const productCtx = document.getElementById('productChart').getContext('2d');
 new Chart(productCtx, {
     type: 'horizontalBar',
@@ -286,8 +289,8 @@ new Chart(productCtx, {
         datasets: [{
             label: '利润率 (%)',
             data: [165, 180, 140, 155, 170],
-            backgroundColor: 'rgba(255, 215, 0, 0.7)',
-            borderColor: 'rgba(255, 215, 0, 1)',
+            backgroundColor: 'rgba(0, 255, 0, 0.7)',
+            borderColor: '#0F0',
             borderWidth: 2
         }]
     },
@@ -302,10 +305,11 @@ new Chart(productCtx, {
             title: {
                 display: true,
                 text: '各类皮革产品利润率',
-                color: '#FFD700',
+                color: '#0F0',
                 font: {
                     size: 16,
-                    weight: 'bold'
+                    weight: 'bold',
+                    family: "'Courier New', monospace"
                 }
             }
         },
@@ -313,28 +317,34 @@ new Chart(productCtx, {
             x: {
                 beginAtZero: true,
                 ticks: {
-                    color: '#fff',
+                    color: '#0F0',
                     callback: function(value) {
                         return value + '%';
+                    },
+                    font: {
+                        family: "'Courier New', monospace"
                     }
                 },
                 grid: {
-                    color: 'rgba(255, 255, 255, 0.1)'
+                    color: 'rgba(0, 255, 0, 0.1)'
                 }
             },
             y: {
                 ticks: {
-                    color: '#fff'
+                    color: '#0F0',
+                    font: {
+                        family: "'Courier New', monospace"
+                    }
                 },
                 grid: {
-                    color: 'rgba(255, 255, 255, 0.1)'
+                    color: 'rgba(0, 255, 0, 0.1)'
                 }
             }
         }
     }
 });
 
-// Chart 4: China Import Share
+// Chart 4: China Import Share - MATRIX STYLE
 const shareCtx = document.getElementById('shareChart').getContext('2d');
 new Chart(shareCtx, {
     type: 'pie',
@@ -344,13 +354,13 @@ new Chart(shareCtx, {
             label: '市场份额 (%)',
             data: [42, 18, 12, 20, 8],
             backgroundColor: [
-                'rgba(255, 215, 0, 0.9)',
-                'rgba(54, 162, 235, 0.8)',
-                'rgba(255, 99, 132, 0.8)',
-                'rgba(75, 192, 192, 0.8)',
-                'rgba(153, 102, 255, 0.8)'
+                'rgba(0, 255, 0, 0.9)',
+                'rgba(0, 255, 0, 0.7)',
+                'rgba(0, 255, 0, 0.5)',
+                'rgba(0, 200, 0, 0.8)',
+                'rgba(0, 200, 0, 0.6)'
             ],
-            borderColor: '#fff',
+            borderColor: '#000',
             borderWidth: 3
         }]
     },
@@ -361,19 +371,21 @@ new Chart(shareCtx, {
             legend: {
                 position: 'bottom',
                 labels: {
-                    color: '#fff',
+                    color: '#0F0',
                     font: {
-                        size: 12
+                        size: 12,
+                        family: "'Courier New', monospace"
                     }
                 }
             },
             title: {
                 display: true,
                 text: '非洲皮革进口来源分布',
-                color: '#FFD700',
+                color: '#0F0',
                 font: {
                     size: 16,
-                    weight: 'bold'
+                    weight: 'bold',
+                    family: "'Courier New', monospace"
                 }
             }
         }
