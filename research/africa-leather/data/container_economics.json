@@ -1,0 +1,56 @@
+{
+  "container_type": "40ft High Cube",
+  "internal_volume_cbm": 76.3,
+  "max_payload_kg": 26700,
+  "typical_leather_load_sqm": 8500,
+  "routes": [
+    {
+      "route": "China \u2192 Nigeria (Lagos)",
+      "shipping_cost_usd": 4500,
+      "customs_duty_usd": 3200,
+      "local_logistics_usd": 800,
+      "total_cost_usd": 8500,
+      "leather_volume_sqm": 8500,
+      "avg_purchase_price_sqm": 5.2,
+      "total_purchase_usd": 44200,
+      "total_investment_usd": 52700,
+      "avg_selling_price_sqm": 15.3,
+      "total_revenue_usd": 130050,
+      "gross_profit_usd": 77350,
+      "roi_pct": 1.47,
+      "payback_months": 0.8
+    },
+    {
+      "route": "China \u2192 Kenya (Mombasa)",
+      "shipping_cost_usd": 3200,
+      "customs_duty_usd": 4100,
+      "local_logistics_usd": 600,
+      "total_cost_usd": 7900,
+      "leather_volume_sqm": 8500,
+      "avg_purchase_price_sqm": 5.2,
+      "total_purchase_usd": 44200,
+      "total_investment_usd": 52100,
+      "avg_selling_price_sqm": 14.8,
+      "total_revenue_usd": 125800,
+      "gross_profit_usd": 73700,
+      "roi_pct": 1.41,
+      "payback_months": 0.85
+    },
+    {
+      "route": "China \u2192 South Africa (Durban)",
+      "shipping_cost_usd": 3800,
+      "customs_duty_usd": 2800,
+      "local_logistics_usd": 900,
+      "total_cost_usd": 7500,
+      "leather_volume_sqm": 8500,
+      "avg_purchase_price_sqm": 5.2,
+      "total_purchase_usd": 44200,
+      "total_investment_usd": 51700,
+      "avg_selling_price_sqm": 16.5,
+      "total_revenue_usd": 140250,
+      "gross_profit_usd": 88550,
+      "roi_pct": 1.71,
+      "payback_months": 0.7
+    }
+  ]
+}

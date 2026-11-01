@@ -1,0 +1,4 @@
+route,shipping_cost_usd,customs_duty_usd,local_logistics_usd,total_cost_usd,leather_volume_sqm,avg_purchase_price_sqm,total_purchase_usd,total_investment_usd,avg_selling_price_sqm,total_revenue_usd,gross_profit_usd,roi_pct,payback_months
+China → Nigeria (Lagos),4500,3200,800,8500,8500,5.2,44200,52700,15.3,130050,77350,1.47,0.8
+China → Kenya (Mombasa),3200,4100,600,7900,8500,5.2,44200,52100,14.8,125800,73700,1.41,0.85
+China → South Africa (Durban),3800,2800,900,7500,8500,5.2,44200,51700,16.5,140250,88550,1.71,0.7
