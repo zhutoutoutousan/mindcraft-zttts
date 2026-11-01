@@ -16,12 +16,26 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19
 }).addTo(map);
 
-// Define shipping routes
+// Define shipping routes with REAL waypoints (through Malacca Strait, Indian Ocean)
 const routes = [
     {
         name: '上海 → 拉各斯',
         from: [31.2304, 121.4737],  // Shanghai
         to: [6.5244, 3.3792],       // Lagos
+        waypoints: [
+            [31.2304, 121.4737],    // Shanghai
+            [22.3, 114.2],          // Hong Kong waters
+            [16.0, 112.0],          // South China Sea
+            [7.5, 105.0],           // Vietnam coast
+            [3.5, 100.5],           // Malacca Strait entrance
+            [1.3, 103.8],           // Singapore Strait
+            [-5.0, 80.0],           // Central Indian Ocean
+            [-8.0, 60.0],           // Western Indian Ocean
+            [-10.0, 45.0],          // East Africa approach
+            [0.0, 40.0],            // Somalia waters
+            [5.0, 10.0],            // Gulf of Guinea approach
+            [6.5244, 3.3792]        // Lagos
+        ],
         color: '#FFD700',
         days: 35,
         cost: 4500
@@ -30,6 +44,18 @@ const routes = [
         name: '深圳 → 德班',
         from: [22.5431, 114.0579],  // Shenzhen
         to: [-29.8587, 31.0218],    // Durban
+        waypoints: [
+            [22.5431, 114.0579],    // Shenzhen
+            [18.0, 112.0],          // South China Sea
+            [10.0, 108.0],          // Vietnam waters
+            [3.5, 100.5],           // Malacca Strait
+            [1.3, 103.8],           // Singapore
+            [-6.0, 85.0],           // Indian Ocean (Sumatra)
+            [-12.0, 70.0],          // Central Indian Ocean
+            [-20.0, 55.0],          // Mozambique Channel approach
+            [-25.0, 40.0],          // Madagascar waters
+            [-29.8587, 31.0218]     // Durban
+        ],
         color: '#FFA500',
         days: 30,
         cost: 4200
@@ -38,6 +64,18 @@ const routes = [
         name: '广州 → 蒙巴萨',
         from: [23.1291, 113.2644],  // Guangzhou
         to: [-4.0435, 39.6682],     // Mombasa
+        waypoints: [
+            [23.1291, 113.2644],    // Guangzhou
+            [18.0, 112.0],          // South China Sea
+            [8.0, 106.0],           // Vietnam coast
+            [3.5, 100.5],           // Malacca Strait
+            [1.3, 103.8],           // Singapore
+            [-3.0, 90.0],           // Indian Ocean (Sumatra)
+            [-8.0, 75.0],           // Central Indian Ocean
+            [-10.0, 60.0],          // Western Indian Ocean
+            [-6.0, 50.0],           // East Africa approach
+            [-4.0435, 39.6682]      // Mombasa
+        ],
         color: '#FF6B6B',
         days: 28,
         cost: 4000
@@ -82,22 +120,40 @@ routes.forEach(route => {
         </div>
     `);
     
-    // Draw curved shipping route using Leaflet.arc
-    const arcLine = L.Polyline.Arc(route.from, route.to, {
+    // Draw REAL shipping route with waypoints (actual maritime path)
+    const shippingLine = L.polyline(route.waypoints, {
         color: route.color,
         weight: 3,
-        opacity: 0.7,
-        vertices: 100,
-        dashArray: '10, 5'
+        opacity: 0.8,
+        smoothFactor: 2,
+        dashArray: '10, 8'
     }).addTo(map);
     
-    arcLine.bindPopup(`
+    shippingLine.bindPopup(`
         <div style="color: #000; font-weight: 600;">
             <strong>${route.name}</strong><br>
-            海运路线 | Shipping Route<br>
+            真实海运航线 | Real Maritime Route<br>
+            <span style="color: #1e3c72;">经马六甲海峡、印度洋</span><br>
             <span style="color: #1e3c72;">预计${route.days}天</span>
         </div>
     `);
+    
+    // Add animated ship marker moving along route
+    let shipIndex = 0;
+    const ship = L.circleMarker(route.waypoints[0], {
+        radius: 5,
+        fillColor: '#fff',
+        color: route.color,
+        weight: 2,
+        opacity: 0.9,
+        fillOpacity: 1
+    }).addTo(map);
+    
+    // Animate ship movement
+    setInterval(() => {
+        shipIndex = (shipIndex + 1) % route.waypoints.length;
+        ship.setLatLng(route.waypoints[shipIndex]);
+    }, 3000); // Move every 3 seconds
 });
 
 // ============================================

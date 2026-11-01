@@ -345,21 +345,167 @@
         
         /* Responsive */
         @media (max-width: 768px) {
+            .header {
+                padding: 15px 20px;
+            }
+            
             .header-content {
                 flex-direction: column;
-                gap: 20px;
+                gap: 15px;
+            }
+            
+            .logo-text h1 {
+                font-size: 18px;
+            }
+            
+            .logo-text p {
+                font-size: 12px;
             }
             
             .nav {
-                flex-direction: column;
-                gap: 10px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 8px;
+                justify-content: center;
+            }
+            
+            .nav a {
+                font-size: 13px;
+                padding: 6px 12px;
+            }
+            
+            .hero {
+                padding: 40px 20px;
             }
             
             .hero h2 {
+                font-size: 28px;
+                line-height: 1.2;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .hero-stats {
+                gap: 20px;
+            }
+            
+            .stat-box {
+                padding: 20px 25px;
+                min-width: 150px;
+            }
+            
+            .stat-value {
                 font-size: 32px;
             }
             
+            .stat-label {
+                font-size: 14px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .section {
+                padding: 25px 20px;
+                margin-bottom: 30px;
+            }
+            
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            #map {
+                height: 400px;
+            }
+            
             .charts-grid, .partner-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .chart-container {
+                padding: 20px;
+            }
+            
+            .chart-title {
+                font-size: 18px;
+            }
+            
+            .partner-card {
+                padding: 25px;
+            }
+            
+            .partner-name {
+                font-size: 20px;
+            }
+            
+            .partner-role {
+                font-size: 14px;
+            }
+            
+            .partner-details {
+                font-size: 13px;
+            }
+            
+            .profit-share-value {
+                font-size: 28px;
+            }
+            
+            .timeline {
+                padding-left: 40px;
+            }
+            
+            .timeline::before {
+                left: 15px;
+            }
+            
+            .timeline-item::before {
+                left: -33px;
+                width: 16px;
+                height: 16px;
+            }
+            
+            .timeline-phase {
+                font-size: 16px;
+            }
+            
+            .timeline-content {
+                padding: 15px;
+            }
+            
+            .timeline-steps {
+                font-size: 14px;
+            }
+        }
+        
+        /* Small phones */
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 24px;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .stat-box {
+                width: 100%;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+            
+            #map {
+                height: 350px;
+            }
+            
+            .partner-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -585,9 +731,6 @@
     
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    
-    <!-- Leaflet Arc Plugin for curved routes -->
-    <script src="https://cdn.jsdelivr.net/npm/leaflet-arc/bin/leaflet-arc.min.js"></script>
     
     <script src="app.js"></script>
 </body>
