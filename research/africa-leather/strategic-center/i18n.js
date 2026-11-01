@@ -146,7 +146,7 @@ const translations = {
                 step7: "到港清关，支付关税 (~$3,200)",
                 step8: "运输到Justice父亲酒店仓库",
                 step9: "在酒店大堂设置皮革展示台",
-                step10: "举办"皮革产品展示会"，邀请10-15个批发商",
+                step10: "举办'皮革产品展示会'，邀请10-15个批发商",
                 step11: "2-3周内销售60-70%货物，回款 ~$90,000"
             },
             goal: "目标：",
@@ -728,11 +728,11 @@ function setLanguage(lang) {
         console.error('Translation not found for:', lang);
         return;
     }
+    
+    // Save first
+    localStorage.setItem('preferredLanguage', lang);
     currentLang = lang;
     console.log('Current language set to:', currentLang);
-    
-    updatePageText();
-    localStorage.setItem('preferredLanguage', lang);
     
     // Update active state
     document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -744,9 +744,6 @@ function setLanguage(lang) {
         console.log('Active button updated:', lang);
     }
     
-    // Update current language display
-    updateCurrentLangDisplay();
-    
     // Close the language menu
     const switcher = document.getElementById('langSwitcher');
     if (switcher) {
@@ -754,10 +751,13 @@ function setLanguage(lang) {
         console.log('Language menu closed');
     }
     
-    // Force reload charts with new language
-    setTimeout(() => {
-        location.reload();
-    }, 300);
+    // Update current language display
+    updateCurrentLangDisplay();
+    
+    // Update page text
+    updatePageText();
+    
+    console.log('Language change complete');
 }
 
 // Update all text on page
@@ -779,16 +779,8 @@ function updatePageText() {
     // Hero section
     const heroH2 = document.querySelector('.hero h2');
     const heroP = document.querySelector('.hero > p');
-    console.log('Hero h2 element:', heroH2);
-    console.log('Hero title translation:', t('hero.title'));
-    if (heroH2) {
-        heroH2.textContent = t('hero.title');
-        console.log('Updated hero h2 to:', heroH2.textContent);
-    }
-    if (heroP) {
-        heroP.textContent = t('hero.description');
-        console.log('Updated hero p to:', heroP.textContent);
-    }
+    if (heroH2) heroH2.textContent = t('hero.title');
+    if (heroP) heroP.textContent = t('hero.description');
     
     const statLabels = document.querySelectorAll('.stat-label');
     if (statLabels[0]) statLabels[0].textContent = t('hero.stats.investment');
@@ -851,8 +843,20 @@ function updatePageText() {
     if (footerPs[0]) footerPs[0].textContent = t('footer.copyright');
     if (footerPs[1]) footerPs[1].textContent = t('footer.tagline');
     
-    // Force chart updates (recreate with new language)
-    updateChartLanguage();
+    // Update all data-i18n elements
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const translation = t(key);
+        if (translation && translation !== key) {
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                el.placeholder = translation;
+            } else {
+                el.textContent = translation;
+            }
+        }
+    });
+    
+    console.log('Page text update complete');
 }
 
 // Update chart labels to current language
@@ -911,6 +915,14 @@ function updateCurrentLangDisplay() {
 // Close language menu when clicking outside
 document.addEventListener('click', (e) => {
     const switcher = document.getElementById('langSwitcher');
+    const isLanguageButton = e.target.closest('.lang-btn');
+    const isToggleButton = e.target.closest('.lang-toggle');
+    
+    // Don't close if clicking on language buttons or toggle
+    if (isLanguageButton || isToggleButton) {
+        return;
+    }
+    
     if (switcher && !switcher.contains(e.target)) {
         switcher.classList.remove('expanded');
     }
