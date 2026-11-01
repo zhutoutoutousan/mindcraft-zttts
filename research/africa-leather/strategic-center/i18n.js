@@ -723,8 +723,14 @@ function t(key) {
 
 // Change language
 function setLanguage(lang) {
-    if (!translations[lang]) return;
+    console.log('setLanguage called with:', lang);
+    if (!translations[lang]) {
+        console.error('Translation not found for:', lang);
+        return;
+    }
     currentLang = lang;
+    console.log('Current language set to:', currentLang);
+    
     updatePageText();
     localStorage.setItem('preferredLanguage', lang);
     
@@ -735,6 +741,7 @@ function setLanguage(lang) {
     const activeBtn = document.querySelector(`[data-lang="${lang}"]`);
     if (activeBtn) {
         activeBtn.classList.add('active');
+        console.log('Active button updated:', lang);
     }
     
     // Update current language display
@@ -744,7 +751,13 @@ function setLanguage(lang) {
     const switcher = document.getElementById('langSwitcher');
     if (switcher) {
         switcher.classList.remove('expanded');
+        console.log('Language menu closed');
     }
+    
+    // Force reload charts with new language
+    setTimeout(() => {
+        location.reload();
+    }, 300);
 }
 
 // Update all text on page
