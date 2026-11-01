@@ -50,12 +50,26 @@ async def test_language_switching():
         # Click Chinese language button
         print("Clicking Chinese language button...")
         await page_desktop.click('[data-lang="zh"]')
-        await page_desktop.wait_for_timeout(1000)
+        await page_desktop.wait_for_timeout(2000)  # Longer wait for charts to render
         
         # Check updated hero title
         hero_title_zh_desktop = await page_desktop.locator('.hero h2').text_content()
         print(f"Hero title after clicking Chinese (Desktop): {hero_title_zh_desktop}")
         results["desktop"]["hero_title_zh"] = hero_title_zh_desktop
+        
+        # Check chart title (first chart)
+        chart_title_zh = await page_desktop.evaluate("""
+            window.containerChart?.options?.plugins?.title?.text || 'No chart'
+        """)
+        print(f"Chart title after clicking Chinese (Desktop): {chart_title_zh}")
+        results["desktop"]["chart_title_zh"] = chart_title_zh
+        
+        # Check chart labels (market chart - second chart)
+        chart_labels_zh = await page_desktop.evaluate("""
+            window.marketChart?.data?.labels?.[0] || 'No labels'
+        """)
+        print(f"Market chart first label (Desktop): {chart_labels_zh}")
+        results["desktop"]["chart_labels_zh"] = chart_labels_zh
         
         # Click language toggle again
         await page_desktop.click('.lang-toggle')
@@ -64,12 +78,19 @@ async def test_language_switching():
         # Click German language button
         print("Clicking German language button...")
         await page_desktop.click('[data-lang="de"]')
-        await page_desktop.wait_for_timeout(1000)
+        await page_desktop.wait_for_timeout(2000)  # Longer wait for charts to render
         
         # Check updated hero title
         hero_title_de_desktop = await page_desktop.locator('.hero h2').text_content()
         print(f"Hero title after clicking German (Desktop): {hero_title_de_desktop}")
         results["desktop"]["hero_title_de"] = hero_title_de_desktop
+        
+        # Check chart labels
+        chart_labels_de = await page_desktop.evaluate("""
+            window.marketChart?.data?.labels?.[0] || 'No labels'
+        """)
+        print(f"Market chart first label (Desktop): {chart_labels_de}")
+        results["desktop"]["chart_labels_de"] = chart_labels_de
         
         await context_desktop.close()
         
@@ -156,6 +177,12 @@ async def test_language_switching():
             print("✅ Desktop: Chinese language switch works")
         else:
             print("❌ Desktop: Chinese language switch failed")
+            passed = False
+        
+        if "尼日利亚" in results["desktop"].get("chart_labels_zh", ""):
+            print("✅ Desktop: Chart labels updated to Chinese")
+        else:
+            print(f"❌ Desktop: Chart labels not updated to Chinese (got: {results['desktop'].get('chart_labels_zh')})")
             passed = False
         
         if "China →" in results["desktop"]["hero_title_de"] or "Leder" in results["desktop"]["hero_title_de"]:

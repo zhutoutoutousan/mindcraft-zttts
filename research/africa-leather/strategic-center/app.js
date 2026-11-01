@@ -2,6 +2,14 @@
 // STRATEGIC CENTER - INTERACTIVE MAP & CHARTS
 // ============================================
 
+// Global chart instances (exposed to window for testing)
+window.containerChart = null;
+window.marketChart = null;
+window.productChart = null;
+window.shareChart = null;
+window.ganttChart = null;
+window.transportChart = null;
+
 // Initialize the map centered on Africa
 const map = L.map('map', {
     center: [5, 20],
@@ -180,457 +188,8 @@ routes.forEach(route => {
 // ============================================
 // CHARTS - DATA VISUALIZATION
 // ============================================
-
-// Chart 1: Container Economics - MATRIX STYLE
-const containerCtx = document.getElementById('containerChart').getContext('2d');
-new Chart(containerCtx, {
-    type: 'bar',
-    data: {
-        labels: ['皮革采购', '海运费用', '关税清关', '本地物流', '预期收入'],
-        datasets: [{
-            label: '美元 (USD)',
-            data: [44200, 4500, 3200, 800, 130000],
-            backgroundColor: [
-                'rgba(0, 255, 0, 0.6)',
-                'rgba(0, 255, 0, 0.7)',
-                'rgba(0, 255, 0, 0.5)',
-                'rgba(0, 255, 0, 0.6)',
-                'rgba(0, 255, 0, 0.9)'
-            ],
-            borderColor: '#0F0',
-            borderWidth: 2
-        }]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: true,
-        plugins: {
-            legend: {
-                display: false
-            },
-            title: {
-                display: true,
-                text: '首个40ft集装箱成本与收入',
-                color: '#0F0',
-                font: {
-                    size: 16,
-                    weight: 'bold',
-                    family: "'Courier New', monospace"
-                }
-            }
-        },
-        scales: {
-            y: {
-                beginAtZero: true,
-                ticks: {
-                    color: '#0F0',
-                    callback: function(value) {
-                        return '$' + value.toLocaleString();
-                    },
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                },
-                grid: {
-                    color: 'rgba(0, 255, 0, 0.1)'
-                }
-            },
-            x: {
-                ticks: {
-                    color: '#0F0',
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                },
-                grid: {
-                    color: 'rgba(0, 255, 0, 0.1)'
-                }
-            }
-        }
-    }
-});
-
-// Chart 2: Market Size - MATRIX STYLE
-const marketCtx = document.getElementById('marketChart').getContext('2d');
-new Chart(marketCtx, {
-    type: 'doughnut',
-    data: {
-        labels: ['尼日利亚', '南非', '肯尼亚', '埃塞俄比亚', '加纳', '坦桑尼亚', '乌干达', '塞内加尔'],
-        datasets: [{
-            label: '市场规模 (百万美元)',
-            data: [580, 450, 320, 280, 210, 190, 150, 130],
-            backgroundColor: [
-                'rgba(0, 255, 0, 0.9)',
-                'rgba(0, 255, 0, 0.8)',
-                'rgba(0, 255, 0, 0.7)',
-                'rgba(0, 255, 0, 0.6)',
-                'rgba(0, 255, 0, 0.5)',
-                'rgba(0, 200, 0, 0.8)',
-                'rgba(0, 200, 0, 0.7)',
-                'rgba(0, 200, 0, 0.6)'
-            ],
-            borderColor: '#000',
-            borderWidth: 2
-        }]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: true,
-        plugins: {
-            legend: {
-                position: 'right',
-                labels: {
-                    color: '#0F0',
-                    font: {
-                        size: 12,
-                        family: "'Courier New', monospace"
-                    }
-                }
-            },
-            title: {
-                display: true,
-                text: '非洲八国皮革市场规模 (2026)',
-                color: '#0F0',
-                font: {
-                    size: 16,
-                    weight: 'bold',
-                    family: "'Courier New', monospace"
-                }
-            }
-        }
-    }
-});
-
-// Chart 3: Product Profit Margins - MATRIX STYLE
-const productCtx = document.getElementById('productChart').getContext('2d');
-new Chart(productCtx, {
-    type: 'bar',
-    data: {
-        labels: ['沙发革', '箱包革', '服装革', '鞋革', '汽车内饰革'],
-        datasets: [{
-            label: '利润率 (%)',
-            data: [165, 180, 140, 155, 170],
-            backgroundColor: 'rgba(0, 255, 0, 0.7)',
-            borderColor: '#0F0',
-            borderWidth: 2
-        }]
-    },
-    options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: true,
-        plugins: {
-            legend: {
-                display: false
-            },
-            title: {
-                display: true,
-                text: 'Product Profit Margins',
-                color: '#0F0',
-                font: {
-                    size: 16,
-                    weight: 'bold',
-                    family: "'Courier New', monospace"
-                }
-            }
-        },
-        scales: {
-            x: {
-                beginAtZero: true,
-                ticks: {
-                    color: '#0F0',
-                    callback: function(value) {
-                        return value + '%';
-                    },
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                },
-                grid: {
-                    color: 'rgba(0, 255, 0, 0.1)'
-                }
-            },
-            y: {
-                ticks: {
-                    color: '#0F0',
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                },
-                grid: {
-                    color: 'rgba(0, 255, 0, 0.1)'
-                }
-            }
-        }
-    }
-});
-
-// Chart 4: China Import Share - MATRIX STYLE
-const shareCtx = document.getElementById('shareChart').getContext('2d');
-new Chart(shareCtx, {
-    type: 'pie',
-    data: {
-        labels: ['中国进口', '印度进口', '土耳其进口', '本地生产', '其他'],
-        datasets: [{
-            label: '市场份额 (%)',
-            data: [42, 18, 12, 20, 8],
-            backgroundColor: [
-                'rgba(0, 255, 0, 0.9)',
-                'rgba(0, 255, 0, 0.7)',
-                'rgba(0, 255, 0, 0.5)',
-                'rgba(0, 200, 0, 0.8)',
-                'rgba(0, 200, 0, 0.6)'
-            ],
-            borderColor: '#000',
-            borderWidth: 3
-        }]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: true,
-        plugins: {
-            legend: {
-                position: 'bottom',
-                labels: {
-                    color: '#0F0',
-                    font: {
-                        size: 12,
-                        family: "'Courier New', monospace"
-                    }
-                }
-            },
-            title: {
-                display: true,
-                text: '非洲皮革进口来源分布',
-                color: '#0F0',
-                font: {
-                    size: 16,
-                    weight: 'bold',
-                    family: "'Courier New', monospace"
-                }
-            }
-        }
-    }
-});
-
-// Chart 5: Gantt Chart - MATRIX STYLE
-const ganttCtx = document.getElementById('ganttChart').getContext('2d');
-new Chart(ganttCtx, {
-    type: 'bar',
-    data: {
-        labels: [
-            'Market Research & Sourcing',
-            'Supplier Negotiation',
-            'Capital Raising',
-            'Order Placement',
-            'Production & QC',
-            'Shipping Documentation',
-            'Sea Freight (25-35 days)',
-            'Customs Clearance',
-            'Port → Hotel Transport',
-            'Showroom Setup',
-            'Exhibition & Sales',
-            'Cash Collection'
-        ],
-        datasets: [{
-            label: 'Duration (days)',
-            data: [7, 7, 15, 5, 10, 5, 30, 3, 2, 5, 14, 14],
-            backgroundColor: [
-                'rgba(0, 255, 0, 0.7)',
-                'rgba(0, 255, 0, 0.6)',
-                'rgba(0, 200, 0, 0.7)',
-                'rgba(0, 255, 0, 0.5)',
-                'rgba(0, 255, 0, 0.8)',
-                'rgba(0, 200, 0, 0.6)',
-                'rgba(0, 255, 0, 0.9)',
-                'rgba(0, 255, 0, 0.7)',
-                'rgba(0, 200, 0, 0.8)',
-                'rgba(0, 255, 0, 0.6)',
-                'rgba(0, 255, 0, 0.8)',
-                'rgba(0, 200, 0, 0.7)'
-            ],
-            borderColor: '#0F0',
-            borderWidth: 1
-        }]
-    },
-    options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: true,
-        plugins: {
-            legend: {
-                display: false
-            },
-            title: {
-                display: true,
-                text: '60-Day Project Timeline',
-                color: '#0F0',
-                font: {
-                    size: 16,
-                    weight: 'bold',
-                    family: "'Courier New', monospace"
-                }
-            }
-        },
-        scales: {
-            x: {
-                beginAtZero: true,
-                max: 60,
-                ticks: {
-                    color: '#0F0',
-                    callback: function(value) {
-                        return 'Day ' + value;
-                    },
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                },
-                grid: {
-                    color: 'rgba(0, 255, 0, 0.1)'
-                },
-                title: {
-                    display: true,
-                    text: 'Days from Start',
-                    color: '#0F0',
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                }
-            },
-            y: {
-                ticks: {
-                    color: '#0F0',
-                    font: {
-                        family: "'Courier New', monospace",
-                        size: 11
-                    }
-                },
-                grid: {
-                    color: 'rgba(0, 255, 0, 0.1)'
-                }
-            }
-        }
-    }
-});
-
-// Chart 6: Transport Comparison - MATRIX STYLE
-const transportCtx = document.getElementById('transportChart').getContext('2d');
-new Chart(transportCtx, {
-    type: 'bar',
-    data: {
-        labels: ['Sea Freight', 'Air Freight', 'Rail', 'Road (Local)'],
-        datasets: [
-            {
-                label: 'Cost ($)',
-                data: [4250, 30000, 9000, 650],
-                backgroundColor: 'rgba(0, 255, 0, 0.6)',
-                borderColor: '#0F0',
-                borderWidth: 2,
-                yAxisID: 'y'
-            },
-            {
-                label: 'Time (days)',
-                data: [30, 5, 21.5, 2],
-                backgroundColor: 'rgba(0, 200, 0, 0.6)',
-                borderColor: '#0A0',
-                borderWidth: 2,
-                yAxisID: 'y1'
-            }
-        ]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: true,
-        interaction: {
-            mode: 'index',
-            intersect: false
-        },
-        plugins: {
-            legend: {
-                display: true,
-                labels: {
-                    color: '#0F0',
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                }
-            },
-            title: {
-                display: true,
-                text: 'Transport Mode Cost vs Time Analysis',
-                color: '#0F0',
-                font: {
-                    size: 16,
-                    weight: 'bold',
-                    family: "'Courier New', monospace"
-                }
-            }
-        },
-        scales: {
-            x: {
-                ticks: {
-                    color: '#0F0',
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                },
-                grid: {
-                    color: 'rgba(0, 255, 0, 0.1)'
-                }
-            },
-            y: {
-                type: 'linear',
-                display: true,
-                position: 'left',
-                ticks: {
-                    color: '#0F0',
-                    callback: function(value) {
-                        return '$' + value.toLocaleString();
-                    },
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                },
-                grid: {
-                    color: 'rgba(0, 255, 0, 0.1)'
-                },
-                title: {
-                    display: true,
-                    text: 'Cost (USD)',
-                    color: '#0F0',
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                }
-            },
-            y1: {
-                type: 'linear',
-                display: true,
-                position: 'right',
-                ticks: {
-                    color: '#0A0',
-                    callback: function(value) {
-                        return value + ' days';
-                    },
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                },
-                grid: {
-                    drawOnChartArea: false
-                },
-                title: {
-                    display: true,
-                    text: 'Time (days)',
-                    color: '#0A0',
-                    font: {
-                        family: "'Courier New', monospace"
-                    }
-                }
-            }
-        }
-    }
-});
+// Charts will be initialized by initializeCharts() function
+// which is called after i18n is loaded
 
 // ============================================
 // SMOOTH SCROLLING
@@ -685,3 +244,363 @@ window.addEventListener('load', () => {
 console.log('🌍 Strategic Center loaded successfully!');
 console.log('📊 Interactive map with real shipping routes');
 console.log('🤝 Justice Sue Owen partnership dashboard');
+
+// Function to initialize/update all charts with current language
+window.initializeCharts = function(lang) {
+    lang = lang || 'en';
+    console.log('Initializing charts with language:', lang);
+    
+    // Get translations - access from window.translations
+    const t = window.translations?.[lang];
+    if (!t) {
+        console.error('Translations not found for language:', lang);
+        return;
+    }
+    
+    // Destroy existing charts
+    if (window.containerChart) window.containerChart.destroy();
+    if (window.marketChart) window.marketChart.destroy();
+    if (window.productChart) window.productChart.destroy();
+    if (window.shareChart) window.shareChart.destroy();
+    if (window.ganttChart) window.ganttChart.destroy();
+    if (window.transportChart) window.transportChart.destroy();
+    
+    // Get canvas contexts
+    const containerCtx = document.getElementById('containerChart')?.getContext('2d');
+    const marketCtx = document.getElementById('marketChart')?.getContext('2d');
+    const productCtx = document.getElementById('productChart')?.getContext('2d');
+    const shareCtx = document.getElementById('shareChart')?.getContext('2d');
+    const ganttCtx = document.getElementById('ganttChart')?.getContext('2d');
+    const transportCtx = document.getElementById('transportChart')?.getContext('2d');
+    
+    if (!containerCtx || !marketCtx || !productCtx || !shareCtx || !ganttCtx || !transportCtx) {
+        console.error('One or more chart canvases not found');
+        return;
+    }
+    
+    // Chart 1: Container Economics
+    window.containerChart = new Chart(containerCtx, {
+        type: 'bar',
+        data: {
+            labels: [
+                t.data.costs.leather,
+                t.data.costs.shipping,
+                t.data.costs.duty,
+                t.data.costs.local,
+                t.data.costs.revenue
+            ],
+            datasets: [{
+                label: 'USD',
+                data: [44200, 4500, 3200, 800, 130000],
+                backgroundColor: [
+                    'rgba(0, 255, 0, 0.6)',
+                    'rgba(0, 255, 0, 0.7)',
+                    'rgba(0, 255, 0, 0.5)',
+                    'rgba(0, 255, 0, 0.6)',
+                    'rgba(0, 255, 0, 0.9)'
+                ],
+                borderColor: '#0F0',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: t.data.chart1Subtitle,
+                    color: '#0F0',
+                    font: { size: 16, weight: 'bold', family: "'Courier New', monospace" }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: { color: '#0F0', font: { family: "'Courier New', monospace" } },
+                    grid: { color: 'rgba(0, 255, 0, 0.1)' }
+                },
+                x: {
+                    ticks: { color: '#0F0', font: { family: "'Courier New', monospace" } },
+                    grid: { color: 'rgba(0, 255, 0, 0.1)' }
+                }
+            }
+        }
+    });
+    
+    // Chart 2: Market Size
+    window.marketChart = new Chart(marketCtx, {
+        type: 'doughnut',
+        data: {
+            labels: [
+                t.data.countries.nigeria,
+                t.data.countries.southAfrica,
+                t.data.countries.kenya,
+                t.data.countries.ethiopia,
+                t.data.countries.ghana,
+                t.data.countries.tanzania,
+                t.data.countries.uganda,
+                t.data.countries.senegal
+            ],
+            datasets: [{
+                label: lang === 'zh' ? '市场规模 (百万美元)' : lang === 'de' ? 'Marktgröße (Mio. USD)' : lang === 'ru' ? 'Размер рынка (млн USD)' : 'Market Size (M USD)',
+                data: [580, 450, 320, 280, 210, 190, 150, 130],
+                backgroundColor: [
+                    'rgba(0, 255, 0, 0.9)',
+                    'rgba(0, 255, 0, 0.8)',
+                    'rgba(0, 255, 0, 0.7)',
+                    'rgba(0, 255, 0, 0.6)',
+                    'rgba(0, 255, 0, 0.5)',
+                    'rgba(0, 200, 0, 0.8)',
+                    'rgba(0, 200, 0, 0.7)',
+                    'rgba(0, 200, 0, 0.6)'
+                ],
+                borderColor: '#000',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: {
+                    position: 'right',
+                    labels: {
+                        color: '#0F0',
+                        font: { size: 12, family: "'Courier New', monospace" }
+                    }
+                },
+                title: {
+                    display: true,
+                    text: t.data.chart2Subtitle,
+                    color: '#0F0',
+                    font: { size: 16, weight: 'bold', family: "'Courier New', monospace" }
+                }
+            }
+        }
+    });
+    
+    // Chart 3: Product Margins
+    window.productChart = new Chart(productCtx, {
+        type: 'bar',
+        data: {
+            labels: [
+                t.data.products.sofa,
+                t.data.products.bag,
+                t.data.products.garment,
+                t.data.products.shoe,
+                t.data.products.auto
+            ],
+            datasets: [{
+                label: lang === 'zh' ? '利润率 (%)' : lang === 'de' ? 'Gewinnmarge (%)' : lang === 'ru' ? 'Маржа (%)' : 'Profit Margin (%)',
+                data: [165, 180, 140, 155, 170],
+                backgroundColor: 'rgba(0, 255, 0, 0.7)',
+                borderColor: '#0F0',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: t.data.chart3Subtitle,
+                    color: '#0F0',
+                    font: { size: 16, weight: 'bold', family: "'Courier New', monospace" }
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    ticks: { color: '#0F0', font: { family: "'Courier New', monospace" } },
+                    grid: { color: 'rgba(0, 255, 0, 0.1)' }
+                },
+                y: {
+                    ticks: { color: '#0F0', font: { family: "'Courier New', monospace" } },
+                    grid: { color: 'rgba(0, 255, 0, 0.1)' }
+                }
+            }
+        }
+    });
+    
+    // Chart 4: Import Share
+    window.shareChart = new Chart(shareCtx, {
+        type: 'pie',
+        data: {
+            labels: [
+                t.data.sources.china,
+                t.data.sources.india,
+                t.data.sources.turkey,
+                t.data.sources.local,
+                t.data.sources.other
+            ],
+            datasets: [{
+                label: lang === 'zh' ? '市场份额 (%)' : lang === 'de' ? 'Marktanteil (%)' : lang === 'ru' ? 'Доля рынка (%)' : 'Market Share (%)',
+                data: [42, 18, 12, 20, 8],
+                backgroundColor: [
+                    'rgba(0, 255, 0, 0.9)',
+                    'rgba(0, 255, 0, 0.7)',
+                    'rgba(0, 255, 0, 0.5)',
+                    'rgba(0, 200, 0, 0.8)',
+                    'rgba(0, 200, 0, 0.6)'
+                ],
+                borderColor: '#000',
+                borderWidth: 3
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        color: '#0F0',
+                        font: { size: 12, family: "'Courier New', monospace" }
+                    }
+                },
+                title: {
+                    display: true,
+                    text: t.data.chart4Subtitle,
+                    color: '#0F0',
+                    font: { size: 16, weight: 'bold', family: "'Courier New', monospace" }
+                }
+            }
+        }
+    });
+    
+    // Chart 5: Gantt Chart  
+    const ganttLabels = lang === 'zh' ? [
+        '市场调研与寻源', '供应商谈判', '资金筹集', '订单下达', '生产与质检',
+        '运输文档', '海运 (25-35天)', '清关', '港口→酒店运输', '展厅布置', '展销会', '回款'
+    ] : lang === 'de' ? [
+        'Marktforschung', 'Lieferantenverhandlung', 'Kapitalbeschaffung', 'Auftragserteilung', 'Produktion & QK',
+        'Versanddokumentation', 'Seefracht (25-35 Tage)', 'Zollabfertigung', 'Hafen→Hotel Transport', 'Showroom-Einrichtung', 'Ausstellung & Verkauf', 'Zahlungseinzug'
+    ] : lang === 'ru' ? [
+        'Исследование рынка', 'Переговоры с поставщиками', 'Привлечение капитала', 'Размещение заказа', 'Производство и КК',
+        'Документация доставки', 'Морская перевозка (25-35 дней)', 'Таможенная очистка', 'Порт→Отель транспорт', 'Настройка выставки', 'Выставка и продажи', 'Сбор платежей'
+    ] : [
+        'Market Research & Sourcing', 'Supplier Negotiation', 'Capital Raising', 'Order Placement', 'Production & QC',
+        'Shipping Documentation', 'Sea Freight (25-35 days)', 'Customs Clearance', 'Port → Hotel Transport', 'Showroom Setup', 'Exhibition & Sales', 'Cash Collection'
+    ];
+    
+    window.ganttChart = new Chart(ganttCtx, {
+        type: 'bar',
+        data: {
+            labels: ganttLabels,
+            datasets: [{
+                label: lang === 'zh' ? '持续时间 (天)' : lang === 'de' ? 'Dauer (Tage)' : lang === 'ru' ? 'Продолжительность (дни)' : 'Duration (days)',
+                data: [7, 7, 15, 5, 10, 5, 30, 3, 2, 5, 14, 14],
+                backgroundColor: [
+                    'rgba(0, 255, 0, 0.7)', 'rgba(0, 255, 0, 0.6)', 'rgba(0, 200, 0, 0.7)',
+                    'rgba(0, 255, 0, 0.5)', 'rgba(0, 255, 0, 0.8)', 'rgba(0, 200, 0, 0.6)',
+                    'rgba(0, 255, 0, 0.9)', 'rgba(0, 255, 0, 0.7)', 'rgba(0, 200, 0, 0.8)',
+                    'rgba(0, 255, 0, 0.6)', 'rgba(0, 255, 0, 0.5)', 'rgba(0, 200, 0, 0.7)'
+                ],
+                borderColor: '#0F0',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: lang === 'zh' ? '60天甘特图' : lang === 'de' ? '60-Tage Gantt-Diagramm' : lang === 'ru' ? 'Диаграмма Ганта 60 дней' : '60-Day Gantt Chart',
+                    color: '#0F0',
+                    font: { size: 18, weight: 'bold', family: "'Courier New', monospace" }
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    ticks: { color: '#0F0', font: { family: "'Courier New', monospace" } },
+                    grid: { color: 'rgba(0, 255, 0, 0.1)' }
+                },
+                y: {
+                    ticks: { color: '#0F0', font: { size: 11, family: "'Courier New', monospace" } },
+                    grid: { color: 'rgba(0, 255, 0, 0.1)' }
+                }
+            }
+        }
+    });
+    
+    // Chart 6: Transport Comparison
+    const transportLabels = lang === 'zh' ? ['海运', '空运', '铁路', '陆运 (本地)'] :
+                            lang === 'de' ? ['Seefracht', 'Luftfracht', 'Bahn', 'Straße (Lokal)'] :
+                            lang === 'ru' ? ['Морской транспорт', 'Авиаперевозки', 'Железная дорога', 'Автомобильный (местный)'] :
+                            ['Sea Freight', 'Air Freight', 'Rail', 'Road (Local)'];
+    
+    window.transportChart = new Chart(transportCtx, {
+        type: 'bar',
+        data: {
+            labels: transportLabels,
+            datasets: [
+                {
+                    label: lang === 'zh' ? '成本 ($)' : lang === 'de' ? 'Kosten ($)' : lang === 'ru' ? 'Стоимость ($)' : 'Cost ($)',
+                    data: [4250, 30000, 9000, 650],
+                    backgroundColor: 'rgba(0, 255, 0, 0.6)',
+                    borderColor: '#0F0',
+                    borderWidth: 2,
+                    yAxisID: 'y'
+                },
+                {
+                    label: lang === 'zh' ? '时间 (天)' : lang === 'de' ? 'Zeit (Tage)' : lang === 'ru' ? 'Время (дни)' : 'Time (days)',
+                    data: [30, 5, 21.5, 2],
+                    backgroundColor: 'rgba(0, 200, 0, 0.6)',
+                    borderColor: '#0A0',
+                    borderWidth: 2,
+                    yAxisID: 'y1'
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: { color: '#0F0', font: { size: 12, family: "'Courier New', monospace" } }
+                },
+                title: {
+                    display: true,
+                    text: lang === 'zh' ? '运输方式对比' : lang === 'de' ? 'Transportmittelvergleich' : lang === 'ru' ? 'Сравнение видов транспорта' : 'Transport Mode Comparison',
+                    color: '#0F0',
+                    font: { size: 16, weight: 'bold', family: "'Courier New', monospace" }
+                }
+            },
+            scales: {
+                y: {
+                    type: 'linear',
+                    display: true,
+                    position: 'left',
+                    beginAtZero: true,
+                    ticks: { color: '#0F0', font: { family: "'Courier New', monospace" } },
+                    grid: { color: 'rgba(0, 255, 0, 0.1)' }
+                },
+                y1: {
+                    type: 'linear',
+                    display: true,
+                    position: 'right',
+                    beginAtZero: true,
+                    ticks: { color: '#0A0', font: { family: "'Courier New', monospace" } },
+                    grid: { drawOnChartArea: false }
+                },
+                x: {
+                    ticks: { color: '#0F0', font: { family: "'Courier New', monospace" } },
+                    grid: { color: 'rgba(0, 255, 0, 0.1)' }
+                }
+            }
+        }
+    });
+    
+    console.log('✅ All charts initialized with language:', lang);
+};

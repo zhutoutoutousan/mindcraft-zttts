@@ -705,6 +705,9 @@ const translations = {
     }
 };
 
+// Expose translations to window for chart initialization
+window.translations = translations;
+
 // Current language (default: English)
 let currentLang = 'en';
 
@@ -756,6 +759,11 @@ function setLanguage(lang) {
     
     // Update page text
     updatePageText();
+    
+    // Update charts with new language
+    if (typeof window.initializeCharts === 'function') {
+        window.initializeCharts(lang);
+    }
     
     console.log('Language change complete');
 }
@@ -895,6 +903,12 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         console.log('Calling updatePageText after 100ms delay');
         updatePageText();
+        
+        // Initialize charts with current language
+        if (typeof window.initializeCharts === 'function') {
+            console.log('Initializing charts with language:', currentLang);
+            window.initializeCharts(currentLang);
+        }
     }, 100);
 });
 
