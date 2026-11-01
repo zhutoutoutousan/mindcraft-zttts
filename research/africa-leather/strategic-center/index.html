@@ -47,16 +47,17 @@
         /* Language Switcher */
         .lang-switcher {
             position: fixed;
-            top: 20px;
+            top: 80px;
             right: 20px;
             z-index: 2000;
             display: flex;
             gap: 10px;
-            background: rgba(0, 0, 0, 0.9);
-            padding: 10px;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 12px;
             border: 2px solid #0F0;
-            border-radius: 5px;
+            border-radius: 8px;
             box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            backdrop-filter: blur(10px);
         }
         
         .lang-btn {
@@ -454,14 +455,15 @@
         /* Responsive */
         @media (max-width: 768px) {
             .lang-switcher {
-                top: 10px;
+                top: 70px;
                 right: 10px;
                 flex-wrap: wrap;
                 padding: 8px;
+                gap: 6px;
             }
             
             .lang-btn {
-                font-size: 10px;
+                font-size: 11px;
                 padding: 6px 10px;
             }
             

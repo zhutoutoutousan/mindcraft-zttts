@@ -734,8 +734,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage');
     if (savedLang && translations[savedLang]) {
         currentLang = savedLang;
-        document.querySelector(`[data-lang="${savedLang}"]`).classList.add('active');
+        const activeBtn = document.querySelector(`[data-lang="${savedLang}"]`);
+        if (activeBtn) {
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            activeBtn.classList.add('active');
+        }
     }
     
     updatePageText();
 });
+
+// Expose setLanguage to global scope for onclick handlers
+window.setLanguage = setLanguage;
