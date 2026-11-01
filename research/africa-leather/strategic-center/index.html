@@ -49,7 +49,7 @@
             position: fixed;
             top: 80px;
             right: 20px;
-            z-index: 2000;
+            z-index: 9999;
             background: rgba(0, 0, 0, 0.95);
             border: 2px solid #0F0;
             border-radius: 8px;
@@ -57,13 +57,14 @@
             backdrop-filter: blur(10px);
             overflow: hidden;
             transition: all 0.3s;
+            min-width: 120px;
         }
         
         .lang-toggle {
             background: transparent;
             border: none;
             color: #0F0;
-            padding: 10px 15px;
+            padding: 12px 15px;
             cursor: pointer;
             font-family: 'Courier New', monospace;
             font-size: 14px;
@@ -71,13 +72,20 @@
             text-shadow: 0 0 5px #0F0;
             display: flex;
             align-items: center;
-            gap: 8px;
+            justify-content: space-between;
+            gap: 10px;
             width: 100%;
             transition: all 0.3s;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
         }
         
         .lang-toggle:hover {
             background: rgba(0, 255, 0, 0.1);
+        }
+        
+        .lang-toggle:active {
+            background: rgba(0, 255, 0, 0.2);
         }
         
         .lang-options {
@@ -936,39 +944,39 @@
                     <div class="logo-icon">🌍</div>
                     <div class="logo-text">
                         <h1>Justice Sue Owen Strategic Center</h1>
-                        <p>非洲皮革贸易战略中心</p>
+                        <p>Africa Leather Trade Intelligence</p>
                     </div>
                 </div>
                 <nav class="nav">
-                    <a href="#map-section">🗺️ 全球航线</a>
-                    <a href="#data-section">📊 数据分析</a>
-                    <a href="#partners-section">🤝 合作伙伴</a>
-                    <a href="#timeline-section">⏱️ 60天计划</a>
+                    <a href="#map-section">🗺️ Global Routes</a>
+                    <a href="#data-section">📊 Data Analysis</a>
+                    <a href="#partners-section">🤝 Partners</a>
+                    <a href="#timeline-section">⏱️ 60-Day Plan</a>
                 </nav>
             </div>
         </header>
         
         <!-- Hero Section -->
         <section class="hero">
-            <h2>中国 → 非洲皮革贸易</h2>
-            <p>利用五星级酒店网络优势，打造高效的中非皮革供应链</p>
+            <h2>China → Africa Leather Trade</h2>
+            <p>Leveraging 5-star hotel networks to build an efficient China-Africa leather supply chain</p>
             
             <div class="hero-stats">
                 <div class="stat-box">
                     <span class="stat-value">$52,700</span>
-                    <span class="stat-label">首个集装箱投资</span>
+                    <span class="stat-label">First Container Investment</span>
                 </div>
                 <div class="stat-box">
                     <span class="stat-value">147%</span>
-                    <span class="stat-label">投资回报率 ROI</span>
+                    <span class="stat-label">Return on Investment</span>
                 </div>
                 <div class="stat-box">
-                    <span class="stat-value">60天</span>
-                    <span class="stat-label">回本周期</span>
+                    <span class="stat-value">60 days</span>
+                    <span class="stat-label">Payback Period</span>
                 </div>
                 <div class="stat-box">
                     <span class="stat-value">$77,300</span>
-                    <span class="stat-label">净利润</span>
+                    <span class="stat-label">Net Profit</span>
                 </div>
             </div>
         </section>
@@ -976,16 +984,16 @@
         <!-- Map Section -->
         <div class="container">
             <section id="map-section" class="section">
-                <h2 class="section-title">🗺️ 全球海运路线图</h2>
+                <h2 class="section-title">🗺️ Global Shipping Routes Map</h2>
                 <p style="margin-bottom: 20px; font-size: 16px; color: #0A0; text-shadow: 0 0 5px #0F0;">
-                    真实的互动式世界地图 - 中国到非洲的三条主要海运路线
+                    Interactive real-world map - Three major maritime routes from China to Africa
                 </p>
                 <div id="map"></div>
             </section>
             
             <!-- Data Analysis Section -->
             <section id="data-section" class="section">
-                <h2 class="section-title">📊 数据分析与市场情报</h2>
+                <h2 class="section-title">📊 Data Analysis & Market Intelligence</h2>
                 
                 <div class="charts-grid">
                     <div class="chart-container">
@@ -1012,7 +1020,7 @@
             
             <!-- Partners Section -->
             <section id="partners-section" class="section">
-                <h2 class="section-title">🤝 三方合作伙伴角色</h2>
+                <h2 class="section-title">🤝 Three-Party Partnership Roles</h2>
                 
                 <div class="partner-grid">
                     <div class="partner-card">
@@ -1079,7 +1087,7 @@
             
             <!-- Timeline Section -->
             <section id="timeline-section" class="section">
-                <h2 class="section-title">⏱️ 60天行动计划</h2>
+                <h2 class="section-title">⏱️ 60-Day Action Plan</h2>
                 
                 <div class="timeline">
                     <div class="timeline-item">
