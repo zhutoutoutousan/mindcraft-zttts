@@ -630,6 +630,221 @@
             }
         }
         
+        /* Matrix Table */
+        .matrix-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .matrix-table th {
+            background: rgba(0, 255, 0, 0.1);
+            color: #0F0;
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #0F0;
+            font-weight: bold;
+            text-shadow: 0 0 5px #0F0;
+        }
+        
+        .matrix-table td {
+            padding: 12px;
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            color: #0A0;
+            line-height: 1.6;
+        }
+        
+        .matrix-table tr:hover {
+            background: rgba(0, 255, 0, 0.05);
+        }
+        
+        .badge-green {
+            background: #0F0;
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+        /* Digital Grid */
+        .digital-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .digital-card {
+            background: rgba(0, 255, 0, 0.03);
+            border: 2px solid #0F0;
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s;
+        }
+        
+        .digital-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.4);
+        }
+        
+        .digital-card h3 {
+            color: #0F0;
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-shadow: 0 0 8px #0F0;
+        }
+        
+        .digital-card p {
+            color: #0A0;
+            margin: 10px 0;
+        }
+        
+        .digital-card ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 10px 0;
+        }
+        
+        .digital-card li {
+            color: #0A0;
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .digital-card li:before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #0F0;
+        }
+        
+        /* Risk Grid */
+        .risk-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .risk-card {
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .risk-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .risk-level {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .risk-high {
+            background: rgba(255, 0, 0, 0.1);
+            border: 2px solid #F00;
+        }
+        
+        .risk-high .risk-level {
+            background: #F00;
+            color: #000;
+            box-shadow: 0 0 10px #F00;
+        }
+        
+        .risk-medium {
+            background: rgba(255, 165, 0, 0.1);
+            border: 2px solid #FFA500;
+        }
+        
+        .risk-medium .risk-level {
+            background: #FFA500;
+            color: #000;
+            box-shadow: 0 0 10px #FFA500;
+        }
+        
+        .risk-low {
+            background: rgba(0, 255, 0, 0.05);
+            border: 2px solid #0F0;
+        }
+        
+        .risk-low .risk-level {
+            background: #0F0;
+            color: #000;
+            box-shadow: 0 0 10px #0F0;
+        }
+        
+        .risk-critical {
+            background: rgba(255, 0, 0, 0.15);
+            border: 3px solid #F00;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+        
+        .risk-critical .risk-level {
+            background: #F00;
+            color: #FFF;
+            box-shadow: 0 0 15px #F00;
+            animation: blink 1.5s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .risk-card h3 {
+            color: #0F0;
+            font-size: 18px;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            text-shadow: 0 0 8px #0F0;
+        }
+        
+        .risk-card p {
+            color: #0A0;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        .risk-card ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 8px 0;
+        }
+        
+        .risk-card li {
+            color: #0A0;
+            padding: 4px 0;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        /* Responsive tables */
+        @media (max-width: 768px) {
+            .matrix-table {
+                font-size: 12px;
+            }
+            
+            .matrix-table th, .matrix-table td {
+                padding: 8px;
+            }
+            
+            .digital-grid, .risk-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
         /* Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
@@ -859,6 +1074,412 @@
                                 <li><strong>结果:</strong> 第60天回本，净利润 $77,300</li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Gantt Chart Section -->
+            <section id="gantt-section" class="section">
+                <h2 class="section-title">📅 Gantt Chart - 60-Day Execution</h2>
+                <div style="overflow-x: auto;">
+                    <canvas id="ganttChart" style="max-height: 400px;"></canvas>
+                </div>
+            </section>
+            
+            <!-- Transport Comparison Section -->
+            <section id="transport-section" class="section">
+                <h2 class="section-title">🚢 Transport Mode Comparison</h2>
+                <div style="overflow-x: auto;">
+                    <table class="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Transport Mode</th>
+                                <th>Time</th>
+                                <th>Cost (40ft)</th>
+                                <th>Pros</th>
+                                <th>Cons</th>
+                                <th>Best For</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>🚢 Sea Freight</strong></td>
+                                <td>25-35 days</td>
+                                <td>$4,000-4,500</td>
+                                <td>✓ Lowest cost<br>✓ Large volume<br>✓ Stable</td>
+                                <td>✗ Slow<br>✗ Weather dependent</td>
+                                <td><span class="badge-green">RECOMMENDED</span><br>Bulk leather goods</td>
+                            </tr>
+                            <tr>
+                                <td><strong>✈️ Air Freight</strong></td>
+                                <td>3-7 days</td>
+                                <td>$25,000-35,000</td>
+                                <td>✓ Very fast<br>✓ Reliable<br>✓ Secure</td>
+                                <td>✗ Very expensive (6-8x)<br>✗ Volume limit</td>
+                                <td>Urgent samples<br>High-value items</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🚂 Rail (China-Europe)</strong></td>
+                                <td>18-25 days</td>
+                                <td>$8,000-10,000</td>
+                                <td>✓ Faster than sea<br>✓ Cheaper than air</td>
+                                <td>✗ No direct Africa route<br>✗ Requires transshipment</td>
+                                <td>Not viable for China→Africa</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🚛 Road (Final Mile)</strong></td>
+                                <td>1-3 days</td>
+                                <td>$500-800</td>
+                                <td>✓ Door-to-door<br>✓ Flexible</td>
+                                <td>✗ Short distance only<br>✗ Road conditions</td>
+                                <td>Port → Hotel warehouse</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="margin-top: 30px;">
+                    <canvas id="transportChart"></canvas>
+                </div>
+            </section>
+            
+            <!-- Detailed Collaboration Section -->
+            <section id="collaboration-section" class="section">
+                <h2 class="section-title">🤝 Detailed Collaboration Matrix</h2>
+                <div style="overflow-x: auto;">
+                    <table class="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Partner</th>
+                                <th>Phase</th>
+                                <th>Specific Tasks</th>
+                                <th>Deliverables</th>
+                                <th>Timeline</th>
+                                <th>Budget</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3"><strong>🇨🇳 China Partner</strong><br>(20-25%)</td>
+                                <td>Sourcing</td>
+                                <td>• Visit 5+ factories in Guangzhou/Shenzhen<br>• Negotiate ¥35-40/sqm pricing<br>• Quality inspection</td>
+                                <td>Supplier contract + samples</td>
+                                <td>Day 1-10</td>
+                                <td>$500 travel</td>
+                            </tr>
+                            <tr>
+                                <td>Procurement</td>
+                                <td>• Place order (8,500 sqm)<br>• Supervise production<br>• Export documentation</td>
+                                <td>8,500 sqm leather + docs</td>
+                                <td>Day 15-25</td>
+                                <td>$44,200</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping</td>
+                                <td>• Book container space<br>• Loading supervision<br>• Track shipment</td>
+                                <td>Shipped container</td>
+                                <td>Day 20-30</td>
+                                <td>$4,500</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3"><strong>🏨 Justice's Father</strong><br>(30-35%)</td>
+                                <td>Pre-Sales</td>
+                                <td>• Set up hotel showroom<br>• Contact VIP clients<br>• Collect pre-orders</td>
+                                <td>15-20 pre-orders</td>
+                                <td>Day 5-30</td>
+                                <td>$1,000 setup</td>
+                            </tr>
+                            <tr>
+                                <td>Customs</td>
+                                <td>• Customs broker coordination<br>• Pay duties ($3,200)<br>• Port clearance</td>
+                                <td>Cleared goods</td>
+                                <td>Day 40-43</td>
+                                <td>$3,500</td>
+                            </tr>
+                            <tr>
+                                <td>Sales</td>
+                                <td>• Host leather exhibition<br>• Negotiate with wholesalers<br>• Manage hotel warehouse</td>
+                                <td>$90,000+ revenue</td>
+                                <td>Day 46-60</td>
+                                <td>$500 events</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3"><strong>💼 Justice's Brother</strong><br>(40-45%)</td>
+                                <td>Funding</td>
+                                <td>• Raise $52,700 capital<br>• Open business account<br>• Set up payment systems</td>
+                                <td>Capital secured</td>
+                                <td>Day 1-15</td>
+                                <td>$52,700</td>
+                            </tr>
+                            <tr>
+                                <td>Coordination</td>
+                                <td>• Daily comms China-Africa<br>• Track container in transit<br>• Manage cash flow</td>
+                                <td>Status reports</td>
+                                <td>Day 1-60</td>
+                                <td>$800 ops</td>
+                            </tr>
+                            <tr>
+                                <td>Profit Distribution</td>
+                                <td>• Calculate final profit<br>• Transfer payments<br>• Plan container #2</td>
+                                <td>$77,300 distributed</td>
+                                <td>Day 60+</td>
+                                <td>N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- Digital Solutions Section -->
+            <section id="digital-section" class="section">
+                <h2 class="section-title">💻 Digital Transformation Stack</h2>
+                
+                <div class="digital-grid">
+                    <div class="digital-card">
+                        <h3>🔗 Supply Chain Tracking</h3>
+                        <p><strong>Tools:</strong></p>
+                        <ul>
+                            <li>Alibaba Trade Assurance</li>
+                            <li>Marine Traffic (vessel tracking)</li>
+                            <li>AfterShip (shipment alerts)</li>
+                        </ul>
+                        <p><strong>Cost:</strong> $50/month</p>
+                    </div>
+                    
+                    <div class="digital-card">
+                        <h3>📊 Inventory Management</h3>
+                        <p><strong>Tools:</strong></p>
+                        <ul>
+                            <li>Zoho Inventory</li>
+                            <li>Google Sheets (real-time collab)</li>
+                            <li>QR code labeling system</li>
+                        </ul>
+                        <p><strong>Cost:</strong> $30/month</p>
+                    </div>
+                    
+                    <div class="digital-card">
+                        <h3>💰 Payment & Finance</h3>
+                        <p><strong>Tools:</strong></p>
+                        <ul>
+                            <li>Wise (international transfers)</li>
+                            <li>QuickBooks (accounting)</li>
+                            <li>PayPal/Stripe (customer payments)</li>
+                        </ul>
+                        <p><strong>Cost:</strong> $80/month</p>
+                    </div>
+                    
+                    <div class="digital-card">
+                        <h3>📱 Communication</h3>
+                        <p><strong>Tools:</strong></p>
+                        <ul>
+                            <li>WhatsApp Business</li>
+                            <li>Slack (team coordination)</li>
+                            <li>WeChat (China supplier comms)</li>
+                        </ul>
+                        <p><strong>Cost:</strong> $15/month</p>
+                    </div>
+                    
+                    <div class="digital-card">
+                        <h3>🎯 Sales & CRM</h3>
+                        <p><strong>Tools:</strong></p>
+                        <ul>
+                            <li>HubSpot CRM (free tier)</li>
+                            <li>Customer database in Airtable</li>
+                            <li>Email campaigns (Mailchimp)</li>
+                        </ul>
+                        <p><strong>Cost:</strong> $25/month</p>
+                    </div>
+                    
+                    <div class="digital-card">
+                        <h3>📸 Marketing</h3>
+                        <p><strong>Tools:</strong></p>
+                        <ul>
+                            <li>Instagram Business</li>
+                            <li>Professional product photos</li>
+                            <li>Hotel lobby digital signage</li>
+                        </ul>
+                        <p><strong>Cost:</strong> $100 setup + $20/month</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px; padding: 20px; background: rgba(0, 255, 0, 0.05); border: 2px solid #0F0; border-radius: 10px;">
+                    <h3 style="color: #0F0; margin-bottom: 15px;">💡 Total Digital Investment</h3>
+                    <p style="color: #0A0; font-size: 18px;">
+                        <strong>Setup:</strong> $100 one-time<br>
+                        <strong>Monthly:</strong> $220/month ($2,640/year)<br>
+                        <strong>ROI Impact:</strong> 15-20% efficiency gain = ~$11,600 extra profit/year
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Risk Analysis Section -->
+            <section id="risk-section" class="section">
+                <h2 class="section-title">⚠️ Risk Analysis & Pitfall Mitigation</h2>
+                
+                <div class="risk-grid">
+                    <div class="risk-card risk-high">
+                        <div class="risk-level">HIGH RISK</div>
+                        <h3>🏭 Supplier Quality Issues</h3>
+                        <p><strong>Pitfall:</strong></p>
+                        <ul>
+                            <li>Substandard leather quality</li>
+                            <li>Wrong specifications</li>
+                            <li>Short quantities</li>
+                        </ul>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>✓ Mandatory pre-shipment inspection</li>
+                            <li>✓ SGS/Bureau Veritas third-party QC</li>
+                            <li>✓ 30% payment only after loading</li>
+                            <li>✓ Trade Assurance on Alibaba</li>
+                        </ul>
+                        <p><strong>Budget:</strong> $800 for inspection</p>
+                    </div>
+                    
+                    <div class="risk-card risk-high">
+                        <div class="risk-level">HIGH RISK</div>
+                        <h3>🚢 Shipping Delays</h3>
+                        <p><strong>Pitfall:</strong></p>
+                        <ul>
+                            <li>Port congestion (Lagos notorious)</li>
+                            <li>Weather delays</li>
+                            <li>Missed connections</li>
+                        </ul>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>✓ Add 10-day buffer (plan 45 days, not 35)</li>
+                            <li>✓ Marine cargo insurance ($500)</li>
+                            <li>✓ Track with Marine Traffic</li>
+                            <li>✓ Use reliable lines (Maersk, MSC)</li>
+                        </ul>
+                        <p><strong>Buffer Cost:</strong> $500 insurance</p>
+                    </div>
+                    
+                    <div class="risk-card risk-medium">
+                        <div class="risk-level">MEDIUM RISK</div>
+                        <h3>📋 Customs & Import Duties</h3>
+                        <p><strong>Pitfall:</strong></p>
+                        <ul>
+                            <li>Unexpected duty hikes</li>
+                            <li>Document errors → container held</li>
+                            <li>Bribery demands</li>
+                        </ul>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>✓ Pre-verify HS codes with customs broker</li>
+                            <li>✓ Perfect documentation (Justice's father)</li>
+                            <li>✓ Budget +20% duty buffer ($640)</li>
+                            <li>✓ Reputable customs broker</li>
+                        </ul>
+                        <p><strong>Buffer:</strong> $640 extra duty reserve</p>
+                    </div>
+                    
+                    <div class="risk-card risk-medium">
+                        <div class="risk-level">MEDIUM RISK</div>
+                        <h3>💵 Currency Fluctuation</h3>
+                        <p><strong>Pitfall:</strong></p>
+                        <ul>
+                            <li>CNY/USD rate changes</li>
+                            <li>Local currency (Naira) instability</li>
+                            <li>Payment timing losses</li>
+                        </ul>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>✓ Lock CNY rate when ordering</li>
+                            <li>✓ Price in USD for customers</li>
+                            <li>✓ Fast payment collection</li>
+                            <li>✓ Use Wise for best FX rates</li>
+                        </ul>
+                        <p><strong>Hedge Cost:</strong> 1-2% FX spread (~$1,000)</p>
+                    </div>
+                    
+                    <div class="risk-card risk-medium">
+                        <div class="risk-level">MEDIUM RISK</div>
+                        <h3>🏪 Slow Sales / Inventory</h3>
+                        <p><strong>Pitfall:</strong></p>
+                        <ul>
+                            <li>Can't sell 60-70% in 2-3 weeks</li>
+                            <li>Hotel storage fees</li>
+                            <li>Cash flow crunch</li>
+                        </ul>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>✓ Collect 15-20 pre-orders BEFORE shipping</li>
+                            <li>✓ Exhibition invites sent Day 1</li>
+                            <li>✓ Price competitively (15-20% below retail)</li>
+                            <li>✓ Offer payment terms (50% upfront)</li>
+                        </ul>
+                        <p><strong>Target:</strong> 50% pre-sold before arrival</p>
+                    </div>
+                    
+                    <div class="risk-card risk-low">
+                        <div class="risk-level">LOW RISK</div>
+                        <h3>🤝 Partner Disputes</h3>
+                        <p><strong>Pitfall:</strong></p>
+                        <ul>
+                            <li>Profit split disagreements</li>
+                            <li>Blame for losses</li>
+                            <li>Work imbalance perception</li>
+                        </ul>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>✓ Written partnership agreement (Day 1)</li>
+                            <li>✓ Clear role division (table above)</li>
+                            <li>✓ Weekly video check-ins</li>
+                            <li>✓ Transparent accounting (QuickBooks)</li>
+                        </ul>
+                        <p><strong>Legal Cost:</strong> $500 partnership contract</p>
+                    </div>
+                    
+                    <div class="risk-card risk-low">
+                        <div class="risk-level">LOW RISK</div>
+                        <h3>🏨 Hotel Relationship Issues</h3>
+                        <p><strong>Pitfall:</strong></p>
+                        <ul>
+                            <li>Hotel management objects</li>
+                            <li>VIP guests complain</li>
+                            <li>Storage space revoked</li>
+                        </ul>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>✓ Justice's father = hotel stakeholder</li>
+                            <li>✓ Professional showroom setup</li>
+                            <li>✓ Limited display hours (10am-6pm)</li>
+                            <li>✓ Offer hotel discount (2-3%)</li>
+                        </ul>
+                        <p><strong>Goodwill:</strong> Small hotel commission</p>
+                    </div>
+                    
+                    <div class="risk-card risk-critical">
+                        <div class="risk-level">CRITICAL</div>
+                        <h3>🚨 Total Loss Scenario</h3>
+                        <p><strong>Worst Case:</strong></p>
+                        <ul>
+                            <li>Ship sinks / piracy</li>
+                            <li>Container totally lost/damaged</li>
+                            <li>Supplier disappears after 70% payment</li>
+                        </ul>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>✓ <strong>MUST:</strong> Marine cargo insurance (CIF terms)</li>
+                            <li>✓ <strong>MUST:</strong> Only use verified suppliers (Alibaba Gold)</li>
+                            <li>✓ Never pay 100% before shipping</li>
+                            <li>✓ Emergency fund reserve ($5,000)</li>
+                        </ul>
+                        <p><strong>Insurance:</strong> $500 (MANDATORY)</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px; padding: 25px; background: rgba(255, 0, 0, 0.1); border: 2px solid #F00; border-radius: 10px;">
+                    <h3 style="color: #F00; margin-bottom: 15px; text-shadow: 0 0 10px #F00;">🚨 TOTAL RISK MITIGATION BUDGET</h3>
+                    <div style="color: #0F0; font-size: 16px; line-height: 2;">
+                        <strong>SGS Inspection:</strong> $800<br>
+                        <strong>Marine Insurance:</strong> $500<br>
+                        <strong>Duty Buffer:</strong> $640<br>
+                        <strong>Partnership Contract:</strong> $500<br>
+                        <strong>Emergency Reserve:</strong> $5,000<br>
+                        <hr style="border-color: #0F0; margin: 15px 0;">
+                        <strong style="font-size: 20px;">TOTAL SAFETY NET: $7,440</strong><br>
+                        <span style="color: #0A0;">(Add to $52,700 = $60,140 total capital needed)</span>
                     </div>
                 </div>
             </section>

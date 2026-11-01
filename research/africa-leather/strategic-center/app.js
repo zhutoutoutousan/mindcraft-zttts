@@ -300,7 +300,7 @@ new Chart(marketCtx, {
 // Chart 3: Product Profit Margins - MATRIX STYLE
 const productCtx = document.getElementById('productChart').getContext('2d');
 new Chart(productCtx, {
-    type: 'horizontalBar',
+    type: 'bar',
     data: {
         labels: ['沙发革', '箱包革', '服装革', '鞋革', '汽车内饰革'],
         datasets: [{
@@ -321,7 +321,7 @@ new Chart(productCtx, {
             },
             title: {
                 display: true,
-                text: '各类皮革产品利润率',
+                text: 'Product Profit Margins',
                 color: '#0F0',
                 font: {
                     size: 16,
@@ -403,6 +403,225 @@ new Chart(shareCtx, {
                     size: 16,
                     weight: 'bold',
                     family: "'Courier New', monospace"
+                }
+            }
+        }
+    }
+});
+
+// Chart 5: Gantt Chart - MATRIX STYLE
+const ganttCtx = document.getElementById('ganttChart').getContext('2d');
+new Chart(ganttCtx, {
+    type: 'bar',
+    data: {
+        labels: [
+            'Market Research & Sourcing',
+            'Supplier Negotiation',
+            'Capital Raising',
+            'Order Placement',
+            'Production & QC',
+            'Shipping Documentation',
+            'Sea Freight (25-35 days)',
+            'Customs Clearance',
+            'Port → Hotel Transport',
+            'Showroom Setup',
+            'Exhibition & Sales',
+            'Cash Collection'
+        ],
+        datasets: [{
+            label: 'Duration (days)',
+            data: [7, 7, 15, 5, 10, 5, 30, 3, 2, 5, 14, 14],
+            backgroundColor: [
+                'rgba(0, 255, 0, 0.7)',
+                'rgba(0, 255, 0, 0.6)',
+                'rgba(0, 200, 0, 0.7)',
+                'rgba(0, 255, 0, 0.5)',
+                'rgba(0, 255, 0, 0.8)',
+                'rgba(0, 200, 0, 0.6)',
+                'rgba(0, 255, 0, 0.9)',
+                'rgba(0, 255, 0, 0.7)',
+                'rgba(0, 200, 0, 0.8)',
+                'rgba(0, 255, 0, 0.6)',
+                'rgba(0, 255, 0, 0.8)',
+                'rgba(0, 200, 0, 0.7)'
+            ],
+            borderColor: '#0F0',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: true,
+        plugins: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: true,
+                text: '60-Day Project Timeline',
+                color: '#0F0',
+                font: {
+                    size: 16,
+                    weight: 'bold',
+                    family: "'Courier New', monospace"
+                }
+            }
+        },
+        scales: {
+            x: {
+                beginAtZero: true,
+                max: 60,
+                ticks: {
+                    color: '#0F0',
+                    callback: function(value) {
+                        return 'Day ' + value;
+                    },
+                    font: {
+                        family: "'Courier New', monospace"
+                    }
+                },
+                grid: {
+                    color: 'rgba(0, 255, 0, 0.1)'
+                },
+                title: {
+                    display: true,
+                    text: 'Days from Start',
+                    color: '#0F0',
+                    font: {
+                        family: "'Courier New', monospace"
+                    }
+                }
+            },
+            y: {
+                ticks: {
+                    color: '#0F0',
+                    font: {
+                        family: "'Courier New', monospace",
+                        size: 11
+                    }
+                },
+                grid: {
+                    color: 'rgba(0, 255, 0, 0.1)'
+                }
+            }
+        }
+    }
+});
+
+// Chart 6: Transport Comparison - MATRIX STYLE
+const transportCtx = document.getElementById('transportChart').getContext('2d');
+new Chart(transportCtx, {
+    type: 'bar',
+    data: {
+        labels: ['Sea Freight', 'Air Freight', 'Rail', 'Road (Local)'],
+        datasets: [
+            {
+                label: 'Cost ($)',
+                data: [4250, 30000, 9000, 650],
+                backgroundColor: 'rgba(0, 255, 0, 0.6)',
+                borderColor: '#0F0',
+                borderWidth: 2,
+                yAxisID: 'y'
+            },
+            {
+                label: 'Time (days)',
+                data: [30, 5, 21.5, 2],
+                backgroundColor: 'rgba(0, 200, 0, 0.6)',
+                borderColor: '#0A0',
+                borderWidth: 2,
+                yAxisID: 'y1'
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        interaction: {
+            mode: 'index',
+            intersect: false
+        },
+        plugins: {
+            legend: {
+                display: true,
+                labels: {
+                    color: '#0F0',
+                    font: {
+                        family: "'Courier New', monospace"
+                    }
+                }
+            },
+            title: {
+                display: true,
+                text: 'Transport Mode Cost vs Time Analysis',
+                color: '#0F0',
+                font: {
+                    size: 16,
+                    weight: 'bold',
+                    family: "'Courier New', monospace"
+                }
+            }
+        },
+        scales: {
+            x: {
+                ticks: {
+                    color: '#0F0',
+                    font: {
+                        family: "'Courier New', monospace"
+                    }
+                },
+                grid: {
+                    color: 'rgba(0, 255, 0, 0.1)'
+                }
+            },
+            y: {
+                type: 'linear',
+                display: true,
+                position: 'left',
+                ticks: {
+                    color: '#0F0',
+                    callback: function(value) {
+                        return '$' + value.toLocaleString();
+                    },
+                    font: {
+                        family: "'Courier New', monospace"
+                    }
+                },
+                grid: {
+                    color: 'rgba(0, 255, 0, 0.1)'
+                },
+                title: {
+                    display: true,
+                    text: 'Cost (USD)',
+                    color: '#0F0',
+                    font: {
+                        family: "'Courier New', monospace"
+                    }
+                }
+            },
+            y1: {
+                type: 'linear',
+                display: true,
+                position: 'right',
+                ticks: {
+                    color: '#0A0',
+                    callback: function(value) {
+                        return value + ' days';
+                    },
+                    font: {
+                        family: "'Courier New', monospace"
+                    }
+                },
+                grid: {
+                    drawOnChartArea: false
+                },
+                title: {
+                    display: true,
+                    text: 'Time (days)',
+                    color: '#0A0',
+                    font: {
+                        family: "'Courier New', monospace"
+                    }
                 }
             }
         }
