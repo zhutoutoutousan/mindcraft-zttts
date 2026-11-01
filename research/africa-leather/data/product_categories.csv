@@ -1,0 +1,7 @@
+category,avg_price_per_sqm_usd,china_export_price_usd,africa_retail_price_usd,margin_pct,demand_score,competition_level,quality_required
+Footwear Leather,8.5,5.2,15.3,0.65,9.2,High,Medium-High
+Garment Leather,12.8,7.8,22.5,0.65,7.8,Medium,High
+Upholstery Leather,6.2,3.8,11.5,0.67,8.5,Medium-High,Medium
+Bag & Accessories Leather,10.5,6.5,18.8,0.65,9.5,High,High
+Automotive Leather,15.2,9.8,27.5,0.64,6.2,Low-Medium,Very High
+Synthetic Leather,3.8,2.1,7.2,0.71,8.9,Very High,Low-Medium

@@ -1,0 +1,9 @@
+risk_category,risk_factor,probability,impact,risk_score,mitigation
+Market Risk,Demand fluctuation,Medium,Medium,6.5,"Diversify product mix, pre-order commitments"
+Financial Risk,Currency exchange volatility,High,High,8.2,"Hedge FX exposure, price in USD, rapid turnover"
+Operational Risk,Shipping delays,Medium,Medium,6.0,"Buffer inventory, multiple shipping lines"
+Legal/Regulatory Risk,Customs/import restrictions,Medium-High,High,7.5,"Local agents, proper documentation, compliance"
+Competition Risk,Local/Turkish competitors,High,Medium,7.0,"Price competitiveness, quality differentiation"
+Political Risk,"Policy changes, instability",Medium,Very High,7.8,"Diversify countries, monitor geopolitical situation"
+Quality Risk,Product damage in transit,Low-Medium,Medium,5.5,"Insurance, proper packaging, quality checks"
+Payment Risk,"Non-payment, fraud",Medium,Very High,8.0,"LC/escrow, vetted partners, deposit requirements"

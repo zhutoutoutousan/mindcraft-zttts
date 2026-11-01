@@ -1,0 +1,62 @@
+{
+  "Political": {
+    "score": 6.5,
+    "factors": [
+      "China-Africa Forum strengthening trade relations",
+      "Belt and Road Initiative infrastructure development",
+      "AfCFTA (African Continental Free Trade Area) reducing intra-African barriers",
+      "Political instability in some regions (risk factor)",
+      "Trade agreements between China and individual African nations"
+    ]
+  },
+  "Economic": {
+    "score": 7.8,
+    "factors": [
+      "African middle class growing rapidly (300M+ by 2025)",
+      "Leather import demand increasing 8-12% annually",
+      "Currency fluctuations (USD/CNY/local currencies)",
+      "Chinese manufacturing cost advantage (40-60% cheaper)",
+      "Strong ROI potential (140-170% based on container analysis)"
+    ]
+  },
+  "Social": {
+    "score": 8.2,
+    "factors": [
+      "Growing demand for fashion and leather goods",
+      "Urbanization driving consumption patterns",
+      "Youth population (median age 19) seeking modern products",
+      "Status-driven consumption in emerging middle class",
+      "Preference for imported/Chinese goods (perceived quality)"
+    ]
+  },
+  "Technological": {
+    "score": 6.8,
+    "factors": [
+      "E-commerce penetration increasing in major cities",
+      "Mobile payment adoption (M-Pesa, etc.)",
+      "Supply chain digitization improving logistics",
+      "Limited cold-chain/quality preservation infrastructure",
+      "Blockchain for trade finance emerging"
+    ]
+  },
+  "Environmental": {
+    "score": 5.5,
+    "factors": [
+      "Increasing environmental regulations on leather processing",
+      "Sustainability concerns in European markets (re-export risk)",
+      "Water scarcity in tanning processes",
+      "Push for eco-friendly synthetic alternatives",
+      "Carbon footprint of long-distance shipping"
+    ]
+  },
+  "Legal": {
+    "score": 6.2,
+    "factors": [
+      "Import duties vary widely (15-35%)",
+      "Customs clearance complexity and delays",
+      "IP protection limited in some markets",
+      "Contract enforcement challenges",
+      "Need for local business partnerships/agents"
+    ]
+  }
+}

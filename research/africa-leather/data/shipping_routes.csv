@@ -1,0 +1,7 @@
+origin_port,origin_country,origin_coords,destination_port,destination_country,destination_coords,distance_nm,transit_days,avg_cost_40ft,frequency_per_month
+Shanghai (CNSHA),China,"(31.2304, 121.4737)",Lagos (NGLOS),Nigeria,"(6.4541, 3.3947)",9800,35,4500,8
+Shenzhen (CNSZX),China,"(22.5431, 114.0579)",Durban (ZADUR),South Africa,"(-29.8587, 31.0218)",7200,28,3800,12
+Guangzhou (CNGZP),China,"(23.1291, 113.2644)",Mombasa (KEMBA),Kenya,"(-4.0435, 39.6682)",6500,25,3200,10
+Ningbo (CNNGB),China,"(29.8683, 121.544)",Tema (GHTEM),Ghana,"(5.6167, -0.0167)",10200,38,4800,6
+Qingdao (CNTAO),China,"(36.0671, 120.3826)",Abidjan (CIABJ),Côte d'Ivoire,"(5.36, -4.0083)",10500,40,5000,5
+Shanghai (CNSHA),China,"(31.2304, 121.4737)",Port Said (EGPSD),Egypt,"(31.2653, 32.3019)",8900,32,4200,15

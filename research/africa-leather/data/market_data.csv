@@ -1,0 +1,9 @@
+country,market_size_usd_m,annual_growth_rate,population_m,gdp_per_capita,import_duty_pct,main_cities,leather_consumption_per_capita_kg,chinese_import_share
+Nigeria,580,0.089,223,2280,20.0,"Lagos, Kano, Ibadan",0.42,0.38
+South Africa,920,0.062,60,6530,15.0,"Johannesburg, Cape Town, Durban",1.82,0.29
+Kenya,340,0.107,54,2130,25.0,"Nairobi, Mombasa, Kisumu",0.51,0.44
+Ghana,210,0.095,33,2440,20.0,"Accra, Kumasi, Sekondi-Takoradi",0.38,0.41
+Egypt,1250,0.071,109,3570,30.0,"Cairo, Alexandria, Giza",0.92,0.35
+Morocco,680,0.058,37,3520,17.5,"Casablanca, Fez, Marrakech",1.45,0.26
+Ethiopia,280,0.125,120,1020,35.0,"Addis Ababa, Dire Dawa, Mek'ele",0.18,0.52
+Tanzania,195,0.098,63,1180,25.0,"Dar es Salaam, Mwanza, Zanzibar",0.27,0.47
