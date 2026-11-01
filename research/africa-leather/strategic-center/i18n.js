@@ -159,6 +159,23 @@ const translations = {
         footer: {
             copyright: "© 2026 Justice Sue Owen Strategic Center. All Rights Reserved.",
             tagline: "非洲皮革贸易战略中心 | Powered by Real-Time Market Intelligence"
+        },
+        
+        // New sections
+        gantt: {
+            title: "甘特图 - 60天执行计划"
+        },
+        transport: {
+            title: "运输方式对比"
+        },
+        collaboration: {
+            title: "详细合作分工矩阵"
+        },
+        digital: {
+            title: "数字化解决方案"
+        },
+        risk: {
+            title: "风险分析与坑点规避"
         }
     },
     
@@ -317,6 +334,23 @@ const translations = {
         footer: {
             copyright: "© 2026 Justice Sue Owen Strategic Center. All Rights Reserved.",
             tagline: "Africa Leather Trade Strategic Center | Powered by Real-Time Market Intelligence"
+        },
+        
+        // New sections
+        gantt: {
+            title: "Gantt Chart - 60-Day Execution"
+        },
+        transport: {
+            title: "Transport Mode Comparison"
+        },
+        collaboration: {
+            title: "Detailed Collaboration Matrix"
+        },
+        digital: {
+            title: "Digital Transformation Stack"
+        },
+        risk: {
+            title: "Risk Analysis & Pitfall Mitigation"
         }
     },
     
@@ -475,6 +509,23 @@ const translations = {
         footer: {
             copyright: "© 2026 Justice Sue Owen Strategiezentrum. Alle Rechte vorbehalten.",
             tagline: "Afrikanisches Lederhandels-Strategiezentrum | Powered by Echtzeit-Marktintelligenz"
+        },
+        
+        // New sections
+        gantt: {
+            title: "Gantt-Diagramm - 60-Tage-Ausführung"
+        },
+        transport: {
+            title: "Transportarten-Vergleich"
+        },
+        collaboration: {
+            title: "Detaillierte Kooperationsmatrix"
+        },
+        digital: {
+            title: "Digitale Transformationslösungen"
+        },
+        risk: {
+            title: "Risikoanalyse & Fallstrickvermeidung"
         }
     },
     
@@ -633,6 +684,23 @@ const translations = {
         footer: {
             copyright: "© 2026 Стратегический центр Justice Sue Owen. Все права защищены.",
             tagline: "Стратегический центр африканской кожаной торговли | Работает на рыночной разведке в реальном времени"
+        },
+        
+        // New sections
+        gantt: {
+            title: "Диаграмма Ганта - 60-дневное выполнение"
+        },
+        transport: {
+            title: "Сравнение способов транспортировки"
+        },
+        collaboration: {
+            title: "Детальная матрица сотрудничества"
+        },
+        digital: {
+            title: "Цифровые решения"
+        },
+        risk: {
+            title: "Анализ рисков и предотвращение ошибок"
         }
     }
 };
@@ -670,8 +738,10 @@ function setLanguage(lang) {
 // Update all text on page
 function updatePageText() {
     // Header
-    document.querySelector('.logo-text h1').textContent = t('title');
-    document.querySelector('.logo-text p').textContent = t('subtitle');
+    const logoH1 = document.querySelector('.logo-text h1');
+    const logoP = document.querySelector('.logo-text p');
+    if (logoH1) logoH1.textContent = t('title');
+    if (logoP) logoP.textContent = t('subtitle');
     
     // Navigation
     document.querySelectorAll('.nav a').forEach((link, i) => {
@@ -680,68 +750,105 @@ function updatePageText() {
     });
     
     // Hero
-    document.querySelector('.hero h2').textContent = t('hero.title');
-    document.querySelector('.hero > p').textContent = t('hero.description');
+    const heroH2 = document.querySelector('.hero h2');
+    const heroP = document.querySelector('.hero > p');
+    if (heroH2) heroH2.textContent = t('hero.title');
+    if (heroP) heroP.textContent = t('hero.description');
     
     const statLabels = document.querySelectorAll('.stat-label');
-    statLabels[0].textContent = t('hero.stats.investment');
-    statLabels[1].textContent = t('hero.stats.roi');
-    statLabels[2].textContent = t('hero.stats.period');
-    statLabels[3].textContent = t('hero.stats.profit');
+    if (statLabels[0]) statLabels[0].textContent = t('hero.stats.investment');
+    if (statLabels[1]) statLabels[1].textContent = t('hero.stats.roi');
+    if (statLabels[2]) statLabels[2].textContent = t('hero.stats.period');
+    if (statLabels[3]) statLabels[3].textContent = t('hero.stats.profit');
     
-    // Sections
-    document.querySelector('#map-section .section-title').textContent = t('map.title');
-    document.querySelector('#data-section .section-title').textContent = t('data.title');
-    document.querySelector('#partners-section .section-title').textContent = t('partners.title');
-    document.querySelector('#timeline-section .section-title').textContent = t('timeline.title');
+    // Section titles
+    const mapTitle = document.querySelector('#map-section .section-title');
+    const dataTitle = document.querySelector('#data-section .section-title');
+    const partnersTitle = document.querySelector('#partners-section .section-title');
+    const timelineTitle = document.querySelector('#timeline-section .section-title');
+    const ganttTitle = document.querySelector('#gantt-section .section-title');
+    const transportTitle = document.querySelector('#transport-section .section-title');
+    const collaborationTitle = document.querySelector('#collaboration-section .section-title');
+    const digitalTitle = document.querySelector('#digital-section .section-title');
+    const riskTitle = document.querySelector('#risk-section .section-title');
+    
+    if (mapTitle) mapTitle.innerHTML = '🗺️ ' + t('map.title');
+    if (dataTitle) dataTitle.innerHTML = '📊 ' + t('data.title');
+    if (partnersTitle) partnersTitle.innerHTML = '🤝 ' + t('partners.title');
+    if (timelineTitle) timelineTitle.innerHTML = '⏱️ ' + t('timeline.title');
+    if (ganttTitle) ganttTitle.innerHTML = '📅 ' + t('gantt.title');
+    if (transportTitle) transportTitle.innerHTML = '🚢 ' + t('transport.title');
+    if (collaborationTitle) collaborationTitle.innerHTML = '🤝 ' + t('collaboration.title');
+    if (digitalTitle) digitalTitle.innerHTML = '💻 ' + t('digital.title');
+    if (riskTitle) riskTitle.innerHTML = '⚠️ ' + t('risk.title');
     
     // Map description
-    document.querySelector('#map-section > p').textContent = t('map.description');
+    const mapDesc = document.querySelector('#map-section > p');
+    if (mapDesc) mapDesc.textContent = t('map.description');
     
     // Chart titles
     const chartTitles = document.querySelectorAll('.chart-title');
-    chartTitles[0].textContent = t('data.chart1');
-    chartTitles[1].textContent = t('data.chart2');
-    chartTitles[2].textContent = t('data.chart3');
-    chartTitles[3].textContent = t('data.chart4');
+    if (chartTitles[0]) chartTitles[0].textContent = t('data.chart1');
+    if (chartTitles[1]) chartTitles[1].textContent = t('data.chart2');
+    if (chartTitles[2]) chartTitles[2].textContent = t('data.chart3');
+    if (chartTitles[3]) chartTitles[3].textContent = t('data.chart4');
     
     // Partners
     const partnerNames = document.querySelectorAll('.partner-name');
-    partnerNames[0].textContent = t('partners.china.name');
-    partnerNames[1].textContent = t('partners.father.name');
-    partnerNames[2].textContent = t('partners.brother.name');
+    if (partnerNames[0]) partnerNames[0].textContent = t('partners.china.name');
+    if (partnerNames[1]) partnerNames[1].textContent = t('partners.father.name');
+    if (partnerNames[2]) partnerNames[2].textContent = t('partners.brother.name');
     
     const partnerRoles = document.querySelectorAll('.partner-role');
-    partnerRoles[0].textContent = t('partners.china.role');
-    partnerRoles[1].textContent = t('partners.father.role');
-    partnerRoles[2].textContent = t('partners.brother.role');
+    if (partnerRoles[0]) partnerRoles[0].textContent = t('partners.china.role');
+    if (partnerRoles[1]) partnerRoles[1].textContent = t('partners.father.role');
+    if (partnerRoles[2]) partnerRoles[2].textContent = t('partners.brother.role');
     
     // Timeline
     const timelinePhases = document.querySelectorAll('.timeline-phase');
-    timelinePhases[0].textContent = t('timeline.phase1');
-    timelinePhases[1].textContent = t('timeline.phase2');
-    timelinePhases[2].textContent = t('timeline.phase3');
-    timelinePhases[3].textContent = t('timeline.phase4');
+    if (timelinePhases[0]) timelinePhases[0].textContent = t('timeline.phase1');
+    if (timelinePhases[1]) timelinePhases[1].textContent = t('timeline.phase2');
+    if (timelinePhases[2]) timelinePhases[2].textContent = t('timeline.phase3');
+    if (timelinePhases[3]) timelinePhases[3].textContent = t('timeline.phase4');
     
     // Footer
-    document.querySelectorAll('.footer p')[0].textContent = t('footer.copyright');
-    document.querySelectorAll('.footer p')[1].textContent = t('footer.tagline');
+    const footerPs = document.querySelectorAll('.footer p');
+    if (footerPs[0]) footerPs[0].textContent = t('footer.copyright');
+    if (footerPs[1]) footerPs[1].textContent = t('footer.tagline');
+    
+    // Force chart updates (recreate with new language)
+    updateChartLanguage();
+}
+
+// Update chart labels to current language
+function updateChartLanguage() {
+    // This will be called when language changes
+    // Charts need to be recreated with new labels
+    console.log('Charts will update on next page load or can be dynamically updated here');
 }
 
 // Initialize on load
-document.addEventListener('DOMContentLoaded', () => {
-    // Load saved language preference
+window.addEventListener('load', () => {
+    // Ensure default is English if no saved preference
     const savedLang = localStorage.getItem('preferredLanguage');
     if (savedLang && translations[savedLang]) {
         currentLang = savedLang;
-        const activeBtn = document.querySelector(`[data-lang="${savedLang}"]`);
-        if (activeBtn) {
-            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-            activeBtn.classList.add('active');
-        }
+    } else {
+        // Default to English
+        currentLang = 'en';
     }
     
-    updatePageText();
+    // Update active button
+    const activeBtn = document.querySelector(`[data-lang="${currentLang}"]`);
+    if (activeBtn) {
+        document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+        activeBtn.classList.add('active');
+    }
+    
+    // Update all text immediately
+    setTimeout(() => {
+        updatePageText();
+    }, 100);
 });
 
 // Expose setLanguage to global scope for onclick handlers
