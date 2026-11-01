@@ -35,13 +35,17 @@ const routes = [
             [-1.0, 98.0],           // Malacca Strait south exit
             [-5.0, 90.0],           // East Indian Ocean
             [-10.0, 80.0],          // Central Indian Ocean
-            [-10.0, 65.0],          // Mid Indian Ocean
-            [-5.0, 50.0],           // West Indian Ocean
-            [0.0, 45.0],            // Equator, East Africa
-            [5.0, 40.0],            // Somalia Basin
-            [8.0, 30.0],            // Horn of Africa waters
-            [10.0, 20.0],           // Red Sea approach (staying in ocean)
-            [8.0, 10.0],            // Gulf of Guinea northeast
+            [-15.0, 70.0],          // Mid Indian Ocean
+            [-20.0, 60.0],          // South Indian Ocean
+            [-25.0, 50.0],          // Approaching South Africa
+            [-30.0, 35.0],          // Off Durban
+            [-35.0, 20.0],          // Cape of Good Hope (好望角)
+            [-33.0, 15.0],          // Rounding the Cape
+            [-25.0, 10.0],          // Atlantic Ocean, west of SA
+            [-15.0, 5.0],           // South Atlantic
+            [-5.0, 2.0],            // Equatorial Atlantic
+            [0.0, 2.5],             // Crossing Equator
+            [3.0, 3.0],             // Gulf of Guinea south
             [6.5244, 3.3792]        // Lagos
         ],
         color: '#0F0',
