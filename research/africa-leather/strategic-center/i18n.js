@@ -637,8 +637,8 @@ const translations = {
     }
 };
 
-// Current language (default: Chinese)
-let currentLang = 'zh';
+// Current language (default: English)
+let currentLang = 'en';
 
 // Get translation
 function t(key) {

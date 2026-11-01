@@ -17,6 +17,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Define shipping routes with REAL waypoints (through Malacca Strait, Indian Ocean)
+// Carefully avoiding land masses
 const routes = [
     {
         name: '上海 → 拉各斯',
@@ -24,19 +25,26 @@ const routes = [
         to: [6.5244, 3.3792],       // Lagos
         waypoints: [
             [31.2304, 121.4737],    // Shanghai
-            [22.3, 114.2],          // Hong Kong waters
-            [16.0, 112.0],          // South China Sea
-            [7.5, 105.0],           // Vietnam coast
-            [3.5, 100.5],           // Malacca Strait entrance
-            [1.3, 103.8],           // Singapore Strait
-            [-5.0, 80.0],           // Central Indian Ocean
-            [-8.0, 60.0],           // Western Indian Ocean
-            [-10.0, 45.0],          // East Africa approach
-            [0.0, 40.0],            // Somalia waters
-            [5.0, 10.0],            // Gulf of Guinea approach
+            [25.0, 120.0],          // Taiwan Strait
+            [20.0, 118.0],          // South China Sea north
+            [15.0, 115.0],          // South China Sea central
+            [10.0, 110.0],          // South China Sea south
+            [5.0, 105.0],           // Approaching Malacca
+            [2.5, 102.0],           // Malacca Strait north entrance
+            [1.0, 100.0],           // Malacca Strait
+            [-1.0, 98.0],           // Malacca Strait south exit
+            [-5.0, 90.0],           // East Indian Ocean
+            [-10.0, 80.0],          // Central Indian Ocean
+            [-10.0, 65.0],          // Mid Indian Ocean
+            [-5.0, 50.0],           // West Indian Ocean
+            [0.0, 45.0],            // Equator, East Africa
+            [5.0, 40.0],            // Somalia Basin
+            [8.0, 30.0],            // Horn of Africa waters
+            [10.0, 20.0],           // Red Sea approach (staying in ocean)
+            [8.0, 10.0],            // Gulf of Guinea northeast
             [6.5244, 3.3792]        // Lagos
         ],
-        color: '#FFD700',
+        color: '#0F0',
         days: 35,
         cost: 4500
     },
@@ -46,17 +54,22 @@ const routes = [
         to: [-29.8587, 31.0218],    // Durban
         waypoints: [
             [22.5431, 114.0579],    // Shenzhen
-            [18.0, 112.0],          // South China Sea
-            [10.0, 108.0],          // Vietnam waters
-            [3.5, 100.5],           // Malacca Strait
-            [1.3, 103.8],           // Singapore
-            [-6.0, 85.0],           // Indian Ocean (Sumatra)
-            [-12.0, 70.0],          // Central Indian Ocean
-            [-20.0, 55.0],          // Mozambique Channel approach
-            [-25.0, 40.0],          // Madagascar waters
+            [18.0, 115.0],          // South China Sea
+            [12.0, 112.0],          // South China Sea mid
+            [6.0, 108.0],           // South China Sea south
+            [2.5, 102.0],           // Malacca Strait entrance
+            [1.0, 100.0],           // Malacca Strait
+            [-1.0, 98.0],           // Malacca Strait exit
+            [-5.0, 92.0],           // Sumatra west
+            [-10.0, 85.0],          // East Indian Ocean
+            [-15.0, 75.0],          // Central Indian Ocean
+            [-20.0, 65.0],          // South Indian Ocean
+            [-25.0, 55.0],          // Approaching Mozambique Channel
+            [-28.0, 45.0],          // Madagascar east
+            [-30.0, 35.0],          // Mozambique Channel
             [-29.8587, 31.0218]     // Durban
         ],
-        color: '#FFA500',
+        color: '#0F0',
         days: 30,
         cost: 4200
     },
@@ -66,17 +79,21 @@ const routes = [
         to: [-4.0435, 39.6682],     // Mombasa
         waypoints: [
             [23.1291, 113.2644],    // Guangzhou
-            [18.0, 112.0],          // South China Sea
-            [8.0, 106.0],           // Vietnam coast
-            [3.5, 100.5],           // Malacca Strait
-            [1.3, 103.8],           // Singapore
-            [-3.0, 90.0],           // Indian Ocean (Sumatra)
-            [-8.0, 75.0],           // Central Indian Ocean
-            [-10.0, 60.0],          // Western Indian Ocean
-            [-6.0, 50.0],           // East Africa approach
+            [18.0, 114.0],          // South China Sea
+            [12.0, 111.0],          // South China Sea mid
+            [6.0, 107.0],           // South China Sea south
+            [2.5, 102.0],           // Malacca Strait entrance
+            [1.0, 100.0],           // Malacca Strait
+            [-1.0, 98.0],           // Malacca Strait exit
+            [-4.0, 93.0],           // Sumatra southwest
+            [-6.0, 88.0],           // East Indian Ocean
+            [-8.0, 80.0],           // Central Indian Ocean
+            [-10.0, 70.0],          // Mid Indian Ocean
+            [-8.0, 60.0],           // West Indian Ocean
+            [-5.0, 50.0],           // East Africa approach
             [-4.0435, 39.6682]      // Mombasa
         ],
-        color: '#FF6B6B',
+        color: '#0F0',
         days: 28,
         cost: 4000
     }
